@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('gp2_usuarios', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
             $table->string('email');
             $table->string('senha');
             $table->timestamps();

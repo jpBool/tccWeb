@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class gp2_usuarios extends Model
 {
-    use HasFactory;
+    protected $table = 'gp2_usuarios';
 }
