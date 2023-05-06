@@ -11,7 +11,7 @@
 <body>
     <div class = "main-login">
         <h1>L O G I N</h1>
-        <form method="post" action="{{route('auth.gp2_usuarios')}}">
+        <form method="post" action="{{route('loginInicial.login')}}">
             {{csrf_field() }}
             <div class="formEmail">
                 <label for="email">Email</label>
