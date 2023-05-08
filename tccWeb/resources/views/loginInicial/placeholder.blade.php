@@ -1,4 +1,10 @@
-<h1>Você logou</h1>
+{{$email = $_POST["email"]}} <br> 
+{{$senha = $_POST["senha"]}}
+
 @foreach($rows as $row)
-    <h1>{{$row->email}}</h1>
+    @if($email == $row->email && $senha == $row->senha)
+        <h1>Logado com sucesso</h1>
+    @else
+        <h1>Login incorreto<h1>
+    @endif
 @endforeach

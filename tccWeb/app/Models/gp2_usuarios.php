@@ -7,5 +7,18 @@ use Illuminate\Database\Eloquent\Model;
 
 class gp2_usuarios extends Model
 {
-    protected $table = 'gp2_usuarios';
+    protected $fillable = 
+    [
+        'nome',
+        'bio',
+        'avatar',
+        'naturalidade',
+        'nascimento',
+        'inscricao',
+        'email',
+        'senha',
+        'telefone',
+        'commits',  
+        'excluido',
+    ];
 }
