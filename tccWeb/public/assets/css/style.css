@@ -1,4 +1,19 @@
 body
 {
     background-color: rgb(190, 199, 230);
+    font-family: 'Inter', arial;
+    font-size: 1em;
+}
+
+.main-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    padding: 40px;
+    border-radius: 15px;
+    margin-top: 15%;
+    margin-left: 35%;
+    margin-right: 35%;
+    background-color: aliceblue;
 }
