@@ -10,14 +10,13 @@ body
     flex-direction: column;
     align-items: center;
     align-content: center;
-    padding: 40px;
-    border-radius: 15px;
-    margin-top: 10%;
-    margin-left: 25%;
+    padding: 50px;
+    border-radius: 20px;
+    margin-top: 5%;
+    margin-left: 22%;
     margin-right: 25%;
     background-color: rgb(183, 212, 238);
-}
-
-#btnlogin {
-    padding-top: 10px;
+    position: absolute;
+    width: 1050px;
+    height: 651px;
 }
