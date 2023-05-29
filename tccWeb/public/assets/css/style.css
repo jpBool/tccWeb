@@ -6,10 +6,15 @@ body
 }
 
 .main-login {
+    width: 100ew;
+    height: 50eh;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
+}
+
+.card-login{
     padding: 50px;
     border-radius: 20px;
     margin-top: 5%;
