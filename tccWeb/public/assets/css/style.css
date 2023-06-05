@@ -1,19 +1,122 @@
 body
 {
-    background-color: rgb(190, 199, 230);
-    font-family: 'Inter', arial;
-    font-size: 1em;
+    font-family: 'Arial',sans-serif;
+    margin: 0;
 }
 
-.main-login{
+
+.main-login {
+    background-color: #0A0622;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.card-login{
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
-    padding: 40px;
-    border-radius: 15px;
-    margin-top: 15%;
-    margin-left: 35%;
-    margin-right: 35%;
-    background-color: aliceblue;
+    padding: 30px 35px;
+    border-radius: 20px;
+    background-color: rgb(183, 212, 238);
+    box-shadow: 0px 10px 40px #060316;
 }
+
+.card-login > h1{
+    color: #8AB6D5;
+    font-weight: 600;
+    margin: 0;
+}
+
+
+.card-login > h1{
+    color: #413779e8;
+    font-weight: 800;
+    margin: 0;
+}
+
+.formEmail{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.formEmail > label{
+    color: #8AB6D5;
+}
+
+.formEmail > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #130c3b;
+    outline: none;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.formEmail > input::placeholder{
+    color: #8AB6D5;
+}
+
+.formSenha{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #130c3b;
+    outline: none;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.formSenha{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.formSenha > label{
+    color: #8AB6D5;
+}
+
+.formSenha > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #130c3b;
+    outline: none;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.formSenha > input::placeholder{
+    color: #8AB6D5;
+}
+
+.btnLogin{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+}
+
+.input [type=submit]{
+    width: 100%;
+    padding: 16px 0px;
+    background-color: #8AB6D5;
+}
+
