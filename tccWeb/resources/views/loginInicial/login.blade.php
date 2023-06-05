@@ -25,7 +25,7 @@
                 </div>
                 <br>
                 <div class="btnLogin">
-                    <input type="submit" value="logar">
+                    <input type="submit" value="logar" class="botaoLogin">
                 </div>
             <form>
         </div>

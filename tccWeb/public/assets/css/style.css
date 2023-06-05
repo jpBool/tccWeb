@@ -6,7 +6,7 @@ body
 
 
 .main-login {
-    background-color: #0A0622;
+    background-color: #364E65;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,17 +16,19 @@ body
 }
 
 .card-login{
-    width: 60%;
+    width: 30%;
+    height: 45%;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
-    padding: 30px 35px;
+    padding: 40px 35px;
     border-radius: 20px;
-    background-color: rgb(183, 212, 238);
-    box-shadow: 0px 10px 40px #060316;
+    background-color: #8AB6D5;
+    box-shadow: 0px 10px 40px #314253;
+    box-sizing: border-box;
 }
-
+/*---------------------------------------------------------------*/
 .card-login > h1{
     color: #8AB6D5;
     font-weight: 600;
@@ -46,11 +48,11 @@ body
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    margin: 10px 0px;
+    margin: 10px 0px 10px;
 }
 
 .formEmail > label{
-    color: #8AB6D5;
+    color: #130c3b;
 }
 
 .formEmail > input{
@@ -70,26 +72,15 @@ body
 
 .formSenha{
     width: 100%;
-    border: none;
-    border-radius: 10px;
-    padding: 15px;
-    background-color: #130c3b;
-    outline: none;
-    font-size: 14px;
-    box-sizing: border-box;
-}
-
-.formSenha{
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    margin: 10px 0px;
+    margin: 10px 0px 10px;
 }
 
 .formSenha > label{
-    color: #8AB6D5;
+    color: #130c3b;
 }
 
 .formSenha > input{
@@ -104,7 +95,7 @@ body
 }
 
 .formSenha > input::placeholder{
-    color: #8AB6D5;
+    color: hsl(205, 47%, 69%);
 }
 
 .btnLogin{
@@ -112,11 +103,17 @@ body
     padding: 16px 0px;
     margin: 25px;
     border: none;
+    background-color: #01dd31;
 }
-
+.botaoLogin
+{
+    background-color: rebeccapurple;
+}
+/*
 .input [type=submit]{
     width: 100%;
     padding: 16px 0px;
     background-color: #8AB6D5;
 }
+*/
 
