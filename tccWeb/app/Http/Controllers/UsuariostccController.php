@@ -10,7 +10,7 @@ use App\Http\Controllers\Controller;
 class UsuariostccController extends Controller
 {
     //
-    public function login()
+    public function login($emailX, $senhaX)
     {
         $rows = gp2_usuarios::all();
         //dd($rows);
