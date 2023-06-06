@@ -13,11 +13,11 @@ class UsuariostccController extends Controller
     public function login(Request $request)
     {
   
-        $senha = $request->input('senha');
-        $email = $request->input('email');
+        $xsenha = $request->input('senha');
+        $xemail = $request->input('email');
 
         $rows = gp2_usuarios::all();
         //dd($rows);
-        return view('loginInicial.placeholder', compact('rows'), compact('email'), compact('senha'));
+        return view('loginInicial.placeholder', compact('rows'), compact('xemail'), compact('xsenha'));
     }
 }
