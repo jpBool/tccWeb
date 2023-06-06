@@ -98,16 +98,13 @@ body
     color: hsl(205, 47%, 69%);
 }
 
-.btnLogin{
-    width: 100%;
-    padding: 16px 0px;
-    margin: 25px;
-    border: none;
-    background-color: #01dd31;
-}
 .botaoLogin
 {
-    background-color: rebeccapurple;
+    width: 100%;
+    padding: 16px 0px;
+    background-color: #8AB6D5;
+    border-radius: 10px;
+    letter-spacing: 3px;
 }
 /*
 .input [type=submit]{
