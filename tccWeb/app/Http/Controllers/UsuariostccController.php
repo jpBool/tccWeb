@@ -10,10 +10,14 @@ use App\Http\Controllers\Controller;
 class UsuariostccController extends Controller
 {
     //
-    public function login($emailX, $senhaX)
+    public function login(Request $request)
     {
+  
+        $senha = $request->input('senha');
+        $email = $request->input('email');
+
         $rows = gp2_usuarios::all();
         //dd($rows);
-        return view('loginInicial.placeholder', compact('rows'));
+        return view('loginInicial.placeholder', compact('rows'), compact('email'), compact('senha'));
     }
 }

@@ -17,5 +17,9 @@ Route::get('/', function () {
     return view('loginInicial.login');
 });
 
-Route::post('/logar', ['as' =>'loginInicial.logar', 'uses' => 'App\Http\Controllers\UsuariostccController@login'] );
+Route::post('/logar',
+['as'  =>'loginInicial.logar',
+ 'uses'=>'App\Http\Controllers\UsuariostccController@login']);
+
+//Route::post('/logar', ['as' =>'loginInicial.logar', 'uses' => 'App\Http\Controllers\UsuariostccController@login'] );
 
