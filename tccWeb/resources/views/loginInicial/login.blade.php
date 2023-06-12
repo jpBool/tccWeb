@@ -10,6 +10,8 @@
 
 <body>
     <div class = "main-login">
+        <img id="logo" src="tccWeb/img_tcc/logo01.png">
+
         <div class="card-login">
             <h1>L O G I N</h1>
             <form method="post" action="{{route('loginInicial.logar')}}">

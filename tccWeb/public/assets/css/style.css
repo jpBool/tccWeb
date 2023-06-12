@@ -4,7 +4,6 @@ body
     margin: 0;
 }
 
-
 .main-login {
     background-color: #364E65;
     display: flex;
@@ -13,6 +12,11 @@ body
     justify-content: center;
     width: 100vw;
     height: 100vh;
+}
+
+#logo{
+    width: 200px;
+    float: left;
 }
 
 .card-login{
