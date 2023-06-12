@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-    <link href="('assets/css/style.css')" rel="stylesheet">
+    <link href="{{asset('css/style.css')}}" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Login</title>
