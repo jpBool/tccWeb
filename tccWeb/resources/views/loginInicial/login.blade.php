@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-    <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
+    <link href="('assets/css/style.css')" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Login</title>
@@ -10,8 +10,6 @@
 
 <body>
     <div class = "main-login">
-        <img id="logo" src="tccWeb/img_tcc/logo01.png">
-
         <div class="card-login">
             <h1>L O G I N</h1>
             <form method="post" action="{{route('loginInicial.logar')}}">
