@@ -5,7 +5,7 @@ body
 }
 
 .main-login {
-    background-color: #364E65;
+    background-color: #f4f9ff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,31 +15,43 @@ body
 }
 
 .card-login{
-    width: 30%;
-    height: 45%;
+    width: 60%;
+    height: 60%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    padding: 40px 35px;
+    padding: 80px 70px;
     border-radius: 20px;
-    background-color: #8AB6D5;
-    box-shadow: 0px 10px 40px #314253;
+    background-color: #BBE1F3;
+    box-shadow: 0px 10px 10px #85a0bb;
     box-sizing: border-box;
 }
 /*---------------------------------------------------------------*/
-.card-login > h1{
-    color: #8AB6D5;
-    font-weight: 600;
-    margin: 0;
-}
-
 
 .card-login > h1{
     color: #413779e8;
     font-weight: 800;
     margin: 0;
     padding-bottom: 10px;
+}
+
+.card-login > h3{
+    font-weight: 500;
+    margin: 0;
+}
+
+.card-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.card-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
 }
 
 .formEmail{
@@ -49,6 +61,7 @@ body
     align-items: start;
     justify-content: center;
     margin: 10px 0px;
+    margin-bottom: 0px;;
 }
 
 .formEmail > label{
@@ -61,14 +74,15 @@ body
     border: none;
     border-radius: 10px;
     padding: 15px;
-    background-color: #130c3b;
+    padding-right: 200px;
+    background-color: #f4f9ff;
     outline: none;
     font-size: 14px;
     box-sizing: border-box;
 }
 
 .formEmail > input::placeholder{
-    color: #8AB6D5;
+    color: #130c3b;
 }
 
 .formSenha{
@@ -90,31 +104,24 @@ body
     border: none;
     border-radius: 10px;
     padding: 15px;
-    background-color: #130c3b;
+    background-color: #f4f9ff;
     outline: none;
     font-size: 14px;
     box-sizing: border-box;
 }
 
 .formSenha > input::placeholder{
-    color: hsl(205, 47%, 69%);
+    color: #130c3b;
 }
 
-.botaoLogin
-{
+.botaoLogin{
     width: 100%;
     padding: 16px 0px;
-    background-color: #8AB6D5;
+    background-color: #f4f9ff;
     border-radius: 10px;
     letter-spacing: 3px;
     text-transform: uppercase;
     font-weight: 800;
+    border: none;
 }
-/*
-.input [type=submit]{
-    width: 100%;
-    padding: 16px 0px;
-    background-color: #8AB6D5;
-}
-*/
 
