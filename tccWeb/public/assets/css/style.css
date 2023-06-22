@@ -4,18 +4,19 @@ body
     margin: 0;
 }
 
-.img-logo::after{
-    width: 10vw;
-}
-
 .main-login {
+    position: fixed;
     background-color: #f4f9ff;
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100vw;
     height: 100vh;
+}
+
+#img-logo{
+    width: 10vw;
+    margin-left: 30px;
 }
 
 .card-login{

@@ -10,7 +10,8 @@
 
 <body>
     <div class = "main-login">
-    <img src="{{'assets/img_tcc/logo.png'}}" alt="img" class="img-logo">
+    <img src="{{'assets/img_tcc/logo.png'}}" alt="img" id="img-logo">
+
         <div class="card-login">
             <div class="card-left">
                 <h1>Hello!</h1>
