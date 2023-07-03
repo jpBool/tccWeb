@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Auth;
 use App\Models\gp2_usuarios;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -13,7 +14,7 @@ class UsuariostccController extends Controller
     //public function login(Request $request)
     public function index()
     { // a visão que pede usuário e senha
-        return view('login.index');
+        return view('loginInicial.login');
     }
     public function entrar(Request $req)
     {
@@ -24,12 +25,17 @@ class UsuariostccController extends Controller
         }   
         else 
         { // pede usuario e senha novamente
-            return redirect()->route('loginInicial.login');
+            return redirect()->route('loginInicial.index');
         }
     }
     public function sair()
     {
         Auth::logout();
         return redirect()->route('site.home');
+    }
+
+    public function returnLogin()
+    {
+        return redirect()->route('loginInicial.placeHolder');
     }
 }
