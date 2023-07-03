@@ -20,6 +20,9 @@ Route::get('/', function () {
 Route::get('/login', ['as' => 'loginInicial.index',
 'uses'=>'App\Http\Controllers\UsuariostccController@index']);
 
+Route::get('/placeholder', ['as' => 'loginInicial.placeholder',
+'uses'=>'App\Http\Controllers\UsuariostccController@enterplaceholder']);
+
 Route::post('/logar',
 ['as'  =>'loginInicial.logar',
  'uses'=>'App\Http\Controllers\UsuariostccController@entrar']);

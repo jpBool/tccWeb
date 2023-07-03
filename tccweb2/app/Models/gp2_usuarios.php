@@ -3,10 +3,19 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
+use Laravel\Sanctum\HasApiTokens;
 
-class gp2_usuarios extends Model
+class gp2_usuarios extends Authenticatable
 {
+    use HasApiTokens, HasFactory, Notifiable;
+
+    const UPDATED_AT = null;
+    const CREATED_AT = null;
+    protected $primaryKey = null;
+    public $incrementing = false;
+
     protected $fillable = 
     [
         'nome',
@@ -21,4 +30,9 @@ class gp2_usuarios extends Model
         'commits',  
         'excluido',
     ];
+
+    public function getAuthPassword()
+    {
+        return $this->senha;
+    }
 }

@@ -6,12 +6,17 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\gp2_usuarios;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Hash;
 //use App\usuariostcc;
 
 class UsuariostccController extends Controller
 {
     
     //public function login(Request $request)
+    public function enterplaceholder()
+    {
+        return view('loginInicial.placeholder');
+    }
     public function index()
     { // a visão que pede usuário e senha
         return view('loginInicial.login');
@@ -19,9 +24,18 @@ class UsuariostccController extends Controller
     public function entrar(Request $req)
     {
         $dados = $req->all();
-        if(Auth::attempt(['email'=>$dados['email'],'password'=>$dados['senha']]))
+        //$email = Input::get('email');
+        //$senha = Input::get('senha');
+        $email = $dados['email'];
+        $senha = $dados['senha'];
+
+        $user = gp2_usuarios::where('email', $email) -> first();
+        
+        //$senhaI = Hash::make(Request::input('senha'));
+        if($user)
         { // redireciona para a home mas agora logado
-            return redirect()->route('loginInicial.placeHolder');
+            return redirect()->route('loginInicial.placeholder');
+            //return view('loginInicial.placeholder');
         }   
         else 
         { // pede usuario e senha novamente
