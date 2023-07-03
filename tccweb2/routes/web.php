@@ -12,16 +12,19 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/placeholder', ['as' => 'loginInicial.placeholder',
+        'uses'=>'App\Http\Controllers\UsuariostccController@enterplaceholder']);
 
-Route::get('/', function () {
-    return view('loginInicial.login');
+Route::group(['middleware'=>'auth'],function()
+{
+    Route::get('/', function () {
+        return view('loginInicial.login');
+    });
 });
+
 
 Route::get('/login', ['as' => 'loginInicial.index',
 'uses'=>'App\Http\Controllers\UsuariostccController@index']);
-
-Route::get('/placeholder', ['as' => 'loginInicial.placeholder',
-'uses'=>'App\Http\Controllers\UsuariostccController@enterplaceholder']);
 
 Route::post('/logar',
 ['as'  =>'loginInicial.logar',
