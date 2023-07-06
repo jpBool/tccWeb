@@ -27,7 +27,7 @@
                         <input type="password" name="senha" placeholder="Senha" id="senha">
                     </div>
                     <br>
-                        <input type="submit" value="logar" class="botaoLogin">
+                        <input type="submit" value="entrar" class="botaoLogin">
                 <form>
             </div>
             <div class="card-right">
