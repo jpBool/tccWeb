@@ -9,8 +9,8 @@
             
             <ul>
             <img src="{{'assets/img_tcc/logo.png'}}" alt="img" class="imglogo">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="index.blade.php">Home</a></li>
+                    <li><a href="sobre.blade.php">Sobre</a></li>
                    <li><a href="pesquisar.html">Pesquisar</a></li>
             </ul>
             
@@ -21,10 +21,11 @@
 <body class="bodysobre">
    
     <div class="main">
-    <div class="text"><h1 class="titulo">About Us</h1>
-        <p>Este sistema visa atender um amplo grupo de pessoas que buscam uma plataforma digital que possa solucionar suas dúvidas no contexto profissional. A nossa prioridade é desenvolver uma plataforma simplificada, garantindo com que seja acessível a todos os públicos e a diversos nichos de programadores e colaboradores empresariais.
-        Através dessa plataforma, busca-se impulsionar a criação de soluções inovadoras, atender necessidades decorrentes, estimular a criatividade e colaboração dos profissionais de programação, além de promover a inclusão digital e democratizar o acesso ao conhecimento tecnológico.</p></div>
-        <img src="{{'assets/img_tcc/imgsobre.png'}}" alt="pessoas" class="imgpessoas">
+        <div class="text"><h1 class="titulo">About Us</h1>
+            <p>Este sistema visa atender um amplo grupo de pessoas que buscam uma plataforma digital que possa solucionar suas dúvidas no contexto profissional. A nossa prioridade é desenvolver uma plataforma simplificada, garantindo com que seja acessível a todos os públicos e a diversos nichos de programadores e colaboradores empresariais.
+            Através dessa plataforma, busca-se impulsionar a criação de soluções inovadoras, atender necessidades decorrentes, estimular a criatividade e colaboração dos profissionais de programação, além de promover a inclusão digital e democratizar o acesso ao conhecimento tecnológico.</p>
+        </div>
+    <img src="{{'assets/img_tcc/imgsobre.png'}}" alt="pessoas" class="imgpessoas">
     </div>
     <br><br><br><br><br>
     <div class="devs">
