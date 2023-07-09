@@ -58,6 +58,7 @@ body {
     background-color: #f2f2f2;
     padding: 1%;
     text-align: left;
+    display: flex;
 }
 
 .textfooter{
@@ -116,3 +117,8 @@ body {
   margin-right: 3%;
 }
 
+.botoesfooter{
+    display: inline;
+    list-style-type: none;
+
+}
