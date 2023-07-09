@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="app.css">
+<link href="{{('assets/css/stylesobre.css')}}" rel="stylesheet">
   
     <div class="header">
          

@@ -1,0 +1,118 @@
+body {
+    font-family:  Helvetica;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #ffffff, #BBE1F3, #9EBAD6, #9EBAD6);
+    height: 100%;
+}
+
+.header {
+    background-color: white;
+    margin-top: 0;
+}
+
+.header nav ul {
+    list-style-type: none;
+    margin: 0;
+   padding-bottom: 1%;
+}
+
+.header nav ul li {
+    display: inline;
+    margin-right: 2%;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: #10273E;
+}
+
+.main{
+    display: flex;
+}
+
+.imgpessoas{
+    margin-top: 50px;
+   padding-right: 6%;
+   opacity: 0.7;
+   width: 100%; /* Ocupa 100% do espaço disponível */
+   height: 100%; /* Mantém a proporção da imagem */
+ }
+
+
+.text {
+    margin-top: 60px;
+   margin-right: 150px;
+    padding-left: 5%;
+    font-family:  Helvetica;
+    text-align: justify;
+}
+
+.titulo{
+  font-size: 400%;
+}
+
+
+
+.footer {
+    background-color: #f2f2f2;
+    padding: 1%;
+    text-align: left;
+}
+
+.textfooter{
+    margin-left: 50px;
+}
+
+.imglogo{
+    width: 100px; /* Largura desejada */
+    height: auto; /* Altura automática (proporcional) */
+    padding-left: 30px;
+    padding-right: 30%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.desen{
+    margin-top: 100px;
+    text-align: center;
+    font-style: italic;
+    font-size: 300%;
+    font-family:  Helvetica;
+}
+
+.devs{
+    padding-bottom: 100px;
+}
+
+.imagem-redonda {
+    width: 200px; /* Ajuste o tamanho conforme necessário */
+    height: 200px; /* Ajuste o tamanho conforme necessário */
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 50px;
+  }
+
+.desen4{
+    padding-left: 120px;
+    display: flex;
+  }
+
+
+  .desen3{
+    padding-left: 250px;
+    display: flex;
+}
+
+.caption {
+  text-align:center;
+  margin-left: 50px;
+  margin-top: 20px;
+  display: block;
+  font-family: helvetica;
+}
+
+.bonito{
+  margin-right: 3%;
+}
+
