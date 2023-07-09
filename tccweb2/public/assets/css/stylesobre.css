@@ -59,6 +59,7 @@ body {
     padding: 1%;
     text-align: left;
     display: flex;
+    margin-right: 20px;
 }
 
 .textfooter{
@@ -119,6 +120,5 @@ body {
 
 .botoesfooter{
     display: inline;
-    list-style-type: none;
-
+    text-decoration: none;
 }

@@ -9,8 +9,8 @@
             
             <ul>
             <img src="{{'assets/img_tcc/logo.png'}}" alt="img" class="imglogo">
-                    <li><a href="index.blade.php">Home</a></li>
-                    <li><a href="sobre.blade.php">Sobre</a></li>
+                    <li><a href="index">Home</a></li>
+                    <li><a href="sobre">Sobre</a></li>
                    <li><a href="pesquisar.html">Pesquisar</a></li>
             </ul>
             
