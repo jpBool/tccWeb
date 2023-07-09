@@ -23,3 +23,6 @@ Route::post('/logar',
 
 //Route::post('/logar', ['as' =>'loginInicial.logar', 'uses' => 'App\Http\Controllers\UsuariostccController@login'] );
 
+Route::get('/sobre', function () {
+    return view('sobre.blade.php');
+});
