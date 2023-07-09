@@ -24,7 +24,7 @@
     <div class="text"><h1 class="titulo">About Us</h1>
         <p>Este sistema visa atender um amplo grupo de pessoas que buscam uma plataforma digital que possa solucionar suas dúvidas no contexto profissional. A nossa prioridade é desenvolver uma plataforma simplificada, garantindo com que seja acessível a todos os públicos e a diversos nichos de programadores e colaboradores empresariais.
         Através dessa plataforma, busca-se impulsionar a criação de soluções inovadoras, atender necessidades decorrentes, estimular a criatividade e colaboração dos profissionais de programação, além de promover a inclusão digital e democratizar o acesso ao conhecimento tecnológico.</p></div>
-       <img src="imgsobre.png" alt="pessoas" class="imgpessoas">
+        <img src="{{'assets/img_tcc/imgsobre.png.png'}}" alt="pessoas" class="imgpessoas">
     </div>
     <br><br><br><br><br>
     <div class="devs">
