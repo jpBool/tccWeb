@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link href="{{('assets/css/stylesobre.css')}}" rel="stylesheet">
-  
-    <div class="header">
-         
-        <nav>   
-            
-            <ul>
-            <img src="{{'assets/img_tcc/logo.png'}}" alt="img" class="imglogo">
-                    <li><a href="index">Home</a></li>
-                    <li><a href="sobre">Sobre</a></li>
-                   <li><a href="pesquisar.html">Pesquisar</a></li>
-            </ul>
-            
-        </nav>
-    </div>
-</head>
+    <head>
+    <link href="{{('assets/css/stylesobre.css')}}" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Sobre</title>
+        <div class="header">
+            <nav>   
+                <ul>
+                <img src="{{'assets/img_tcc/logo.png'}}" alt="img" class="imglogo">
+                        <li><a href="index">Home</a></li>
+                        <li><a href="sobre">Sobre</a></li>
+                    <li><a href="pesquisar.html">Pesquisar</a></li>
+                </ul>
+                
+            </nav>
+        </div>
+    </head>
 
 <body class="bodysobre">
    
