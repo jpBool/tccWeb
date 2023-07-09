@@ -8,7 +8,7 @@
         <nav>   
             
             <ul>
-                <img src="Logo2.PNG" alt="Logo" class="imglogo" >
+            <img src="{{'assets/img_tcc/logo.png'}}" alt="img" class="imglogo">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
                    <li><a href="pesquisar.html">Pesquisar</a></li>
@@ -33,16 +33,16 @@
        
             <div class="desen4">
 
-                <div class="bonito"><img src="devs.png" alt="dev1" class="imagem-redonda" >
+                <div class="bonito"><img src="{{'assets/img_tcc/devs.png'}}" alt="dev1" class="imagem-redonda" >
                     <div class="caption">Aline Tiemi</div> <div class="caption">aaaaaaaa@gmail.com</div></div>
                 
-                <div class="bonito"><img src="devs.png" alt="dev2" class="imagem-redonda" >
+                <div class="bonito"><img src="{{'assets/img_tcc/devs.png'}}" alt="dev2" class="imagem-redonda" >
                     <div class="caption">Beatriz Kaori</div> <div class="caption">aaaaaaaa@gmail.com</div></div>
                 
-                <div class="bonito"><img src="devs.png" alt="dev3" class="imagem-redonda" >
+                <div class="bonito"><img src="{{'assets/img_tcc/devs.png'}}" alt="dev3" class="imagem-redonda" >
                     <div class="caption">Beatriz Osajima</div> <div class="caption">aaaaaaaa@gmail.com</div></div>
 
-                <div class="bonito"><img src="devs.png" alt="dev4" class="imagem-redonda" >
+                <div class="bonito"><img src="{{'assets/img_tcc/devs.png'}}" alt="dev4" class="imagem-redonda" >
                     <div class="caption">Joao Pedro</div> <div class="caption">aaaaaaaa@gmail.com</div></div>
             </div>
        
@@ -50,13 +50,13 @@
         <br><br><br><br><br>
 
         <div class="desen3">
-            <div class="bonito"><img src="devs.png" alt="dev4" class="imagem-redonda" >
+            <div class="bonito"><img src="{{'assets/img_tcc/devs.png'}}" alt="dev4" class="imagem-redonda" >
                 <div class="caption">Mariana Caroline</div> <div class="caption">aaaaaaaa@gmail.com</div></div>
 
-            <div class="bonito"><img src="devs.png" alt="dev4" class="imagem-redonda" >
+            <div class="bonito"><img src="{{'assets/img_tcc/devs.png'}}" alt="dev4" class="imagem-redonda" >
                 <div class="caption">Matheus Gimenes</div> <div class="caption">aaaaaaaa@gmail.com</div></div>
 
-            <div class="bonito"><img src="devs.png" alt="dev4" class="imagem-redonda" >
+            <div class="bonito"><img src="{{'assets/img_tcc/devs.png'}}" alt="dev4" class="imagem-redonda" >
                 <div class="caption">Renan Hayashi</div> <div class="caption">aaaaaaaa@gmail.com</div></div>
         </div>
     </div>
