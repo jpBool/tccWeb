@@ -12,7 +12,10 @@
                         <li><a href="sobre">Explorar</a></li>
                     <li><a href="pesquisar.html">Pesquisar</a></li>
                 </ul>
-                
+                <div class="icons">
+                    <i class="fas fa-search"></i>
+                    <i class="fas fa-user"></i>
+                </div>
             </nav>
         </div>
     </head>
