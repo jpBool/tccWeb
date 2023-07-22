@@ -26,15 +26,6 @@ body {
     text-decoration: none;
     color: #10273E;
 }
-
-.icons {
-    display: flex;
-  }
-  
-  .icons i {
-    font-size: 20px;
-    margin-left: 10px;
-  }
   
   /*---------------------------------------------------------------*/
 
