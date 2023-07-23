@@ -30,13 +30,17 @@ class UsuariostccController extends Controller
         $senha = $dados['senha'];
 
         $user = gp2_usuarios::where('email', $email) -> first();
-        $senha = gp2_usuarios::where('senha', $senha) -> first();
+        
         
         //$senhaI = Hash::make(Request::input('senha'));
-        if($user && $senha)
+        if($user)
         { // redireciona para a home mas agora logado
             
-            return view('loginInicial.placeholder', compact('user'));
+            if($user->senha == $senha)
+            {
+                return view('loginInicial.placeholder', compact('user'));
+            }
+            return redirect()->route('loginInicial.index');
             //return view('loginInicial.placeholder');
         }   
         else 
