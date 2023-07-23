@@ -35,7 +35,8 @@ class UsuariostccController extends Controller
         //$senhaI = Hash::make(Request::input('senha'));
         if($user && $senha)
         { // redireciona para a home mas agora logado
-            return redirect()->route('loginInicial.placeholder');
+            
+            return view('loginInicial.placeholder', compact('user'));
             //return view('loginInicial.placeholder');
         }   
         else 
