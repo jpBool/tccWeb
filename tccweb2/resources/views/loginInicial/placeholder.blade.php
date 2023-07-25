@@ -6,7 +6,7 @@ Naturalidade : {{$user->naturalidade }} <br>
 Nascimento : {{$user->nascimento }} <br>
 Telefone : {{$user->telefone }} <br>
 
- <a href="">Home</a>
+ <a href="{{route('homeInicial')}}">Home</a>
 
 
 
