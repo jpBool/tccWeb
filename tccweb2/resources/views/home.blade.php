@@ -8,13 +8,26 @@
     <title>Login</title>
 </head>
 
-<body>
-    @foreach($rows as $row)
-    <img src="{{'assets/img_tcc/logo.png'}}" alt="img" id="img-logo">
-    <div class='project'>  
-        <h4>Nova atualização de {{$row->autores}} </h4> --- {{$row->nome_projeto}} <br>
-        {{$row->email_contato}} <br>
-        {{$row->descricao_breve}} 
+<body >
+    @foreach($rows as $row) 
+    <div class='project'>
+        <div class="titulo">
+            <img src="{{'assets/img_tcc/usuario.png'}}" alt="img" id="img-user">
+            <label class="label-titulo"> Nova atualização de <div id="nome-autor">{{$row->autores}} </div>. Há 18 horas </label>
+        </div>
+        
+        <div class="conteudo"> 
+            <div>
+                <img src="{{'assets/img_tcc/gatinho.png'}}" alt="img" id="img-project" width="200px">
+            </div>
+            <div class="conteudo-texto">
+                <h2> {{$row->nome_projeto}} </h2>
+                {{$row->descricao_breve}} 
+                <br>
+                {{$row->data_criacao}}
+            </div> 
+        </div>
+        <br>
     </div>
     <br>
     @endforeach  

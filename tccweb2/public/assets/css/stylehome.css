@@ -1,0 +1,51 @@
+body{
+    background-image: linear-gradient(#BADFF2, #9EBAD6);
+}
+.conteudo
+{
+    border-bottom-left-radius: 13px 13px;
+    border-bottom-right-radius: 13px 13px;
+    width: 700px;
+    display: inline-flex;
+    
+    background-image: linear-gradient(#8AB6D5, #364E65);
+}
+
+#img-project
+{
+    padding-left: 30px;
+    padding: 14px;
+    border-radius: 25px;
+}
+
+#img-user
+{
+    
+    align-self: center;
+    width: 15px;
+    padding-left: 10px;
+    padding-right: 8px;
+}
+
+
+.project
+{
+    width: 700px;
+    border-style: solid;
+    border-radius: 15px;
+    background-color: white;
+    
+}
+
+.titulo
+{
+    margin-top: 5px;
+    display: inline-flex;
+    
+}
+
+#nome-autor
+{
+    display: inline-flex;
+    text-decoration: underline;
+}
