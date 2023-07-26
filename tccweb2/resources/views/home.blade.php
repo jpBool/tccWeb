@@ -1,3 +1,7 @@
+@extends('layout._site')
+@section('titulo','Alunos')
+@section('conteudo')
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -8,27 +12,32 @@
     <title>Login</title>
 </head>
 
-<body >
-    @foreach($rows as $row) 
-    <div class='project'>
-        <div class="titulo">
-            <img src="{{'assets/img_tcc/usuario.png'}}" alt="img" id="img-user">
-            <label class="label-titulo"> Nova atualização de <div id="nome-autor">{{$row->autores}} </div>. Há 18 horas </label>
-        </div>
-        
-        <div class="conteudo"> 
-            <div>
-                <img src="{{'assets/img_tcc/gatinho.png'}}" alt="img" id="img-project" width="200px">
+<body>
+    <div class="main">
+        <h1>Para você!</h1>
+        @foreach($rows as $row) 
+        <div class='project'>
+            <div class="titulo">
+                <img src="{{'assets/img_tcc/usuario.png'}}" alt="img" id="img-user">
+                <label class="label-titulo"> Nova atualização de <div id="nome-autor">{{$row->autores}} </div>. Há 18 horas </label>
             </div>
-            <div class="conteudo-texto">
-                <h2> {{$row->nome_projeto}} </h2>
-                {{$row->descricao_breve}} 
-                <br>
-                {{$row->data_criacao}}
-            </div> 
-        </div>
+            
+            <div class="conteudo"> 
+                <div>
+                    <img src="{{'assets/img_tcc/gatinho.png'}}" alt="img" id="img-project" width="200px">
+                </div>
+                <div class="conteudo-texto">
+                    <h2> {{$row->nome_projeto}} </h2>
+                    {{$row->descricao_breve}} 
+                    <br>
+                    {{$row->data_criacao}}
+                </div> 
+            </div>
+            <br>
+        </div>   
         <br>
+        @endforeach 
     </div>
-    <br>
-    @endforeach  
+    
 </body>
+@endsection
