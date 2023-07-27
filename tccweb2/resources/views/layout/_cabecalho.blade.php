@@ -10,13 +10,13 @@
 
     <div class="header">
             <nav>   
-                <ul>
-                <img src="{{'assets/img_tcc/logo.png'}}" alt="img" class="imglogo">
-                <div class=header-text>
+                <ul> 
+                <div class="header-link">
+                        <img src="{{'assets/img_tcc/logo.png'}}" alt="img" class="imglogo">
                         <li><a href="index">Seguindo</a></li>
                         <li><a href="sobre">Explorar</a></li>
-                    <li><a href="pesquisar.html">Pesquisar</a></li>
-                </div>
+                        <li><a href="pesquisar.html">Pesquisar</a></li>
+                    </div>
                 </ul>
             </nav>
     </div>

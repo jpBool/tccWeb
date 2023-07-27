@@ -26,12 +26,17 @@
                 <div>
                     <img src="{{'assets/img_tcc/gatinho.png'}}" alt="img" id="img-project" width="200px">
                 </div>
-                <div class="conteudo-texto">
+                <div class="allConteudo">
                     <h2> {{$row->nome_projeto}} </h2>
-                    {{$row->descricao_breve}} 
-                    <br>
-                    {{$row->data_criacao}}
+                    <div class="conteudo-texto">
+                        {{$row->descricao_breve}} 
+                        <br>
+                        <br>
+                        {{$row->data_criacao}} <br>
+                        <button type="button" class="button">Show all</button>
+                    </div> 
                 </div> 
+                
             </div>
             <br>
         </div>   

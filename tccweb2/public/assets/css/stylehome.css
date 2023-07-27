@@ -12,11 +12,47 @@ body{
 
 .conteudo
 {
-    border-bottom-left-radius: 13px 13px;
-    border-bottom-right-radius: 13px 13px;
+    border-bottom-left-radius: 12px 13.5px;
+    border-bottom-right-radius: 12px 13.5px;
     width: 900px;
     display: inline-flex;
     background-image: linear-gradient(#8AB6D5, #364E65);
+    box-sizing: border-box;
+}
+
+.conteudo-texto
+{
+    width: 80%;
+    display: block;
+    align-self: center;
+    text-align: center;
+}
+.allConteudo
+{
+    display: block;
+    width: 80%;
+}
+
+.button
+{
+    margin-top: 7px;
+    min-width: 100px;
+    height: 30px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: black;
+    overflow: hidden;
+    border: black;
+    color: white;
+    margin-bottom: 10px;
 }
 
 #img-project
@@ -37,8 +73,9 @@ body{
 .project
 {
     width: 900px;
+    height: auto;
     border-style: solid;
-    border-radius: 20px;
+    border-radius: 14px;
     background-color: white;   
 }
 
@@ -51,39 +88,56 @@ body{
 #nome-autor
 {
     display: inline-flex;
-    text-decoration: underline;
+    font-weight: bold
 }
 
 /*-------------Header-------------*/
+.imglogo{
+    width: 100px; /* Largura desejada */
+    height: auto; /* Altura automática (proporcional) */
+    padding-top: 3%;
+    margin-right: 30%;
+}
+
+.header-link
+{
+    align-self: center;
+}
+
 .header {
+    display: inline-flex;
     background-color: white;
     margin-top: 0;
+    width: 900px;
+    align-items: center;
 }
-
-.imglogo
+nav
 {
-    width: 150px;
-}
-
-.header-text
-{
-    display: inline-flex;
+    display: inline-block;
+    width: 100%; 
+    position: fixed;
+    padding-top: 2%;
+    background-color: white;
 }
 
 .header nav ul {
     list-style-type: none;
     margin: 0;
-   padding-bottom: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+   
 }
 
 .header nav ul li {
     display: inline;
-    margin-right: 3%;
+    margin-right: 2%;
+    
 }
 
 .header nav ul li a {
     text-decoration: none;
     color: #10273E;
+    text-align: center;
 }
 
 /*-------------------------------footer--------------------------------*/
@@ -91,6 +145,8 @@ body{
     display: inline;
     text-decoration: none;
     margin-top: 15px;
+    text-align: center;
+    align-self: center;
 }
 
 .footer {
