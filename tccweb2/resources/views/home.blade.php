@@ -24,7 +24,7 @@
             
             <div class="conteudo"> 
                 <div>
-                    <img src="{{'assets/img_tcc/gatinho.png'}}" alt="img" id="img-project" width="200px">
+                    <img src="{{'assets/img_tcc/gatinho.png'}}" alt="img" id="img-project" width="280px">
                 </div>
                 <div class="allConteudo">
                     <h2> {{$row->nome_projeto}} </h2>

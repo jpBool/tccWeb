@@ -43,11 +43,10 @@ body{
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
-    position: relative;
     display: inline-block;
     outline: none;
     border-radius: 5px;
-    z-index: 0;
+    z-index: 0; /*Quanto maior o valor, mais fica na camada de frente quando há sobreposiçao de objetos*/
     background: black;
     overflow: hidden;
     border: black;
@@ -57,9 +56,10 @@ body{
 
 #img-project
 {
+    box-sizing: border-box;
     padding-left: 30px;
     padding: 14px;
-    border-radius: 25px;
+    border-radius: 30px;
 }
 
 #img-user
@@ -75,7 +75,7 @@ body{
     width: 900px;
     height: auto;
     border-style: solid;
-    border-radius: 14px;
+    border-radius: 1.2vw;
     background-color: white;   
 }
 
@@ -91,26 +91,17 @@ body{
     font-weight: bold
 }
 
-/*-------------Header-------------*/
-.imglogo{
-    width: 100px; /* Largura desejada */
-    height: auto; /* Altura automática (proporcional) */
-    padding-top: 3%;
-    margin-right: 30%;
-}
+/*-------------Header----------------------------------------*/
 
-.header-link
+.header 
 {
-    align-self: center;
-}
-
-.header {
     display: inline-flex;
     background-color: white;
     margin-top: 0;
     width: 900px;
     align-items: center;
 }
+
 nav
 {
     display: inline-block;
@@ -120,43 +111,68 @@ nav
     background-color: white;
 }
 
-.header nav ul {
-    list-style-type: none;
+.header nav ul 
+{
+    width: 60%;
+    list-style-type: none; /*define o icone marcador ou check nos itens da lista*/
     margin: 0;
     padding-bottom: 1%;
     text-align: center;
-   
 }
 
-.header nav ul li {
-    display: inline;
-    margin-right: 2%;
-    
-}
-
-.header nav ul li a {
-    text-decoration: none;
-    color: #10273E;
-    text-align: center;
-}
-
-/*-------------------------------footer--------------------------------*/
-.botoesfooter{
-    display: inline;
-    text-decoration: none;
-    margin-top: 15px;
-    text-align: center;
+.header-link
+{
     align-self: center;
 }
 
-.footer {
+.imglogo
+{
+    width: 100px; /* Largura desejada */
+    height: auto; /* Altura automática (proporcional) */
+    padding-top: 2%;
+    margin-top: 20px;
+    padding-right: 63%;
+}
+
+.header nav ul li 
+{
+    display: inline;
+    margin-right: 3%;
+}
+
+.header nav ul li a 
+{
+    text-decoration: none;
+    color: #10273E;
+}
+
+/*-------------------------------footer--------------------------------*/
+.botoesfooter
+{
+    display: inline;
+    margin-top: 15px;
+    margin-left: 45%;
+    text-align: center;
+    justify-content: center;
+}
+
+.botoesfooter a
+{
+    color: #10273E;
+    text-decoration: none;
+    padding-right: 150px;
+}
+
+.footer 
+{
     background-color: #f2f2f2;
-    padding: 1%;
+    padding: 2%;
     text-align: left;
     display: flex;
 }
 
-.textfooter{
+.textfooter
+{
     margin-left: 50px;
     margin-right: 25px;
 }
