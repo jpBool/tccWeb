@@ -131,7 +131,7 @@ nav
     height: auto; /* Altura automática (proporcional) */
     padding-top: 2%;
     margin-top: 20px;
-    padding-right: 63%;
+    padding-right: 390px;
 }
 
 .header nav ul li 
@@ -151,20 +151,21 @@ nav
 {
     display: inline;
     margin-top: 15px;
-    margin-left: 45%;
+    margin-left: 30%;
     text-align: center;
-    justify-content: center;
+    flex: 1 50px;
 }
 
 .botoesfooter a
 {
     color: #10273E;
     text-decoration: none;
-    padding-right: 150px;
+    padding-right: 10%;
 }
 
 .footer 
 {
+    width: 100%;
     background-color: #f2f2f2;
     padding: 2%;
     text-align: left;
@@ -173,7 +174,16 @@ nav
 
 .textfooter
 {
+    display: flex;
     margin-left: 50px;
     margin-right: 25px;
+}
+.imgfooter
+{
+    width: 90px;
+    height: 30px;
+    margin-left: 50px;
+    margin-right: 25px;
+    margin-top: 5px;
 }
 /*---------------------------------------------------------------*/
