@@ -14,6 +14,8 @@
 
 <body>
     <div class="main">
+        <br><br><br><br>
+        <br>
         <h1>Para você!</h1>
         @foreach($rows as $row) 
         <div class='project'>

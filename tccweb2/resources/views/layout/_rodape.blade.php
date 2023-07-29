@@ -6,8 +6,6 @@
             <a href="index.blade.php">Home</a>
             <a href="sobre.blade.php">Sobre nós</a>
             <a href="pesquisar.html">Download</a>
-
-            <p class="textfooter"> Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur. </p> 
         
         </div>
     </div>

@@ -12,12 +12,11 @@ body{
 
 .conteudo
 {
-    border-bottom-left-radius: 12px 13.5px;
-    border-bottom-right-radius: 12px 13.5px;
-    width: 900px;
+    border-radius: 14px;
+    width: 898px;
+    height: 200px;
     display: inline-flex;
-    background-image: linear-gradient(#8AB6D5, #364E65);
-    box-sizing: border-box;
+    
 }
 
 .conteudo-texto
@@ -72,17 +71,22 @@ body{
 
 .project
 {
+    margin-left: 2px;
     width: 900px;
     height: auto;
     border-style: solid;
-    border-radius: 1.2vw;
-    background-color: white;   
+    border-radius: 15px;
+    background-image: linear-gradient(#8AB6D5, #364E65);
 }
 
 .titulo
 {
-    margin-top: 5px;
+
+    background-color: white;
     display: inline-flex;
+    width: 100%;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
 }
 
 #nome-autor
@@ -95,11 +99,12 @@ body{
 
 .header 
 {
-    display: inline-flex;
+    left: 0;
+    width: 100%;
+    height: 11%;
+    display: inline;
     background-color: white;
     margin-top: 0;
-    width: 900px;
-    align-items: center;
 }
 
 nav
@@ -107,43 +112,44 @@ nav
     display: inline-block;
     width: 100%; 
     position: fixed;
-    padding-top: 2%;
     background-color: white;
 }
 
 .header nav ul 
 {
-    width: 60%;
     list-style-type: none; /*define o icone marcador ou check nos itens da lista*/
     margin: 0;
-    padding-bottom: 1%;
     text-align: center;
 }
 
 .header-link
 {
-    align-self: center;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .imglogo
 {
+    padding-top: 10%;
+    display: flex;
     width: 100px; /* Largura desejada */
     height: auto; /* Altura automática (proporcional) */
-    padding-top: 2%;
-    margin-top: 20px;
-    padding-right: 390px;
+    padding-top: 1%;
+    /*padding-right: 390px;*/
 }
 
 .header nav ul li 
 {
     display: inline;
-    margin-right: 3%;
+    text-align: center;
 }
 
 .header nav ul li a 
 {
     text-decoration: none;
     color: #10273E;
+    margin-right: 3%;
 }
 
 /*-------------------------------footer--------------------------------*/
@@ -165,19 +171,23 @@ nav
 
 .footer 
 {
-    width: 100%;
-    background-color: #f2f2f2;
+    background-color: white;
     padding: 2%;
     text-align: left;
     display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 .textfooter
 {
     display: flex;
-    margin-left: 50px;
+    margin-left: 10%;
     margin-right: 25px;
 }
+
 .imgfooter
 {
     width: 90px;
