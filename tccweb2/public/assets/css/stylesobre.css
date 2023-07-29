@@ -44,7 +44,7 @@ body {
 
 .text {
     margin-top: 60px;
-   margin-right: 150px;
+    margin-right: 150px;
     padding-left: 7%;
     font-family:  Helvetica;
     text-align: justify;
@@ -81,15 +81,15 @@ body {
     border-radius: 50%;
     object-fit: cover;
     margin-left: 50px;
-  }
+}
 
 .desen4{
     padding-left: 120px;
     display: flex;
-  }
+}
 
 
-  .desen3{
+.desen3{
     padding-left: 250px;
     display: flex;
 }
