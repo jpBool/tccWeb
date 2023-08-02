@@ -31,6 +31,8 @@ class UsuariostccController extends Controller
 
         $user = gp2_usuarios::where('email', $email) -> first();
         
+        //$senha = gp2_usuarios::where('senha', $senha) -> first();
+
         
         //$senhaI = Hash::make(Request::input('senha'));
         if($user)

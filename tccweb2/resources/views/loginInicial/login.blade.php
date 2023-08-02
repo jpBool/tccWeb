@@ -25,6 +25,7 @@
                     <div class="formSenha">
                         <label for="senha">Senha</label>
                         <input type="password" name="senha" placeholder="Senha" id="senha">
+                        <!--<input type="checkbox" name="checkbox" id="checkboz">-->
                     </div>
                     <br>
                         <input type="submit" value="entrar" class="botaoLogin">

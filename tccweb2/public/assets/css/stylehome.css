@@ -1,0 +1,199 @@
+body{
+    background-image: linear-gradient(to bottom, #ffffff, #BBE1F3, #9EBAD6, #9EBAD6);
+    margin: 0;
+}
+
+.main
+{
+    width: 900px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.conteudo
+{
+    border-radius: 14px;
+    width: 898px;
+    height: 200px;
+    display: inline-flex;
+    
+}
+
+.conteudo-texto
+{
+    width: 80%;
+    display: block;
+    align-self: center;
+    text-align: center;
+}
+.allConteudo
+{
+    display: block;
+    width: 80%;
+}
+
+.button
+{
+    margin-top: 7px;
+    min-width: 100px;
+    height: 30px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0; /*Quanto maior o valor, mais fica na camada de frente quando há sobreposiçao de objetos*/
+    background: black;
+    overflow: hidden;
+    border: black;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#img-project
+{
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding: 14px;
+    border-radius: 30px;
+}
+
+#img-user
+{
+    align-self: center;
+    width: 15px;
+    padding-left: 10px;
+    padding-right: 8px;
+}
+
+.project
+{
+    margin-left: 2px;
+    width: 900px;
+    height: auto;
+    border-style: solid;
+    border-radius: 15px;
+    background-image: linear-gradient(#8AB6D5, #364E65);
+}
+
+.titulo
+{
+
+    background-color: white;
+    display: inline-flex;
+    width: 100%;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+#nome-autor
+{
+    display: inline-flex;
+    font-weight: bold
+}
+
+/*-------------Header----------------------------------------*/
+
+.header 
+{
+    left: 0;
+    width: 100%;
+    height: 11%;
+    display: inline;
+    background-color: white;
+    margin-top: 0;
+}
+
+nav
+{
+    display: inline-block;
+    width: 100%; 
+    position: fixed;
+    background-color: white;
+}
+
+.header nav ul 
+{
+    list-style-type: none; /*define o icone marcador ou check nos itens da lista*/
+    margin: 0;
+    text-align: center;
+}
+
+.header-link
+{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.imglogo
+{
+    padding-top: 10%;
+    display: flex;
+    width: 100px; /* Largura desejada */
+    height: auto; /* Altura automática (proporcional) */
+    padding-top: 1%;
+    /*padding-right: 390px;*/
+}
+
+.header nav ul li 
+{
+    display: inline;
+    text-align: center;
+}
+
+.header nav ul li a 
+{
+    text-decoration: none;
+    color: #10273E;
+    margin-right: 3%;
+}
+
+/*-------------------------------footer--------------------------------*/
+.botoesfooter
+{
+    display: inline;
+    margin-top: 15px;
+    margin-left: 30%;
+    text-align: center;
+    flex: 1 50px;
+}
+
+.botoesfooter a
+{
+    color: #10273E;
+    text-decoration: none;
+    padding-right: 10%;
+}
+
+.footer 
+{
+    background-color: white;
+    padding: 2%;
+    text-align: left;
+    display: flex;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.textfooter
+{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 25px;
+}
+
+.imgfooter
+{
+    width: 90px;
+    height: 30px;
+    margin-left: 50px;
+    margin-right: 25px;
+    margin-top: 5px;
+}
+/*---------------------------------------------------------------*/
