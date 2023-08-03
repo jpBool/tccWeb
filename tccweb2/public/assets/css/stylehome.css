@@ -99,20 +99,18 @@ body{
 
 .header 
 {
-    left: 0;
     width: 100%;
-    height: 11%;
     display: inline;
-    background-color: white;
     margin-top: 0;
 }
 
 nav
 {
     display: inline-block;
-    width: 100%; 
+    width: 100%;
     position: fixed;
     background-color: white;
+    justify-content: center;
 }
 
 .header nav ul 
@@ -120,36 +118,27 @@ nav
     list-style-type: none; /*define o icone marcador ou check nos itens da lista*/
     margin: 0;
     text-align: center;
-}
-
-.header-link
-{
-    width: 100%;
-    text-align: center;
-    margin-bottom: 50px;
+    padding-top: 2.5%;
+    padding-bottom: 2%;
 }
 
 .imglogo
 {
-    padding-top: 10%;
-    display: flex;
-    width: 100px; /* Largura desejada */
+    float: left;
+    width: 100px;
     height: auto; /* Altura automática (proporcional) */
-    padding-top: 1%;
-    /*padding-right: 390px;*/
 }
 
 .header nav ul li 
 {
     display: inline;
-    text-align: center;
+    margin-right: 3%;
 }
 
 .header nav ul li a 
 {
     text-decoration: none;
     color: #10273E;
-    margin-right: 3%;
 }
 
 /*-------------------------------footer--------------------------------*/
