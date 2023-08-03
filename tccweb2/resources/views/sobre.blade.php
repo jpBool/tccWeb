@@ -4,16 +4,16 @@
     <link href="{{('assets/css/stylesobre.css')}}" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Sobre</title>
-        <div class="header">
-            <nav>   
+    <div class="header">
+            <nav>  
                 <ul>
                 <img src="{{'assets/img_tcc/logo.png'}}" alt="img" class="imglogo">
                         <li><a href="index">Seguindo</a></li>
                         <li><a href="sobre">Explorar</a></li>
-                    <li><a href="pesquisar.html">Pesquisar</a></li>
+                        <li><a href="pesquisar.html">Pesquisar</a></li>
                 </ul>
             </nav>
-        </div>
+    </div>
     </head>
 
 <body class="bodysobre">
