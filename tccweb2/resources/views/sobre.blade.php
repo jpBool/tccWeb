@@ -4,20 +4,21 @@
     <link href="{{('assets/css/stylesobre.css')}}" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Sobre</title>
-    <div class="header">
-            <nav>  
-                <ul>
-                <img src="{{'assets/img_tcc/logo.png'}}" alt="img" class="imglogo">
-                        <li><a href="index">Seguindo</a></li>
-                        <li><a href="sobre">Explorar</a></li>
-                        <li><a href="pesquisar.html">Pesquisar</a></li>
-                </ul>
-            </nav>
-    </div>
     </head>
 
-<body class="bodysobre">
-   
+<body class="body">
+
+        <div class="header">
+                <nav>  
+                    <ul>
+                    <img src="{{'assets/img_tcc/logo.png'}}" alt="img" class="imglogo">
+                            <li><a href="index">Seguindo</a></li>
+                            <li><a href="sobre">Explorar</a></li>
+                            <li><a href="pesquisar.html">Pesquisar</a></li>
+                    </ul>
+                </nav>
+        </div>
+
     <div class="main">
         <div class="text"><h1 class="titulo">About Us</h1>
             <p>Este sistema visa atender um amplo grupo de pessoas que buscam uma plataforma digital que possa solucionar suas dúvidas no contexto profissional. A nossa prioridade é desenvolver uma plataforma simplificada, garantindo com que seja acessível a todos os públicos e a diversos nichos de programadores e colaboradores empresariais.

@@ -2,7 +2,8 @@ body {
     font-family:  Helvetica;
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(to bottom, #ffffff, #BBE1F3, #9EBAD6, #9EBAD6);
+    background: linear-gradient(to bottom, #ffffff, #BBE1F3, #9EBAD6, #9EBAD6);
+
 }
 /*------------------------------- header --------------------------------*/
 .header 

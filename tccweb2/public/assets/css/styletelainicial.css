@@ -1,5 +1,5 @@
 body{
-    background-image: linear-gradient(to bottom, #ffffff, #BBE1F3, #9EBAD6, #9EBAD6);
+    background: linear-gradient(to bottom, #ffffff, #BBE1F3, #9EBAD6, #9EBAD6);
 }
 /*---------header-----------*/
 .header 
@@ -47,3 +47,48 @@ nav
 }
 /*-----------------------------------------------*/
 
+/*-------------------------------footer--------------------------------*/
+.botoesfooter
+{
+    display: inline;
+    margin-top: 15px;
+    margin-left: 30%;
+    text-align: center;
+    flex: 1 50px;
+}
+
+.botoesfooter a
+{
+    color: #10273E;
+    text-decoration: none;
+    padding-right: 10%;
+}
+
+.footer 
+{
+    background-color: white;
+    padding: 2%;
+    text-align: left;
+    display: flex;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.textfooter
+{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 25px;
+}
+
+.imgfooter
+{
+    width: 90px;
+    height: 30px;
+    margin-left: 50px;
+    margin-right: 25px;
+    margin-top: 5px;
+}
+/*---------------------------------------------------------------*/

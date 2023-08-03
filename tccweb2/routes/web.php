@@ -39,3 +39,7 @@ Route::get('/home',
 Route::get('/sobre', function () {
     return view('sobre');
 });
+
+Route::get('/telainicial', function () {
+    return view('telainicial');
+});
