@@ -107,21 +107,47 @@ body {
 }
 
 /*-------------------------------footer--------------------------------*/
-.botoesfooter{
+.botoesfooter
+{
     display: inline;
-    text-decoration: none;
     margin-top: 15px;
+    margin-left: 30%;
+    text-align: center;
+    flex: 1 50px;
 }
 
-.footer {
-    background-color: #f2f2f2;
-    padding: 1%;
+.botoesfooter a
+{
+    color: #10273E;
+    text-decoration: none;
+    padding-right: 10%;
+}
+
+.footer 
+{
+    background-color: white;
+    padding: 2%;
     text-align: left;
     display: flex;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
-.textfooter{
+.textfooter
+{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 25px;
+}
+
+.imgfooter
+{
+    width: 90px;
+    height: 30px;
     margin-left: 50px;
     margin-right: 25px;
+    margin-top: 5px;
 }
 /*---------------------------------------------------------------*/
