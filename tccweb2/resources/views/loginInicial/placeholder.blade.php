@@ -12,30 +12,47 @@
 <body>
     <div class="main">
         <div class="top">
-            <div class="top-left">
-                <div class="top-left-left">
-                <img src="{{'assets/img_tcc/usuario.png'}}" alt="img" id="img-pess">
-                    <div class="top-left-left-top-left">
-                        <labeL>134 seguidores</label>
+            <div id="linha-perfil">
+                <div class="top-left">
+                    <div class="img-perfil">
+                        <img src="{{'assets/img_tcc/usuario.png'}}" alt="img" id="img-pess">
                     </div>
-                    <div class="top-left-left-top-right">
-                        <labeL>136 seguidores</label>
-                    </div>
+                    <div class="seguidores-commits">
+                        <div class="seguidores"> 
+                                <div class="top-left-left-top-left">
+                                    <labeL>134 seguidores</label>
+                                </div>
+                                <div class="top-left-left-top-right">
+                                    <labeL>136 seguindo</label>
+                                </div>
+                                </div>
+                                <div id="linha">
+                                </div>
+                                <div class="commits">
+                                    <label>{{$user->commits}}</label>
+                                    <label>commits</label>
+                                </div>
+                                <div class="data-ativo">
+                                    <label>Ativo desde {{$user->inscricao}}</label>
+                                </div>
+                        </div>
+                </div>
+                <div clss="top-botton">
+                    <label>Nome : {{$user->nome}}</label><br>
+                    <label>Email : {{$user->email}}</label>
                 </div>
             </div>
-            <div class="top-left-left-botton">
-                        <label>
-                            Nome : {{$user->nome }} <br>
-                            Email : {{$user->email }} <br>
-                        </label>
-                    </div>
-            <div class="top-right">
+
+        <div class="top-right"></div>
+            <div class="linha-bio">
+                <div class="top-right-right">
+                    <label>Bio : {{$user->bio}}</label>
+                </div>
             </div>
         </div>
+        <button type="button" class="button">Editar Perfil</button>
+        
         <h1>vc entrou</h1>
-            
-            
-            Bio : {{$user->bio }} <br>
             Naturalidade : {{$user->naturalidade }} <br>
             Nascimento : {{$user->nascimento }} <br>
             Telefone : {{$user->telefone }} <br>

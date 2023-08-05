@@ -3,23 +3,43 @@ body{
     margin: 0;
     width: 100%;
 }
-.top-left-left
+
+#linha-perfil{
+    border: 2px solid #000;
+    border-radius: 40px;
+    padding: 20px;
+    width: 290px;
+    background: white;
+}
+.top-left
+{
+    display: inline-flex;
+    align-items: center;
+    align-content: center;
+}
+.seguidores
 {
     display: inline-flex;
 }
 .top-left-left-top-left{
     display: inline-flex;
     width: 80px;
-    border-style: solid;
+    height: 40px;
+    padding: 5px;
+    border: 2px solid #000;
     border-radius: 15px;
     margin-right: 10px;
+    background: #E5F1F3;
 }
 
 .top-left-left-top-right{
     display: inline-flex;
     width: 80px;
-    border-style: solid;
+    height: 40px;
+    border: 2px solid #000;
     border-radius: 15px;
+    padding: 5px;
+    background: #E5F1F3;
 }
 
 #img-pess
@@ -31,7 +51,53 @@ body{
     padding: 5px;
 }
 
-.top-left-left-botton{
-    display: inline-block;
+#linha{
+    width: 200px;
+    border: 1px solid #000;
+    margin-top: 10px;
+}
+.commits{
+    display: block;
+    padding: 5px;
 }
 
+.segiudores-commits{
+    display: block;
+}
+
+.top-left-left-botton{
+    display: block;
+}
+
+.img-perfil
+{
+    height: 150px;
+}
+
+.top-botton{
+    display: block;
+}
+
+.top{
+    display: inline-flex;
+    padding-left: 50px;
+    margin-top: 20px;
+}
+
+.linha-bio{
+    border: 2px solid #000;
+    border-radius: 40px;
+    width: 800px;
+    height: 180px;
+    background: white;
+    text-align:start;
+    margin-left: 100px;
+}
+.top-right{
+    display: block;
+}
+.top-right-right{
+    display: inline-flex;
+    padding: 30px;
+    padding-top: 15px;
+}
