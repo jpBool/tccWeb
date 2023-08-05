@@ -7,15 +7,15 @@ body{
     width: 100%;
     display: inline;
     margin-top: 0;
+    margin-left:0;
 }
 
 nav
 {
-    display: inline-block;
     width: 100%;
     position: fixed;
     background-color: white;
-    justify-content: center;
+
 }
 
 .header nav ul 
@@ -25,12 +25,16 @@ nav
     text-align: center;
     padding-top: 2.5%;
     padding-bottom: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
 .imglogo
 {
     float: left;
-    width: 100px;
+    width: 200px;
     height: auto; /* Altura automática (proporcional) */
 }
 
@@ -45,7 +49,23 @@ nav
     text-decoration: none;
     color: #10273E;
 }
-/*-----------------------------------------------*/
+
+.imgperfil{
+    width: 30px;
+}
+
+.imgconfg{
+    width: 25px;
+}
+
+.navIcon{
+    height: auto;
+    margin-left: 30%;
+}
+
+.navButtom{
+    display: flex;
+}
 
 /*-------------------------------footer--------------------------------*/
 .botoesfooter
@@ -72,6 +92,7 @@ nav
     display: flex;
     position: relative;
     left: 0;
+    margin-left:0;
     bottom: 0;
     width: 100%;
 }
@@ -92,3 +113,36 @@ nav
     margin-top: 5px;
 }
 /*---------------------------------------------------------------*/
+
+.textos{
+    font-size:20px;
+    font-family:  Helvetica;
+    text-align: center;
+}
+
+.textoprincial{
+    margin-top: 75px;
+}
+
+.button
+{
+    margin-top: 50px;
+    min-width: 100px;
+    height: 30px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0; /*Quanto maior o valor, mais fica na camada de frente quando há sobreposiçao de objetos*/
+    background: black;
+    overflow: hidden;
+    border: black;
+    color: white;
+    margin-bottom: 10px;
+}
+
+
