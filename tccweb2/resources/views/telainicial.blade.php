@@ -17,10 +17,10 @@
             </nav>
     </div>
     
-    TESTE
+    
 
     <div class="footer">
-            <img src="{{'assets/img_tcc/logoSensei.png'}}" alt="img" class="imgfooter">
+            <img src="{{'assets/img_tcc/logo.png'}}" alt="img" class="imgfooter">
 
             <div class="botoesfooter">
             <a href="index.blade.php">Home</a>
