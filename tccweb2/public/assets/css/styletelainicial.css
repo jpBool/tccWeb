@@ -10,14 +10,14 @@ body{
     display: inline;
     margin-top: 0;
     margin-left:0;
+    font-family:  Helvetica;  
+    
 }
 
 nav
 {
     width: 100%;
     position: fixed;
-    background-color: white;
-
 }
 
 .header nav ul 
@@ -25,12 +25,12 @@ nav
     list-style-type: none; /*define o icone marcador ou check nos itens da lista*/
     margin: 0;
     text-align: center;
-    padding-top: 2.5%;
-    padding-bottom: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    
 }
 
 .imglogo
@@ -115,13 +115,11 @@ nav
     margin-right: 25px;
     margin-top: 5px;
 }
-/*---------------------------------------------------------------*/
+/*------------------------------Body-------------------------------*/
 
 .textos{
     font-size:20px;
     font-family:  Helvetica;
-    text-align: center;
-    margin-top: 200px;
 }
 
 
@@ -139,7 +137,7 @@ nav
     outline: none;
     border-radius: 5px;
     z-index: 0; /*Quanto maior o valor, mais fica na camada de frente quando há sobreposiçao de objetos*/
-    background: black;
+    background: #0C283C;
     overflow: hidden;
     border: black;
     color: white;
@@ -148,5 +146,39 @@ nav
 
 .links{
     padding-right: 35px;
+   
+}
 
+.textprimeiro{
+text-align: left;
+margin-left: 120px;
+}
+
+.entrar{
+    text-align: center;
+    font-size:18px;
+}
+
+.textoscentralizados{
+    text-align: center;
+}
+
+.linha-lateral {
+    margin-top: 10px;
+    left: 0;
+    height: 300px;
+    width: 3.5px; /* Ajuste a largura conforme necessário */
+    background-color: #001270;
+    margin-left: 85px;
+    position: absolute;
+}
+
+.linha-lateral1 {
+    margin-top: 16px;
+    left: 0;
+    height: 300px;
+    width: 3.5px; /* Ajuste a largura conforme necessário */
+    background-color: #001270;
+    margin-left: 85px;
+    position: absolute;
 }
