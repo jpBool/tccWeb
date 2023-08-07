@@ -95,6 +95,34 @@ body{
     font-weight: bold
 }
 
+ /* styles.css */
+ .barra {
+    background-color: blue;
+    height: 20px;
+}
+
+/* Defina a variável CSS customizada */
+:root {
+    --largura-elemento: 100px; /* Valor padrão ou um valor de fallback */
+}
+
+.barraPreta
+{
+    width: 65%;
+    background-color: black;
+    display: block;
+    align-self: center;
+    text-align: center;
+    border: black;
+    border-radius: 10px;
+    margin-left: 70px;
+}
+.barra
+{
+    border-radius: 10px;
+}
+
+
 /*-------------Header----------------------------------------*/
 
 .header 
