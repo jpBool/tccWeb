@@ -2,6 +2,7 @@ body{
     background: linear-gradient(to bottom, #ffffff, #BBE1F3, #9EBAD6, #9EBAD6);
     margin: 0;
     padding: 0;
+    height: 4500px;
 }
 /*---------header-----------*/
 .header 
@@ -11,7 +12,7 @@ body{
     margin-top: 0;
     margin-left:0;
     font-family:  Helvetica;  
-    
+    font-weight: bolder;
 }
 
 nav
@@ -98,6 +99,7 @@ nav
     margin-left:0;
     bottom: 0;
     width: 100%;
+    font-family: Helvetica;
 }
 
 .textfooter
@@ -142,7 +144,58 @@ nav
     border: black;
     color: white;
     margin-bottom: 10px;
+    font-size: 17px;
+    font-family: Helvetica;
 }
+
+.button1
+{
+    margin-top: 50px;
+    min-width: 100px;
+    height: 35px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0; /*Quanto maior o valor, mais fica na camada de frente quando há sobreposiçao de objetos*/
+    background: #0C283C;
+    overflow: hidden;
+    border: black;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-family: Helvetica;
+    margin-left:40%;
+}
+
+.button2
+{
+    margin-top: 50px;
+    min-width: 100px;
+    height: 35px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0; /*Quanto maior o valor, mais fica na camada de frente quando há sobreposiçao de objetos*/
+    background: #AAD2E5;
+    overflow: hidden;
+    border: black;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-family: Helvetica;
+    margin-right: 40%;
+}
+
 
 .links{
     padding-right: 35px;
@@ -156,29 +209,131 @@ margin-left: 120px;
 
 .entrar{
     text-align: center;
-    font-size:18px;
+    font-size:20px;
 }
 
-.textoscentralizados{
-    text-align: center;
-}
+/*---------------Linhas laterais------------------*/
 
 .linha-lateral {
-    margin-top: 10px;
+    
     left: 0;
-    height: 300px;
+    height: 310px;
     width: 3.5px; /* Ajuste a largura conforme necessário */
     background-color: #001270;
     margin-left: 85px;
     position: absolute;
 }
 
-.linha-lateral1 {
-    margin-top: 16px;
+.linha-lateral2 {
+    margin-top: 30px;
     left: 0;
-    height: 300px;
+    height: 100%;
     width: 3.5px; /* Ajuste a largura conforme necessário */
     background-color: #001270;
     margin-left: 85px;
     position: absolute;
+    padding-bottom: 50px;
+}
+
+.linha-lateral3 {
+    margin-top: 35px;
+    left: 0;
+    height: 100%;
+    width: 3.5px; /* Ajuste a largura conforme necessário */
+    background-color: #001270;
+    margin-left: 85px;
+    position: absolute;
+    padding-bottom: 50px;
+}
+
+.linha-lateral4 {
+    margin-top: 40px;
+    left: 0;
+    height: 100%;
+    width: 3.5px; /* Ajuste a largura conforme necessário */
+    background-color: #001270;
+    margin-left: 85px;
+    position: absolute;
+    padding-bottom: 50px;
+}
+
+.linha-lateral5 {
+    margin-top: 40px;
+    left: 0;
+    height: 100%;
+    width: 3.5px; /* Ajuste a largura conforme necessário */
+    background-color: #001270;
+    margin-left: 85px;
+    position: absolute;
+    padding-bottom: 50px;
+}
+
+.linha-lateral6 {
+    margin-top: 40px;
+    left: 0;
+    height: 40%;
+    width: 3.5px; /* Ajuste a largura conforme necessário */
+    background-color: #001270;
+    margin-left: 85px;
+    position: absolute;
+}
+/*===========================================*/
+
+
+.imgtexto1{
+    margin-top: 0;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transform: translate(50%, 10%);
+}
+
+/* Icones bara lateral */
+.icon1{
+    margin-top: 50px;
+    margin-left:75px;
+}
+
+.icon2{
+    margin-left:75px;
+    margin-top: 120px;
+
+}
+
+.icon3{
+    margin-left:75px;
+    margin-top: 120px;
+}
+.icon4{
+    margin-top: 130px;
+    margin-left:75px;
+}
+.icon5{
+    margin-top: 120px;
+    margin-left:75px;
+}
+
+/*textos */
+.text1{
+    align-items: center;
+    text-align: center;
+}
+.text2{
+    align-items: center;
+    text-align: center;
+    font-weight: bolder;
+}
+.textin2{
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    padding-left: 400px;
+    padding-right: 400px;;
+}
+
+.botoesembaixo{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
 }

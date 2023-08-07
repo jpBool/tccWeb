@@ -31,10 +31,8 @@
 
 
         <div class="textos">
-            <br><br><br>
             
             <div class="linha-lateral"></div>
-
 
             <div class="textprimeiro">
             <h1> Bem vindo ao Sensei!</h1>
@@ -46,28 +44,74 @@
             <p>Ja possui uma conta? Entrar</p><br>
             </div>
 
-            <div class="linha-lateral1"></div>
+            <img src="{{'assets/img_tcc/icon1.svg'}}" alt="img" class="icon1" style="width: 1.5%;" > 
 
-            <div class="textoscentralizados">
-                <div class="text1"> <h2> Compartilhe seus projetos com o mundo</h2>
-                    <p>Esta plataforma te permite compartilhar projetos com quem desejar, de onde estiver.</p><br><br>
+            <div class="linha-lateral2"></div>
+
+            <br><br><br>
+                <div class="text1"> <h2> Compartilhe seus projetos com o mundo</h2><br>
+                    <p>Esta plataforma te permite compartilhar projetos com quem desejar, de onde estiver.</p><br>
                 </div>
 
-                <div class="text2"> <h2> Procure softwares e encontre desenvolvedores.</h2>
-                    <p>Apoiando a união de projetos e desenvolvedores de software.</p><br><br>
+                <div class="imgtextos">
+                <img src="{{'assets/img_tcc/img1.jpg'}}" alt="img" class="imgtexto1" style="width: 50%;" > 
                 </div>
 
-                <div class="text3"> <h2> Gerencie seus projetos com a sua equipe.</h2>
-                    <p>Possibilitando uma melhora profissional, o site possui diversas funcionalidades para sua formação empresa.</p><br><br>
+                <img src="{{'assets/img_tcc/icon2.svg'}}" alt="img" class="icon2" style="width: 1.5%;" > 
+
+                <div class="linha-lateral3"></div>
+                <br><br><br>
+
+                <div class="text1"> <h2> Procure softwares e encontre desenvolvedores.</h2><br>
+                    <p>Apoiando a união de projetos e desenvolvedores de software.</p><br>
                 </div>
 
-                <div class="text4"> <h2> Navegue em seu feed e descubra novos softwares.</h2>
+                <div class="imgtextos">
+                <img src="{{'assets/img_tcc/img2.jpg'}}" alt="img" class="imgtexto1" style="width: 50%;" > 
+                </div>
+
+                <img src="{{'assets/img_tcc/icon3.svg'}}" alt="img" class="icon3" style="width: 1.5%;" > 
+
+                <div class="linha-lateral4"></div>
+                <br><br><br>
+
+                <div class="text1"> <h2> Gerencie seus projetos com a sua equipe.</h2><br>
+                    <p>Possibilitando uma melhora profissional, o site possui diversas funcionalidades para sua formação empresa.</p><br>
+                </div>
+
+                <div class="imgtextos">
+                <img src="{{'assets/img_tcc/img3.jpg'}}" alt="img" class="imgtexto1" style="width: 50%;" > 
+                </div>
+
+                <img src="{{'assets/img_tcc/icon4.svg'}}" alt="img" class="icon4" style="width: 1.5%;" > 
+
+                <div class="linha-lateral5"></div>
+                <br><br><br>
+                <div class="text1"> <h2> Navegue em seu feed e descubra novos softwares.</h2><br>
                     <p>As sugestões selecionadas para você, abrirão as portas da exploração e descoberta de suas preferências.</p><br><br>
                 </div>
+
+                <div class="imgtextos">
+                <img src="{{'assets/img_tcc/img4.jpg'}}" alt="img" class="imgtexto1" style="width: 50%;" > 
+                </div>
+
+                <img src="{{'assets/img_tcc/icon1.svg'}}" alt="img" class="icon5" style="width: 1.5%;" > 
+
+                <div class="linha-lateral6"></div>
+
+                <div class="text2"> <h2> Inspiri-se e seja inspiração!</h2>
+                    <div class="textin2"><p>Acreditamos no poder da colaboração!
+                        Faça parte de uma comunidade de desenvolvedores que compartilham ideias e conquistam o impossível.</p>
+                    </div>
+                </div>
+
+                <div class="botoesembaixo">
+            <button type="button" class="button1">Criar conta</button>
+            <button type="button" class="button2">Entrar</button>
             </div>
+
         </div>
-
-
+        <br><br><br><br><br>
         
 
         <div class="footer">
