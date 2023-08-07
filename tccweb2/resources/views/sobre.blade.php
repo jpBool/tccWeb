@@ -26,10 +26,10 @@
         </div>
     <img src="{{'assets/img_tcc/imgsobre.png'}}" alt="pessoas" class="imgpessoas">
     </div>
-    <br><br><br><br><br>
+    <br><br><br><br>
     <div class="devs">
        
-        <h1 class="desen">Desenvolvedores</h1><br><br><br><br>
+        <h1 class="desen">Desenvolvedores</h1><br><br><br>
        
             <div class="desen4">
 

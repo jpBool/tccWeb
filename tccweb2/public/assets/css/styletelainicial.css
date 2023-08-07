@@ -1,5 +1,7 @@
 body{
     background: linear-gradient(to bottom, #ffffff, #BBE1F3, #9EBAD6, #9EBAD6);
+    margin: 0;
+    padding: 0;
 }
 /*---------header-----------*/
 .header 
@@ -65,6 +67,7 @@ nav
 
 .navButtom{
     display: flex;
+    margin-left: 200px;
 }
 
 /*-------------------------------footer--------------------------------*/
@@ -118,11 +121,9 @@ nav
     font-size:20px;
     font-family:  Helvetica;
     text-align: center;
+    margin-top: 200px;
 }
 
-.textoprincial{
-    margin-top: 75px;
-}
 
 .button
 {
@@ -145,4 +146,7 @@ nav
     margin-bottom: 10px;
 }
 
+.links{
+    padding-right: 35px;
 
+}

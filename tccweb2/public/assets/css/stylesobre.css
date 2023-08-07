@@ -38,6 +38,7 @@ nav
     height: auto; /* Altura automática (proporcional) */
 }
 
+
 .header nav ul li 
 {
     display: inline;
@@ -57,16 +58,16 @@ nav
 }
 
 .imgpessoas{
-   margin-top: 50px;
+   margin-top: 90px;
    padding-right: 6%;
-   opacity: 0.7;
+   padding-left: 75.5px;
    width: 700px; 
    height: 467px; 
  }
 
 
 .text {
-    margin-top: 60px;
+    margin-top: 100px;
     margin-right: 150px;
     padding-left: 7%;
     font-family:  Helvetica;
@@ -77,14 +78,6 @@ nav
   font-size: 400%;
 }
 
-.imglogo{
-    width: 100px; /* Largura desejada */
-    height: auto; /* Altura automática (proporcional) */
-    padding-left: 30px;
-    padding-right: 30%;
-    margin-top: 10px;
-    margin-bottom: 0px;
-}
 
 .desen{
     margin-top: 100px;
@@ -107,13 +100,13 @@ nav
 }
 
 .desen4{
-    padding-left: 120px;
+    padding-left: 160px;
     display: flex;
 }
 
 
 .desen3{
-    padding-left: 250px;
+    padding-left: 290px;
     display: flex;
 }
 
@@ -128,6 +121,7 @@ nav
 .bonito{
   margin-right: 3%;
 }
+
 
 /*-------------------------------footer--------------------------------*/
 .botoesfooter

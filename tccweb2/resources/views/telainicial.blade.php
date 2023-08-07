@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head> 
     <link href="{{('assets/css/styletelainicial.css')}}" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Home</title>
@@ -11,9 +11,9 @@
                     <ul>
                         <img src="{{'assets/img_tcc/logo.png'}}" alt="img" class="imglogo">
                         <div class="navButtom">
-                            <li><a href="index">Seguindo</a></li>
-                            <li><a href="sobre">Explorar</a></li>
-                            <li><a href="pesquisar.html">Pesquisar</a></li>
+                            <li><a class="links" href="index">Seguindo</a></li>
+                            <li><a class="links" href="sobre">Explorar</a></li>
+                            <li><a class="links" href="pesquisar.html">Pesquisar</a></li>
                         </div>
 
                         <div class="navIcon">
@@ -22,14 +22,14 @@
                         </div>
                     </ul>
                 </nav>
-        </div>
+    </div>
 
 
         <div class="textos">
 
-            <div class="textprincipal"> <h1> Bem vindo ao Sensei!</h1><br>
+             <h1> Bem vindo ao Sensei!</h1><br>
                 <p>Compartilhe seu talento, conecte-se com desenvolvedores e alcance novos patamares.</p><br><br>
-            </div>
+           
 
             <button type="button" class="button">Criar conta</button>
             <p class="entrar">Ja possui uma conta? Entrar</p> 
