@@ -31,24 +31,28 @@
 
 
         <div class="textos">
+            <div class="divbonita">
+                <div class="linha-lateral"></div>
+
+                <div class="textprimeiro">
+                <h1> Bem vindo ao Sensei!</h1>
+                    <p>Compartilhe seu talento, conecte-se com desenvolvedores e alcance novos patamares.</p>
+                </div>
+
+                <div class="entrar">
+                <button type="button" class="button">Criar conta</button>
+                <p>Ja possui uma conta? Entrar</p><br>
+                </div>
+            </div>
             
-            <div class="linha-lateral"></div>
-
-            <div class="textprimeiro">
-            <h1> Bem vindo ao Sensei!</h1>
-                <p>Compartilhe seu talento, conecte-se com desenvolvedores e alcance novos patamares.</p>
-            </div>
-
-            <div class="entrar">
-            <button type="button" class="button">Criar conta</button>
-            <p>Ja possui uma conta? Entrar</p><br>
-            </div>
-
+            <div class="divbonita">
+                <div class="iconlinha">
             <img src="{{'assets/img_tcc/icon1.svg'}}" alt="img" class="icon1" style="width: 1.5%;" > 
-
             <div class="linha-lateral2"></div>
+                </div>
 
-            <br><br><br>
+           
+            
                 <div class="text1"> <h2> Compartilhe seus projetos com o mundo</h2><br>
                     <p>Esta plataforma te permite compartilhar projetos com quem desejar, de onde estiver.</p><br>
                 </div>
@@ -56,19 +60,24 @@
                 <div class="imgtextos">
                 <img src="{{'assets/img_tcc/img1.jpg'}}" alt="img" class="imgtexto1" style="width: 50%;" > 
                 </div>
+            </div>
 
+            <div class="divbonita">
+                <div class="iconlinha">
                 <img src="{{'assets/img_tcc/icon2.svg'}}" alt="img" class="icon2" style="width: 1.5%;" > 
 
                 <div class="linha-lateral3"></div>
-                <br><br><br>
+</div>
+                
 
-                <div class="text1"> <h2> Procure softwares e encontre desenvolvedores.</h2><br>
-                    <p>Apoiando a união de projetos e desenvolvedores de software.</p><br>
+                <div class="text1"> <h2> Procure softwares e encontre desenvolvedores.</h2>
+                    <p>Apoiando a união de projetos e desenvolvedores de software.</p>
                 </div>
 
                 <div class="imgtextos">
                 <img src="{{'assets/img_tcc/img2.jpg'}}" alt="img" class="imgtexto1" style="width: 50%;" > 
                 </div>
+</div>
 
                 <img src="{{'assets/img_tcc/icon3.svg'}}" alt="img" class="icon3" style="width: 1.5%;" > 
 
