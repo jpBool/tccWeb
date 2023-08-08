@@ -7,6 +7,7 @@ use App\Models\gp2_usuarios;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
+use App\Models\gp2_projetos;
 //use App\usuariostcc;
 
 class UsuariostccController extends Controller
@@ -40,7 +41,8 @@ class UsuariostccController extends Controller
             
             if($user->senha == $senha)
             {
-                return view('loginInicial.placeholder', compact('user'));
+                $row = gp2_projetos::where('id_criador', $user->id_usuario) -> first();
+                return view('loginInicial.placeholder', compact('user', 'row'));
             }
             return redirect()->route('loginInicial.index');
             //return view('loginInicial.placeholder');

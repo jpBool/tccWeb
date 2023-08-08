@@ -16,4 +16,10 @@ class homeController extends Controller
         $rows = gp2_projetos::all();
         return view('home', compact('rows'));
     }
+
+    public function showUserProjects()
+    {
+        $rows = gp2_projetos::all();
+        return view('home', compact('rows'));
+    }
 }

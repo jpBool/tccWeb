@@ -34,12 +34,15 @@
                 </div>
                 <div class="allConteudo">
                     <h2> {{$row->nome_projeto}} </h2>
+                
+                <div class="barra-progress">
                     Progress:
                     <div class="barraPreta">
                         <div class="barra" style="width: {{$row->porcentagem}}%;">
 
                         </div>
                     </div>
+                </div>
                     
                     <div class="conteudo-texto">
                         {{$row->descricao_breve}} 

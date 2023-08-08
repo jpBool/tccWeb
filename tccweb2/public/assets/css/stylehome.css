@@ -8,6 +8,7 @@ body{
     width: 900px; 
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 .conteudo
@@ -21,6 +22,7 @@ body{
 
 .conteudo-texto
 {
+    margin-top: 7px;
     width: 80%;
     display: block;
     align-self: center;
@@ -76,7 +78,7 @@ body{
     height: auto;
     border-style: solid;
     border-radius: 15px;
-    background-image: linear-gradient(#8AB6D5, #364E65);
+    background-image: linear-gradient(#8AB6D5, #BBE1F3);
 }
 
 .titulo
@@ -93,6 +95,10 @@ body{
 {
     display: inline-flex;
     font-weight: bold
+}
+
+.barra-progress{
+    display: flex;
 }
 
  /* styles.css */
