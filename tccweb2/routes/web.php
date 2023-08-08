@@ -43,3 +43,7 @@ Route::get('/sobre', function () {
 Route::get('/telainicial', function () {
     return view('telainicial');
 });
+
+Route::get('/teladownload', function () {
+    return view('teladownload');
+});
