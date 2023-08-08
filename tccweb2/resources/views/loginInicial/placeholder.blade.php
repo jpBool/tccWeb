@@ -55,38 +55,43 @@
         </div>
 
         <div class="projects-perfil">
-            <div class='project'>
-                <div class="titulo">
-                    <img src="{{'assets/img_tcc/usuario.png'}}" alt="img" id="img-user">
-                    <label class="label-titulo"> Nova atualização de <div id="nome-autor">{{$row->autores}} </div>. Há 18 horas </label>
-                </div>
-                    
-                <div class="conteudo"> 
-                    <div>
-                        <img src="{{'assets/img_tcc/gatinho.png'}}" alt="img" id="img-project" width="280px">
+            <label class="yours-projects">Seus Projetos: </label>
+            @foreach($rows as $row) 
+                <div class='project'>
+                    <div class="titulo">
+                        <img src="{{'assets/img_tcc/usuario.png'}}" alt="img" id="img-user">
+                        <label class="label-titulo"> Nova atualização de <div id="nome-autor">{{$row->autores}} </div>. Há 18 horas </label>
                     </div>
-                    <div class="allConteudo">
-                        <h2> {{$row->nome_projeto}} </h2>
-
-                    <div class="barra-progress">
-                        <div class="progress">Progress</div>
-                        <div class="barraPreta">
-                            <div class="barra" style="width: {{$row->porcentagem}}%;">
-
-                            </div>
+                        
+                    <div class="conteudo"> 
+                        <div>
+                            <img src="{{'assets/img_tcc/gatinho.png'}}" alt="img" id="img-project" width="280px">
                         </div>
-                    </div>
+                        <div class="allConteudo">
+                            <h2> {{$row->nome_projeto}} </h2>
+
+                        <div class="barra-progress">
+                            <div class="progress">Progress</div>
+                            <div class="barraPreta">
+                                <div class="barra" style="width: {{$row->porcentagem}}%;">
+
+                                </div>
                             
-                        <div class="conteudo-texto">
-                            {{$row->descricao_breve}} 
-                            <br>
-                            <br>
-                            {{$row->data_criacao}} <br>
-                            <button type="button" class="button">Show all</button>
+                            </div>
+                            <div class="num-porcentagem">{{$row->porcentagem}}%</div>
+                        </div>
+                                
+                            <div class="conteudo-texto">
+                                {{$row->descricao_breve}} 
+                                <br>
+                                <br>
+                                {{$row->data_criacao}} <br>
+                                <button type="button" class="button">Show all</button>
+                            </div> 
                         </div> 
-                    </div> 
-                </div>
-            </div> 
+                    </div>
+                </div> 
+                @endforeach 
             <a href="{{route('homeInicial')}}">Home</a>
         </div>
     </div>

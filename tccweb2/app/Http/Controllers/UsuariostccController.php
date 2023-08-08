@@ -41,8 +41,11 @@ class UsuariostccController extends Controller
             
             if($user->senha == $senha)
             {
-                $row = gp2_projetos::where('id_criador', $user->id_usuario) -> first();
-                return view('loginInicial.placeholder', compact('user', 'row'));
+                $rows = gp2_projetos::where('id_criador', $user->id_usuario)
+                ->orderBy('porcentagem', 'desc')
+                ->get();
+                
+                return view('loginInicial.placeholder', compact('user', 'rows'));
             }
             return redirect()->route('loginInicial.index');
             //return view('loginInicial.placeholder');
