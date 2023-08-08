@@ -1,7 +1,17 @@
 body{
-    background-image: linear-gradient(to bottom, #ffffff, #BBE1F3, #9EBAD6, #9EBAD6);
+    background-image: linear-gradient(to bottom, #dae6eb, #a9d9f0, #9EBAD6, #9EBAD6);
     margin: 0;
-    width: 100%;
+    height: 4000px;
+    position: relative;
+
+}
+
+.main
+{
+    height: 10%;
+    width: 1400px; 
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #linha-perfil{
@@ -17,10 +27,12 @@ body{
     align-items: center;
     align-content: center;
 }
+
 .seguidores
 {
     display: inline-flex;
 }
+
 .top-left-left-top-left{
     display: inline-flex;
     width: 80px;
@@ -56,6 +68,7 @@ body{
     border: 1px solid #000;
     margin-top: 10px;
 }
+
 .commits{
     display: block;
     padding: 5px;
@@ -63,6 +76,7 @@ body{
 
 .segiudores-commits{
     display: block;
+    margin-left: 10px;
 }
 
 .top-left-left-botton{
@@ -93,11 +107,166 @@ body{
     text-align:start;
     margin-left: 100px;
 }
+
 .top-right{
     display: block;
 }
+
 .top-right-right{
     display: inline-flex;
     padding: 30px;
     padding-top: 15px;
+}
+
+.button-perfil{
+    margin-top: 30px;
+    margin-left: 99px;
+    min-width: 100px;
+    height: 30px;
+    color: #fff;
+    padding: 5px 364px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0; /*Quanto maior o valor, mais fica na camada de frente quando há sobreposiçao de objetos*/
+    background: #10273E;
+    overflow: hidden;
+    border: 2px solid white;
+    color: white;
+}
+
+/*--------------------------------------------------*/
+
+.conteudo
+{
+    border-radius: 14px;
+    width: 898px;
+    height: 220px;
+    display: inline-flex;
+    
+}
+
+.conteudo-texto
+{
+    margin-top: 7px;
+    width: 80%;
+    display: block;
+    align-self: center;
+    text-align: center;
+}
+
+.allConteudo
+{
+    display: block;
+    width: 80%;
+}
+
+.button
+{
+    margin-top: 7px;
+    min-width: 100px;
+    height: 30px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0; /*Quanto maior o valor, mais fica na camada de frente quando há sobreposiçao de objetos*/
+    background: black;
+    overflow: hidden;
+    border: black;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#img-project
+{
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding: 14px;
+    border-radius: 30px;
+}
+
+#img-user
+{
+    align-self: center;
+    width: 15px;
+    padding-left: 10px;
+    padding-right: 8px;
+}
+
+.projects-perfil{
+    
+}
+
+.project
+{
+    margin-left: 2px;
+    width: 910px;
+    height: auto;
+    border-style: solid;
+    border-radius: 15px;
+    background-image: linear-gradient(#8AB6D5, #BBE1F3);
+}
+
+.titulo
+{
+
+    background-color: white;
+    display: inline-flex;
+    width: 100%;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+#nome-autor
+{
+    display: inline-flex;
+    font-weight: bold;
+}
+
+.barra-progress{
+    width: 95%;
+    display: flex;
+    background: #10273E;
+    border-radius: 18px;
+    padding: 10px;
+    color: white;
+}
+
+.progress{
+    padding-left: 5px;
+}
+
+ /* styles.css */
+.barra {
+    background-color: blue;
+    height: 20px;
+}
+
+/* Defina a variável CSS customizada */
+:root {
+    --largura-elemento: 100px; /* Valor padrão ou um valor de fallback */
+}
+
+.barraPreta
+{
+    width: 65%;
+    background-color: #BBE1F3;
+    display: block;
+    align-self: center;
+    text-align: center;
+    border: black;
+    border-radius: 10px;
+    margin-left: 70px;
+}
+
+.barra
+{
+    border-radius: 10px;
 }
