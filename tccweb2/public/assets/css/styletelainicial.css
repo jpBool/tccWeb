@@ -2,7 +2,7 @@ body{
     background: linear-gradient(to bottom, #ffffff, #BBE1F3, #9EBAD6, #9EBAD6);
     margin: 0;
     padding: 0;
-    height: 4500px;
+    width:100%;
     
 }
 /*---------header-----------*/
@@ -87,6 +87,15 @@ nav
     color: #10273E;
     text-decoration: none;
     padding-right: 10%;
+    font-size:16.7px;
+}
+
+.emailequipe{
+    font-size: 16.7px;
+    text-align: right;
+    color: #10273E;
+    margin-right: 52%;
+    margin-top: 27px;
 }
 
 .footer 
@@ -112,11 +121,11 @@ nav
 
 .imgfooter
 {
-    width: 90px;
-    height: 30px;
+    width: 180px;
+    height: 50px;
     margin-left: 50px;
     margin-right: 25px;
-    margin-top: 5px;
+    margin-top: 25px;
 }
 /*------------------------------Body-------------------------------*/
 
@@ -201,17 +210,20 @@ nav
 
 .links{
     padding-right: 35px;
-   
+    margin-left: 40px;
+   font-size: 17.5px;
 }
 
 .textprimeiro{
 text-align: left;
-margin-left: 120px;
+margin-left: 70px;
+flex-direction:column;
 }
 
 .entrar{
     text-align: center;
     font-size:20px;
+    margin-left: 495px;
 }
 
 /*---------------Linhas laterais------------------*/
@@ -227,9 +239,9 @@ margin-left: 120px;
 }
 
 .linha-lateral2 {
-    margin-top: 30px;
+    margin-top: 15px;
     left: 0;
-    height: 400px;
+    height: 600px;
     width: 3.5px; /* Ajuste a largura conforme necessário */
     background-color: #001270;
     margin-left: 85px;
@@ -238,9 +250,9 @@ margin-left: 120px;
 }
 
 .linha-lateral3 {
-    margin-top: 35px;
+    margin-top: 15px;
     left: 0;
-    height: 100%;
+    height: 255px;
     width: 3.5px; /* Ajuste a largura conforme necessário */
     background-color: #001270;
     margin-left: 85px;
@@ -248,75 +260,43 @@ margin-left: 120px;
     padding-bottom: 50px;
 }
 
-.linha-lateral4 {
-    margin-top: 40px;
-    left: 0;
-    height: 100%;
-    width: 3.5px; /* Ajuste a largura conforme necessário */
-    background-color: #001270;
-    margin-left: 85px;
-    position:static;
-    padding-bottom: 50px;
-}
-
-.linha-lateral5 {
-    margin-top: 40px;
-    left: 0;
-    height: 100%;
-    width: 3.5px; /* Ajuste a largura conforme necessário */
-    background-color: #001270;
-    margin-left: 85px;
-    position:static;
-    padding-bottom: 50px;
-}
-
-.linha-lateral6 {
-    margin-top: 40px;
-    left: 0;
-    height: 40%;
-    width: 3.5px; /* Ajuste a largura conforme necessário */
-    background-color: #001270;
-    margin-left: 85px;
-    position:static;
-}
 /*===========================================*/
 
 
 .imgtexto1{
     margin-top: 0;
     border-radius: 25px;
-    
     /* transform: translate(50%, 10%); */
 }
 
 .imgtextos{
-    align-items: center;
-    justify-content: center;
+    margin-left: 350px;
     display: flex;
+    width: 100%;
 }
 
 /* Icones bara lateral */
 .icon1{
-    margin-top: 50px;
+    margin-top: 15px;
     margin-left:75px;
 }
 
 .icon2{
     margin-left:75px;
-    margin-top: 120px;
+    margin-top: 20px;
 
 }
 
 .icon3{
     margin-left:75px;
-    margin-top: 120px;
+    margin-top: 20px;
 }
 .icon4{
-    margin-top: 130px;
+    margin-top: 20px;
     margin-left:75px;
 }
 .icon5{
-    margin-top: 120px;
+    margin-top: 20px;
     margin-left:75px;
 }
 
@@ -324,26 +304,52 @@ margin-left: 120px;
 .text1{
     align-items: center;
     text-align: center;
+    margin-top: 50px;
+    
 }
 .text2{
     align-items: center;
     text-align: center;
     font-weight: bolder;
+    margin-top: 60px;
 }
 .textin2{
     align-items: center;
     text-align: center;
     font-weight: bold;
-    padding-left: 400px;
-    padding-right: 400px;;
+    padding-left: 200px;
+    padding-right: 200px;;
 }
 
 .botoesembaixo{
     align-items: center;
     justify-content: space-between;
     display: flex;
+    margin-bottom: 80px;
 }
 
 .divbonita{
     display: flex;
+}
+
+.iconlinha{
+    flex-direction:column;
+}
+
+.iconlinha2{
+    display: flex;
+}
+
+.textoimagem{
+    flex-direction:column;
+}
+
+.text3{
+    margin-top: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+.ultimotexto{
+    flex-direction: column;
 }
