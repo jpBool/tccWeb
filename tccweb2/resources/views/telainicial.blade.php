@@ -140,7 +140,7 @@
 
                 <div class="botoesfooter">
                 <a href="index.blade.php">Home</a>
-                <a href="sobre.blade.php">Sobre nós</a>
+                <a href="sobre">Sobre nós</a>
                 <a href="pesquisar.html">Download</a>
                 <p class="emailequipe">sensei.system7@gmail.com</p>
         </div>

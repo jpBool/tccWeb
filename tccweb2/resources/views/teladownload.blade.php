@@ -48,11 +48,18 @@
         
         <div class="textos">
             <div class="titulo2"><h2>Quais as vantagens de baixar o nosso sistema?</h2></div>    
-                <div class="textin"><p>Nosso site oferece diversas vantagens para os usuários que buscam explorar o potencial da tecnologia. Ao identificar as 
-                    ecessidades individuais dos clientes em relação à tecnologia, proporcionamos soluções direcionadas e eficazes. Além disso, estamos comprometidos
-                    em auxiliar as pessoas na resolução de problemas sociais por meio da inovação tecnológica, promovendo um impacto positivo na sociedade. Para os 
-                    desenvolvedores, oferecemos uma oportunidade única de ascensão acadêmica e profissional, impulsionando suas carreiras para novos patamares. 
-                    Nossa plataforma se destaca pela facilidade de acesso e uso, garantindo que todos possam desfrutar das possibilidades tecnológicas sem barreiras. 
+                <div class="textin"><p>Nosso site oferece diversas vantagens para os usuários que buscam explorar 
+                    o potencial da tecnologia. 
+                    Ao identificar as 
+                    necessidades individuais dos clientes em relação à tecnologia, proporcionamos soluções direcionadas e eficazes. 
+                    Além disso, estamos comprometidos
+                    em auxiliar as pessoas na resolução de problemas sociais por meio 
+                    da inovação tecnológica, promovendo um impacto positivo na sociedade. 
+                    Para os 
+                    desenvolvedores, oferecemos uma oportunidade única de ascensão acadêmica e profissional, 
+                    impulsionando suas carreiras para novos patamares. 
+                    Nossa plataforma se destaca pela facilidade de acesso e uso, garantindo que todos possam 
+                    desfrutar das possibilidades tecnológicas sem barreiras. 
                     Ao participar conosco, você estará imerso em um ambiente que valoriza o desenvolvimento e a
                     criatividade, fomentando um cenário dinâmico e estimulante no campo tecnológico.</p>    
                 </div>
