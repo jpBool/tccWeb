@@ -2,7 +2,7 @@ body{
     background: linear-gradient(to bottom, #ffffff, #BBE1F3, #9EBAD6, #9EBAD6);
     margin: 0;
     padding: 0;
-    height: 3000px;
+    height: 1100px;
 }
 /*---------header-----------*/
 .header 
@@ -84,19 +84,81 @@ nav
 /*-------------------------------body--------------------------------*/
 
 .main{
-    font-size:20px;
     font-family:  Helvetica;
+    
+}
+
+.conteudo{
+    display: flex;
 }
 
 .Titulo{
-    text-align: left;
+    text-align:left;
+    margin-left: 110px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    font-size: 25px;
+}
+
+.subtitulo{
     margin-left: 120px;
+    font-size:20px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 .imgdownload{
-    width: 15%;
+    width: 300px;
 }
 
+.img{
+    margin-left: 120px;
+}
+
+.download{
+    margin-right: 280px;
+}
+
+.button
+{
+    margin-top: 50px;
+    min-width: 150px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0; /*Quanto maior o valor, mais fica na camada de frente quando há sobreposiçao de objetos*/
+    background: #0C283C;
+    overflow: hidden;
+    border: black;
+    color: white;
+    margin-bottom: 100px;
+    font-size: 17px;
+    font-family: Helvetica;
+    margin-left: 200px;
+}
+
+.textos{
+ 
+}
+
+.titulo2{
+    font-size:23px;
+    margin-right: 250px;
+    text-align: center;
+}
+
+.textin{
+    font-size: 20px;
+    text-align:justify;
+    margin-right: 250px;
+    font-weight: bold;
+}
 
 /*-------------------------------footer--------------------------------*/
 .botoesfooter
@@ -113,6 +175,15 @@ nav
     color: #10273E;
     text-decoration: none;
     padding-right: 10%;
+    font-size:16.7px;
+}
+
+.emailequipe{
+    font-size: 16.7px;
+    text-align: right;
+    color: #10273E;
+    margin-right: 52%;
+    margin-top: 27px;
 }
 
 .footer 
@@ -124,9 +195,7 @@ nav
     position: relative;
     left: 0;
     margin-left:0;
-    position: absolute;
     bottom: 0;
-    right: 0;
     width: 100%;
     font-family: Helvetica;
 }
@@ -140,10 +209,9 @@ nav
 
 .imgfooter
 {
-    width: 90px;
-    height: 30px;
+    width: 180px;
+    height: 50px;
     margin-left: 50px;
     margin-right: 25px;
-    margin-top: 5px;
+    margin-top: 25px;
 }
-

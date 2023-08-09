@@ -3,7 +3,7 @@
     <head>
     <link href="{{('assets/css/styledownload.css')}}" rel="stylesheet">
     <meta charset="UTF-8">
-    <title>Sobre</title>
+    <title>Download</title>
     </head>
 
 <body class="body">
@@ -29,30 +29,47 @@
 
     <div class="main">
 
-        <div class="Titulo">
-            <h1> Download Sensei</h1>
-        </div>
-
-        <div class="texto"> 
-            <h2> Download Sensei para Windows</h2><br>  
-            <img src="{{'assets/img_tcc/download.png'}}" alt="img" class="imgdownload">
-        </div>
-
+    <div class="Titulo">
+                <h1> Download Sensei</h1>
     </div>
+<div class="conteudo">
+        <div class="download">
+            <div class="subtitulo"> 
+                <h3> Download Sensei para Windows</h3> 
+            </div>
 
-    <br><br><br><br><br>
+            <div class="img">
+                <img src="{{'assets/img_tcc/download.png'}}" alt="img" class="imgdownload">
+            </div>
+
+            <button type="button" class="button">Download</button>
+
+        </div>    
         
+        <div class="textos">
+            <div class="titulo2"><h2>Quais as vantagens de baixar o nosso sistema?</h2></div>    
+                <div class="textin"><p>Nosso site oferece diversas vantagens para os usuários que buscam explorar o potencial da tecnologia. Ao identificar as 
+                    ecessidades individuais dos clientes em relação à tecnologia, proporcionamos soluções direcionadas e eficazes. Além disso, estamos comprometidos
+                    em auxiliar as pessoas na resolução de problemas sociais por meio da inovação tecnológica, promovendo um impacto positivo na sociedade. Para os 
+                    desenvolvedores, oferecemos uma oportunidade única de ascensão acadêmica e profissional, impulsionando suas carreiras para novos patamares. 
+                    Nossa plataforma se destaca pela facilidade de acesso e uso, garantindo que todos possam desfrutar das possibilidades tecnológicas sem barreiras. 
+                    Ao participar conosco, você estará imerso em um ambiente que valoriza o desenvolvimento e a
+                    criatividade, fomentando um cenário dinâmico e estimulante no campo tecnológico.</p>    
+                </div>
+        </div>   
+</div>     
+
+    </div>    
 
     <div class="footer">
+                <img src="{{'assets/img_tcc/logoSensei.png'}}" alt="img" class="imgfooter">
 
-        <img src="{{'assets/img_tcc/logo.png'}}" alt="img" class="imgfooter">
-
-        <div class="botoesfooter">
-        <a href="index.blade.php">Home</a>
-        <a href="sobre.blade.php">Sobre nós</a>
-        <a href="pesquisar.html">Download</a>
-
-    </div>
+                <div class="botoesfooter">
+                <a href="index.blade.php">Home</a>
+                <a href="sobre.blade.php">Sobre nós</a>
+                <a href="pesquisar.html">Download</a>
+                <p class="emailequipe">sensei.system7@gmail.com</p>
+        </div>
   
 </body>
 </html>
