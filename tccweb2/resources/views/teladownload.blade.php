@@ -32,23 +32,23 @@
     <div class="Titulo">
                 <h1> Download Sensei</h1>
     </div>
-<div class="conteudo">
+    <div class="conteudo">
         <div class="download">
             <div class="subtitulo"> 
-                <h3> Download Sensei para Windows</h3> 
+                <h2>Download Sensei para Windows</h2>
             </div>
 
-            <div class="img">
-                <img src="{{'assets/img_tcc/download.png'}}" alt="img" class="imgdownload">
-            </div>
+            
+            <img src="{{'assets/img_tcc/download.png'}}" alt="img" class="imgdownload">
+            
 
             <button type="button" class="button">Download</button>
 
-        </div>    
+        </div>
         
         <div class="textos">
-            <div class="titulo2"><h2>Quais as vantagens de baixar o nosso sistema?</h2></div>    
-                <div class="textin"><p>Nosso site oferece diversas vantagens para os usuários que buscam explorar 
+            <h2>Quais as vantagens de baixar o nosso sistema?</h2>
+                <p class="textin">Nosso site oferece diversas vantagens para os usuários que buscam explorar 
                     o potencial da tecnologia. 
                     Ao identificar as 
                     necessidades individuais dos clientes em relação à tecnologia, proporcionamos soluções direcionadas e eficazes. 
@@ -61,10 +61,10 @@
                     Nossa plataforma se destaca pela facilidade de acesso e uso, garantindo que todos possam 
                     desfrutar das possibilidades tecnológicas sem barreiras. 
                     Ao participar conosco, você estará imerso em um ambiente que valoriza o desenvolvimento e a
-                    criatividade, fomentando um cenário dinâmico e estimulante no campo tecnológico.</p>    
-                </div>
+                    criatividade, fomentando um cenário dinâmico e estimulante no campo tecnológico.
+                </p>
         </div>   
-</div>     
+    </div>     
 
     </div>    
 
