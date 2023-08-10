@@ -9,10 +9,11 @@ body{
 {
     width: 100%;
     display: inline;
-    margin-top: 0;
+    margin-top: 0; 
     margin-left:0;
     font-family:  Helvetica;  
     font-weight: bolder;
+    position: fixed;
 }
 
 nav
@@ -85,6 +86,7 @@ nav
 
 .main{
     font-family:  Helvetica;
+    margin-top: 200px;
     
 }
 
