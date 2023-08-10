@@ -1,4 +1,3 @@
-
 body{
     background: linear-gradient(to bottom, #ffffff, #BBE1F3, #9EBAD6, #9EBAD6);
     margin: 0;
@@ -6,17 +5,15 @@ body{
     height: 1100px;
     max-width: 1920px;
 }
-
 /*---------header-----------*/
 .header 
 {
     width: 100%;
     display: inline;
-    margin-top: 0; 
+    margin-top: 0;
     margin-left:0;
     font-family:  Helvetica;  
     font-weight: bolder;
-    position: fixed;
 }
 
 nav
@@ -70,7 +67,7 @@ nav
     height: auto;
     margin-left: 30%;
     margin-right: 20px;
-    gap: 3rem;
+    gap: 2rem;
     grid-template-columns: auto auto;
 }
 
@@ -89,8 +86,7 @@ nav
 
 .main{
     font-family:  Helvetica;
-    margin-top: 200px;
-    
+    width: 100%;
 }
 
 .conteudo{
@@ -159,7 +155,7 @@ nav
 
 .textos h2, .subtitulo h2 {
     font-size: 36px;
-    font-weight: 8 00;
+    font-weight: 800;
     text-align: center;
 }
 

@@ -34,10 +34,10 @@
             <div class="divbonita">
                 <div class="linha-lateral"></div>
 
-                    <div class="textprimeiro">
-                        <h1> Bem vindo ao Sensei!</h1>
-                            <p>Compartilhe seu talento, conecte-se com desenvolvedores e alcance novos patamares.</p>
-                        <div class="entrar">
+                <div class="textprimeiro">
+                    <h1> Bem vindo ao Sensei!</h1>
+                        <p>Compartilhe seu talento, conecte-se com desenvolvedores e alcance novos patamares.</p>
+                    <div class="entrar">
                         <button type="button" class="button">Criar conta</button>
                         <p>Ja possui uma conta? Entrar</p>
                     </div>
