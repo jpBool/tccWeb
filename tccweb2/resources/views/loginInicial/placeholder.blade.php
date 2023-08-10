@@ -1,3 +1,6 @@
+@extends('layout._site')
+@section('titulo','Logar')
+@section('conteudo')
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -97,6 +100,6 @@
     </div>
 </body>
 
-
+@endsection 
 
 

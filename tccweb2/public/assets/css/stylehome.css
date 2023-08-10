@@ -5,10 +5,9 @@ body{
 
 .main
 {
-    width: 900px; 
+    width: 100%; 
     margin-left: auto;
     margin-right: auto;
-    
 }
 
 .conteudo
@@ -73,7 +72,7 @@ body{
 
 .project
 {
-    margin-left: 2px;
+    margin-left: 30%;
     width: 900px;
     height: auto;
     border-style: solid;
@@ -102,9 +101,10 @@ body{
 }
 
  /* styles.css */
- .barra {
-    background-color: blue;
+.barra {
+    background-color: #8AB6D5;
     height: 20px;
+    border-radius: 10px;
 }
 
 /* Defina a variável CSS customizada */
@@ -115,17 +115,13 @@ body{
 .barraPreta
 {
     width: 65%;
-    background-color: black;
+    background-color: #BBE1F3;
     display: block;
     align-self: center;
     text-align: center;
     border: black;
     border-radius: 10px;
-    margin-left: 70px;
-}
-.barra
-{
-    border-radius: 10px;
+    margin-left: 40px;
 }
 
 

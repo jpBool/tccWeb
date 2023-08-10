@@ -1,17 +1,18 @@
 body{
     background-image: linear-gradient(to bottom, #dae6eb, #a9d9f0, #9EBAD6, #9EBAD6);
     margin: 0;
-    height: 4000px;
+    width: 100%;
     position: relative;
 
 }
 
 .main
 {
-    height: 10%;
-    width: 1400px; 
+    width: 90%; 
     margin-left: auto;
     margin-right: auto;
+    padding-top: 8%;
+    padding-bottom: 1000px;
 }
 
 #linha-perfil{
@@ -209,8 +210,10 @@ body{
     background-color: white;
     margin-top: 50px;
     padding-top: 50px;
-    margin-left: 5%;
-    width: 90%;
+    margin-left: 4%;
+    width: 88%;
+    border-radius: 2%;
+    border: 1px solid black;
 }
 
 .project

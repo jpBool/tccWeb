@@ -1,5 +1,5 @@
 @extends('layout._site')
-@section('titulo','Alunos')
+@section('titulo','Home')
 @section('conteudo')
 
 <!DOCTYPE html>
