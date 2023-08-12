@@ -1,0 +1,1 @@
+{{rows->id_criador}};

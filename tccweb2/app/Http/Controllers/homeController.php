@@ -22,4 +22,10 @@ class homeController extends Controller
         $rows = gp2_projetos::all();
         return view('home', compact('rows'));
     }
+
+    public function showProjectIsoled(Request $req)
+    {
+        $rows = gp2_projetos::where('id_projeto', $req->id_projeto) -> first();
+        return view('projeto', compact('rows'));
+    }
 }

@@ -49,7 +49,12 @@
                         <br>
                         <br>
                         {{$row->data_criacao}} <br>
-                        <button type="button" class="button">Show all</button>
+                        <!--<button href="{{route('projetoIsolado')}}" type="button" class="button">Show all</button> -->
+                       
+                        <form action="{{route('projetoIsolado')}}">
+                            <input type="text" name="id_projeto" value="{{$row->id_projeto}}" />
+                            <input type="submit" value="Show All" class="button" />
+                        </form>
                     </div> 
                 </div> 
                 

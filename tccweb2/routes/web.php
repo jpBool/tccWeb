@@ -36,6 +36,10 @@ Route::get('/home',
 ['as'   =>'homeInicial', 
  'uses' =>'App\Http\Controllers\homeController@showProjects']);
 
+ Route::post('/projetoUser',
+['as'   =>'projetoIsolado', 
+ 'uses' =>'App\Http\Controllers\homeController@showProjectIsoled']);
+
 Route::get('/sobre', function () {
     return view('sobre');
 });
