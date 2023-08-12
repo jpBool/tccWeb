@@ -1,10 +1,16 @@
+:root, * {
+    box-sizing: border-box;
+}
+
 body{
     background: linear-gradient(to bottom, #ffffff, #BBE1F3, #9EBAD6, #9EBAD6);
     margin: 0;
     padding: 0;
     width:100%;
-    
 }
+
+
+
 /*---------header-----------*/
 .header 
 {
@@ -142,31 +148,37 @@ nav
 .textos{
     font-size:20px;
     font-family:  Helvetica;
-    margin-top: 0;
+    margin-inline: 160px;
+}
+.buttonsHome{
+    padding-block: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
 }
 
+.buttonsHome p{
+    margin: 0;
+}
 
 .button
 {
-    margin-top: 50px;
-    min-width: 100px;
-    height: 30px;
+    background-color: #0C283C;
     color: #fff;
     padding: 5px 10px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
-    display: inline-block;
-    outline: none;
-    border-radius: 5px;
-    z-index: 0; /*Quanto maior o valor, mais fica na camada de frente quando há sobreposiçao de objetos*/
-    background: #0C283C;
-    overflow: hidden;
+    border-radius: 15px;
     border: black;
     color: white;
-    margin-bottom: 10px;
-    font-size: 17px;
+    font-size: 20px;
     font-family: Helvetica;
+    width: max-content;
+    min-width: 150px;
+    height: 50px;
 }
 
 .button1
@@ -181,8 +193,7 @@ nav
     transition: all 0.3s ease;
     display: inline-block;
     outline: none;
-    border-radius: 5px;
-    z-index: 0; /*Quanto maior o valor, mais fica na camada de frente quando há sobreposiçao de objetos*/
+    border-radius: 5px;/*Quanto maior o valor, mais fica na camada de frente quando há sobreposiçao de objetos*/
     background: #0C283C;
     overflow: hidden;
     border: black;
@@ -195,7 +206,7 @@ nav
 
 .button2
 {
-    margin-top: 50px;
+    margin-top: 25px;
     min-width: 100px;
     height: 35px;
     color: #fff;
@@ -225,9 +236,11 @@ nav
 }
 
 .textprimeiro{
-text-align: left;
-margin-left: 70px;
-flex-direction:column;
+    text-align: left;
+    padding-inline: 70px;
+    width: 100%;
+    flex-direction:column;
+    border-left: solid 5px #001270;
 }
 
 .textprimeiro h1{
@@ -240,34 +253,38 @@ flex-direction:column;
     font-weight: 800;
 }
 
+.entrar{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-size:20px;
+    padding: 30px;
+    margin-block: .5rem;
+}
+
 .entrar p{
     font-size: 20px;
 }
 
-.entrar{
-    text-align: center;
-    font-size:20px;
-    flex-direction: column;
-    justify-content: center;
+.entrar button {
+    width: fit-content;
+    align-self: center;
 }
 
-/*---------------Linhas laterais------------------*/
-
-.linha-lateral {
-    
+#icon1{
+    position: absolute;
     left: 0;
-    height: 310px;
-    width: 3.5px; /* Ajuste a largura conforme necessário */
-    background-color: #001270;
-    margin-left: 85px;
-    position:static;
+    transform: translateX(-40%);
 }
 
+/*---------------Linhas laterais------------------
 .linha-lateral2 {
     margin-top: 15px;
     left: 0;
     height: 600px;
-    width: 3.5px; /* Ajuste a largura conforme necessário */
+    width: 3.5px;  Ajuste a largura conforme necessário 
     background-color: #001270;
     margin-left: 85px;
     position:static;
@@ -278,14 +295,12 @@ flex-direction:column;
     margin-top: 15px;
     left: 0;
     height: 255px;
-    width: 3.5px; /* Ajuste a largura conforme necessário */
+    width: 3.5px; /* Ajuste a largura conforme necessário 
     background-color: #001270;
     margin-left: 85px;
     position:static;
     padding-bottom: 50px;
-}
-
-/*===========================================*/
+}*/
 
 
 .imgtexto1{
@@ -301,10 +316,6 @@ flex-direction:column;
 }
 
 /* Icones bara lateral */
-.icon1{
-    margin-top: 15px;
-    margin-left:75px;
-}
 
 .icon2{
     margin-left:75px;
@@ -355,6 +366,7 @@ flex-direction:column;
 
 .divbonita{
     display: flex;
+    flex-direction: column;
 }
 
 .iconlinha{

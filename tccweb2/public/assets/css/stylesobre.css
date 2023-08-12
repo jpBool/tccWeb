@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background: linear-gradient(to bottom, #ffffff, #BBE1F3, #9EBAD6, #9EBAD6);
-
+    font-family: helvetica;
 }
 /*------------------------------- header --------------------------------*/
 .header 
@@ -74,42 +74,43 @@ nav
   
   /*---------------------------------------------------------------*/
 
-.main{
+.divtotal1{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
 }
 
 .imgpessoas{
+   width: 933px; 
+   height: 569px; 
    margin-top: 90px;
-   padding-right: 6%;
-   padding-left: 75.5px;
-   width: 700px; 
-   height: 467px; 
  }
 
 
 .text {
-    margin-top: 100px;
-    margin-right: 150px;
-    padding-left: 7%;
-    font-family:  Helvetica;
+    padding: 100px;
     text-align: justify;
+    width: 400px;
 }
 
 .titulo{
   font-size: 400%;
+  text-align:left;
 }
 
 
 .desen{
-    margin-top: 100px;
     text-align: center;
     font-style: italic;
-    font-size: 300%;
-    font-family:  Helvetica;
+    font-size: 200%;
 }
 
 .devs{
-    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column; /* Empilha as divs verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
 }
 
 .imagem-redonda {
@@ -117,32 +118,31 @@ nav
     height: 200px; /* Ajuste o tamanho conforme necessário */
     border-radius: 50%;
     object-fit: cover;
-    margin-left: 50px;
 }
 
 .desen4{
-    padding-left: 160px;
     display: flex;
+    padding-top: 50px;
 }
 
 
 .desen3{
-    padding-left: 310px;
     display: flex;
+    align-items: center;
 }
 
 .caption {
-  text-align:center;
-  margin-left: 50px;
-  margin-top: 20px;
   display: block;
-  font-family: helvetica;
+  text-align: center;
+    margin-top: 5px;
 }
 
 .bonito{
-  margin-right: 3%;
+    display: flex; 
+    flex-direction: column;
+    padding: 50px;
+    width: 200px;
 }
-
 
 /*-------------------------------footer--------------------------------*/
 .botoesfooter

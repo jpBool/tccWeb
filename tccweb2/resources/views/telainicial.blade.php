@@ -32,19 +32,23 @@
 
         <div class="textos">
             <div class="divbonita">
-                <div class="linha-lateral"></div>
 
                 <div class="textprimeiro">
                     <h1> Bem vindo ao Sensei!</h1>
-                        <p>Compartilhe seu talento, conecte-se com desenvolvedores e alcance novos patamares.</p>
-                    <div class="entrar">
-                        <button type="button" class="button">Criar conta</button>
+                    <p>Compartilhe seu talento, conecte-se com desenvolvedores e alcance novos patamares.</p>
+                </div>
+
+                <div class="entrar">
+                    <img src="{{'assets/img_tcc/icon1.svg'}}" alt="img" id="icon1" style="width: 1.5%;" > 
+                    
+                    <div class="buttonsHome">
+                        <a class="button">Criar conta</a>
                         <p>Ja possui uma conta? Entrar</p>
                     </div>
                 </div>
             </div>
 
-            <img src="{{'assets/img_tcc/icon1.svg'}}" alt="img" class="icon1" style="width: 1.5%;" > 
+
             
             <div class="divbonita">
                 <div class="iconlinha">
@@ -69,17 +73,17 @@
                 
 
                 <div class="linha-lateral2"></div>
-                </div>
+            </div>
                 
-                <div class="textoimagem">
-                <div class="text3"> <h2> Procure softwares e encontre desenvolvedores.</h2>
-                    <p>Apoiando a união de projetos e desenvolvedores de software.</p><br>
-                </div>
+            <div class="textoimagem">
+            <div class="text3"> <h2> Procure softwares e encontre desenvolvedores.</h2>
+                <p>Apoiando a união de projetos e desenvolvedores de software.</p><br>
+            </div>
 
-                <div class="imgtextos">
+            <div class="imgtextos">
                 <img src="{{'assets/img_tcc/img2.jpg'}}" alt="img" class="imgtexto1" style="width: 50%;" > 
-                </div>
-</div>
+            </div>
+    </div>
             </div>
 
             <img src="{{'assets/img_tcc/icon3.svg'}}" alt="img" class="icon3" style="width: 1.5%;" > 
