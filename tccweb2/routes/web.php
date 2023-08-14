@@ -36,7 +36,7 @@ Route::get('/home',
 ['as'   =>'homeInicial', 
  'uses' =>'App\Http\Controllers\homeController@showProjects']);
 
- Route::post('/projetoUser',
+ Route::get('/projetoUser',
 ['as'   =>'projetoIsolado', 
  'uses' =>'App\Http\Controllers\homeController@showProjectIsoled']);
 

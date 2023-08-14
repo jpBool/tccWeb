@@ -23,9 +23,13 @@ class homeController extends Controller
         return view('home', compact('rows'));
     }
 
-    public function showProjectIsoled(Request $req)
-    {
-        $rows = gp2_projetos::where('id_projeto', $req->id_projeto) -> first();
+    public function ShowProjectIsoled(Request $request) {
+        $projeto = $request->input('id_projeto');
+        
+        $rows = gp2_projetos::where('id_projeto', $projeto) -> first();
+        // Faça algo com $descricao_breve
+        
+        // Por exemplo, você pode retornar uma view com o valor
         return view('projeto', compact('rows'));
     }
 }
