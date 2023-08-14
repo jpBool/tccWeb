@@ -7,6 +7,7 @@ body{
     margin: 0;
     padding: 0;
     width:100%;
+    font-family: Helvetica;
 }
 
 
@@ -14,12 +15,14 @@ body{
 /*---------header-----------*/
 .header 
 {
+    position: relative;
     width: 100%;
     display: inline;
     margin-top: 0;
     margin-left:0;
     font-family:  Helvetica;  
     font-weight: bolder;
+    z-index: 99;
 }
 
 nav
@@ -167,7 +170,7 @@ nav
 {
     background-color: #0C283C;
     color: #fff;
-    padding: 5px 10px;
+    padding: 10px 20px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -178,7 +181,6 @@ nav
     font-family: Helvetica;
     width: max-content;
     min-width: 150px;
-    height: 50px;
 }
 
 .button1
@@ -262,6 +264,7 @@ nav
     font-size:20px;
     padding: 30px;
     margin-block: .5rem;
+
 }
 
 .entrar p{
@@ -273,41 +276,26 @@ nav
     align-self: center;
 }
 
-#icon1{
+.sidebar-icon{
     position: absolute;
     left: 0;
-    transform: translateX(-40%);
+    transform: translateX(-50%);
 }
 
-/*---------------Linhas laterais------------------
-.linha-lateral2 {
-    margin-top: 15px;
+.sidebar-icon-overlay {
+    position: absolute;
     left: 0;
-    height: 600px;
-    width: 3.5px;  Ajuste a largura conforme necessário 
-    background-color: #001270;
-    margin-left: 85px;
-    position:static;
-    padding-bottom: 50px;
+    top: -50%;
 }
 
-.linha-lateral3 {
-    margin-top: 15px;
-    left: 0;
-    height: 255px;
-    width: 3.5px; /* Ajuste a largura conforme necessário 
-    background-color: #001270;
-    margin-left: 85px;
-    position:static;
-    padding-bottom: 50px;
-}*/
 
 
 .imgtexto1{
     margin-top: 0;
     border-radius: 25px;
-    margin-left: 350px;
-    /* transform: translate(50%, 10%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .imgtextos{
@@ -340,7 +328,7 @@ nav
 .text1{
     align-items: center;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 140px;
     
 }
 .text2{
@@ -378,7 +366,11 @@ nav
 }
 
 .textoimagem{
+    text-align: left;
+    padding-inline: 70px;
+    width: 100%;
     flex-direction:column;
+    border-left: solid 5px #001270;
 }
 
 .text3{
