@@ -1,0 +1,47 @@
+body{
+    height: 100%;
+}
+
+.main{
+    height: 2000px;
+    padding-left: 200px;
+}
+
+
+/* ------------------- BARRA -------------------*/
+
+.num-porcentagem{
+    padding-left: 10px;
+}
+
+.barraPreta
+{
+    width: 75%;
+    background-color: white;
+    display: block;
+    align-self: center;
+    text-align: center;
+    border: black;
+    border-radius: 10px;
+    margin-left: 40px;
+    border: 1px solid black;
+}
+
+.barra-progress{
+    width: 990px;
+    display: flex;
+    border-radius: 18px;
+    padding: 10px;
+    color: black;
+    margin-left: 20%;
+}
+
+.progress{
+    padding-left: 20px;
+}
+
+.barra {
+    background-color: #364E65;
+    height: 20px;
+    border-radius: 10px;
+}
