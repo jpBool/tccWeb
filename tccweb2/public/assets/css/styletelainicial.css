@@ -151,7 +151,7 @@ nav
 .textos{
     font-size:20px;
     font-family:  Helvetica;
-    margin-inline: 160px;
+    margin-inline: 300px;
 }
 .buttonsHome{
     padding-block: 0.5rem;
@@ -185,51 +185,37 @@ nav
 
 .button1
 {
-    margin-top: 50px;
-    min-width: 100px;
-    height: 35px;
+    background-color: #0C283C;
     color: #fff;
-    padding: 5px 10px;
+    padding: 10px 20px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
-    display: inline-block;
-    outline: none;
-    border-radius: 5px;/*Quanto maior o valor, mais fica na camada de frente quando há sobreposiçao de objetos*/
-    background: #0C283C;
-    overflow: hidden;
+    border-radius: 15px;
     border: black;
     color: white;
-    margin-bottom: 10px;
-    font-size: 17px;
+    font-size: 20px;
     font-family: Helvetica;
-    margin-left:40%;
+    width: max-content;
+    min-width: 150px;
 }
 
 .button2
 {
-    margin-top: 25px;
-    min-width: 100px;
-    height: 35px;
+    background-color: #0C283C;
     color: #fff;
-    padding: 5px 10px;
+    padding: 10px 20px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
-    display: inline-block;
-    outline: none;
-    border-radius: 5px;
-    z-index: 0; /*Quanto maior o valor, mais fica na camada de frente quando há sobreposiçao de objetos*/
-    background: #AAD2E5;
-    overflow: hidden;
+    border-radius: 15px;
     border: black;
-    color: rgb(0, 0, 0);
-    margin-bottom: 10px;
-    font-size: 17px;
+    color: white;
+    font-size: 20px;
     font-family: Helvetica;
-    margin-right: 40%;
+    width: max-content;
+    min-width: 150px;
 }
-
 
 .links{
     padding-right: 35px;
@@ -238,20 +224,30 @@ nav
 }
 
 .textprimeiro{
+    position: relative;
     text-align: left;
-    padding-inline: 70px;
+    padding-inline: 200px;
     width: 100%;
     flex-direction:column;
-    border-left: solid 5px #001270;
+    border-left: solid 6px #001270;
+}
+
+.espaco{
+    padding: 70px;
 }
 
 .textprimeiro h1{
-    font-size: 60px;
+    font-size: 70px;
+    font-weight: 800;
+}
+
+.textprimeiro h2{
+    font-size: 40px;
     font-weight: 800;
 }
 
 .textprimeiro p{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 800;
 }
 
@@ -285,9 +281,9 @@ nav
 .sidebar-icon-overlay {
     position: absolute;
     left: 0;
-    top: -50%;
+    top: 50%;
+    transform: translateX(-60%);
 }
-
 
 
 .imgtexto1{
@@ -303,39 +299,14 @@ nav
     width: 100%;
 }
 
-/* Icones bara lateral */
-
-.icon2{
-    margin-left:75px;
-    margin-top: 20px;
-
-}
-
-.icon3{
-    margin-left:75px;
-    margin-top: 20px;
-}
-.icon4{
-    margin-top: 20px;
-    margin-left:75px;
-}
-.icon5{
-    margin-top: 20px;
-    margin-left:75px;
-}
-
 /*textos */
-.text1{
-    align-items: center;
-    text-align: center;
-    margin-top: 140px;
-    
-}
 .text2{
     align-items: center;
     text-align: center;
     font-weight: bolder;
     margin-top: 60px;
+    font-size: 25px;
+    padding: 60px;
 }
 .textin2{
     align-items: center;
@@ -346,9 +317,11 @@ nav
 }
 
 .botoesembaixo{
-    align-items: center;
-    justify-content: space-between;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    margin-inline: 200px;
     margin-bottom: 80px;
 }
 
@@ -371,12 +344,6 @@ nav
     width: 100%;
     flex-direction:column;
     border-left: solid 5px #001270;
-}
-
-.text3{
-    margin-top: 50px;
-    align-items: center;
-    text-align: center;
 }
 
 .ultimotexto{
