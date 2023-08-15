@@ -1,8 +1,8 @@
 html, body {
-    height: 100%;
-    width: 100%;
+    width: 120vw;
     margin: 0;
     padding: 0;
+    height: 120vw;
 }
 
 
@@ -10,13 +10,13 @@ body{
     background-image: linear-gradient(to bottom, #ffffff, #BBE1F3, #9EBAD6, #9EBAD6);
     margin: 0;
     background-repeat: no-repeat;
+    height: 100vw;
 }
 
 .main
 {
     margin-left: auto;
     margin-right: auto;
-
     height: 100%; /* Garante que a div main tenha altura igual à altura do body */
     width: 100%;
     margin: 0 auto;
@@ -26,9 +26,8 @@ body{
 {
     border-radius: 14px;
     width: 898px;
-    height: 200px;
+    height: 220px;
     display: inline-flex;
-    
 }
 
 .conteudo-texto
@@ -95,7 +94,6 @@ body{
 
 .titulo
 {
-
     background-color: white;
     display: inline-flex;
     width: 100%;
@@ -109,8 +107,22 @@ body{
     font-weight: bold
 }
 
+.num-porcentagem{
+    padding-left: 10px;
+    color: white;
+}
+
 .barra-progress{
+    width: 95%;
     display: flex;
+    background: #10273E;
+    border-radius: 18px;
+    padding: 10px;
+}
+
+.progress{
+    padding-left: 5px;
+    color: white;
 }
 
  /* styles.css */
@@ -136,7 +148,6 @@ body{
     border-radius: 10px;
     margin-left: 40px;
 }
-
 
 /*-------------Header----------------------------------------*/
 

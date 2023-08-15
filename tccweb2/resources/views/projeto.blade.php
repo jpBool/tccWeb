@@ -41,14 +41,31 @@
             </div>
             <div class="infoAutor"> 
                 <div class="autores">Autores: {{$rows->autores}};</div>
-                <div class="email">E-mail para contato: {{$rows->email_contato}};</div>
-                <div>Site do Projeto: {{$rows->link_site}};</div>
+                <label>E-mail para contato: <div class="email">{{$rows->email_contato}};</div></label>
+                <label>Site do Projeto: <div class="link-site">{{$rows->link_site}};</div></label>
                 <br>
                 <h2>Status do Projeto: < {{$rows->status}} ></h2>
                 <h4>Previsão de Conclusão : < {{$rows->previsao}} > </h4>
                 <h4>Linguagem: < {{$rows->linguagem}} > </h4>
-                <div class="descricao"> 
+                <div class="descricao">
+                    <h2>Descrição</h2>
                     {{$rows->descricao_detalhada}};
+                </div>
+
+                <h2>Imagens</h2>
+
+                <h2>Vídeo do Projeto</h2>
+
+                <h2>Etapas do Projeto</h2>
+
+                <h2>Colaboradores do Projeto</h2>
+                <div class="colaboradores">
+                    <h4>{{$rows->id_criador}};</h4>
+                </div>
+
+                <div class="palavras-chave">
+                    <h2>Palavras Chaves</h2>
+                    <h4>{{$rows->palavras_chaves}}</h4>
                 </div>
             </div>
             <br>
@@ -57,15 +74,6 @@
             <br>
             <br>
             {{$rows->id_projeto}};
-            {{$rows->id_criador}};
-            
-            {{$rows->palavras_chaves}};
-            
-            
-        
-            
-        
-            
             {{$rows->excluido}};   
     </div>
 </body>

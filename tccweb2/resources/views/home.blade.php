@@ -13,14 +13,11 @@
 </head>
 
 <body>
- 
     <div class="main">
         <br><br><br><br>
         <br>
         <h1>Para você!</h1>
-        @foreach($rows as $row) 
-
-      
+        @foreach($rows as $row)      
         <div class='project'>
             <div class="titulo">
                 <img src="{{'assets/img_tcc/usuario.png'}}" alt="img" id="img-user">
@@ -33,15 +30,15 @@
                 </div>
                 <div class="allConteudo">
                     <h2> {{$row->nome_projeto}} </h2>
-                
-                <div class="barra-progress">
-                    Progress:
-                    <div class="barraPreta">
-                        <div class="barra" style="width: {{$row->porcentagem}}%;">
+                    <div class="barra-progress">
+                        <div class="progress">Progress</div>
+                            <div class="barraPreta">
+                                <div class="barra" style="width: {{$row->porcentagem}}%;">
 
+                                </div>
+                            </div>
+                            <div class="num-porcentagem">{{$row->porcentagem}}%</div>
                         </div>
-                    </div>
-                </div>
                     
                     <div class="conteudo-texto">
                         {{$row->descricao_breve}} 

@@ -40,6 +40,7 @@ body {
     padding: 10px;
     color: black;
     margin-left: 17%;
+    background: none;
 }
 
 .progress{
@@ -95,14 +96,23 @@ body {
     margin-bottom: 40px;
 }
 
-.email{
+.infoAutor label{
+    display: flex;
     margin-bottom: 7px;
+}
+.email{
+    text-decoration: underline;
+}
+
+.link-site{
+    text-decoration: underline;
 }
 
 .infoAutor
 {
     margin-left: 15%;
 }
+
 .descricao
 {
     text-align: left;
@@ -113,3 +123,19 @@ body {
     padding: 20px;
 }
 
+.colaboradores{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 800px;
+    height: 300px;
+    padding: 10px;
+}
+
+.palavras-chave{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 800px;
+    height: 200px;
+    padding: 0px 10px 10px 10px;
+    margin-top: 50px;
+}
