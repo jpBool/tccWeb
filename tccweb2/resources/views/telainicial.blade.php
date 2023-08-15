@@ -42,7 +42,7 @@
             </div>
 
             <div class="entrar">
-                <img src="{{'assets/img_tcc/icon1.svg'}}" alt="img" class="sidebar-icon" style="width: 2%;" > 
+                <img src="{{'assets/img_tcc/icon1.svg'}}" alt="img" class="sidebar-icon" style="width: 3%;" > 
                 
                 <div class="buttonsHome">
                     <a class="button">Criar conta</a>
@@ -118,24 +118,6 @@
             </div>
         </div> 
     </div>
-
-    <div class="divbonita">
-        <div class="iconlinha">
-        <div class="linha-lateral2"></div>
-    </div>
-
-    <div class="divbonita">
-        <div class="iconlinha">
-        <div class="linha-lateral2"></div>
-    </div>
-
-    <div class="divbonita">
-        <div class="iconlinha">
-        <div class="linha-lateral2"></div>
-    </div>
-
-    <div class="iconlinha2">
-        <div class="linha-lateral3"></div>
 
         <div class="ultimotexto">
             <div class="text2"> 

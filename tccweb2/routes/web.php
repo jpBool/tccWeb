@@ -51,3 +51,7 @@ Route::get('/telainicial', function () {
 Route::get('/teladownload', function () {
     return view('teladownload');
 });
+
+Route::get('/cadastro', function () {
+    return view('cadastro');
+});

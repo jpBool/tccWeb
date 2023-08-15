@@ -6,7 +6,7 @@
     <title>Download</title>
     </head>
 
-<body class="body">
+<body>
 
     <div class="header">
         <nav id="navbar">  
@@ -30,8 +30,9 @@
     <div class="main">
 
     <div class="Titulo">
-                <h1> Download Sensei</h1>
+        <h1> Download Sensei</h1>
     </div>
+    
     <div class="conteudo">
         <div class="download">
             <div class="subtitulo"> 
@@ -69,7 +70,7 @@
     </div>    
 
     <div class="footer">
-                <img src="{{'assets/img_tcc/logoSensei.png'}}" alt="img" class="imgfooter">
+                <img src="{{'assets/img_tcc/logoSensei.svg'}}" alt="img" class="imgfooter">
 
                 <div class="botoesfooter">
                 <a href="index.blade.php">Home</a>
@@ -79,4 +80,18 @@
         </div>
   
 </body>
+
+<script>
+        document.addEventListener('scroll', () => {
+            let scrollVertical = window.pageYOffset;
+            const header = document.getElementById('navbar');
+            if(scrollVertical > 300) {
+                header.style.backgroundColor = 'white';
+                console.log(`Scroll vertical:`, header);
+            } else {
+                header.style.backgroundColor = 'transparent';
+            }
+        }) 
+    </script>
+
 </html>
