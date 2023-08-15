@@ -13,7 +13,9 @@ class homeController extends Controller
     //
     public function showProjects()
     {
-        $rows = gp2_projetos::all();
+        $rows = gp2_projetos::orderBy('porcentagem', 'desc')
+        ->get();
+
         return view('home', compact('rows'));
     }
 
@@ -26,7 +28,9 @@ class homeController extends Controller
     public function ShowProjectIsoled(Request $request) {
         $projeto = $request->input('id_projeto');
         
-        $rows = gp2_projetos::where('id_projeto', $projeto) -> first();
+        $rows = gp2_projetos::where('id_projeto', $projeto)
+        ->orderBy('porcentagem', 'desc')
+        ->first();
         // Faça algo com $descricao_breve
         
         // Por exemplo, você pode retornar uma view com o valor

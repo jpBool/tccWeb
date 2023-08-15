@@ -1,12 +1,16 @@
-body{
+body {
     height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .main{
-    height: 2000px;
+    width: 100%; 
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 200px;
 }
-
 
 /* ------------------- BARRA -------------------*/
 
@@ -16,6 +20,8 @@ body{
 
 .barraPreta
 {
+    margin-top: 14%;
+    box-sizing: border-box;
     width: 75%;
     background-color: white;
     display: block;
@@ -33,7 +39,7 @@ body{
     border-radius: 18px;
     padding: 10px;
     color: black;
-    margin-left: 20%;
+    margin-left: 17%;
 }
 
 .progress{
@@ -45,3 +51,65 @@ body{
     height: 20px;
     border-radius: 10px;
 }
+
+
+.GroupNomProjeto
+{
+    display: inline-flex;
+    width: auto;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+.nomeProjeto
+{
+    width: 400px;
+    padding: 15px;
+    width: 600px;
+    margin-bottom: 20px;
+    padding-top: 0;
+}
+
+.nomeProjeto h1
+{
+    margin-top: 0;
+    width: 600px;
+    font-size: 60px;
+    font-weight: 600px;
+}
+
+.dadosProjeto
+{
+    margin-top: 5px;
+    margin-left: 10%;
+    width: 340px;
+    height: 130px;
+    display: block;
+    text-align: left;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.autores{
+    margin-bottom: 40px;
+}
+
+.email{
+    margin-bottom: 7px;
+}
+
+.infoAutor
+{
+    margin-left: 15%;
+}
+.descricao
+{
+    text-align: left;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 800px;
+    height: 600px;
+    padding: 20px;
+}
+

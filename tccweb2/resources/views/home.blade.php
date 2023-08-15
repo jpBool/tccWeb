@@ -13,8 +13,7 @@
 </head>
 
 <body>
-
-        
+ 
     <div class="main">
         <br><br><br><br>
         <br>
@@ -64,6 +63,5 @@
         <br>
         @endforeach 
     </div>
-    
 </body>
 @endsection 
