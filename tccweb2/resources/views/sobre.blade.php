@@ -37,7 +37,7 @@
 
     <div class="devs">
        
-        <div class="desen"><h3>Desenvolvedores</h3></div>
+        <div class="desen"><h2>Desenvolvedores</h2></div>
        
             <div class="desen4">
 
