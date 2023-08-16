@@ -12,7 +12,7 @@
     <title>Login</title>
 </head>
 
-<body>
+<body> 
     <div class="main">
         <div class="top">
             <div id="linha-perfil">
@@ -58,7 +58,7 @@
         </div>
 
         <div class="projects-perfil">
-            <label class="yours-projects">Seus Projetos: </label>
+            <label>Seus Projetos: </label>
             @foreach($rows as $row) 
                 <div class='project'>
                     <div class="titulo">
@@ -97,9 +97,8 @@
                 @endforeach 
             <a href="{{route('homeInicial')}}">Home</a>
         </div>
-    </div>
+</div>
 </body>
-
 @endsection 
 
 

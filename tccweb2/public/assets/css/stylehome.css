@@ -1,16 +1,17 @@
 html, body {
-    width: 120vw;
     margin: 0;
     padding: 0;
-    height: 120vw;
+    height: 100%;
+    background-repeat: no-repeat;
 }
 
 
 body{
+    height: 100%;
     background-image: linear-gradient(to bottom, #ffffff, #BBE1F3, #9EBAD6, #9EBAD6);
     margin: 0;
     background-repeat: no-repeat;
-    height: 100vw;
+    padding-bottom: 0;
 }
 
 .main
@@ -20,6 +21,7 @@ body{
     height: 100%; /* Garante que a div main tenha altura igual à altura do body */
     width: 100%;
     margin: 0 auto;
+    padding-bottom: 0;
 }
 
 .conteudo
@@ -193,6 +195,26 @@ nav
 {
     text-decoration: none;
     color: #10273E;
+}
+
+.imgperfil{
+    width: 30px;
+    padding-right: 25px;
+}
+
+.imgconfg{
+    width: 25px;
+    padding-right: 25px;
+}
+
+.navIcon{
+    height: auto;
+    margin-left: 30%;
+}
+
+.navButtom{
+    display: flex;
+    margin-left: 90px;
 }
 
 /*-------------------------------footer--------------------------------*/
