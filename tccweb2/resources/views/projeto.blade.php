@@ -68,13 +68,6 @@
                     <h4>{{$rows->palavras_chaves}}</h4>
                 </div>
             </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            {{$rows->id_projeto}};
-            {{$rows->excluido}};   
     </div>
 </body>
 @endsection
