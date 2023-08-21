@@ -29,31 +29,36 @@
 
         <!-- body -->
         <main>
-            <div class="titulo">         
-                <h1> Create Account </h1>
-                <p> Join us to create amazing projects </p>
+            <div class="fundo">
+
+                <div class="titulo">         
+                    <h1> Create Account </h1>
+                    <p> Join us to create amazing projects </p>
+                </div>
+
+                <form class="form_cadastro">
+                    <div class="divLabel">
+                        <label for="nome">Nome:</label>
+                        <input class="form_input" type="text" id="nome" name="nome" placeholder="nome">
+                    </div>
+                    <div class="divLabel">
+                        <label for="email">Email:</label>
+                        <input class="form_input" type="email" id="email" name="email" placeholder="email">
+                    </div>
+                    <div class="divLabel">
+                        <label for="datanasc">Data de nascimento:</label>
+                        <input class="form_input" type="date" id="datanasc" style="width:" name="datanasc">
+                    </div>
+                    <div class="divLabel">
+                        <label for="senha">Senha:</label>
+                        <input class="form_input" type="password" id="senha" name="senha" placeholder="senha">
+                    </div>
+                
+                    <button class="divButton" type="submit">Cadastrar</button>
+                </form>
             </div>
 
-            <form class="form_cadastro">
-                <div class="divLabel">
-                    <label for="nome">Nome:</label>
-                    <input class="form_input" type="text" id="nome" name="nome" placeholder="nome">
-                </div>
-                <div class="divLabel">
-                    <label for="email">Email:</label>
-                    <input class="form_input" type="email" id="email" name="email" placeholder="email">
-                </div>
-                <div class="divLabel">
-                    <label for="senha">Data de nascimento:</label>
-                    <input class="form_input" type="date" id="datanasc" name="datanasc" placeholder="data de nascimento">
-                </div>
-                <div class="divLabel">
-                    <label for="senha">Senha:</label>
-                    <input class="form_input" type="password" id="senha" name="senha" placeholder="senha">
-                </div>
-            
-                <button type="submit">Cadastrar</button>
-            </form>
+
         </main>
         <!-- footer -->
         
