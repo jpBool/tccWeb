@@ -1,9 +1,26 @@
-body{
+body, html{
     background: linear-gradient(to bottom, #ffffff, #BBE1F3, #9EBAD6, #9EBAD6);
+    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
     width:100%;
     font-family: Helvetica;
+    height: 100vh;
+}
+
+body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+main{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*---------header-----------*/
@@ -22,7 +39,7 @@ body{
 nav
 {
     width: 100%;
-    position: fixed;
+    position: relative;
 }
 
 .header nav ul 
@@ -119,10 +136,6 @@ nav
     padding-top: 2%;
     text-align: left;
     display: flex;
-    position: relative;
-    left: 0;
-    margin-left:0;
-    bottom: 0;
     width: 100%;
     font-family: Helvetica;
 }
@@ -144,8 +157,88 @@ nav
 }
 
 /*------------------------------Body-------------------------------*/
+.fundo{
+    background-color: #C0E0F6;
+    width: 700px;
+    height: 700px;
+    border-radius: 2rem;
+    
+    box-shadow: 0px 0px 30px rgb(255, 255, 255);
+
+}
+
 .conteudo{
+    margin: 0;
+    padding: 0;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
+}
+
+.titulo h1 {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 30px;
+}
+
+.titulo p {
+    text-align: center;
+    font-size: 20px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form
+{
+    /* display: grid;
+    place-items: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.divLabel{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    width: 12.5rem;
+    font-size: 18px
+}
+
+.form_input{
+    padding-inline: 1rem;
+    padding-block: .5rem;
+    border-radius: .7rem;
+    width: max-content;
+    border: none;
+}
+
+#datanasc {
+    text-align: left;
+    /* display: flex; */
+}
+
+.form_cadastro{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+input[type="date"]{
+    width: calc(100% - 32px); /* Padding e Icone não contam no 100%. (16px do icone e 16px do padding) NÃO MEXER NUNCA*/
+}
+
+.divButton{
+    padding: 5px 10px;
+    border-radius: .5rem;
+    border: none;
+    background-color: #ffffff;
+    font-size: 18px;
+    font-family: helvetica;
 }
