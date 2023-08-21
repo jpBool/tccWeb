@@ -1,6 +1,6 @@
 /*-------------Header----------------------------------------*/
 
-.header 
+.headerA
 {
     width: 100%;
     display: inline;
@@ -16,7 +16,7 @@ nav
     justify-content: center;
 }
 
-.header nav ul 
+.headerA nav ul 
 {
     list-style-type: none; /*define o icone marcador ou check nos itens da lista*/
     margin: 0;
@@ -32,13 +32,13 @@ nav
     height: auto; /* Altura automática (proporcional) */
 }
 
-.header nav ul li 
+.headerA nav ul li 
 {
     display: inline;
     margin-right: 3%;
 }
 
-.header nav ul li a 
+.headerA nav ul li a 
 {
     text-decoration: none;
     color: #10273E;

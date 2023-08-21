@@ -1,34 +1,44 @@
-html, body {
-    margin: 0;
-    padding: 0;
+html{
     height: 100%;
-    background-repeat: no-repeat;
-}
-
-
-body{
-    height: 100%;
-    background-image: linear-gradient(to bottom, #ffffff, #BBE1F3, #9EBAD6, #9EBAD6);
-    margin: 0;
     background-repeat: no-repeat;
     padding-bottom: 0;
+     /* 100% da altura da tela */
+    display: flex;
+    flex-direction: column; /* Para estender o conteúdo */
 }
+
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(to bottom, #ffffff, #BBE1F3, #9EBAD6, #9EBAD6);
+  }
 
 .main
 {
+    margin: 0;
+    padding: 0;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
     height: 100%; /* Garante que a div main tenha altura igual à altura do body */
     width: 100%;
-    margin: 0 auto;
     padding-bottom: 0;
 }
 
 .conteudo
 {
+    margin: 0;
+    padding: 0;
+    
     border-radius: 14px;
     width: 898px;
-    height: 220px;
+  
     display: inline-flex;
 }
 

@@ -1,27 +1,38 @@
-html, body
-{
+html{
     height: 100%;
-    margin: 0;
-    padding: 0;
-    
-}
-body{
-    background-image: linear-gradient(to bottom, #dae6eb, #a9d9f0, #9EBAD6, #9EBAD6);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-   
+    padding-bottom: 0;
+     /* 100% da altura da tela */
+    display: flex;
+    flex-direction: column; /* Para estender o conteúdo */
 }
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh;
+    z-index: -1;
+    background: linear-gradient(to bottom, #ffffff, #BBE1F3, #9EBAD6, #9EBAD6);
+  }
 
 .main
 {
-    
+    margin: 0;
+    padding: 0;
     height: 100%;
-    width: 90%; 
     margin-left: auto;
     margin-right: auto;
-    padding-top: 8%;
-    padding-bottom: 100px;
+    height: 100%; /* Garante que a div main tenha altura igual à altura do body */
+    width: 100%;
+    padding-bottom: 0;
 }
+
 
 #linha-perfil{
     border: 2px solid #000;
@@ -104,7 +115,8 @@ body{
 .top{
     display: inline-flex;
     padding-left: 50px;
-    margin-top: 20px;
+    margin-top: 200px;
+    margin-left: 22%;
 }
 
 .linha-bio{
@@ -217,7 +229,7 @@ body{
     background-color: white;
     margin-top: 50px;
     padding-top: 50px;
-    margin-left: 4%;
+    margin-left: 25%;
     width: 1234px;
     max-width: 1234px;
     height: auto;

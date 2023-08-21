@@ -22,6 +22,11 @@ class UsuariostccController extends Controller
     { // a visão que pede usuário e senha
         return view('loginInicial.login');
     }
+
+    public function busca()
+    {
+       
+    }
     public function entrar(Request $req)
     {
         $dados = $req->all();
@@ -64,5 +69,11 @@ class UsuariostccController extends Controller
     public function returnLogin()
     {
         return redirect()->route('loginInicial.placeHolder');
+    }
+
+    public function showUsers()
+    {
+        $rows = gp2_usuarios::all();
+        return view('buscar', compact('rows'));
     }
 }

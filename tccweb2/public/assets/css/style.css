@@ -45,7 +45,8 @@ body
 }
 
 .card-left{
-    width: 50%;
+    
+    width: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,7 +54,7 @@ body
 }
 
 .card-right{
-    width: 50%;
+    width: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;

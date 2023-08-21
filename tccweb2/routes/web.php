@@ -22,6 +22,11 @@ Route::group(['middleware'=>'auth'],function()
     });
 });
 
+Route::get('/busca', ['as' => 'pesquisaTotal',
+        'uses'=>'App\Http\Controllers\UsuariostccController@enterplaceholder']);
+
+Route::get('/pesquisar', ['as' => 'pesquisarAll', 
+'uses'=>'App\Http\Controllers\UsuariostccController@showUsers']);
 
 Route::get('/login', ['as' => 'loginInicial.index',
 'uses'=>'App\Http\Controllers\UsuariostccController@index']);
