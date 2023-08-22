@@ -53,9 +53,13 @@
                         <label for="senha">Senha:</label>
                         <input class="form_input" type="password" id="senha" name="senha" placeholder="senha">
                     </div>
+
+                    <label> <input type="checkbox" id="rememberCheckbox"> Lembrar </label>
                 
                     <button class="divButton" type="submit">Cadastrar</button>
                 </form>
+
+                <p id="loginLink">Já possui uma conta? <a href="#" id="loginLink">Faça login</a></p>
             </div>
 
 
@@ -75,18 +79,17 @@
 
     </body>
 
-        <script>
-           /* document.addEventListener('scroll', () => {
-                let scrollVertical = window.pageYOffset;
-                const header = document.getElementById('navbar');
-                if(scrollVertical > 300) {
-                    header.style.backgroundColor = 'white';
-                    console.log(`Scroll vertical:`, header);
-                } else {
-                    header.style.backgroundColor = 'transparent';
-                }
+    <script>
+        document.addEventListener('scroll', () => {
+            let scrollVertical = window.pageYOffset;
+            const header = document.getElementById('navbar');
+            if(scrollVertical > 300) {
+                header.style.backgroundColor = 'white';
+                console.log(`Scroll vertical:`, header);
+            } else {
+                header.style.backgroundColor = 'transparent';
+            }
 
-            }) */
-        </script>
-
+        }) 
+    </script>
 </html>
