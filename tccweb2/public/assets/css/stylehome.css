@@ -7,6 +7,16 @@ html{
     flex-direction: column; /* Para estender o conteúdo */
 }
 
+body
+{
+    overflow-y: auto;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* Defina o fundo da página inteira, incluindo a área abaixo do footer */
+    background-color: #f0f0f0; /* Substitua pela cor de fundo desejada */
+   
+}
 
 body::before {
     content: "";
@@ -23,7 +33,6 @@ body::before {
 {
     margin: 0;
     padding: 0;
-    height: 100%;
     margin-left: auto;
     margin-right: auto;
     height: 100%; /* Garante que a div main tenha altura igual à altura do body */
@@ -35,10 +44,8 @@ body::before {
 {
     margin: 0;
     padding: 0;
-    
     border-radius: 14px;
     width: 898px;
-  
     display: inline-flex;
 }
 
@@ -161,116 +168,3 @@ body::before {
     margin-left: 40px;
 }
 
-/*-------------Header----------------------------------------*/
-
-.header 
-{
-    width: 100%;
-    display: inline;
-    margin-top: 0;
-}
-
-nav
-{
-    display: inline-block;
-    width: 100%;
-    position: fixed;
-    background-color: white;
-    justify-content: center;
-}
-
-.header nav ul 
-{
-    list-style-type: none; /*define o icone marcador ou check nos itens da lista*/
-    margin: 0;
-    text-align: center;
-    padding-top: 2.5%;
-    padding-bottom: 2%;
-}
-
-.imglogo
-{
-    float: left;
-    width: 100px;
-    height: auto; /* Altura automática (proporcional) */
-}
-
-.header nav ul li 
-{
-    display: inline;
-    margin-right: 3%;
-}
-
-.header nav ul li a 
-{
-    text-decoration: none;
-    color: #10273E;
-}
-
-.imgperfil{
-    width: 30px;
-    padding-right: 25px;
-}
-
-.imgconfg{
-    width: 25px;
-    padding-right: 25px;
-}
-
-.navIcon{
-    height: auto;
-    margin-left: 30%;
-}
-
-.navButtom{
-    display: flex;
-    margin-left: 90px;
-}
-
-/*-------------------------------footer--------------------------------*/
-.botoesfooter
-{
-    display: inline;
-    margin-top: 15px;
-    margin-left: 30%;
-    text-align: center;
-    flex: 1 50px;
-}
-
-.botoesfooter a
-{
-    color: #10273E;
-    text-decoration: none;
-    padding-right: 10%;
-}
-
-.footer 
-{
-    box-sizing: border-box;
-    background-color: white;
-    padding: 2%;
-    text-align: left;
-    display: flex;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-}
-
-.textfooter
-{
-    display: flex;
-    margin-left: 10%;
-    margin-right: 25px;
-}
-
-.imgfooter
-{
-    width: 90px;
-    height: 30px;
-    margin-left: 50px;
-    margin-right: 25px;
-    margin-top: 5px;
-}
-/*---------------------------------------------------------------*/

@@ -28,7 +28,7 @@ body::before {
     height: 100%;
     margin-left: auto;
     margin-right: auto;
-    height: 100%; /* Garante que a div main tenha altura igual à altura do body */
+    height: 200%; /* Garante que a div main tenha altura igual à altura do body */
     width: 100%;
     padding-bottom: 0;
 }
