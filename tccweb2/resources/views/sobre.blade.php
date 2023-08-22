@@ -41,34 +41,34 @@
        
             <div class="desen4">
 
-                <div class="bonito"><img src="{{'assets/img_tcc/devs.png'}}" alt="dev1" class="imagem-redonda" >
+                <div class="bonito"><img src="{{'assets/img_tcc/aline.png'}}" alt="dev1" class="imagem-redonda" >
                     <div class="caption">Aline Tiemi</div> <div class="caption">aline-tiemi.awoki@unesp.br</div></div>
                 
-                <div class="bonito"><img src="{{'assets/img_tcc/devs.png'}}" alt="dev2" class="imagem-redonda" >
+                <div class="bonito"><img src="{{'assets/img_tcc/kaori.png'}}" alt="dev2" class="imagem-redonda" >
                     <div class="caption">Beatriz Kaori</div> <div class="caption">kaori.sakai@unesp.br</div></div>
                 
-                <div class="bonito"><img src="{{'assets/img_tcc/devs.png'}}" alt="dev3" class="imagem-redonda" >
+                <div class="bonito"><img src="{{'assets/img_tcc/bia.png'}}" alt="dev3" class="imagem-redonda" >
                     <div class="caption">Beatriz Osajima</div> <div class="caption">beatriz.suwa@unesp.br</div></div>
 
-                <div class="bonito"><img src="{{'assets/img_tcc/devs.png'}}" alt="dev4" class="imagem-redonda" >
+                <div class="bonito"><img src="{{'assets/img_tcc/joao.png'}}" alt="dev4" class="imagem-redonda" >
                     <div class="caption">Joâo Pedro</div> <div class="caption">joao-pedro.santos@unesp.br</div></div>
             </div>
        
 
         <div class="desen3">
-            <div class="bonito"><img src="{{'assets/img_tcc/devs.png'}}" alt="dev4" class="imagem-redonda" >
+            <div class="bonito"><img src="{{'assets/img_tcc/mari.png'}}" alt="dev4" class="imagem-redonda" >
                 <div class="caption">Mariana Caroline</div> <div class="caption">mariana.caroline@unesp.br</div></div>
 
-            <div class="bonito"><img src="{{'assets/img_tcc/devs.png'}}" alt="dev4" class="imagem-redonda" >
+            <div class="bonito"><img src="{{'assets/img_tcc/matheus.png'}}" alt="dev4" class="imagem-redonda" >
                 <div class="caption">Matheus Gimenes</div> <div class="caption">mathues.gimenes-soares@unesp.br</div></div>
 
-            <div class="bonito"><img src="{{'assets/img_tcc/devs.png'}}" alt="dev4" class="imagem-redonda" >
+            <div class="bonito"><img src="{{'assets/img_tcc/renan.png'}}" alt="dev4" class="imagem-redonda" >
                 <div class="caption">Renan Hayashi</div> <div class="caption">renan.h.moreira@</div></div>
         </div>
     </div>
 
     <div class="footer">
-                <img src="{{'assets/img_tcc/logoSensei.png'}}" alt="img" class="imgfooter">
+                <img src="{{'assets/img_tcc/logoSensei.svg'}}" alt="img" class="imgfooter">
 
                 <div class="botoesfooter">
                 <a href="index.blade.php">Home</a>
