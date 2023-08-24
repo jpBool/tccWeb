@@ -167,13 +167,6 @@ nav
 
 }
 
-.conteudo{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .titulo h1 {
     text-align: center;

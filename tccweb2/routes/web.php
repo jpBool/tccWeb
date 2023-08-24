@@ -60,3 +60,7 @@ Route::get('/teladownload', function () {
 Route::get('/cadastro', function () {
     return view('cadastro');
 });
+
+Route::get('/edicaoperfil', function () {
+    return view('edicaoperfil');
+});
