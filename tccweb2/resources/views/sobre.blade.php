@@ -63,7 +63,7 @@
                 <div class="caption">Matheus Gimenes</div> <div class="caption">mathues.gimenes-soares@unesp.br</div></div>
 
             <div class="bonito"><img src="{{'assets/img_tcc/renan.png'}}" alt="dev4" class="imagem-redonda" >
-                <div class="caption">Renan Hayashi</div> <div class="caption">renan.h.moreira@</div></div>
+                <div class="caption">Renan Hayashi</div> <div class="caption">renan.h.moreira@unesp.br</div></div>
         </div>
     </div>
 
