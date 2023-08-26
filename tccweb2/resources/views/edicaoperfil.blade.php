@@ -29,16 +29,14 @@
     <!-- body -->
     <main>
         <div class="fundo">
-            <div class="FotoUsuario"> 
-                <img src="{{'assets/img_tcc/.png'}}" alt="foto" class="imgUsuario" >
-            </div>
-
-            <div class="titulo">         
+            <div class="userconfig">  
+                <img src="{{'assets/img_tcc/renan.png'}}" alt="foto" class="imgUsuario" width="150px">  
                 <h3> Nome de Usuário </h3>
-                <button type="button" class="button1">Alterar foto de perfil</button>
+                <button type="button" class="button">Alterar foto de perfil</button>
             </div>
 
-            <form class="form_cadastro">
+            <form class="form_altera">
+
                 <div class="divLabel">
                     <label for="nome">Nome:</label>
                     <input class="form_input" type="text" id="nome" name="nome" placeholder="nome">
@@ -47,8 +45,16 @@
                     <label for="datanasc">Data de nascimento:</label>
                     <input class="form_input" type="date" id="datanasc" style="width:" name="datanasc">
                 </div>
+                <div class="divLabel">
+                    <label for="TextNat">Naturalidade:</label>
+                    <input class="form_input" type="text" id="TextNat" name="TextNat" placeholder="naturalidade">
+                </div>
+                <div class="divLabel">
+                    <label for="TextBio">Biografia:</label>
+                    <input class="form_input" type="text" id="TextBio" name="TextBio" placeholder="biografia">
+                </div>
             
-                <button class="divButton" type="submit">Salvar alteraçêes</button>
+                <button class="divButton" type="submit">Salvar alterações</button>
             </form>
         </div>
     </main>

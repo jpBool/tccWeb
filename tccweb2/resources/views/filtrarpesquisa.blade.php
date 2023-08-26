@@ -41,28 +41,28 @@
        
             <div class="desen4">
 
-                <div class="bonito"><img src="{{'assets/img_tcc/aline.png'}}" alt="dev1" class="imagem-redonda" width="200px">
+                <div class="bonito"><img src="{{'assets/img_tcc/aline.png'}}" alt="dev1" class="imagem-redonda" >
                     <div class="caption">Aline Tiemi</div> <div class="caption">aline-tiemi.awoki@unesp.br</div></div>
                 
-                <div class="bonito"><img src="{{'assets/img_tcc/kaori.png'}}" alt="dev2" class="imagem-redonda" width="200px">
+                <div class="bonito"><img src="{{'assets/img_tcc/kaori.png'}}" alt="dev2" class="imagem-redonda" >
                     <div class="caption">Beatriz Kaori</div> <div class="caption">kaori.sakai@unesp.br</div></div>
                 
-                <div class="bonito"><img src="{{'assets/img_tcc/bia.png'}}" alt="dev3" class="imagem-redonda" width="200px">
+                <div class="bonito"><img src="{{'assets/img_tcc/bia.png'}}" alt="dev3" class="imagem-redonda" >
                     <div class="caption">Beatriz Osajima</div> <div class="caption">beatriz.suwa@unesp.br</div></div>
 
-                <div class="bonito"><img src="{{'assets/img_tcc/joao.png'}}" alt="dev4" class="imagem-redonda" width="200px">
+                <div class="bonito"><img src="{{'assets/img_tcc/joao.png'}}" alt="dev4" class="imagem-redonda" >
                     <div class="caption">Joâo Pedro</div> <div class="caption">joao-pedro.santos@unesp.br</div></div>
             </div>
        
 
         <div class="desen3">
-            <div class="bonito"><img src="{{'assets/img_tcc/mari.png'}}" alt="dev4" class="imagem-redonda" width="200px">
+            <div class="bonito"><img src="{{'assets/img_tcc/mari.png'}}" alt="dev4" class="imagem-redonda" >
                 <div class="caption">Mariana Caroline</div> <div class="caption">mariana.caroline@unesp.br</div></div>
 
-            <div class="bonito"><img src="{{'assets/img_tcc/matheus.png'}}" alt="dev4" class="imagem-redonda" width="200px">
+            <div class="bonito"><img src="{{'assets/img_tcc/matheus.png'}}" alt="dev4" class="imagem-redonda" >
                 <div class="caption">Matheus Gimenes</div> <div class="caption">mathues.gimenes-soares@unesp.br</div></div>
 
-            <div class="bonito"><img src="{{'assets/img_tcc/renan.png'}}" alt="dev4" class="imagem-redonda" width="200px">
+            <div class="bonito"><img src="{{'assets/img_tcc/renan.png'}}" alt="dev4" class="imagem-redonda" >
                 <div class="caption">Renan Hayashi</div> <div class="caption">renan.h.moreira@unesp.br</div></div>
         </div>
     </div>
@@ -78,19 +78,5 @@
         </div>
   
 </body>
-
-<script>
-        document.addEventListener('scroll', () => {
-            let scrollVertical = window.pageYOffset;
-            const header = document.getElementById('navbar');
-            if(scrollVertical > 100) {
-                header.style.backgroundColor = 'white';
-                console.log(`Scroll vertical:`, header);
-            } else {
-                header.style.backgroundColor = 'transparent';
-            }
-
-        }) 
-    </script>
 
 </html>

@@ -1,11 +1,3 @@
-body {
-    font-family:  Helvetica;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to bottom, #ffffff, #BBE1F3, #9EBAD6, #9EBAD6);
-    font-family: helvetica;
-}
-/*------------------------------- header --------------------------------*/
 .header 
 {
     width: 100%;
@@ -73,78 +65,13 @@ nav
     display: flex;
     margin-left: 90px;
 }
-  
-  /*---------------------------------------------------------------*/
+/*================ Header r==============*/
 
-.divtotal1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 90px;
+
+.so{
+    height: 600px;
 }
-
-.imgpessoas{
-   width: 933px; 
-   height: 569px; 
-   margin-top: 90px;
- }
-
-
-.text {
-    padding: 50px;
-    text-align: justify;
-    width: 300px;
-}
-
-.titulo{
-  font-size: 400%;
-  text-align:left;
-}
-
-
-.desen{
-    text-align: center;
-    font-style: italic;
-    font-size: 200%;
-}
-
-.devs{
-    display: flex;
-    flex-direction: column; /* Empilha as divs verticalmente */
-    align-items: center; /* Centraliza horizontalmente */
-    justify-content: center; /* Centraliza verticalmente */
-}
-
-.imagem-redonda {
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.desen4{
-    display: flex;
-    padding-top: 50px;
-}
-
-
-.desen3{
-    display: flex;
-    align-items: center;
-}
-
-.caption {
-  display: block;
-  text-align: center;
-    margin-top: 5px;
-}
-
-.bonito{
-    display: flex; 
-    flex-direction: column;
-    padding: 50px;
-    width: 200px;
-}
-
-/*-------------------------------footer--------------------------------*/
+/*================ Footer ==============*/
 .botoesfooter
 {
     display: inline;
@@ -200,3 +127,4 @@ nav
     margin-right: 25px;
     margin-top: 25px;
 }
+/*================ Footer ==============*/
