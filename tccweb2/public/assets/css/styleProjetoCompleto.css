@@ -7,6 +7,16 @@ html{
     flex-direction: column; /* Para estender o conteúdo */
 }
 
+body
+{
+    overflow-y: auto;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* Defina o fundo da página inteira, incluindo a área abaixo do footer */
+    background-color: #f0f0f0; /* Substitua pela cor de fundo desejada */
+   
+}
 
 body::before {
     content: "";
@@ -23,14 +33,13 @@ body::before {
 {
     margin: 0;
     padding: 0;
-    height: 100%;
     margin-left: auto;
     margin-right: auto;
     height: 100%; /* Garante que a div main tenha altura igual à altura do body */
     width: 100%;
     padding-bottom: 0;
+    position: relative;
 }
-
 /* ------------------- BARRA -------------------*/
 
 .num-porcentagem{
@@ -41,7 +50,7 @@ body::before {
 {
     margin-top: 14%;
     box-sizing: border-box;
-    width: 75%;
+    width: 60%;
     background-color: white;
     display: block;
     align-self: center;
@@ -63,13 +72,17 @@ body::before {
 }
 
 .progress{
-    padding-left: 20px;
+    padding-left: 0;
+    color: black;
+    margin-top: 10%;
+    position: fixed;
 }
 
 .barra {
     background-color: #364E65;
     height: 20px;
     border-radius: 10px;
+    display: flex;
 }
 
 
@@ -113,6 +126,10 @@ body::before {
 
 .autores{
     margin-bottom: 40px;
+}
+
+.infoAutor{
+    margin-bottom: 100px;
 }
 
 .infoAutor label{

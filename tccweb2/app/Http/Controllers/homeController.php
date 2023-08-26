@@ -7,14 +7,26 @@ use App\Models\gp2_projetos;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
+use Carbon\Carbon;
 
 class homeController extends Controller
 {
     //
     public function showProjects()
     {
-        $rows = gp2_projetos::orderBy('porcentagem', 'desc')
+        $projetos = gp2_projetos::orderBy('porcentagem', 'desc')
         ->get();
+
+        $rows = [];
+
+        foreach ($projetos as $projeto) {
+            $dataAtualizacao = $projeto->data_atualizacao;
+            $dataAtualizacao = Carbon::parse($dataAtualizacao);
+            $dataAtual = Carbon::now();
+            $diferencaDias = $dataAtual->diffInDays($dataAtualizacao);
+            $projeto->diferencaDias = $diferencaDias;
+            $rows[] = $projeto;
+        }
 
         return view('home', compact('rows'));
     }

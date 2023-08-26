@@ -7,16 +7,24 @@ html{
     flex-direction: column; /* Para estender o conteúdo */
 }
 
+body
+{
+    overflow-y: auto;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* Defina o fundo da página inteira, incluindo a área abaixo do footer */
+    background-color: #f0f0f0; /* Substitua pela cor de fundo desejada */
+   
+}
+
 body::before {
     content: "";
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    height: 100vh;
+    height: 100%;
     z-index: -1;
     background: linear-gradient(to bottom, #ffffff, #BBE1F3, #9EBAD6, #9EBAD6);
   }
@@ -25,12 +33,12 @@ body::before {
 {
     margin: 0;
     padding: 0;
-    height: 100%;
     margin-left: auto;
     margin-right: auto;
-    height: 200%; /* Garante que a div main tenha altura igual à altura do body */
+    height: 100%; /* Garante que a div main tenha altura igual à altura do body */
     width: 100%;
     padding-bottom: 0;
+    position: relative;
 }
 
 

@@ -15,6 +15,7 @@ body
     padding: 0;
     /* Defina o fundo da página inteira, incluindo a área abaixo do footer */
     background-color: #f0f0f0; /* Substitua pela cor de fundo desejada */
+    font-family: Helvetica;
    
 }
 
@@ -38,6 +39,20 @@ body::before {
     height: 100%; /* Garante que a div main tenha altura igual à altura do body */
     width: 100%;
     padding-bottom: 0;
+    position: relative;
+}
+.allall
+{
+    margin-top: 3%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    
+}
+.allall h1
+{
+    align-self: center;
 }
 
 .conteudo
@@ -47,14 +62,16 @@ body::before {
     border-radius: 14px;
     width: 898px;
     display: inline-flex;
+    position: relative;
 }
 
 .conteudo-texto
 {
     margin-top: 7px;
-    width: 80%;
+    width: 100%;
     display: block;
     align-self: center;
+    position: relative;
     text-align: center;
 }
 
@@ -62,6 +79,7 @@ body::before {
 {
     display: block;
     width: 80%;
+    position: relative;
 }
 
 .button
@@ -91,22 +109,34 @@ body::before {
     padding-left: 30px;
     padding: 14px;
     border-radius: 30px;
+    height: 230px;
 }
 
+.label-titulo{
+    align-self: center;
+}
 #img-user
 {
     align-self: center;
-    width: 15px;
-    padding-left: 10px;
-    padding-right: 8px;
+    width: 50px;
+    padding-left: 25px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 4px;
 }
 
+#margin-project{
+    margin-bottom: 90px;
+}
 .project
 {
-    margin-left: 30%;
+    position: relative;
     width: 900px;
+    max-width: 100%; /* Impede que a largura ultrapasse a largura do contêiner pai */
+    margin: 0 auto; /* Define margens automáticas nas laterais para centralizar horizontalmente */
     height: auto;
-    border-style: solid;
+    border: 1px white solid;
+    box-shadow: 2px 2px 30px #10273E;
     border-radius: 15px;
     background-image: linear-gradient(#8AB6D5, #BBE1F3);
 }
@@ -137,6 +167,7 @@ body::before {
     background: #10273E;
     border-radius: 18px;
     padding: 10px;
+    position: relative;
 }
 
 .progress{
