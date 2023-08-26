@@ -116,8 +116,6 @@ nav
 }
 
 .imagem-redonda {
-    width: 200px; /* Ajuste o tamanho conforme necessário */
-    height: 200px; /* Ajuste o tamanho conforme necessário */
     border-radius: 50%;
     object-fit: cover;
 }
