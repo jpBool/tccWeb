@@ -165,3 +165,80 @@ nav
     
     box-shadow: 0px 0px 30px rgb(255, 255, 255);
 }
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} 
+
+form
+{
+    /* display: grid;
+    place-items: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.userconfig{
+    display: flex;
+}
+
+.divLabel{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    width: 12.5rem;
+    font-size: 18px
+}
+
+.form_input{
+    padding-inline: 1rem;
+    padding-block: .5rem;
+    border-radius: .7rem;
+    width: max-content;
+    border: none;
+}
+
+.form_altera{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+input[type="date"]{
+    width: calc(100% - 32px); /* Padding e Icone não contam no 100%. (16px do icone e 16px do padding) NÃO MEXER NUNCA*/
+}
+
+.imgUsuario{
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.button{
+    padding: 4px 8px;
+    border-radius: .5rem;
+    border: none;
+    background-color: #0C283C;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: helvetica;
+}
+
+.divButton{
+    padding: 5px 10px;
+    border-radius: .7rem;
+    border: none;
+    background-color: #0C283C;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: helvetica;
+}
+
+#TextBio{
+    height: 100px;
+    
+}
