@@ -3,7 +3,7 @@
     <head>
     <link href="{{('assets/css/stylefiltrar.css')}}" rel="stylesheet">
     <meta charset="UTF-8">
-    <title>Sobre</title> 
+    <title>Pesquisar</title> 
     </head>
 
 <div class="header">
@@ -38,11 +38,9 @@
             <div class="filtro"><img class="filter" src="{{'assets/img_tcc/filtersearch.svg'}}"></img></div>
             <div class="textfiltro">Filtrar Pesquisa</div>
         </div>
-
     </div>
 
 <div>
-
 
     <div class="footer">
                 <img src="{{'assets/img_tcc/logoSensei.svg'}}" alt="img" class="imgfooter">

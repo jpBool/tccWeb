@@ -8,7 +8,7 @@ body, html{
     height: 110vh;
 }
 
-body{
+body{     
     display: flex;
     justify-content: space-between;
     align-items: center;
