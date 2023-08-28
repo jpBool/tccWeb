@@ -48,7 +48,7 @@
                 <div class="botoesfooter">
                 <a href="index.blade.php">Home</a>
                 <a href="sobre">Sobre nós</a>
-                <a href="pesquisar.html">Download</a>
+                <a href="teladownload">Download</a>
                 <p class="emailequipe">sensei.system7@gmail.com</p>
         </div>
   
