@@ -162,6 +162,35 @@ padding: 10px;
     font-size: 25px;
 }
 
+.quad{
+    background-color: #BBE1F3;
+    width: 600px;
+    height: 300px;
+    border-radius: 2rem;
+    visibility: hidden;
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+
+}
+
+.status{
+    display: flex;
+    gap: 10rem;
+}
+
+.escolher{
+    border-radius: 3px;
+    width: 40px;
+    height: 10px;
+    border: 1px solid #000;
+    background: #FFF;
+
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /*---------------------------------------*/
 .search-container { 
     text-align: center;
