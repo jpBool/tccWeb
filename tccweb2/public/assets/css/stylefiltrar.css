@@ -98,10 +98,8 @@ nav
 }
 
 #searchInput {
-    padding-left: 30px;
-    padding-right: 150px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    width: 400px;
+    height: 40px;
     border: none;
     border-radius: 15px; /* Deixa a barra redonda */
     outline: none;
@@ -135,7 +133,7 @@ nav
 }
 
 .filter{
-    width: 70px;
+    width: 50px;
     fill: black;
 }
 
@@ -146,8 +144,8 @@ nav
 }
 
 .filtrar{
-    width: 250px;
-    height: 100px;
+    width: 220px;
+    height: 80px;
     background-color: #FFFFFF;
     border-radius: 27px;
     display: flex;
@@ -163,6 +161,7 @@ padding: 10px;
 .textfiltro{
     font-size: 25px;
 }
+
 /*---------------------------------------*/
 .search-container { 
     text-align: center;

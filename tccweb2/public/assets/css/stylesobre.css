@@ -116,6 +116,8 @@ nav
 }
 
 .imagem-redonda {
+    height: auto;
+    width:200px;
     border-radius: 50%;
     object-fit: cover;
 }

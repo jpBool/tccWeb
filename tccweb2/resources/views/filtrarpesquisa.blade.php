@@ -3,6 +3,7 @@
     <head>
     <link href="{{('assets/css/stylefiltrar.css')}}" rel="stylesheet">
     <meta charset="UTF-8">
+    @vite(['resources/js/pesquisa.js'])
     <title>Pesquisar</title> 
     </head>
 
@@ -48,7 +49,7 @@
                 <div class="botoesfooter">
                 <a href="index.blade.php">Home</a>
                 <a href="sobre">Sobre nós</a>
-                <a href="pesquisar.html">Download</a>
+                <a href="teladownload">Download</a>
                 <p class="emailequipe">sensei.system7@gmail.com</p>
         </div>
   
