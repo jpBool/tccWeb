@@ -29,10 +29,15 @@
     <!-- body -->
     <main>
         <div class="fundo">
+            <div class="titulo">
+                <h2> Editar Perfil </h2>
+            </div>
             <div class="userconfig">  
-                <img src="{{'assets/img_tcc/renan.png'}}" alt="foto" class="imgUsuario" width="150px">  
-                <h3> Nome de Usuário </h3>
-                <button type="button" class="button">Alterar foto de perfil</button>
+                <img src="{{'assets/img_tcc/renan.png'}}" alt="foto" class="imgUsuario">      
+                <div>
+                    <h3> Nome de Usuário </h3>
+                    <button type="button" class="button">Alterar foto de perfil</button>
+                </div>
             </div>
 
             <form class="form_altera">
@@ -61,17 +66,17 @@
             
     <!-- footer -->
         
-        <div class="footer">
-            <img src="{{'assets/img_tcc/logoSensei.svg'}}" alt="img" class="imgfooter">
+    <div class="footer">
+        <img src="{{'assets/img_tcc/logoSensei.svg'}}" alt="img" class="imgfooter">
 
-            <div class="botoesfooter">
-                <a href="index.blade.php">Home</a>
-                <a href="sobre">Sobre nós</a>
-                <a href="pesquisar.html">Download</a>
-                <p class="emailequipe">sensei.system7@gmail.com</p>
-            </div>
-        </div>  
-    </body>
+        <div class="botoesfooter">
+            <a href="index.blade.php">Home</a>
+            <a href="sobre">Sobre nós</a>
+            <a href="pesquisar.html">Download</a>
+            <p class="emailequipe">sensei.system7@gmail.com</p>
+        </div>
+    </div>  
+</body>
 
     <script>
         document.addEventListener('scroll', () => {
