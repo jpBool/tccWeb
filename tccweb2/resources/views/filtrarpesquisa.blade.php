@@ -3,6 +3,7 @@
     <head>
     <link href="{{('assets/css/stylefiltrar.css')}}" rel="stylesheet">
     <meta charset="UTF-8">
+    @vite(['resources/js/pesquisa.js'])
     <title>Pesquisar</title> 
     </head>
 
