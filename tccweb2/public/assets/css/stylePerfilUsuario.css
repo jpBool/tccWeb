@@ -29,17 +29,25 @@ body::before {
     background: linear-gradient(to bottom, #ffffff, #BBE1F3, #9EBAD6, #9EBAD6);
   }
 
-.main
-{
-    margin: 0;
-    padding: 0;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100%; /* Garante que a div main tenha altura igual à altura do body */
-    width: 100%;
-    padding-bottom: 0;
+  .main
+  {
+      margin: 0;
+      padding: 0;
+      margin-left: auto;
+      margin-right: auto;
+      height: 100%; /* Garante que a div main tenha altura igual à altura do body */
+      width: 100%;
+      padding-bottom: 0;
+      position: relative;
+  }
+  .allall
+  {
+    margin-top: 3%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     position: relative;
-}
+  }
 
 
 #linha-perfil{
@@ -124,7 +132,7 @@ body::before {
     display: inline-flex;
     padding-left: 50px;
     margin-top: 200px;
-    margin-left: 22%;
+   
 }
 
 .linha-bio{
@@ -169,18 +177,21 @@ body::before {
 /*--------------------------------------------------*/
 .conteudo
 {
+    margin: 0;
+    padding: 0;
     border-radius: 14px;
     width: 898px;
-    height: 220px;
     display: inline-flex;
+    position: relative;
 }
 
 .conteudo-texto
 {
     margin-top: 7px;
-    width: 80%;
+    width: 100%;
     display: block;
     align-self: center;
+    position: relative;
     text-align: center;
 }
 
@@ -188,6 +199,7 @@ body::before {
 {
     display: block;
     width: 80%;
+    position: relative;
 }
 
 .button
@@ -217,49 +229,41 @@ body::before {
     padding-left: 30px;
     padding: 14px;
     border-radius: 30px;
+    height: 230px;
 }
 
+.label-titulo{
+    align-self: center;
+}
 #img-user
 {
     align-self: center;
-    width: 15px;
-    padding-left: 10px;
-    padding-right: 8px;
+    width: 50px;
+    padding-left: 25px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 4px;
 }
 
-.projects-perfil label{
-    font-size: 35px;
-    font-weight: 600;
-    margin-left: 14.5%;
+#margin-project{
+    margin-bottom: 90px;
+    
 }
-
-.projects-perfil{
-    background-color: white;
-    margin-top: 50px;
-    padding-top: 50px;
-    margin-left: 25%;
-    width: 1234px;
-    max-width: 1234px;
-    height: auto;
-    border-radius: 2%;
-    border: 1px solid black;
-    overflow: auto; 
-}
-
 .project
 {
-    margin-top: 50px;
-    margin-left: 170px;
-    width: 910px;
+    position: relative;
+    width: 900px;
+    max-width: 100%; /* Impede que a largura ultrapasse a largura do contêiner pai */
+    margin: 0 auto; /* Define margens automáticas nas laterais para centralizar horizontalmente */
     height: auto;
-    border-style: solid;
+    border: 1px white solid;
+    box-shadow: 2px 2px 30px #10273E;
     border-radius: 15px;
     background-image: linear-gradient(#8AB6D5, #BBE1F3);
 }
 
 .titulo
 {
-
     background-color: white;
     display: inline-flex;
     width: 100%;
@@ -270,11 +274,12 @@ body::before {
 #nome-autor
 {
     display: inline-flex;
-    font-weight: bold;
+    font-weight: bold
 }
 
 .num-porcentagem{
     padding-left: 10px;
+    color: white;
 }
 
 .barra-progress{
@@ -283,11 +288,12 @@ body::before {
     background: #10273E;
     border-radius: 18px;
     padding: 10px;
-    color: white;
+    position: relative;
 }
 
 .progress{
     padding-left: 5px;
+    color: white;
 }
 
  /* styles.css */
@@ -314,3 +320,24 @@ body::before {
     margin-left: 40px;
 }
 
+.projects-perfil {
+    flex: 1; /* Isso permite que a div cresça para ocupar o espaço vertical restante */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente o conteúdo */
+    align-items: center; /* Centraliza horizontalmente o conteúdo */
+    width: 100%;
+    
+}
+
+.BackProjects
+{
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: s0px 250px 40px 40px;
+}
