@@ -4,7 +4,7 @@ body {
     padding: 0;
     background: linear-gradient(to bottom, #ffffff, #BBE1F3, #9EBAD6, #9EBAD6);
     font-family: helvetica;
-    height:600px
+    height:750px;
 }
 /*------------------------------- header --------------------------------*/
 .header 
@@ -13,8 +13,7 @@ body {
     display: inline;
     margin-top: 0;
     margin-left:0;
-    font-family:  Helvetica;  
-    font-weight: bolder;
+    font-family:  Helvetica; 
 }
 
 nav
@@ -163,13 +162,18 @@ padding: 10px;
 }
 
 .quad{
+    margin-top: 50px;
     background-color: #BBE1F3;
-    width: 600px;
-    height: 300px;
+    width: 800px;
+    height: 355px;
     border-radius: 2rem;
     visibility: hidden;
-    border: 5px black;
+    font-size: 20px;
+    border-width: 2.5px; 
+    border-style: solid; 
+    border-color:  rgb(0, 0, 0);
 }
+
 
 #id{
     width: 5px;
@@ -179,6 +183,60 @@ padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.buttons{
+    background-color: #0C283C;
+    color: #fff;
+    padding: 1px 3x;
+    border-radius: 5px;
+    border: black;
+    color: white;
+    font-size: 15px;
+    font-family: Helvetica;
+    width: 230px;
+}
+
+.Porcentagem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+}
+
+.datacon{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 15px;
+}
+
+.datatt{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 13px;
+}
+
+.dataprev{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 5px;
+}
+
+
+.botoesform{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 15px;
+}
+
+.status{
+    display: flex;
+    justify-content: center;
+    margin-top: 13px;
 }
 /*---------------------------------------*/
 .search-container { 
