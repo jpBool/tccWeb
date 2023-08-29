@@ -339,5 +339,6 @@ body::before {
     height: 100%;
     border-radius: 10px;
     border: 1px solid black;
-    padding: s0px 250px 40px 40px;
+    padding: 20px 250px 40px 40px;
+    margin-left: 10px;
 }

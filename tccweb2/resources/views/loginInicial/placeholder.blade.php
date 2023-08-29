@@ -56,7 +56,9 @@
                     <button type="button" class="button-perfil">Editar Perfil</button>
                 </div>
             </div>
-            
+            <br>
+            <br>
+            <br>
             <div class="projects-perfil">
                 <div class="BackProjects">
                     <label>Seus Projetos: </label> <br><br><br>
