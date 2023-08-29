@@ -44,8 +44,26 @@
 <div>
             <div class="center">
                 <div class="quad">
-                    <div class="status">
-                    <p>Status do Projeto: </p> <div class="escolher">Escolher</div>
+        <form>
+                <label for="status">Status de Projeto:</label>
+                <select id="status" name="status">
+                    <option value="em-andamento">Em Andamento</option>
+                    <option value="concluido">Concluído</option>
+                </select>
+                <br>
+                <label for="porcentagem">Porcentagem de Conclusão:</label>
+                <input type="number" id="porcentagem" name="porcentagem" min="0" max="100">
+                <br>
+                <label for="porcentagem">Porcentagem de Conclusão:</label>
+                <input type="number" id="porcentagem" name="porcentagem" min="0" max="100">
+                <br>
+                <label for="porcentagem">Porcentagem de Conclusão:</label>
+                <input type="number" id="porcentagem" name="porcentagem" min="0" max="100">
+                <br>
+
+
+                <input type="submit" value="Enviar">
+        </form>
                 </div>
                 </div>
             <div>
