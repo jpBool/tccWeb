@@ -117,6 +117,7 @@ nav
 
 .textfooter
 {
+    
     display: flex;
     margin-left: 10%;
     margin-right: 25px;
@@ -130,4 +131,10 @@ nav
     margin-left: 50px;
     margin-right: 25px;
     margin-top: 25px;
+}
+
+#navButton li 
+{
+    color:black;
+    padding: 10px;
 }

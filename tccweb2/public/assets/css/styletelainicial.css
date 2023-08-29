@@ -340,11 +340,7 @@ nav
 }
 
 .textoimagem{
-    text-align: left;
-    padding-inline: 70px;
-    width: 100%;
-    flex-direction:column;
-    border-left: solid 5px #001270;
+    
 }
 
 .ultimotexto{

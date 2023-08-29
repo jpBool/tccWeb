@@ -32,8 +32,8 @@
             <div class="fundo">
 
                 <div class="titulo">         
-                    <h1> Create Account </h1>
-                    <p> Join us to create amazing projects </p>
+                    <h1> Cadastro </h1>
+                    <p> Entre conosco para criar projetos incríveis </p>
                 </div>
 
                 <form class="form_cadastro">

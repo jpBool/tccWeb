@@ -81,7 +81,7 @@
   
 </body>
 
-<script>
+    <script>
         document.addEventListener('scroll', () => {
             let scrollVertical = window.pageYOffset;
             const header = document.getElementById('navbar');

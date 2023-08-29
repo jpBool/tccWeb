@@ -52,6 +52,9 @@ Route::get('/sobre', function () {
 Route::get('/telainicial', function () {
     return view('telainicial');
 });
+Route::get('/telainicialdark', function () {
+    return view('telainicialDark');
+}); 
 
 Route::get('/teladownload', function () {
     return view('teladownload');
@@ -67,4 +70,8 @@ Route::get('/edicaoperfil', function () {
 
 Route::get('/filtrarpesquisa', function () {
     return view('filtrarpesquisa');
+});
+
+Route::get('/edicaocadastro', function () {
+    return view('edicaocadastro');
 });
