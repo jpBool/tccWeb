@@ -68,3 +68,7 @@ Route::get('/edicaoperfil', function () {
 Route::get('/filtrarpesquisa', function () {
     return view('filtrarpesquisa');
 });
+
+Route::get('/edicaocadastro', function () {
+    return view('edicaocadastro');
+});

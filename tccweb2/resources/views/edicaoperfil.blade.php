@@ -33,7 +33,7 @@
                 <h2> Editar Perfil </h2>
             </div>
             <div class="userconfig">  
-                <img src="{{'assets/img_tcc/renan.png'}}" alt="foto" class="imgUsuario">      
+                <img src="{{'assets/img_tcc/renan.svg'}}" alt="foto" class="imgUsuario">      
                 <div>
                     <h3> Nome de Usuário </h3>
                     <button type="button" class="button">Alterar foto de perfil</button>
