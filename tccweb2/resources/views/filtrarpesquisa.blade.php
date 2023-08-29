@@ -42,6 +42,15 @@
     </div>
 
 <div>
+            <div class="center">
+                <div class="quad">
+                    <div class="status">
+                    <p>Status do Projeto: </p> <div class="escolher">Escolher</div>
+                </div>
+                </div>
+            <div>
+
+       
 
     <div class="footer">
                 <img src="{{'assets/img_tcc/logoSensei.svg'}}" alt="img" class="imgfooter">
