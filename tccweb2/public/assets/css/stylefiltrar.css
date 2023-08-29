@@ -168,22 +168,11 @@ padding: 10px;
     height: 300px;
     border-radius: 2rem;
     visibility: hidden;
-    box-shadow: 0px 0px 10px rgb(255, 255, 255);
-
+    border: 5px black;
 }
 
-.status{
-    display: flex;
-    gap: 10rem;
-}
-
-.escolher{
-    border-radius: 3px;
-    width: 40px;
-    height: 10px;
-    border: 1px solid #000;
-    background: #FFF;
-
+#id{
+    width: 5px;
 }
 
 .center{
