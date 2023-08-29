@@ -61,7 +61,8 @@
             <br>
             <div class="projects-perfil">
                 <div class="BackProjects">
-                    <label>Seus Projetos: </label> <br><br><br>
+                    <br><br>
+                    <h1 id="piupiu">Seus Projetos: </h1> <br><br><br>
                     @foreach($rows as $row)
                         <div id="margin-project">
                             <div class='project'>
@@ -98,7 +99,7 @@
                             </div>
                         </div>
                     @endforeach 
-                    <a href="{{route('homeInicial')}}">Home</a>
+                
                 </div>
             </div>
         </div>

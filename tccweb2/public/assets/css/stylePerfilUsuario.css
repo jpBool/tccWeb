@@ -15,7 +15,7 @@ body
     padding: 0;
     /* Defina o fundo da página inteira, incluindo a área abaixo do footer */
     background-color: #f0f0f0; /* Substitua pela cor de fundo desejada */
-   
+    font-family: Helvetica;
 }
 
 body::before {
@@ -49,6 +49,9 @@ body::before {
     position: relative;
   }
 
+.piupiu{
+    font-weight: 600;
+}
 
 #linha-perfil{
     border: 2px solid #000;
@@ -337,8 +340,11 @@ body::before {
     margin-left: 20px;
     margin-right: 10px;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 30px;
     border: 1px solid black;
-    padding: 20px 250px 40px 40px;
-    margin-left: 10px;
+    padding-left: 140px;
+    padding-right: 190px;
+    margin-left: 60px;
+    margin-bottom: 400px;
+    
 }
