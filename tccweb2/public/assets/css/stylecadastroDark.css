@@ -1,0 +1,250 @@
+body, html{
+    background: #364E65;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    width:100%;
+    font-family: Helvetica;
+    height: 120vh;
+}
+
+body{     
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+main{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*---------header-----------*/
+.header 
+{
+    position: relative;
+    width: 100%;
+    display: inline;
+    margin-top: 0;
+    margin-left:0;
+    font-family:  Helvetica;  
+    font-weight: bolder;
+    z-index: 99;
+}
+
+nav
+{
+    width: 100%;
+    position: relative;
+}
+
+.header nav ul 
+{
+    list-style-type: none; /*define o icone marcador ou check nos itens da lista*/
+    margin: 0;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    
+    background-color: #10273E;
+}
+
+.imglogo
+{
+    float: left;
+    width: 200px;
+    height: auto; /* Altura automática (proporcional) */
+}
+
+.header nav ul li 
+{
+    display: inline;
+    margin-right: 3%;
+}
+
+.header nav ul li a 
+{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.imgperfil{
+    width: 30px;
+}
+
+.imgconfg{
+    width: 25px;
+}
+
+.navIcon{
+    display: grid;
+    height: auto;
+    margin-left: 30%;
+    margin-right: 20px;
+    gap: 2rem;
+    grid-template-columns: auto auto;
+}
+
+.navButtom{
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+
+/*-------------------------------footer--------------------------------*/
+.botoesfooter
+{
+    display: inline;
+    margin-top: 15px;
+    margin-left: 30%;
+    text-align: center;
+    flex: 1 50px;
+}
+
+.botoesfooter a
+{
+    color: #ffffff;
+    text-decoration: none;
+    padding-right: 10%;
+    font-size:16.7px;
+}
+
+.emailequipe{
+    font-size: 16.7px;
+    text-align: right;
+    color: #ffffff;
+    margin-right: 52%;
+    margin-top: 27px;
+}
+
+.footer 
+{
+    background-color: rgb(0, 0, 0);
+    padding-bottom: 2%;
+    padding-top: 2%;
+    text-align: left;
+    display: flex;
+    width: 100%;
+    font-family: Helvetica;
+}
+
+.textfooter
+{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 25px;
+}
+
+.imgfooter
+{
+    width: 180px;
+    height: 50px;
+    margin-left: 50px;
+    margin-right: 25px;
+    margin-top: 25px;
+}
+
+/*------------------------------Body-------------------------------*/
+.fundo{
+    background-color: #6D89A0;
+    width: 600px;
+    height: 700px;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 30px rgb(255, 255, 255); 
+    color: #ffffff;
+}
+
+
+.titulo h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.titulo p {
+    text-align: center;
+    font-size: 20px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form
+{
+    /* display: grid;
+    place-items: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.divLabel{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    width: 12.5rem;
+    font-size: 18px
+}
+
+.form_input{
+    padding-inline: 1rem;
+    padding-block: .5rem;
+    border-radius: .7rem;
+    width: max-content;
+    border: none;
+}
+
+#datanasc {
+    text-align: left;
+    /* display: flex; */
+}
+
+.form_cadastro{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+input[type="date"]{
+    width: calc(100% - 32px); /* Padding e Icone não contam no 100%. (16px do icone e 16px do padding) NÃO MEXER NUNCA*/
+}
+
+.divButton{
+    padding: 5px 10px;
+    border-radius: .5rem;
+    border: none;
+    background-color: #0C283C;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: helvetica;
+}
+
+#loginLink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+#rememberCheckbox[type="checkbox"]:checked {
+    background-color: red !important;
+}

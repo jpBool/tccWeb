@@ -52,7 +52,7 @@ Route::get('/sobre', function () {
 Route::get('/telainicial', function () {
     return view('telainicial');
 });
-Route::get('/telainicialdark', function () {
+Route::get('/telainicialDark', function () {
     return view('telainicialDark');
 }); 
 
@@ -78,4 +78,12 @@ Route::get('/edicaocadastro', function () {
 
 Route::get('/teladownloadDark', function () {
     return view('teladownloadDark');
+});
+
+Route::get('/cadastroDark', function () {
+    return view('cadastroDark');
+});
+
+Route::get('/sobreDark', function () {
+    return view('sobreDark');
 });
