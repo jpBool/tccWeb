@@ -75,3 +75,7 @@ Route::get('/filtrarpesquisa', function () {
 Route::get('/edicaocadastro', function () {
     return view('edicaocadastro');
 });
+
+Route::get('/teladownloadDark', function () {
+    return view('teladownloadDark');
+});
