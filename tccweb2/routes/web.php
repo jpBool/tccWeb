@@ -52,7 +52,7 @@ Route::get('/sobre', function () {
 Route::get('/telainicial', function () {
     return view('telainicial');
 });
-Route::get('/telainicialdark', function () {
+Route::get('/telainicialDark', function () {
     return view('telainicialDark');
 }); 
 
@@ -76,5 +76,19 @@ Route::get('/edicaocadastro', function () {
     return view('edicaocadastro');
 });
 
+
 Route::get('/pesquisar', 'App\Http\Controllers\UsuariostccController@pesquisar'); // Rota para a página de pesquisa
 Route::post('/pesquisar', 'App\Http\Controllers\UsuariostccController@processarPesquisa'); // Rota para processar a pesquisa
+
+Route::get('/teladownloadDark', function () {
+    return view('teladownloadDark');
+});
+
+Route::get('/cadastroDark', function () {
+    return view('cadastroDark');
+});
+
+Route::get('/sobreDark', function () {
+    return view('sobreDark');
+});
+
