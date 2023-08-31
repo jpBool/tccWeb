@@ -41,8 +41,19 @@
         </div>
     </div>
 
-<div>
-            <div class="center">
+    <div>
+        <div class="pessoasProjetos"> 
+                <form action="{{route('projetoIsolado')}}">
+                    <input type="hidden" name="id_projeto" value="">
+                    <input type="submit" value="Pessoas" class="button" />
+                </form>
+
+                <form action="{{route('projetoIsolado')}}">
+                    <input type="hidden" name="id_projeto" value="">
+                    <input type="submit" value="Projetos" class="button" />
+                </form>
+        </div>
+            <div class="center">  
                 <div class="quad">
                 <form>
                     <div class="status">
@@ -51,35 +62,40 @@
                             <option value="em-andamento">Em Andamento</option>
                             <option value="concluido">Concluído</option>
                         </select>
-</div>
-                        
-                        <div class="Porcentagem"><p>Porcentagem</p>
-                            <label for="porcentagem">Maior que:</label>
+                    </div>
+                    
+                        <div class="Porcentagem">
+                            <p id="lado0">Porcentagem:</p>
+                            <label for="porcentagem" id="lado" >Maior que:</label>
                             <input type="number" id="porcentagem" name="porcentagem" min="0" max="100">
-                            <label for="porcentagem">Menor que:</label>
-                            <input type="number" id="porcentagem" name="porcentagem" min="0" max="100">
-                        </div>
-                        
-                        <div class="datacon"><p>Data de Conclusão:</p>
-                            <label for="porcentagem">Maior que:</label>
-                            <input type="number" id="porcentagem" name="porcentagem" min="0" max="100">
-                            <label for="porcentagem">Menor que:</label>
+                            <label for="porcentagem" id="lado2" >Menor que:</label>
                             <input type="number" id="porcentagem" name="porcentagem" min="0" max="100">
                         </div>
                         
-                        <div class="datatt"><p>Data de Atualização:</p>
-                            <label for="porcentagem">Maior que:</label>
+                        <div class="datacon">
+                            <p id="lado0">Data de Conclusão:</p>
+                            <label for="porcentagem" id="lado" >Maior que:</label>
                             <input type="number" id="porcentagem" name="porcentagem" min="0" max="100">
-                            <label for="porcentagem">Menor que:</label>
+                            <label for="porcentagem" id="lado2" >Menor que:</label>
                             <input type="number" id="porcentagem" name="porcentagem" min="0" max="100">
                         </div>
                         
-                        <div class="dataprev"><p>Previsão de Conclusão:</p>
-                            <label for="porcentagem">Maior que:</label>
+                        <div class="datatt">
+                            <p id="lado0">Data de Atualização:</p>
+                            <label for="porcentagem" id="lado" >Maior que:</label>
                             <input type="number" id="porcentagem" name="porcentagem" min="0" max="100">
-                            <label for="porcentagem">Menor que:</label>
+                            <label for="porcentagem" id="lado2" >Menor que:</label>
                             <input type="number" id="porcentagem" name="porcentagem" min="0" max="100">
                         </div>
+                        
+                        <div class="dataprev">
+                            <p id="lado0">Previsão de Conclusão:</p>
+                            <label for="porcentagem" id="lado" >Maior que:</label>
+                            <input type="number" id="porcentagem" name="porcentagem" min="0" max="100">
+                            <label for="porcentagem" id="lado2" >Menor que:</label>
+                            <input type="number" id="porcentagem" name="porcentagem" min="0" max="100">
+                        </div>
+                    
 
                         <div class="botoesform">
                         <input class="buttons" type="reset" value="LIMPAR FILTROS">
@@ -87,9 +103,16 @@
                         <input class="buttons" type="submit" value="APLICAR FILTROS">
                         </div>
                 </form>
+                
                 </div>
-                </div>
+                
+            </div>
+
+
+                
         <div>
+
+        
 
        
 

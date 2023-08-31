@@ -64,7 +64,7 @@
                     <br><br>
                     <h1 id="piupiu">Seus Projetos: </h1> <br><br><br>
                     @foreach($rows as $row)
-                        <div id="margin-project">
+                        <div id="margin-project">   
                             <div class='project'>
                                 <div class="titulo">
                                     <img src="{{'assets/img_tcc/usuario.png'}}" alt="img" id="img-user">

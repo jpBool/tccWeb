@@ -1,11 +1,34 @@
-body {
-    font-family:  Helvetica;
+html{
+    height: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 0;
+     /* 100% da altura da tela */
+    display: flex;
+    flex-direction: column; /* Para estender o conteúdo */
+}
+
+body
+{
+    overflow-y: auto;
+    height: 100%;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #ffffff, #BBE1F3, #9EBAD6, #9EBAD6);
-    font-family: helvetica;
-    height:750px;
+    /* Defina o fundo da página inteira, incluindo a área abaixo do footer */
+    background-color: #f0f0f0; /* Substitua pela cor de fundo desejada */
+    font-family: Helvetica;
+            
 }
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(to bottom, #ffffff, #BBE1F3, #9EBAD6, #9EBAD6);
+  }
 /*------------------------------- header --------------------------------*/
 .header 
 {
@@ -94,6 +117,8 @@ nav
     display: flex;
     align-items:flex-start;
     justify-content: left;
+    margin-top: 20px;
+    width: 800px;
 }
 
 #searchInput {
@@ -139,7 +164,7 @@ nav
 .separador{
     display: flex;
     justify-content: center;
-    gap:30%;
+    gap:5%;
 }
 
 .filtrar{
@@ -183,48 +208,77 @@ padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+.pessoasProjetos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    max-width: 100%;
+    gap: 2%;
+    margin-right: 930px;
 }
 
 .buttons{
     background-color: #0C283C;
     color: #fff;
     padding: 1px 3x;
-    border-radius: 5px;
+    border-radius: 10px;
     border: black;
     color: white;
     font-size: 15px;
     font-family: Helvetica;
     width: 230px;
+    height: 30px;
 }
 
 .Porcentagem{
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 28px;
+    justify-content: left;
+    margin-left: 50px;
+    
 }
 
 .datacon{
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     display: flex;
-    gap: 15px;
+    margin-left: 50px;
+    
 }
 
 .datatt{
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     display: flex;
-    gap: 13px;
+    margin-left: 50px;
+
 }
 
 .dataprev{
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     display: flex;
-    gap: 5px;
-}
+    margin-left: 50px;
 
+}
+#lado0
+{
+    width: 130px;
+    margin-right: 20px;
+}
+#lado
+{
+    width: 120px;
+   
+}
+#lado2
+{
+    width: 130px;
+    margin-left: 70px;
+}
 
 .botoesform{
     display: flex;
@@ -238,12 +292,23 @@ padding: 10px;
     justify-content: center;
     margin-top: 13px;
 }
+
+#status
+{
+    margin-left: 10px;
+}
 /*---------------------------------------*/
 .search-container { 
     text-align: center;
 }
 
+.itens-lado{
+    justify-content: left;
+}
+
 #searchInput {
+    padding-left: 20px;
+    width: 80%;
     border: none;
     border-radius: 25px;
     outline: none;

@@ -76,4 +76,24 @@ class UsuariostccController extends Controller
         $rows = gp2_usuarios::all();
         return view('buscar', compact('rows'));
     }
+
+
+    public function pesquisar()
+    {
+        return view('pesquisar'); // Crie uma view chamada 'pesquisar' para exibir o formulário de pesquisa.
+    }
+
+    public function processarPesquisa(Request $request)
+    {
+        $termoPesquisa = $request->input('termo_pesquisa');
+
+        // Execute a pesquisa no banco de dados usando o termo de pesquisa.
+        $resultados = gp2_usuarios::all();
+        $resultados = gp2_usuarios::whereRaw('LOWER(nome) ILIKE ?', ["%$termoPesquisa%"])
+            ->orWhereRaw('LOWER(email) ILIKE ?', ["%$termoPesquisa%"])
+            ->get();
+
+        return view('resultados', ['resultados' => $resultados]);
+    }
+
 }
