@@ -3,7 +3,7 @@
 }
 
 body{
-    background: linear-gradient(to bottom, #ffffff, #BBE1F3, #9EBAD6, #9EBAD6);
+    background: linear-gradient(to bottom, #364E65, #10273E);
     margin: 0;
     padding: 0;
     width:100%;
@@ -91,7 +91,7 @@ nav
     
 }
 
-/*-------------------------------footer--------------------------------*/
+/*-------------------------------footer--------------------------------COMECEI A PARTIR DAQUI*/
 .botoesfooter
 {
     display: inline;
@@ -103,7 +103,7 @@ nav
 
 .botoesfooter a
 {
-    color: #10273E;
+    color: white;
     text-decoration: none;
     padding-right: 10%;
     font-size:16.7px;
@@ -112,14 +112,14 @@ nav
 .emailequipe{
     font-size: 16.7px;
     text-align: right;
-    color: #10273E;
+    color: white;
     margin-right: 52%;
     margin-top: 27px;
 }
 
 .footer 
 {
-    background-color: white;
+    background-color: black;
     padding-bottom: 2%;
     padding-top: 2%;
     text-align: left;
@@ -169,15 +169,15 @@ nav
 
 .button
 {
-    background-color: #0C283C;
-    color: #fff;
+    background-color: white;
+    color: black;
     padding: 10px 20px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
     border-radius: 15px;
-    border: black;
-    color: white;
+    border: white;
+    color: black;
     font-size: 20px;
     font-family: Helvetica;
     width: max-content;
@@ -186,15 +186,15 @@ nav
 
 .button1
 {
-    background-color: #0C283C;
-    color: #fff;
+    background-color: white;
+    color: black;
     padding: 10px 20px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
     border-radius: 15px;
-    border: black;
-    color: white;
+    border: white;
+    color: black;
     font-size: 20px;
     font-family: Helvetica;
     width: max-content;
@@ -203,15 +203,15 @@ nav
 
 .button2
 {
-    background-color: #0C283C;
-    color: #fff;
+    background-color: #AAD2E5;
+    color: black;
     padding: 10px 20px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
     border-radius: 15px;
-    border: black;
-    color: white;
+    border: #AAD2E5;
+    color: black;
     font-size: 20px;
     font-family: Helvetica;
     width: max-content;
@@ -230,7 +230,7 @@ nav
     padding-inline: 200px;
     width: 100%;
     flex-direction:column;
-    border-left: solid 6px #001270;
+    border-left: solid 6px #BBE1F3;
 }
 
 .espaco{
@@ -344,7 +344,7 @@ nav
     padding-inline: 70px;
     width: 100%;
     flex-direction:column;
-    border-left: solid 5px #001270;
+    border-left: solid 5px #BBE1F3;
 }
 
 .ultimotexto{

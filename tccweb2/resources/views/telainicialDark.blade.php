@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head> 
-    <link href="{{('assets/css/styletelainicial.css')}}" rel="stylesheet">
+    <link href="{{('assets/css/styletelainicialDark.css')}}" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Home</title>
     </head>
