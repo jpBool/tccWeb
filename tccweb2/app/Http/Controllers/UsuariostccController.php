@@ -28,38 +28,30 @@ class UsuariostccController extends Controller
        
     }
     public function entrar(Request $req)
-    {
-        $dados = $req->all();
-        //$email = Input::get('email');
-        //$senha = Input::get('senha');
-        $email = $dados['email'];
-        $senha = $dados['senha'];
+{
+    $dados = $req->all();
+    $email = $dados['email'];
+    $senha = $dados['senha'];
 
-        $user = gp2_usuarios::where('email', $email) -> first();
-        
-        //$senha = gp2_usuarios::where('senha', $senha) -> first();
+    $user = gp2_usuarios::where('email', $email)->first();
 
-        
-        //$senhaI = Hash::make(Request::input('senha'));
-        if($user)
-        { // redireciona para a home mas agora logado
-            
-            if($user->senha == $senha)
-            {
-                $rows = gp2_projetos::where('id_criador', $user->id_usuario)
+    if ($user) {
+        // Verifique se a senha fornecida pelo usuário corresponde à senha criptografada no banco de dados
+        if (password_verify($senha, $user->senha)) {
+            $rows = gp2_projetos::where('id_criador', $user->id_usuario)
                 ->orderBy('porcentagem', 'desc')
                 ->get();
-                
-                return view('loginInicial.placeholder', compact('user', 'rows'));
-            }
-            return redirect()->route('loginInicial.index');
-            //return view('loginInicial.placeholder');
-        }   
-        else 
-        { // pede usuario e senha novamente
-            return redirect()->route('loginInicial.index');
+
+            return view('loginInicial.placeholder', compact('user', 'rows'));
         }
+
+        // Senha incorreta, redirecione de volta para a página de login
+        return redirect()->route('loginInicial.index');
+    } else {
+        // Usuário não encontrado, redirecione de volta para a página de login
+        return redirect()->route('loginInicial.index');
     }
+}
     public function sair()
     {
         Auth::logout();
@@ -94,6 +86,30 @@ class UsuariostccController extends Controller
             ->get();
 
         return view('resultados', ['resultados' => $resultados]);
+    }
+
+
+    public function cadastrar(Request $request)
+    {
+        // Valide os dados do formulário de cadastro
+        $request->validate([
+            'nome' => 'required|string',
+            'email' => 'required|email|unique:gp2_usuarios',
+            'datanasc' => 'required|date',
+            'senha' => 'required|min:6',
+        ]);
+
+        // Crie um novo usuário
+        gp2_usuarios::create([
+            'nome' => $request->input('nome'),
+            'email' => $request->input('email'),
+            'datanasc' => $request->input('datanasc'),
+            'senha' => bcrypt($request->input('senha')),
+            // Outros campos do usuário que você deseja salvar
+        ]);
+
+        // Redirecione para a página de login ou para onde desejar após o cadastro
+        return view('loginInicial.login');// ou outra rota de sua escolha
     }
 
 }

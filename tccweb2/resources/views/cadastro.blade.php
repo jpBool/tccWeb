@@ -36,7 +36,8 @@
                     <p> Entre conosco para criar projetos incríveis </p>
                 </div>
 
-                <form class="form_cadastro">
+                <form class="form_cadastro" method="POST" action="{{ route('cadastro.store') }}">
+                    @csrf <!-- Adicione o token CSRF para proteção contra ataques de falsificação de solicitação entre sites -->
                     <div class="divLabel">
                         <label for="nome">Nome:</label>
                         <input class="form_input" type="text" id="nome" name="nome" placeholder="nome">
@@ -47,7 +48,7 @@
                     </div>
                     <div class="divLabel">
                         <label for="datanasc">Data de nascimento:</label>
-                        <input class="form_input" type="date" id="datanasc" style="width:" name="datanasc">
+                        <input class="form_input" type="date" id="datanasc" name="datanasc">
                     </div>
                     <div class="divLabel">
                         <label for="senha">Senha:</label>
@@ -55,7 +56,7 @@
                     </div>
 
                     <label> <input type="checkbox" id="rememberCheckbox"> Lembrar </label>
-                
+
                     <button class="divButton" type="submit">Cadastrar</button>
                 </form>
 
