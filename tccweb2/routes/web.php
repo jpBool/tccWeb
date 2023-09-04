@@ -70,14 +70,18 @@ Route::get('/edicaoperfil', function () {
 
 Route::get('/filtrarpesquisa', function () {
     return view('filtrarpesquisa');
-});
+})->name('filtrarpesquisa');
+
+Route::get('pesquisausuario', function () {
+    return view('pesquisaUsuarios');
+})->name('pesquisausuario');
 
 Route::get('/edicaocadastro', function () {
     return view('edicaocadastro');
 });
 
 
-Route::get('/pesquisar', 'App\Http\Controllers\UsuariostccController@pesquisar'); // Rota para a página de pesquisa
+Route::get('/pesquisa', 'App\Http\Controllers\UsuariostccController@pesquisar'); // Rota para a página de pesquisa
 Route::post('/pesquisar', 'App\Http\Controllers\UsuariostccController@processarPesquisa'); // Rota para processar a pesquisa
 
 Route::get('/teladownloadDark', function () {

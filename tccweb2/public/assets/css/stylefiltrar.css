@@ -108,6 +108,48 @@ nav
   
   /*---------------------------------------------------------------*/
 
+  .button
+{
+    margin-top: 7px;
+    min-width: 100px;
+    height: 30px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0; /*Quanto maior o valor, mais fica na camada de frente quando há sobreposiçao de objetos*/
+    background: black;
+    overflow: hidden;
+    border: black;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.button2
+{
+    margin-top: 7px;
+    min-width: 100px;
+    height: 30px;
+    color: #030303;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0; /*Quanto maior o valor, mais fica na camada de frente quando há sobreposiçao de objetos*/
+    background: rgb(255, 255, 255);
+    overflow: hidden;
+    border: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+
 .titulo{
   text-align:left;
 }
@@ -165,6 +207,7 @@ nav
     display: flex;
     justify-content: center;
     gap:5%;
+    margin-top: 8%;
 }
 
 .filtrar{

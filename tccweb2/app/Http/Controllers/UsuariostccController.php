@@ -78,13 +78,12 @@ class UsuariostccController extends Controller
     public function processarPesquisa(Request $request)
     {
         $termoPesquisa = $request->input('termo_pesquisa');
-
+    
         // Execute a pesquisa no banco de dados usando o termo de pesquisa.
-        $resultados = gp2_usuarios::all();
         $resultados = gp2_usuarios::whereRaw('LOWER(nome) ILIKE ?', ["%$termoPesquisa%"])
             ->orWhereRaw('LOWER(email) ILIKE ?', ["%$termoPesquisa%"])
             ->get();
-
+    
         return view('resultados', ['resultados' => $resultados]);
     }
 

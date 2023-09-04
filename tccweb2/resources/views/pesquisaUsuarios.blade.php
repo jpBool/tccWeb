@@ -39,11 +39,7 @@
                 </form>
     </div>
             
-    @foreach($resultados as $row)
-    {{ $row->nome }}<br>
-    {{ $row->email }}<br>
-    <br>
-    @endforeach
+
 
                 
     
