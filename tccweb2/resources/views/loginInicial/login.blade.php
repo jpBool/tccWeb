@@ -15,21 +15,20 @@
             <div class="card-left">
                 <h1>Hello!</h1>
                 <h3>Sign in to your account</h3>
-                <form method="post" action="{{route('loginInicial.logar')}}">
-                    {{csrf_field() }}
-                    <div class="formEmail">
-                        <label for="email">Email</label>
-                        <input type="text" name="email" placeholder="Email" id="email">
-                    </div> 
-                    <br>
-                    <div class="formSenha">
-                        <label for="senha">Senha</label>
-                        <input type="password" name="senha" placeholder="Senha" id="senha">
-                        <!--<input type="checkbox" name="checkbox" id="checkboz">-->
+                <form method="POST" action="{{ route('login') }}">
+                    @csrf
+                    <div class="form-group">
+                        <label for="email">E-Mail</label>
+                        <input id="email" type="email" name="email" value="{{ old('email') }}" required autofocus>
                     </div>
-                    <br>
-                        <input type="submit" value="entrar" class="botaoLogin">
-                <form>
+                    <div class="form-group">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Login</button>
+                    </div>
+                </form>
             </div>
             <div class="card-right">
                 <h1>Bem vindo!</h1>

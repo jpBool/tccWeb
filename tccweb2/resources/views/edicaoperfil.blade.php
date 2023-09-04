@@ -40,21 +40,24 @@
                 </div>
             </div>
 
-            <form class="form_altera">
+            <form class="form_altera" method="POST" action="{{ route('perfil.atualizar') }}">
+                @csrf
 
                 <div class="divLabel">
                     <label for="nome">Nome:</label>
-                    <input class="form_input" type="text" id="nome" name="nome" placeholder="nome">
+                    <input class="form_input" type="text" id="nome" name="nome" placeholder="Nome" value="{{ $usuario->nome }}">
                 </div>
+
                 <div class="divLabel">
                     <label for="TextNat">Naturalidade:</label>
-                    <input class="form_input" type="text" id="TextNat" name="TextNat" placeholder="naturalidade">
+                    <input class="form_input" type="text" id="TextNat" name="TextNat" placeholder="Naturalidade" value="{{ $usuario->naturalidade }}">
                 </div>
+
                 <div class="divLabel">
                     <label for="TextBio">Biografia:</label>
-                    <input class="form_input" type="text" id="TextBio" name="TextBio" placeholder="biografia">
+                    <textarea class="form_input" id="TextBio" name="TextBio" placeholder="Biografia">{{ $usuario->biografia }}</textarea>
                 </div>
-            
+
                 <button class="divButton" type="submit">Salvar alterações</button>
             </form>
         </div>

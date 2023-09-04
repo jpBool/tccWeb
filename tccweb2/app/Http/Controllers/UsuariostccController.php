@@ -8,10 +8,45 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use App\Models\gp2_projetos;
+use App\Http\Controllers\AuthenticatesUsers;
 //use App\usuariostcc;
 
 class UsuariostccController extends Controller
 {
+
+    
+
+    protected $redirectTo = '/home'; // Redirecionar após o login bem-sucedido
+
+    public function __construct()
+    {
+        $this->middleware('guest')->except('logout');
+    }
+
+    public function showLoginForm()
+    {
+        return view('loginInicial.login'); // Substitua 'sua.visao.de.login' pelo caminho correto da sua visão de login
+    }
+
+
+    public function login(Request $request)
+{
+    $credentials = $request->only('email', 'password');
+
+    if (Auth::attempt($credentials)) {
+        // Autenticação bem-sucedida
+        $user = Auth::user(); // Obtenha o usuário autenticado
+
+        $rows = gp2_projetos::where('id_criador', $user->id_usuario)
+            ->orderBy('porcentagem', 'desc')
+            ->get();
+
+        return view('loginInicial.placeholder', compact('user', 'rows'));
+    }
+
+    // Autenticação falhou, redirecione de volta para a página de login
+    return redirect()->back()->withInput()->withErrors(['email' => 'Credenciais inválidas']);
+}
     
     //public function login(Request $request)
     public function enterplaceholder()
@@ -23,35 +58,46 @@ class UsuariostccController extends Controller
         return view('loginInicial.login');
     }
 
+    protected function attemptLogin(Request $request)
+    {
+        $credentials = $request->only('email', 'password');
+        $credentials['ativo'] = 1; // Exemplo: Verificar se o usuário está ativo
+
+        return $this->guard()->attempt(
+            $credentials,
+            $request->filled('remember')
+        );
+    }
+
     public function busca()
     {
        
     }
     public function entrar(Request $req)
-{
-    $dados = $req->all();
-    $email = $dados['email'];
-    $senha = $dados['senha'];
+    {
+        $dados = $req->all();
+        $email = $dados['email'];
+        $senha = $dados['senha'];
 
-    $user = gp2_usuarios::where('email', $email)->first();
+        $user = gp2_usuarios::where('email', $email)->first();
 
-    if ($user) {
-        // Verifique se a senha fornecida pelo usuário corresponde à senha criptografada no banco de dados
-        if (password_verify($senha, $user->senha)) {
-            $rows = gp2_projetos::where('id_criador', $user->id_usuario)
-                ->orderBy('porcentagem', 'desc')
-                ->get();
+        if ($user) {
+            // Verifique se a senha fornecida pelo usuário corresponde à senha criptografada no banco de dados
+            if (password_verify($senha, $user->senha)) {
+                $rows = gp2_projetos::where('id_criador', $user->id_usuario)
+                    ->orderBy('porcentagem', 'desc')
+                    ->get();
 
-            return view('loginInicial.placeholder', compact('user', 'rows'));
+                return view('loginInicial.placeholder', compact('user', 'rows'));
+            }
+
+            // Senha incorreta, redirecione de volta para a página de login
+            return redirect()->route('loginInicial.index');
+        } else {
+            // Usuário não encontrado, redirecione de volta para a página de login
+            return redirect()->route('loginInicial.index');
         }
-
-        // Senha incorreta, redirecione de volta para a página de login
-        return redirect()->route('loginInicial.index');
-    } else {
-        // Usuário não encontrado, redirecione de volta para a página de login
-        return redirect()->route('loginInicial.index');
     }
-}
     public function sair()
     {
         Auth::logout();
@@ -111,5 +157,32 @@ class UsuariostccController extends Controller
         // Redirecione para a página de login ou para onde desejar após o cadastro
         return view('loginInicial.login');// ou outra rota de sua escolha
     }
+
+    public function editar()
+    {
+        $usuario = Auth::user(); // Obtém o usuário autenticado
+        return view('edicaoperfil', compact('usuario'));
+    }
+
+    public function atualizar(Request $request)
+    {
+        $usuario = Auth::user(); // Obtém o usuário autenticado
+
+        $request->validate([
+            'nome' => 'required|string|max:255',
+            // Outras regras de validação para os campos do perfil
+        ]);
+
+        // Atualize os campos do perfil com os novos valores do formulário
+        $usuario->update([
+            'nome' => $request->input('nome'),
+            // Atualize os outros campos do perfil aqui
+        ]);
+
+        return redirect()->route('edicaoperfil')->with('success', 'Perfil atualizado com sucesso');
+    }
+
+
+    
 
 }
