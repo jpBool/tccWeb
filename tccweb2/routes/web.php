@@ -93,3 +93,11 @@ Route::get('/sobreDark', function () {
 });
 
 Route::post('/cadastrar', 'App\Http\Controllers\UsuariostccController@cadastrar')->name('cadastro.store');
+
+Route::get('/edicaocadastroDark', function () {
+    return view('edicaocadastroDark');
+});
+
+Route::get('/edicaoperfilDark', function () {
+    return view('edicaoperfilDark');
+});
