@@ -96,3 +96,4 @@ Route::get('/sobreDark', function () {
     return view('sobreDark');
 });
 
+Route::post('/cadastrar', 'App\Http\Controllers\UsuariostccController@cadastrar')->name('cadastro.store');

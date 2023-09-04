@@ -47,10 +47,6 @@
                     <input class="form_input" type="text" id="nome" name="nome" placeholder="nome">
                 </div>
                 <div class="divLabel">
-                    <label for="datanasc">Data de nascimento:</label>
-                    <input class="form_input" type="date" id="datanasc" style="width:" name="datanasc">
-                </div>
-                <div class="divLabel">
                     <label for="TextNat">Naturalidade:</label>
                     <input class="form_input" type="text" id="TextNat" name="TextNat" placeholder="naturalidade">
                 </div>
