@@ -53,7 +53,11 @@
                             <label>Bio : {{$user->bio}}</label>
                         </div>
                     </div>
-                    <button type="button" class="button-perfil">Editar Perfil</button>
+                    
+                    <form action="{{ route('perfil.editar') }}">
+                       
+                        <input type="submit" value="Editar" class="button-perfil" />
+                    </form>
                 </div>
             </div>
             <br>

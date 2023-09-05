@@ -14,21 +14,25 @@ class homeController extends Controller
     //
     public function showProjects()
     {
-        $projetos = gp2_projetos::orderBy('porcentagem', 'desc')
-        ->get();
+        if (Auth::check())
+        {
+            $rows = [];
 
-        $rows = [];
-
-        foreach ($projetos as $projeto) {
-            $dataAtualizacao = $projeto->data_atualizacao;
-            $dataAtualizacao = Carbon::parse($dataAtualizacao);
-            $dataAtual = Carbon::now();
-            $diferencaDias = $dataAtual->diffInDays($dataAtualizacao);
-            $projeto->diferencaDias = $diferencaDias;
-            $rows[] = $projeto;
+            foreach ($projetos as $projeto) {
+                $dataAtualizacao = $projeto->data_atualizacao;
+                $dataAtualizacao = Carbon::parse($dataAtualizacao);
+                $dataAtual = Carbon::now();
+                $diferencaDias = $dataAtual->diffInDays($dataAtualizacao);
+                $projeto->diferencaDias = $diferencaDias;
+                $rows[] = $projeto;
+            }
+    
+            return view('home', compact('rows'));     
         }
-
-        return view('home', compact('rows'));
+        else
+        {
+            return view('loginInicial.login');
+        }      
     }
 
     public function showUserProjects()

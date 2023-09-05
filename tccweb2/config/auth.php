@@ -64,11 +64,6 @@ return [
             'driver' => 'eloquent',
             'model' => App\Models\gp2_usuarios::class,
         ],
-
-        // 'users' => [
-        //     'driver' => 'database',
-        //     'table' => 'users',
-        // ],
     ],
 
     /*
