@@ -233,6 +233,14 @@ nav
     border-left: solid 6px #001270;
 }
 
+.svg-test >{
+    fill: none;
+    stroke: pink;
+    stroke-width: 1px;
+    stroke-dasharray: 2,2;
+    stroke-linejoin: round;
+  }
+
 .espaco{
     padding: 70px;
 }
@@ -283,7 +291,8 @@ nav
     position: absolute;
     left: 0;
     top: 50%;
-    transform: translateX(-60%);
+    transform: translateX(-52%);
+    padding: 4rem;
 }
 
 
@@ -337,10 +346,6 @@ nav
 
 .iconlinha2{
     display: flex;
-}
-
-.textoimagem{
-    
 }
 
 .ultimotexto{

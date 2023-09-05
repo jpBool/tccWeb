@@ -105,3 +105,7 @@ Route::get('/edicaocadastroDark', function () {
 Route::get('/edicaoperfilDark', function () {
     return view('edicaoperfilDark');
 });
+
+Route::get('/homeDark', function () {
+    return view('homeDark');
+});

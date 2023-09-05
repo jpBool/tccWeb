@@ -28,10 +28,12 @@
     </div>
 
     <div class="globo">                             
-        <img src="{{'assets/img_tcc/globo.png'}}" alt="img" class="imglobo"> 
+        <img src="{{'assets/img_tcc/globoclaro.svg'}}" alt="img" class="imglobo"> 
     </div>
 
     <!-- body -->
+
+    <img src="{{'assets/img_tcc/icon2.svg'}}" alt="img" class="sidebar-icon-overlay svg-test" >
 
     <div class="textos">
         <div class="divbonita">
@@ -61,7 +63,7 @@
 
             <div class="textprimeiro">
 
-                <img style="background-color: #BBE1F3" src="{{'assets/img_tcc/icon2.svg'}}" alt="img" class="sidebar-icon-overlay" style="width: 2%;" >
+                <img src="{{'assets/img_tcc/icon2.svg'}}" alt="img" class="sidebar-icon-overlay svg-test" style="width: 2%;" >
                 
                 <div class="imgtextos">
                     <img src="{{'assets/img_tcc/img1.jpg'}}" alt="img" class="imgtexto1" style="width: 100%;" > 
@@ -78,7 +80,7 @@
             </div>
 
             <div class="textprimeiro">
-                <img style="background-color: #B0D2E8" src="{{'assets/img_tcc/icon3.svg'}}" alt="img" class="sidebar-icon-overlay" style="width: 2%;"> 
+                <img src="{{'assets/img_tcc/icon3.svg'}}" alt="img" class="sidebar-icon-overlay" style="width: 2%;"> 
 
                 <div class="imgtextos">
                     <img src="{{'assets/img_tcc/img2.jpg'}}" alt="img" class="imgtexto1" style="width: 100%;" > 
@@ -95,7 +97,7 @@
             </div>
 
             <div class="textprimeiro">
-                <img style="background-color: #9EBAD6" src="{{'assets/img_tcc/icon4.svg'}}" alt="img" class="sidebar-icon-overlay" style="width: 2%;" > 
+                <img src="{{'assets/img_tcc/icon4.svg'}}" alt="img" class="sidebar-icon-overlay" style="width: 2%;" > 
 
                 <div class="imgtextos">
                     <img src="{{'assets/img_tcc/img3.jpg'}}" alt="img" class="imgtexto1" style="width: 100%;" > 

@@ -43,17 +43,7 @@
     {{ $row->nome }}<br>
     {{ $row->email }}<br>
     <br>
-    @endforeach
-
-                
-    
-
-        
-
-       
-
-
-  
+    @endforeach  
 </body>
 
 </html>
