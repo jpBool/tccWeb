@@ -25,119 +25,117 @@ Route::get('/login', ['as' => 'loginInicial.index', 'uses' => 'App\Http\Controll
 
 
 // Agrupe apenas as rotas protegidas pelo middleware 'auth' aqui
-Route::middleware('auth')->group(function () {
 
-    Route::middleware('Check')->group(function () {
+
+        Route::get('/home', 
+        ['as' => 'homeInicial', 'uses' => 'App\Http\Controllers\homeController@showProjects']);
+        
         Route::get('/placeholder', ['as' => 'loginInicial.placeholder', 'uses' => 'App\Http\Controllers\UsuariostccController@enterplaceholder']);
 
-    Route::get('/busca', ['as' => 'pesquisaTotal', 'uses' => 'App\Http\Controllers\UsuariostccController@enterplaceholder']);
+        Route::get('/busca', ['as' => 'pesquisaTotal', 'uses' => 'App\Http\Controllers\UsuariostccController@enterplaceholder']);
 
-    Route::get('/pesquisar', ['as' => 'pesquisarAll', 'uses' => 'App\Http\Controllers\UsuariostccController@showUsers']);
+        Route::get('/pesquisar', ['as' => 'pesquisarAll', 'uses' => 'App\Http\Controllers\UsuariostccController@showUsers']);
 
-    Route::post('/logar', ['as' => 'loginInicial.logar', 'uses' => 'App\Http\Controllers\UsuariostccController@entrar']);
+        Route::post('/logar', ['as' => 'loginInicial.logar', 'uses' => 'App\Http\Controllers\UsuariostccController@entrar']);
 
-    Route::get('/home', ['as' => 'homeInicial', 'uses' => 'App\Http\Controllers\homeController@showProjects']);
+        
 
-    Route::get('/projetoUser', ['as' => 'projetoIsolado', 'uses' => 'App\Http\Controllers\homeController@showProjectIsoled']);
+        Route::get('/projetoUser', ['as' => 'projetoIsolado', 'uses' => 'App\Http\Controllers\homeController@showProjectIsoled']);
 
-    Route::get('/sobre', function () {
-        return view('sobre');
-    });
-    
+        Route::get('/sobre', function () {
+            return view('sobre');
+        });
+        
 
-    Route::get('/telainicial', function () {
-        return view('telainicial');
-    });
+        Route::get('/telainicial', function () {
+            return view('telainicial');
+        });
 
-    Route::get('/telainicialDark', function () {
-        return view('telainicialDark');
-    }); 
+        Route::get('/telainicialDark', function () {
+            return view('telainicialDark');
+        }); 
 
-    Route::get('/teladownload', function () {
-        return view('teladownload');
-    });
+        Route::get('/teladownload', function () {
+            return view('teladownload');
+        });
 
-    Route::get('/cadastro', function () {
-        return view('cadastro');
-    });
+        Route::get('/cadastro', function () {
+            return view('cadastro');
+        });
 
-    Route::get('/edicaoperfil', function () {
-        return view('edicaoperfil');
-    });
+        Route::get('/edicaoperfil', function () {
+            return view('edicaoperfil');
+        });
 
-    Route::get('/filtrarpesquisa', function () {
-        return view('filtrarpesquisa');
-    });
+        Route::get('/filtrarpesquisa', function () {
+            return view('filtrarpesquisa');
+        });
 
-    Route::get('/edicaocadastro', function () {
-        return view('edicaocadastro');
-    });
+        Route::get('/edicaocadastro', function () {
+            return view('edicaocadastro');
+        });
 
-    Route::get('/pesquisar', 'App\Http\Controllers\UsuariostccController@pesquisar'); // Rota para a página de pesquisa
-    Route::post('/pesquisar', 'App\Http\Controllers\UsuariostccController@processarPesquisa'); // Rota para processar a pesquisa
+        Route::get('/pesquisar', 'App\Http\Controllers\UsuariostccController@pesquisar'); // Rota para a página de pesquisa
+        Route::post('/pesquisar', 'App\Http\Controllers\UsuariostccController@processarPesquisa'); // Rota para processar a pesquisa
 
-    Route::get('/teladownloadDark', function () {
-        return view('teladownloadDark');
-    });
+        Route::get('/teladownloadDark', function () {
+            return view('teladownloadDark');
+        });
 
-    Route::get('/cadastroDark', function () {
-        return view('cadastroDark');
-    });
+        Route::get('/cadastroDark', function () {
+            return view('cadastroDark');
+        });
 
-    Route::get('/sobreDark', function () {
-        return view('sobreDark');
-    });
+        Route::get('/sobreDark', function () {
+            return view('sobreDark');
+        });
 
-    Route::post('/cadastrar', 'App\Http\Controllers\UsuariostccController@cadastrar')->name('cadastro.store');
+        Route::post('/cadastrar', 'App\Http\Controllers\UsuariostccController@cadastrar')->name('cadastro.store');
 
-    Route::get('/perfil/editar', 'App\Http\Controllers\UsuariostccController@editar')->name('perfil.editar');
+        Route::get('/perfil/editar', 'App\Http\Controllers\UsuariostccController@editar')->name('perfil.editar');
 
-    Route::post('/perfil/atualizar', 'App\Http\Controllers\UsuariostccController@atualizar')->name('perfil.atualizar');
+        Route::post('/perfil/atualizar', 'App\Http\Controllers\UsuariostccController@atualizar')->name('perfil.atualizar');
 
-    Route::get('/filtrarpesquisa', function () {
-        return view('filtrarpesquisa');
-    })->name('filtrarpesquisa');
+        Route::get('/filtrarpesquisa', function () {
+            return view('filtrarpesquisa');
+        })->name('filtrarpesquisa');
 
-    Route::get('pesquisausuario', function () {
-        return view('pesquisaUsuarios');
-    })->name('pesquisausuario');
+        Route::get('pesquisausuario', function () {
+            return view('pesquisaUsuarios');
+        })->name('pesquisausuario');
 
-    Route::get('/edicaocadastro', function () {
-        return view('edicaocadastro');
-    });
+        Route::get('/edicaocadastro', function () {
+            return view('edicaocadastro');
+        });
 
 
-    Route::get('/pesquisa', 'App\Http\Controllers\UsuariostccController@pesquisar'); // Rota para a página de pesquisa
-    Route::post('/pesquisar', 'App\Http\Controllers\UsuariostccController@processarPesquisa'); // Rota para processar a pesquisa
+        Route::get('/pesquisa', 'App\Http\Controllers\UsuariostccController@pesquisar'); // Rota para a página de pesquisa
+        Route::post('/pesquisar', 'App\Http\Controllers\UsuariostccController@processarPesquisa'); // Rota para processar a pesquisa
 
-    Route::get('/teladownloadDark', function () {
-        return view('teladownloadDark');
-    });
+        Route::get('/teladownloadDark', function () {
+            return view('teladownloadDark');
+        });
 
-    Route::get('/cadastroDark', function () {
-        return view('cadastroDark');
-    });
+        Route::get('/cadastroDark', function () {
+            return view('cadastroDark');
+        });
 
-    Route::get('/sobreDark', function () {
-        return view('sobreDark');
-    });
+        Route::get('/sobreDark', function () {
+            return view('sobreDark');
+        });
 
-    Route::post('/cadastrar', 'App\Http\Controllers\UsuariostccController@cadastrar')->name('cadastro.store');
+        Route::post('/cadastrar', 'App\Http\Controllers\UsuariostccController@cadastrar')->name('cadastro.store');
 
-    Route::get('/edicaocadastroDark', function () {
-        return view('edicaocadastroDark');
-    });
+        Route::get('/edicaocadastroDark', function () {
+            return view('edicaocadastroDark');
+        });
 
-    Route::get('/edicaoperfilDark', function () {
-        return view('edicaoperfilDark');
-    });
-
-      // Rotas que só o admin pode acessar
-    });
- 
+        Route::get('/edicaoperfilDark', function () {
+            return view('edicaoperfilDark');
+        });
     // Demais rotas
- });
-    // Adicione outras rotas protegidas aqui
+
+
    
    
     

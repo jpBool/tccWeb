@@ -14,8 +14,6 @@ use App\Http\Controllers\AuthenticatesUsers;
 class UsuariostccController extends Controller
 {
 
-    
-
     protected $redirectTo = '/home'; // Redirecionar após o login bem-sucedido
 
     public function __construct()
@@ -30,23 +28,26 @@ class UsuariostccController extends Controller
 
 
     public function login(Request $request)
-{
-    $credentials = $request->only('email', 'password');
+    {
+        $credentials = $request->only('email', 'password');
 
-    if (Auth::attempt($credentials)) {
-        // Autenticação bem-sucedida
-        $user = Auth::user(); // Obtenha o usuário autenticado
+        if (Auth::attempt($credentials)) {
+            // Autenticação bem-sucedida
+            $user = Auth::user(); // Obtenha o usuário autenticado
+            $rows = gp2_projetos::where('id_criador', $user->id_usuario)
+                ->orderBy('porcentagem', 'desc')
+                ->get();
 
-        $rows = gp2_projetos::where('id_criador', $user->id_usuario)
-            ->orderBy('porcentagem', 'desc')
-            ->get();
+                if (Auth::check())
+                {
+                    return view('home', compact('user', 'rows'));
+                }
+            
+        }
 
-        return view('loginInicial.placeholder', compact('user', 'rows'));
+        // Autenticação falhou, redirecione de volta para a página de login
+        return redirect()->back()->withInput()->withErrors(['email' => 'Credenciais inválidas']);
     }
-
-    // Autenticação falhou, redirecione de volta para a página de login
-    return redirect()->back()->withInput()->withErrors(['email' => 'Credenciais inválidas']);
-}
     
     //public function login(Request $request)
     public function enterplaceholder()
@@ -124,12 +125,13 @@ class UsuariostccController extends Controller
     public function processarPesquisa(Request $request)
     {
         $termoPesquisa = $request->input('termo_pesquisa');
-    
+
         // Execute a pesquisa no banco de dados usando o termo de pesquisa.
+        $resultados = gp2_usuarios::all();
         $resultados = gp2_usuarios::whereRaw('LOWER(nome) ILIKE ?', ["%$termoPesquisa%"])
             ->orWhereRaw('LOWER(email) ILIKE ?', ["%$termoPesquisa%"])
             ->get();
-    
+
         return view('resultados', ['resultados' => $resultados]);
     }
 
