@@ -3,14 +3,12 @@
 }
 
 body{
-    background: linear-gradient(to bottom, #364E65, #10273E);
+    background: #364E65;
     margin: 0;
     padding: 0;
     width:100%;
     font-family: Helvetica;
 }
-
-
 
 /*---------header-----------*/
 .header 
@@ -59,7 +57,7 @@ nav
 .header nav ul li a 
 {
     text-decoration: none;
-    color: #10273E;
+    color: #ffffff;
 }
 
 .imgperfil{
@@ -165,19 +163,18 @@ nav
 
 .buttonsHome p{
     margin: 0;
+    color: #ffffff;
 }
 
 .button
 {
-    background-color: white;
-    color: black;
+    background-color: #10273E;
+    color: #ffffff;
     padding: 10px 20px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
     border-radius: 15px;
-    border: white;
-    color: black;
     font-size: 20px;
     font-family: Helvetica;
     width: max-content;
@@ -186,15 +183,14 @@ nav
 
 .button1
 {
-    background-color: white;
-    color: black;
+    background-color: #10273E;
+    color: #ffffff;
+    border: #10273E;
     padding: 10px 20px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
     border-radius: 15px;
-    border: white;
-    color: black;
     font-size: 20px;
     font-family: Helvetica;
     width: max-content;
@@ -203,15 +199,14 @@ nav
 
 .button2
 {
-    background-color: #AAD2E5;
-    color: black;
+    background-color: #10273E;
+    color: #ffffff;
+    border: #10273E;
     padding: 10px 20px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
     border-radius: 15px;
-    border: #AAD2E5;
-    color: black;
     font-size: 20px;
     font-family: Helvetica;
     width: max-content;
@@ -240,16 +235,19 @@ nav
 .textprimeiro h1{
     font-size: 70px;
     font-weight: 800;
+    color: #ffffff;
 }
 
 .textprimeiro h2{
     font-size: 40px;
     font-weight: 800;
+    color: #ffffff;
 }
 
 .textprimeiro p{
     font-size: 25px;
     font-weight: 800;
+    color: #ffffff;
 }
 
 .entrar{
@@ -283,7 +281,8 @@ nav
     position: absolute;
     left: 0;
     top: 50%;
-    transform: translateX(-60%);
+    transform: translateX(-53%);
+    padding: 4rem;
 }
 
 
@@ -349,4 +348,5 @@ nav
 
 .ultimotexto{
     flex-direction: column;
+    color: #ffffff;
 }

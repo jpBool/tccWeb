@@ -11,7 +11,7 @@
 <div class="header">
         <nav id="navbar">  
             <ul>
-                <img src="{{'assets/img_tcc/logo.svg'}}" alt="img" class="imglogo">
+                <img src="{{'assets/img_tcc/logoclaro.svg'}}" alt="img" class="imglogo">
                 <div class="navButtom">
                     <li><a class="links" href="index">Seguindo</a></li>
                     <li><a class="links" href="sobre">Explorar</a></li>
@@ -19,8 +19,8 @@
                 </div>
 
                 <div class="navIcon">
-                    <img src="{{'assets/img_tcc/perfil.png'}}" alt="img" class="imgperfil">
-                    <img src="{{'assets/img_tcc/confg.png'}}" alt="img" class="imgconfg">
+                    <img src="{{'assets/img_tcc/perfilclaro.png'}}" alt="img" class="imgperfil">
+                    <img src="{{'assets/img_tcc/confgclaro.png'}}" alt="img" class="imgconfg">
                 </div>
             </ul>
         </nav>
@@ -41,25 +41,25 @@
        
             <div class="desen4">
 
-                <div class="bonito"><img src="{{'assets/img_tcc/aline.png'}}" alt="dev1" class="imagem-redonda" >
+                <div class="bonito"><img src="{{'assets/img_tcc/aline.svg'}}" alt="dev1" class="imagem-redonda" >
                     <div class="caption">Aline Tiemi</div> <div class="caption">aline-tiemi.awoki@unesp.br</div></div>
                 
-                <div class="bonito"><img src="{{'assets/img_tcc/kaori.png'}}" alt="dev2" class="imagem-redonda" >
+                <div class="bonito"><img src="{{'assets/img_tcc/kaori.svg'}}" alt="dev2" class="imagem-redonda" >
                     <div class="caption">Beatriz Kaori</div> <div class="caption">kaori.sakai@unesp.br</div></div>
                 
-                <div class="bonito"><img src="{{'assets/img_tcc/bia.png'}}" alt="dev3" class="imagem-redonda" >
+                <div class="bonito"><img src="{{'assets/img_tcc/bia.svg'}}" alt="dev3" class="imagem-redonda" >
                     <div class="caption">Beatriz Osajima</div> <div class="caption">beatriz.suwa@unesp.br</div></div>
 
-                <div class="bonito"><img src="{{'assets/img_tcc/joao.png'}}" alt="dev4" class="imagem-redonda" >
+                <div class="bonito"><img src="{{'assets/img_tcc/joao.svg'}}" alt="dev4" class="imagem-redonda" >
                     <div class="caption">Joâo Pedro</div> <div class="caption">joao-pedro.santos@unesp.br</div></div>
             </div>
        
 
         <div class="desen3">
-            <div class="bonito"><img src="{{'assets/img_tcc/mari.png'}}" alt="dev4" class="imagem-redonda" >
+            <div class="bonito"><img src="{{'assets/img_tcc/mari.svg'}}" alt="dev4" class="imagem-redonda" >
                 <div class="caption">Mariana Caroline</div> <div class="caption">mariana.caroline@unesp.br</div></div>
 
-            <div class="bonito"><img src="{{'assets/img_tcc/matheus.png'}}" alt="dev4" class="imagem-redonda" >
+            <div class="bonito"><img src="{{'assets/img_tcc/matheus.svg'}}" alt="dev4" class="imagem-redonda" >
                 <div class="caption">Matheus Gimenes</div> <div class="caption">mathues.gimenes-soares@unesp.br</div></div>
 
             <div class="bonito"><img src="{{'assets/img_tcc/renan.svg'}}" alt="dev4" class="imagem-redonda" >
@@ -68,7 +68,7 @@
     </div>
 
     <div class="footer">
-                <img src="{{'assets/img_tcc/logoSensei.svg'}}" alt="img" class="imgfooter">
+                <img src="{{'assets/img_tcc/logoSenseiclaro.svg'}}" alt="img" class="imgfooter">
 
                 <div class="botoesfooter">
                 <a href="index.blade.php">Home</a>
@@ -84,7 +84,7 @@
             let scrollVertical = window.pageYOffset;
             const header = document.getElementById('navbar');
             if(scrollVertical > 100) {
-                header.style.backgroundColor = 'white';
+                header.style.backgroundColor = '#10273E';
                 console.log(`Scroll vertical:`, header);
             } else {
                 header.style.backgroundColor = 'transparent';

@@ -15,7 +15,7 @@
                     <div class="navButtom">
                         <li><a class="links" href="index">Seguindo</a></li>
                         <li><a class="links" href="{{route('homeInicial')}}">Explorar</a></li>
-                        <li><a class="links" href="pesquisar.html">Pesquisar</a></li>
+                        <li><a class="links" href="{{route('pesquisausuario') }}">Pesquisar</a></li>
                     </div>
 
                     <div class="navIcon">

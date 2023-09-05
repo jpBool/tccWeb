@@ -12,7 +12,7 @@
     <div class="header">
         <nav id="navbar">  
             <ul>
-                <img src="{{'assets/img_tcc/logo.svg'}}" alt="img" class="imglogo">
+                <img src="{{'assets/img_tcc/logoclaro.svg'}}" alt="img" class="imglogo">
                 <div class="navButtom">
                     <li><a class="links" href="index">Seguindo</a></li>
                     <li><a class="links" href="sobre">Explorar</a></li>
@@ -20,15 +20,15 @@
                 </div>
 
                 <div class="navIcon">
-                    <img src="{{'assets/img_tcc/perfil.png'}}" alt="img" class="imgperfil">
-                    <img src="{{'assets/img_tcc/confg.png'}}" alt="img" class="imgconfg">
+                    <img src="{{'assets/img_tcc/perfilclaro.png'}}" alt="img" class="imgperfil">
+                    <img src="{{'assets/img_tcc/confgclaro.png'}}" alt="img" class="imgconfg">
                 </div>
             </ul>
         </nav>
     </div>
 
     <div class="globo">                             
-        <img src="{{'assets/img_tcc/globo.png'}}" alt="img" class="imglobo"> 
+        <img src="{{'assets/img_tcc/globoescuro.svg'}}" alt="img" class="imglobo"> 
     </div>
 
     <!-- body -->
@@ -42,7 +42,7 @@
             </div>
 
             <div class="entrar">
-                <img src="{{'assets/img_tcc/icon1.svg'}}" alt="img" class="sidebar-icon" style="width: 3%;" > 
+                <img src="{{'assets/img_tcc/icon1claro.svg'}}" alt="img" class="sidebar-icon" style="width: 3%;" > 
                 
                 <div class="buttonsHome">
                     <a class="button">Criar conta</a>
@@ -61,7 +61,7 @@
 
             <div class="textprimeiro">
 
-                <img style="background-color: #BBE1F3" src="{{'assets/img_tcc/icon2.svg'}}" alt="img" class="sidebar-icon-overlay" style="width: 2%;" >
+                <img style="background-color: #364E65" src="{{'assets/img_tcc/icon2claro.svg'}}" alt="img" class="sidebar-icon-overlay" style="width: 2%;" >
                 
                 <div class="imgtextos">
                     <img src="{{'assets/img_tcc/img1.jpg'}}" alt="img" class="imgtexto1" style="width: 100%;" > 
@@ -78,7 +78,7 @@
             </div>
 
             <div class="textprimeiro">
-                <img style="background-color: #B0D2E8" src="{{'assets/img_tcc/icon3.svg'}}" alt="img" class="sidebar-icon-overlay" style="width: 2%;"> 
+                <img style="background-color: #364E65" src="{{'assets/img_tcc/icon3claro.svg'}}" alt="img" class="sidebar-icon-overlay" style="width: 2%;"> 
 
                 <div class="imgtextos">
                     <img src="{{'assets/img_tcc/img2.jpg'}}" alt="img" class="imgtexto1" style="width: 100%;" > 
@@ -95,7 +95,7 @@
             </div>
 
             <div class="textprimeiro">
-                <img style="background-color: #9EBAD6" src="{{'assets/img_tcc/icon4.svg'}}" alt="img" class="sidebar-icon-overlay" style="width: 2%;" > 
+                <img style="background-color: #364E65" src="{{'assets/img_tcc/icon4claro.svg'}}" alt="img" class="sidebar-icon-overlay" style="width: 2%;" > 
 
                 <div class="imgtextos">
                     <img src="{{'assets/img_tcc/img3.jpg'}}" alt="img" class="imgtexto1" style="width: 100%;" > 
@@ -138,7 +138,7 @@
         <!-- footer -->
 
         <div class="footer">
-            <img src="{{'assets/img_tcc/logoSensei.svg'}}" alt="img" class="imgfooter">
+            <img src="{{'assets/img_tcc/logoSenseiclaro.svg'}}" alt="img" class="imgfooter">
 
             <div class="botoesfooter">
                 <a href="index.blade.php">Home</a>
@@ -155,7 +155,7 @@
             let scrollVertical = window.pageYOffset;
             const header = document.getElementById('navbar');
             if(scrollVertical > 300) {
-                header.style.backgroundColor = 'white';
+                header.style.backgroundColor = '#10273E';
                 console.log(`Scroll vertical:`, header);
             } else {
                 header.style.backgroundColor = 'transparent';

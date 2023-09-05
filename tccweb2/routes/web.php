@@ -20,16 +20,15 @@ Route::get('/', function () {
 });
 
 Route::post('/login', ['as' => 'login', 'uses' => 'App\Http\Controllers\UsuariostccController@login']);
-Route::get('/login2', ['as' => 'loginInicial.index', 'uses' => 'App\Http\Controllers\UsuariostccController@index']);
+Route::get('/login', ['as' => 'loginInicial.index', 'uses' => 'App\Http\Controllers\UsuariostccController@index']);
 
 
 
 // Agrupe apenas as rotas protegidas pelo middleware 'auth' aqui
-Route::group(['middleware' => 'auth'], function () {
-   
-    // Adicione outras rotas protegidas aqui
+Route::middleware('auth')->group(function () {
 
-    Route::get('/placeholder', ['as' => 'loginInicial.placeholder', 'uses' => 'App\Http\Controllers\UsuariostccController@enterplaceholder']);
+    Route::middleware('Check')->group(function () {
+        Route::get('/placeholder', ['as' => 'loginInicial.placeholder', 'uses' => 'App\Http\Controllers\UsuariostccController@enterplaceholder']);
 
     Route::get('/busca', ['as' => 'pesquisaTotal', 'uses' => 'App\Http\Controllers\UsuariostccController@enterplaceholder']);
 
@@ -44,6 +43,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/sobre', function () {
         return view('sobre');
     });
+    
 
     Route::get('/telainicial', function () {
         return view('telainicial');
@@ -93,4 +93,51 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/perfil/editar', 'App\Http\Controllers\UsuariostccController@editar')->name('perfil.editar');
 
     Route::post('/perfil/atualizar', 'App\Http\Controllers\UsuariostccController@atualizar')->name('perfil.atualizar');
-});
+
+    Route::get('/filtrarpesquisa', function () {
+        return view('filtrarpesquisa');
+    })->name('filtrarpesquisa');
+
+    Route::get('pesquisausuario', function () {
+        return view('pesquisaUsuarios');
+    })->name('pesquisausuario');
+
+    Route::get('/edicaocadastro', function () {
+        return view('edicaocadastro');
+    });
+
+
+    Route::get('/pesquisa', 'App\Http\Controllers\UsuariostccController@pesquisar'); // Rota para a página de pesquisa
+    Route::post('/pesquisar', 'App\Http\Controllers\UsuariostccController@processarPesquisa'); // Rota para processar a pesquisa
+
+    Route::get('/teladownloadDark', function () {
+        return view('teladownloadDark');
+    });
+
+    Route::get('/cadastroDark', function () {
+        return view('cadastroDark');
+    });
+
+    Route::get('/sobreDark', function () {
+        return view('sobreDark');
+    });
+
+    Route::post('/cadastrar', 'App\Http\Controllers\UsuariostccController@cadastrar')->name('cadastro.store');
+
+    Route::get('/edicaocadastroDark', function () {
+        return view('edicaocadastroDark');
+    });
+
+    Route::get('/edicaoperfilDark', function () {
+        return view('edicaoperfilDark');
+    });
+
+      // Rotas que só o admin pode acessar
+    });
+ 
+    // Demais rotas
+ });
+    // Adicione outras rotas protegidas aqui
+   
+   
+    
