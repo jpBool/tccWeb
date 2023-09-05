@@ -1,0 +1,177 @@
+html{
+    height: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 0;
+     /* 100% da altura da tela */
+    display: flex;
+    flex-direction: column; /* Para estender o conteúdo */
+}
+
+body
+{
+    overflow-y: auto;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* Defina o fundo da página inteira, incluindo a área abaixo do footer */
+    background-color: #364E65; /* Substitua pela cor de fundo desejada */
+   
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(to bottom, #364E65, #10273E);
+  }
+
+.main
+{
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%; /* Garante que a div main tenha altura igual à altura do body */
+    width: 100%;
+    padding-bottom: 0;
+    position: relative;
+}
+/* ------------------- BARRA -------------------*/
+
+.num-porcentagem{
+    padding-left: 10px;
+}
+
+.barraPreta
+{
+    margin-top: 14%;
+    box-sizing: border-box;
+    width: 60%;
+    background-color: white;
+    display: block;
+    align-self: center;
+    text-align: center;
+    border: black;
+    border-radius: 10px;
+    margin-left: 40px;
+    border: 1px solid black;
+}
+
+.barra-progress{
+    width: 990px;
+    display: flex;
+    border-radius: 18px;
+    padding: 10px;
+    color: black;
+    margin-left: 17%;
+    background: none;
+}
+
+.progress{
+    padding-left: 0;
+    color: black;
+    margin-top: 10%;
+    position: fixed;
+}
+
+.barra {
+    background-color: #364E65;
+    height: 20px;
+    border-radius: 10px;
+    display: flex;
+}
+
+
+.GroupNomProjeto
+{
+    display: inline-flex;
+    width: auto;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+.nomeProjeto
+{
+    width: 400px;
+    padding: 15px;
+    width: 600px;
+    margin-bottom: 20px;
+    padding-top: 0;
+}
+
+.nomeProjeto h1
+{
+    margin-top: 0;
+    width: 600px;
+    font-size: 60px;
+    font-weight: 600px;
+}
+
+.dadosProjeto
+{
+    margin-top: 5px;
+    margin-left: 10%;
+    width: 340px;
+    height: 130px;
+    display: block;
+    text-align: left;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.autores{
+    margin-bottom: 40px;
+}
+
+.infoAutor{
+    margin-bottom: 100px;
+}
+
+.infoAutor label{
+    display: flex;
+    margin-bottom: 7px;
+}
+.email{
+    text-decoration: underline;
+}
+
+.link-site{
+    text-decoration: underline;
+}
+
+.infoAutor
+{
+    margin-left: 15%;
+}
+
+.descricao
+{
+    text-align: left;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 800px;
+    height: 600px;
+    padding: 20px;
+}
+
+.colaboradores{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 800px;
+    height: 300px;
+    padding: 10px;
+}
+
+.palavras-chave{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 800px;
+    height: 200px;
+    padding: 0px 10px 10px 10px;
+    margin-top: 50px;
+}
