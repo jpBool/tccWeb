@@ -66,14 +66,14 @@ body::before {
     display: flex;
     border-radius: 18px;
     padding: 10px;
-    color: black;
+    color: #8AB6D5;
     margin-left: 17%;
     background: none;
 }
 
 .progress{
     padding-left: 0;
-    color: black;
+    color: white;
     margin-top: 10%;
     position: fixed;
 }
