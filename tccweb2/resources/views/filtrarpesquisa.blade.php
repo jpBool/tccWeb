@@ -15,15 +15,16 @@
 <body class="body">
 
 <div class="espacinho">
-<form method="POST" action="/pesquisar">
-    <div class="separador">
-        <div class="search-container">
-            <input type="text" name="termo_pesquisa" id="searchInput" placeholder="Pesquisar...">
-            <button id="searchButton"><img class="lupa" src="{{'assets/img_tcc/lupa.svg'}}"></img></button>
-    
+    <form method="POST" action="/pesquisarProjetos">
+            @csrf
+            <div class="separador">
+                <div class="search-container">
+                    <input type="text" name="termo_pesquisa" id="searchInput" placeholder="Pesquisar...">
+                    <button id="searchButton" type="submit" ><img class="lupa" src="{{'assets/img_tcc/lupa.svg'}}"></button>
+                </div>
+            </div>
             
-        </div>
-    </form>
+        </form>
 
         <div class="filtrar">
             <div class="filtro"><img class="filter" src="{{'assets/img_tcc/filtersearch.svg'}}"></img></div>

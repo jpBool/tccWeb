@@ -86,7 +86,7 @@ Route::get('/homeDark', function () {
         Route::get('/pesquisar', 'App\Http\Controllers\UsuariostccController@pesquisar'); // Rota para a página de pesquisa
         Route::post('/pesquisar', 'App\Http\Controllers\UsuariostccController@processarPesquisa'); // Rota para processar a pesquisa
 
-        Route::post('/pesquisar', 'App\Http\Controllers\UsuariostccController@processarProjetos');
+        Route::post('/pesquisarProjetos', 'App\Http\Controllers\UsuariostccController@processarProjetos'); // 
 
         Route::get('/teladownloadDark', function () {
             return view('teladownloadDark');
@@ -119,8 +119,7 @@ Route::get('/homeDark', function () {
         });
 
 
-        Route::get('/pesquisa', 'App\Http\Controllers\UsuariostccController@pesquisar'); // Rota para a página de pesquisa
-        Route::post('/pesquisar', 'App\Http\Controllers\UsuariostccController@processarPesquisa'); // Rota para processar a pesquisa
+       
 
         Route::get('/teladownloadDark', function () {
             return view('teladownloadDark');

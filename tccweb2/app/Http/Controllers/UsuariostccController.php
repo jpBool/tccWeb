@@ -135,6 +135,19 @@ class UsuariostccController extends Controller
         return view('resultados', ['resultados' => $resultados]);
     }
 
+    public function processarProjetos(Request $request)
+    {
+        $termoPesquisa = $request->input('termo_pesquisa');
+
+        // Execute a pesquisa no banco de dados usando o termo de pesquisa.
+        $resultados = gp2_projetos::all();
+        $resultados = gp2_projetos::whereRaw('LOWER(nome_projeto) ILIKE ?', ["%$termoPesquisa%"])
+            ->orWhereRaw('LOWER(descricao_breve) ILIKE ?', ["%$termoPesquisa%"])
+            ->get();
+
+        return view('resultadosProjeto', ['resultados' => $resultados]);
+    }
+
 
     public function cadastrar(Request $request)
     {
