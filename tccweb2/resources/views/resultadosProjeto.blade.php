@@ -40,8 +40,8 @@
     </div>
          <center>   
     @foreach($resultados as $row)
-    {{ $row->nome }}<br> 
-    {{ $row->email }} Segue você --- Seguir de volta
+    {{ $row->criador }}<br> 
+     Segue você --- Seguir de volta
     <br><br>
     @endforeach  
 </center>

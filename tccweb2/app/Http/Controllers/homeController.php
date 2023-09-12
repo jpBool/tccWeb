@@ -14,10 +14,10 @@ class homeController extends Controller
     //
     public function showProjects()
     {
-        if (Auth::check())
-        {
-            $rows = [];
+       
 
+            $rows = [];
+            $projetos = gp2_projetos::all();
             foreach ($projetos as $projeto) {
                 $dataAtualizacao = $projeto->data_atualizacao;
                 $dataAtualizacao = Carbon::parse($dataAtualizacao);
@@ -28,11 +28,8 @@ class homeController extends Controller
             }
     
             return view('home', compact('rows'));     
-        }
-        else
-        {
-            return view('loginInicial.login');
-        }      
+        
+         
     }
 
     public function showUserProjects()
