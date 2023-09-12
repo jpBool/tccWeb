@@ -6,7 +6,7 @@
     <title>Home</title>
     </head>
     <body>
-    
+
     <!-- header -->
 
     <div class="header">
@@ -20,8 +20,8 @@
                 </div>
 
                 <div class="navIcon">
-                    <img src="{{'assets/img_tcc/perfil.png'}}" alt="img" class="imgperfil">
-                    <img src="{{'assets/img_tcc/confg.png'}}" alt="img" class="imgconfg">
+                    <img src="{{'assets/img_tcc/icon_perfilescuro.svg'}}" alt="img" class="imgperfil">
+                    <img src="{{'assets/img_tcc/icon_menu.svg'}}" alt="img" class="imgconfg">
                 </div>
             </ul>
         </nav>
@@ -31,9 +31,26 @@
         <img src="{{'assets/img_tcc/globoclaro.svg'}}" alt="img" class="imglobo"> 
     </div>
 
+    <div class="sidebar">
+        <!-- Conteúdo da barra lateral -->
+
+        <img src="{{'assets/img_tcc/icon_logout.svg'}}" alt="img" class="sidebar" style="width: 3%;" > 
+        <img src="{{'assets/img_tcc/icon_perfilescuro.svg'}}" alt="img" class="sidebar" style="width: 3%;" > 
+        <img src="{{'assets/img_tcc/icon_search.svg'}}" alt="img" class="sidebar" style="width: 3%;" > 
+        <img src="{{'assets/img_tcc/icon_global.svg'}}" alt="img" class="sidebar" style="width: 3%;" > 
+        <img src="{{'assets/img_tcc/icon_notification.svg'}}" alt="img" class="sidebar" style="width: 3%;" > 
+        <img src="{{'assets/img_tcc/icon_user_add.svg'}}" alt="img" class="sidebar" style="width: 3%;" > 
+        <img src="{{'assets/img_tcc/icon_home.svg'}}" alt="img" class="sidebar" style="width: 3%;" > 
+        <img src="{{'assets/img_tcc/icon_download.svg'}}" alt="img" class="sidebar" style="width: 3%;" > 
+        <img src="{{'assets/img_tcc/icon_user_edit.svg'}}" alt="img" class="sidebar" style="width: 3%;" > 
+        <img src="{{'assets/img_tcc/icon_lock.svg'}}" alt="img" class="sidebar" style="width: 3%;" > 
+        <img src="{{'assets/img_tcc/icon_confg.svg'}}" alt="img" class="sidebar" style="width: 3%;" > 
+        <img src="{{'assets/img_tcc/icon_people.svg'}}" alt="img" class="sidebar" style="width: 3%;" > 
+    </div>
+
     <!-- body -->
 
-    <img src="{{'assets/img_tcc/icon2.svg'}}" alt="img" class="sidebar-icon-overlay svg-test" >
+    
 
     <div class="textos">
         <div class="divbonita">
@@ -63,7 +80,7 @@
 
             <div class="textprimeiro">
 
-                <img src="{{'assets/img_tcc/icon2.svg'}}" alt="img" class="sidebar-icon-overlay svg-test" style="width: 2%;" >
+                <img style="background-color: #e3f2fa" src="{{'assets/img_tcc/icon2.svg'}}" alt="img" class="sidebar-icon-overlay svg-test" style="width: 2%;" >
                 
                 <div class="imgtextos">
                     <img src="{{'assets/img_tcc/img1.jpg'}}" alt="img" class="imgtexto1" style="width: 100%;" > 
@@ -80,7 +97,7 @@
             </div>
 
             <div class="textprimeiro">
-                <img src="{{'assets/img_tcc/icon3.svg'}}" alt="img" class="sidebar-icon-overlay" style="width: 2%;"> 
+                <img style="background-color: #e3f2fa" src="{{'assets/img_tcc/icon3.svg'}}" alt="img" class="sidebar-icon-overlay" style="width: 2%;"> 
 
                 <div class="imgtextos">
                     <img src="{{'assets/img_tcc/img2.jpg'}}" alt="img" class="imgtexto1" style="width: 100%;" > 
@@ -97,7 +114,7 @@
             </div>
 
             <div class="textprimeiro">
-                <img src="{{'assets/img_tcc/icon4.svg'}}" alt="img" class="sidebar-icon-overlay" style="width: 2%;" > 
+                <img  style="background-color: #e3f2fa" src="{{'assets/img_tcc/icon4.svg'}}" alt="img" class="sidebar-icon-overlay" style="width: 2%;" > 
 
                 <div class="imgtextos">
                     <img src="{{'assets/img_tcc/img3.jpg'}}" alt="img" class="imgtexto1" style="width: 100%;" > 
@@ -165,4 +182,6 @@
 
         }) 
     </script>
+
+
 </html>

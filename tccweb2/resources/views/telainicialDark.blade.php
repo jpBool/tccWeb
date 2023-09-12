@@ -20,8 +20,8 @@
                 </div>
 
                 <div class="navIcon">
-                    <img src="{{'assets/img_tcc/perfilclaro.png'}}" alt="img" class="imgperfil">
-                    <img src="{{'assets/img_tcc/confgclaro.png'}}" alt="img" class="imgconfg">
+                    <img src="{{'assets/img_tcc/icon_perfilclaro.svg'}}" alt="img" class="imgperfil">
+                    <img src="{{'assets/img_tcc/icon_menu_claro.svg'}}" alt="img" class="imgconfg">
                 </div>
             </ul>
         </nav>
@@ -60,11 +60,9 @@
             </div>
 
             <div class="textprimeiro">
-
-                <img style="background-color: #364E65" src="{{'assets/img_tcc/icon2claro.svg'}}" alt="img" class="sidebar-icon-overlay" style="width: 2%;" >
-                
                 <div class="imgtextos">
                     <img src="{{'assets/img_tcc/img1.jpg'}}" alt="img" class="imgtexto1" style="width: 100%;" > 
+                    <img style="background-color: #364E65" src="{{'assets/img_tcc/icon2claro.svg'}}" alt="img" class="sidebar-icon-overlay" style="width: 2%;" >
                 </div>
             </div>
 
