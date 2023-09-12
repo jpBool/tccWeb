@@ -8,22 +8,22 @@
 
 <body class="body">
 
-<div class="header">
-        <nav id="navbar">  
-            <ul>
-                <img src="{{'assets/img_tcc/logo.svg'}}" alt="img" class="imglogo">
-                <div class="navButtom">
-                    <li><a class="links" href="index">Seguindo</a></li>
-                    <li><a class="links" href="sobre">Explorar</a></li>
-                    <li><a class="links" href="filtrarpesquisa">Pesquisar</a></li>
-                </div>
+    <div class="header">
+            <nav id="navbar">  
+                <ul>
+                    <img src="{{'assets/img_tcc/logo.svg'}}" alt="img" class="imglogo">
+                    <div class="navButtom">
+                        <li><a class="links" href="index">Seguindo</a></li>
+                        <li><a class="links" href="sobre">Explorar</a></li>
+                        <li><a class="links" href="pesquisar.html">Pesquisar</a></li>
+                    </div>
 
-                <div class="navIcon">
-                    <img src="{{'assets/img_tcc/perfil.png'}}" alt="img" class="imgperfil">
-                    <img src="{{'assets/img_tcc/confg.png'}}" alt="img" class="imgconfg">
-                </div>
-            </ul>
-        </nav>
+                    <div class="navIcon">
+                        <img src="{{'assets/img_tcc/perfil.png'}}" alt="img" class="imgperfil">
+                        <img src="{{'assets/img_tcc/confg.png'}}" alt="img" class="imgconfg">
+                    </div>
+                </ul>
+            </nav>
     </div>
 
     <div class="divtotal1">
