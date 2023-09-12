@@ -13,7 +13,7 @@ body {
     display: inline;
     margin-top: 0;
     margin-left:0;
-    font-family:  Helvetica; 
+    font-family:  Helvetica;  
     z-index: 99;
 }
 
@@ -117,10 +117,12 @@ nav
 }
 
 .devs{
+    margin-top: 100px;
     display: flex;
     flex-direction: column; /* Empilha as divs verticalmente */
     align-items: center; /* Centraliza horizontalmente */
     justify-content: center; /* Centraliza verticalmente */
+
 }
 
 .imagem-redonda {
@@ -157,11 +159,9 @@ nav
 /*-------------------------------footer--------------------------------*/
 .botoesfooter
 {
-    display: inline;
-    margin-top: 15px;
-    margin-left: 30%;
-    text-align: center;
-    flex: 1 50px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
 }
 
 .botoesfooter a
@@ -170,15 +170,14 @@ nav
     text-decoration: none;
     padding-right: 10%;
     font-size:16.7px;
+    
 }
 
 .emailequipe{
     font-size: 16.7px;
-    text-align: right;
     color: #10273E;
-    margin-right: 52%;
-    margin-top: 27px;
 }
+
 
 .footer 
 {
@@ -193,6 +192,7 @@ nav
     bottom: 0;
     width: 100%;
     font-family: Helvetica;
+    justify-content: space-between;
 }
 
 .textfooter

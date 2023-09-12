@@ -3,7 +3,7 @@
 }
 
 body{
-    background: linear-gradient(to bottom, #ffffff, #BBE1F3, #9EBAD6, #9EBAD6);
+    background: #e3f2fa;
     margin: 0;
     padding: 0;
     width:100%;
@@ -230,7 +230,7 @@ nav
     padding-inline: 200px;
     width: 100%;
     flex-direction:column;
-    border-left: solid 6px #001270;
+    border-left: solid 6px #364E65;
 }
 
 .svg-test >{
@@ -290,7 +290,7 @@ nav
 .sidebar-icon-overlay {
     position: absolute;
     left: 0;
-    top: 50%;
+    top: 32%;
     transform: translateX(-52%);
     padding: 4rem;
 }

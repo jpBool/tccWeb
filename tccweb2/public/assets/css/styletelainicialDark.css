@@ -280,7 +280,7 @@ nav
 .sidebar-icon-overlay {
     position: absolute;
     left: 0;
-    top: 50%;
+    top: 32%;
     transform: translateX(-53%);
     padding: 4rem;
 }
