@@ -21,7 +21,7 @@
 
                 <div class="navIcon">
                     <img src="{{'assets/img_tcc/icon_perfilescuro.svg'}}" alt="img" class="imgperfil">
-                    <img src="{{'assets/img_tcc/icon_menu.svg'}}" alt="img" class="imgconfg">
+                    <img src="{{'assets/img_tcc/icon_menu.svg'}}" alt="img" class="imgconfg" id="openSidebarButton">
                 </div>
             </ul>
         </nav>
@@ -31,141 +31,191 @@
         <img src="{{'assets/img_tcc/globoclaro.svg'}}" alt="img" class="imglobo"> 
     </div>
 
-    <div class="sidebar">
-        <!-- Conteúdo da barra lateral -->
+    <div class="sidebar" id="sidebar">
 
-        <img src="{{'assets/img_tcc/icon_logout.svg'}}" alt="img" class="sidebar" style="width: 3%;" > 
-        <img src="{{'assets/img_tcc/icon_perfilescuro.svg'}}" alt="img" class="sidebar" style="width: 3%;" > 
-        <img src="{{'assets/img_tcc/icon_search.svg'}}" alt="img" class="sidebar" style="width: 3%;" > 
-        <img src="{{'assets/img_tcc/icon_global.svg'}}" alt="img" class="sidebar" style="width: 3%;" > 
-        <img src="{{'assets/img_tcc/icon_notification.svg'}}" alt="img" class="sidebar" style="width: 3%;" > 
-        <img src="{{'assets/img_tcc/icon_user_add.svg'}}" alt="img" class="sidebar" style="width: 3%;" > 
-        <img src="{{'assets/img_tcc/icon_home.svg'}}" alt="img" class="sidebar" style="width: 3%;" > 
-        <img src="{{'assets/img_tcc/icon_download.svg'}}" alt="img" class="sidebar" style="width: 3%;" > 
-        <img src="{{'assets/img_tcc/icon_user_edit.svg'}}" alt="img" class="sidebar" style="width: 3%;" > 
-        <img src="{{'assets/img_tcc/icon_lock.svg'}}" alt="img" class="sidebar" style="width: 3%;" > 
-        <img src="{{'assets/img_tcc/icon_confg.svg'}}" alt="img" class="sidebar" style="width: 3%;" > 
-        <img src="{{'assets/img_tcc/icon_people.svg'}}" alt="img" class="sidebar" style="width: 3%;" > 
+        <!-- Conteúdo da barra lateral -->
+        <div class="fundo"> 
+            <div class="integracao-button"> 
+                <img src="{{'assets/img_tcc/icon_logout.svg'}}" alt="img" class="sidebar-i"> 
+                <button type="button" class="nav-button">Logout</button>
+            </div>
+
+            <div class="integracao-button">
+                <img src="{{'assets/img_tcc/icon_perfilescuro.svg'}}" alt="img" class="sidebar-i"> 
+                <button type="button" class="nav-button">Perfil</button> 
+            </div>
+
+            <div class="integracao-button"> 
+                <img src="{{'assets/img_tcc/icon_search.svg'}}" alt="img" class="sidebar-i"> 
+                <button type="button" class="nav-button">Pesquisar</button>
+            </div>
+
+            <div class="integracao-button">
+                <img src="{{'assets/img_tcc/icon_global.svg'}}" alt="img" class="sidebar-i"> 
+                <button type="button" class="nav-button">Explorar</button>
+            </div>
+
+            <div class="integracao-button">
+                <img src="{{'assets/img_tcc/icon_notification.svg'}}" alt="img" class="sidebar-i"> 
+                <button type="button" class="nav-button">Seguindo</button>
+            </div>
+
+            <div class="integracao-button">
+                <img src="{{'assets/img_tcc/icon_user_add.svg'}}" alt="img" class="sidebar-i"> 
+                <button type="button" class="nav-button">Seguidores</button>
+            </div>
+
+            <div class="integracao-button">
+                <img src="{{'assets/img_tcc/icon_home.svg'}}" alt="img" class="sidebar-i"> 
+                <button type="button" class="nav-button">Home</button>
+            </div>
+
+            <div class="integracao-button">
+                <img src="{{'assets/img_tcc/icon_download.svg'}}" alt="img" class="sidebar-i"> 
+                <button type="button" class="nav-button">Download</button>
+            </div>
+
+            <div class="integracao-button">
+                <img src="{{'assets/img_tcc/icon_user_edit.svg'}}" alt="img" class="sidebar-i"> 
+                <button type="button" class="nav-button">Editar Perfil</button>
+            </div>
+
+            <div class="integracao-button">
+                <img src="{{'assets/img_tcc/icon_lock.svg'}}" alt="img" class="sidebar-i"> 
+                <button type="button" class="nav-button">Editar Cadastro</button>
+            </div>
+
+            <div class="integracao-button">
+                <img src="{{'assets/img_tcc/icon_confg.svg'}}" alt="img" class="sidebar-i"> 
+                <button type="button" class="nav-button">Configurações</button>
+            </div>
+
+            <div class="integracao-button">
+                <img src="{{'assets/img_tcc/icon_people.svg'}}" alt="img" class="sidebar-i"> 
+                <button type="button" class="nav-button">Sobre</button>
+            </div>
+        </div>
     </div>
 
     <!-- body -->
 
     
+    <main class="main"> 
+        <div class="textos">
+            <div class="divbonita">
 
-    <div class="textos">
-        <div class="divbonita">
-
-            <div class="textprimeiro">
-                <h1>Bem vindo ao Sensei!</h1>
-                <p>Compartilhe seu talento, conecte-se com desenvolvedores e alcance novos patamares.</p>
-            </div>
-
-            <div class="entrar">
-                <img src="{{'assets/img_tcc/icon1.svg'}}" alt="img" class="sidebar-icon" style="width: 3%;" > 
-                
-                <div class="buttonsHome">
-                    <a class="button">Criar conta</a>
-                    <p>Ja possui uma conta? Entrar</p>
+                <div class="textprimeiro">
+                    <h1>Bem vindo ao Sensei!</h1>
+                    <p>Compartilhe seu talento, conecte-se com desenvolvedores e alcance novos patamares.</p>
                 </div>
-            </div>
 
-            <!---------------------------------------------------------------------------------------------->
-
-            <div class="textprimeiro"> 
-                <div class="espaco">
-                    <h2> Compartilhe seus projetos com o mundo</h2>
-                    <p>Esta plataforma te permite compartilhar projetos com quem desejar, de onde estiver.</p><br>
+                <div class="entrar">
+                    <img src="{{'assets/img_tcc/icon1.svg'}}" alt="img" class="sidebar-icon" style="width: 3%;" > 
+                    
+                    <div class="buttonsHome">
+                        <a class="button">Criar conta</a>
+                        <p>Ja possui uma conta? Entrar</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="textprimeiro">
+                <!---------------------------------------------------------------------------------------------->
 
-                <img style="background-color: #e3f2fa" src="{{'assets/img_tcc/icon2.svg'}}" alt="img" class="sidebar-icon-overlay svg-test" style="width: 2%;" >
-                
-                <div class="imgtextos">
-                    <img src="{{'assets/img_tcc/img1.jpg'}}" alt="img" class="imgtexto1" style="width: 100%;" > 
+                <div class="textprimeiro"> 
+                    <div class="espaco">
+                        <h2> Compartilhe seus projetos com o mundo</h2>
+                        <p>Esta plataforma te permite compartilhar projetos com quem desejar, de onde estiver.</p><br>
+                    </div>
                 </div>
-            </div>
 
-            <!---------------------------------------------------------------------------------------------->
+                <div class="textprimeiro">
 
-            <div class="textprimeiro"> 
-                <div class="espaco">
-                    <h2>Procure softwares e encontre desenvolvedores.</h2>
-                    <p>Apoiando a união de projetos e desenvolvedores de software.</p><br>
+                    <img style="background-color: #e3f2fa" src="{{'assets/img_tcc/icon2.svg'}}" alt="img" class="sidebar-icon-overlay svg-test" style="width: 2%;" >
+                    
+                    <div class="imgtextos">
+                        <img src="{{'assets/img_tcc/img1.jpg'}}" alt="img" class="imgtexto1" style="width: 100%;" > 
+                    </div>
                 </div>
-            </div>
 
-            <div class="textprimeiro">
-                <img style="background-color: #e3f2fa" src="{{'assets/img_tcc/icon3.svg'}}" alt="img" class="sidebar-icon-overlay" style="width: 2%;"> 
+                <!---------------------------------------------------------------------------------------------->
 
-                <div class="imgtextos">
-                    <img src="{{'assets/img_tcc/img2.jpg'}}" alt="img" class="imgtexto1" style="width: 100%;" > 
+                <div class="textprimeiro"> 
+                    <div class="espaco">
+                        <h2>Procure softwares e encontre desenvolvedores.</h2>
+                        <p>Apoiando a união de projetos e desenvolvedores de software.</p><br>
+                    </div>
                 </div>
-            </div>
 
-            <!---------------------------------------------------------------------------------------------->
+                <div class="textprimeiro">
+                    <img style="background-color: #e3f2fa" src="{{'assets/img_tcc/icon3.svg'}}" alt="img" class="sidebar-icon-overlay" style="width: 2%;"> 
 
-            <div class="textprimeiro"> 
-                <div class="espaco">
-                    <h2> Gerencie seus projetos com a sua equipe.</h2>
-                    <p>Possibilitando uma melhora profissional, o site possui diversas funcionalidades para sua formação empresa.</p><br>
+                    <div class="imgtextos">
+                        <img src="{{'assets/img_tcc/img2.jpg'}}" alt="img" class="imgtexto1" style="width: 100%;" > 
+                    </div>
                 </div>
-            </div>
 
-            <div class="textprimeiro">
-                <img  style="background-color: #e3f2fa" src="{{'assets/img_tcc/icon4.svg'}}" alt="img" class="sidebar-icon-overlay" style="width: 2%;" > 
+                <!---------------------------------------------------------------------------------------------->
 
-                <div class="imgtextos">
-                    <img src="{{'assets/img_tcc/img3.jpg'}}" alt="img" class="imgtexto1" style="width: 100%;" > 
+                <div class="textprimeiro"> 
+                    <div class="espaco">
+                        <h2> Gerencie seus projetos com a sua equipe.</h2>
+                        <p>Possibilitando uma melhora profissional, o site possui diversas funcionalidades para sua formação empresa.</p><br>
+                    </div>
                 </div>
-            </div>
 
-            <!---------------------------------------------------------------------------------------------->
+                <div class="textprimeiro">
+                    <img  style="background-color: #e3f2fa" src="{{'assets/img_tcc/icon4.svg'}}" alt="img" class="sidebar-icon-overlay" style="width: 2%;" > 
 
-            <div class="textprimeiro"> 
-                <div class="espaco">
-                    <h2> Navegue em seu feed e descubra novos softwares.</h2>
-                    <p>As sugestões selecionadas para você, abrirão as portas da exploração e descoberta de suas preferências.</p><br>
+                    <div class="imgtextos">
+                        <img src="{{'assets/img_tcc/img3.jpg'}}" alt="img" class="imgtexto1" style="width: 100%;" > 
+                    </div>
                 </div>
-            </div>
 
-            <div class="textprimeiro">
-                <div class="imgtextos">
-                    <img src="{{'assets/img_tcc/img4.jpg'}}" alt="img" class="imgtexto1" style="width: 100%;" > 
+                <!---------------------------------------------------------------------------------------------->
+
+                <div class="textprimeiro"> 
+                    <div class="espaco">
+                        <h2> Navegue em seu feed e descubra novos softwares.</h2>
+                        <p>As sugestões selecionadas para você, abrirão as portas da exploração e descoberta de suas preferências.</p><br>
+                    </div>
                 </div>
-            </div>
-        </div> 
-    </div>
 
-        <div class="ultimotexto">
-            <div class="text2"> 
-                <h2> Inspiri-se e seja inspiração!</h2>
-                <div class="textin2">
-                    <p>Acreditamos no poder da colaboração!
-                    Faça parte de uma comunidade de desenvolvedores que compartilham ideias e conquistam o impossível.</p>
+                <div class="textprimeiro">
+                    <div class="imgtextos">
+                        <img src="{{'assets/img_tcc/img4.jpg'}}" alt="img" class="imgtexto1" style="width: 100%;" > 
+                    </div>
                 </div>
-            </div>
-
-            <div class="botoesembaixo">
-                <button type="button" class="button1">Criar conta</button>
-                <button type="button" class="button2">Entrar</button>
-            </div>
+            </div> 
         </div>
-    </div>       
-        
-        <!-- footer -->
 
-        <div class="footer">
-            <img src="{{'assets/img_tcc/logoSensei.svg'}}" alt="img" class="imgfooter">
+            <div class="ultimotexto">
+                <div class="text2"> 
+                    <h2> Inspiri-se e seja inspiração!</h2>
+                    <div class="textin2">
+                        <p>Acreditamos no poder da colaboração!
+                        Faça parte de uma comunidade de desenvolvedores que compartilham ideias e conquistam o impossível.</p>
+                    </div>
+                </div>
 
-            <div class="botoesfooter">
-                <a href="index.blade.php">Home</a>
-                <a href="sobre">Sobre nós</a>
-                <a href="pesquisar.html">Download</a>
-                <p class="emailequipe">sensei.system7@gmail.com</p>
+                <div class="botoesembaixo">
+                    <button type="button" class="button1">Criar conta</button>
+                    <button type="button" class="button2">Entrar</button>
+                </div>
             </div>
-        </div>
+        </div>       
+            
+            <!-- footer -->
+
+            <div class="footer">
+                <img src="{{'assets/img_tcc/logoSensei.svg'}}" alt="img" class="imgfooter">
+
+                <div class="botoesfooter">
+                    <a href="index.blade.php">Home</a>
+                    <a href="sobre">Sobre nós</a>
+                    <a href="pesquisar.html">Download</a>
+                    <p class="emailequipe">sensei.system7@gmail.com</p>
+                </div>
+            </div>
+    </main> 
 </body>
 
 
@@ -183,5 +233,22 @@
         }) 
     </script>
 
+    <script>
+
+function openSidebar() {
+            const sidebar = document.getElementById('sidebar')
+            console.log(sidebar.style)
+        };
+
+        const closeSidebar = () => {
+            sidebar.style.width = '0';
+            content.style.marginLeft = '0';
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('openSidebarButton').addEventListener('click', () => openSidebar());
+        });
+
+    </script>
 
 </html>
