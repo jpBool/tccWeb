@@ -3,9 +3,9 @@ body {
     margin: 0;
     padding: 0;
     background: linear-gradient(to bottom, #ffffff, #BBE1F3, #9EBAD6, #9EBAD6);
-    font-family: helvetica;
 }
 /*------------------------------- header --------------------------------*/
+
 .header 
 {
     position: relative;
@@ -14,6 +14,8 @@ body {
     margin-top: 0;
     margin-left:0;
     font-family:  Helvetica;  
+    font-weight: bolder;
+    font-size: 18px;
     z-index: 99;
 }
 
@@ -54,12 +56,9 @@ nav
     color: #10273E;
 }
 
-.imgperfil{
+.nav-icon{
     width: 30px;
-}
-
-.imgconfg{
-    width: 25px;
+    cursor: pointer;
 }
 
 .navIcon{
@@ -73,15 +72,50 @@ nav
 
 .navButtom{
     display: grid;
-    gap: 3rem;
+    gap: 7.5rem;
     grid-template-columns: auto auto auto;
     justify-content: center;
     align-items: center;
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
-    
 }
+
+
+/*-------------------------------sidebar--------------------------------*/
+
+.sidebar{
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    top: 0;
+
+    width: fit-content;
+    padding: 1rem;
+
+    height: 100%;
+    background-color: #fff;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.sidebar-i{
+    width: 1.5rem;
+}
+
+
   /*---------------------------------------------------------------*/
 
 .divtotal1{

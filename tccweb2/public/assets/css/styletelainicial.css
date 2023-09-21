@@ -62,12 +62,9 @@ nav
     color: #10273E;
 }
 
-.imgperfil{
+.nav-icon{
     width: 30px;
-}
-
-.imgconfg{
-    width: 25px;
+    cursor: pointer;
 }
 
 .navIcon{
@@ -91,26 +88,36 @@ nav
 }
 
 /*-------------------------------sidebar--------------------------------*/
-.fundo{
-    background-color: #fff;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
 
 .sidebar{
     z-index: 1000;
-    position: absolute;
+    position: fixed;
     right: 0;
-    top: 115.31px;
+    top: 0;
+
+    width: fit-content;
+    padding: 1rem;
+
+    height: 100%;
+    background-color: #fff;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
 }
 
 .sidebar-i{
-    width: 2%;
-}
-
-.nav-button{
-    width: 100px;
+    width: 1.5rem;
 }
 
 /*-------------------------------footer--------------------------------*/

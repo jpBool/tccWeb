@@ -20,8 +20,73 @@
                 </div>
 
                 <div class="navIcon">
-                    <img src="{{'assets/img_tcc/icon_perfilescuro.svg'}}" alt="img" class="imgperfil">
-                    <img src="{{'assets/img_tcc/icon_menu.svg'}}" alt="img" class="imgconfg" id="openSidebarButton">
+                    <img src="{{'assets/img_tcc/icon_perfilescuro.svg'}}" alt="img" class="nav-icon">
+                    <img src="{{'assets/img_tcc/icon_menu.svg'}}" alt="img" class="nav-icon" id="openSidebarButton">
+
+                    <div class="sidebar" id="sidebar">
+                        <!-- Conteúdo da barra lateral -->
+                        <img src="{{'assets/img_tcc/icon_close.svg'}}" alt="img" class="nav-icon" id="closeSidebarButton" style="width: 20px">
+
+                        <a href="#" class="integracao-button"> 
+                            <img src="{{'assets/img_tcc/icon_logout.svg'}}" alt="img" class="sidebar-i">
+                            <span>Logout</span>
+                        </a>
+
+                        <a href="#" class="integracao-button">
+                            <img src="{{'assets/img_tcc/icon_perfilescuro.svg'}}" alt="img" class="sidebar-i">
+                            <span>Perfil</span>
+                        </a>
+
+                        <a href="#" class="integracao-button"> 
+                            <img src="{{'assets/img_tcc/icon_search.svg'}}" alt="img" class="sidebar-i">
+                            <span>Pesquisar</span>
+                        </a>
+
+                        <a href="#" class="integracao-button">
+                            <img src="{{'assets/img_tcc/icon_global.svg'}}" alt="img" class="sidebar-i">
+                            <span>Explorar</span>
+                        </a>
+
+                        <a href="#" class="integracao-button">
+                            <img src="{{'assets/img_tcc/icon_notification.svg'}}" alt="img" class="sidebar-i">
+                            <span>Seguindo</span>
+                        </a>
+
+                        <a href="#" class="integracao-button">
+                            <img src="{{'assets/img_tcc/icon_user_add.svg'}}" alt="img" class="sidebar-i">
+                            <span>Seguidores</span>
+                        </a>
+
+                        <a href="#" class="integracao-button">
+                            <img src="{{'assets/img_tcc/icon_home.svg'}}" alt="img" class="sidebar-i">
+                            <span>Home</span>
+                        </a>
+
+                        <a href="#" class="integracao-button">
+                            <img src="{{'assets/img_tcc/icon_download.svg'}}" alt="img" class="sidebar-i">
+                            <span>Download</span>
+                        </a>
+
+                        <a href="#" class="integracao-button">
+                            <img src="{{'assets/img_tcc/icon_user_edit.svg'}}" alt="img" class="sidebar-i">
+                            <span>Editar perfil</span>
+                        </a>
+
+                        <a href="#" class="integracao-button">
+                            <img src="{{'assets/img_tcc/icon_lock.svg'}}" alt="img" class="sidebar-i">
+                            <span>Editar cadastro</span>
+                        </a>
+
+                        <a href="#" class="integracao-button">
+                            <img src="{{'assets/img_tcc/icon_confg.svg'}}" alt="img" class="sidebar-i">
+                            <span>Configurações</span>
+                        </a>
+
+                        <a href="#" class="integracao-button">
+                            <img src="{{'assets/img_tcc/icon_people.svg'}}" alt="img" class="sidebar-i">
+                            <span>Sobre</span>
+                        </a>
+                    </div>
                 </div>
             </ul>
         </nav>
@@ -29,72 +94,6 @@
 
     <div class="globo">                             
         <img src="{{'assets/img_tcc/globoclaro.svg'}}" alt="img" class="imglobo"> 
-    </div>
-
-    <div class="sidebar" id="sidebar">
-
-        <!-- Conteúdo da barra lateral -->
-        <div class="fundo"> 
-            <div class="integracao-button"> 
-                <img src="{{'assets/img_tcc/icon_logout.svg'}}" alt="img" class="sidebar-i"> 
-                <button type="button" class="nav-button">Logout</button>
-            </div>
-
-            <div class="integracao-button">
-                <img src="{{'assets/img_tcc/icon_perfilescuro.svg'}}" alt="img" class="sidebar-i"> 
-                <button type="button" class="nav-button">Perfil</button> 
-            </div>
-
-            <div class="integracao-button"> 
-                <img src="{{'assets/img_tcc/icon_search.svg'}}" alt="img" class="sidebar-i"> 
-                <button type="button" class="nav-button">Pesquisar</button>
-            </div>
-
-            <div class="integracao-button">
-                <img src="{{'assets/img_tcc/icon_global.svg'}}" alt="img" class="sidebar-i"> 
-                <button type="button" class="nav-button">Explorar</button>
-            </div>
-
-            <div class="integracao-button">
-                <img src="{{'assets/img_tcc/icon_notification.svg'}}" alt="img" class="sidebar-i"> 
-                <button type="button" class="nav-button">Seguindo</button>
-            </div>
-
-            <div class="integracao-button">
-                <img src="{{'assets/img_tcc/icon_user_add.svg'}}" alt="img" class="sidebar-i"> 
-                <button type="button" class="nav-button">Seguidores</button>
-            </div>
-
-            <div class="integracao-button">
-                <img src="{{'assets/img_tcc/icon_home.svg'}}" alt="img" class="sidebar-i"> 
-                <button type="button" class="nav-button">Home</button>
-            </div>
-
-            <div class="integracao-button">
-                <img src="{{'assets/img_tcc/icon_download.svg'}}" alt="img" class="sidebar-i"> 
-                <button type="button" class="nav-button">Download</button>
-            </div>
-
-            <div class="integracao-button">
-                <img src="{{'assets/img_tcc/icon_user_edit.svg'}}" alt="img" class="sidebar-i"> 
-                <button type="button" class="nav-button">Editar Perfil</button>
-            </div>
-
-            <div class="integracao-button">
-                <img src="{{'assets/img_tcc/icon_lock.svg'}}" alt="img" class="sidebar-i"> 
-                <button type="button" class="nav-button">Editar Cadastro</button>
-            </div>
-
-            <div class="integracao-button">
-                <img src="{{'assets/img_tcc/icon_confg.svg'}}" alt="img" class="sidebar-i"> 
-                <button type="button" class="nav-button">Configurações</button>
-            </div>
-
-            <div class="integracao-button">
-                <img src="{{'assets/img_tcc/icon_people.svg'}}" alt="img" class="sidebar-i"> 
-                <button type="button" class="nav-button">Sobre</button>
-            </div>
-        </div>
     </div>
 
     <!-- body -->
@@ -235,18 +234,18 @@
 
     <script>
 
-function openSidebar() {
-            const sidebar = document.getElementById('sidebar')
-            console.log(sidebar.style)
+        function openSidebar() {
+            document.getElementById('sidebar').style.visibility = 'visible';
         };
 
-        const closeSidebar = () => {
-            sidebar.style.width = '0';
-            content.style.marginLeft = '0';
-        };
+        function closeSidebar() {
+            document.getElementById('sidebar').style.visibility = 'hidden'
+        }
 
         document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('sidebar').style.visibility = 'hidden'
             document.getElementById('openSidebarButton').addEventListener('click', () => openSidebar());
+            document.getElementById('closeSidebarButton').addEventListener('click', () => closeSidebar());
         });
 
     </script>
