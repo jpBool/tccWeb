@@ -58,11 +58,6 @@
                         </a>
 
                         <a href="#" class="integracao-button">
-                            <img src="{{'assets/img_tcc/icon_home.svg'}}" alt="img" class="sidebar-i">
-                            <span>Home</span>
-                        </a>
-
-                        <a href="#" class="integracao-button">
                             <img src="{{'assets/img_tcc/icon_download.svg'}}" alt="img" class="sidebar-i">
                             <span>Download</span>
                         </a>
@@ -93,7 +88,8 @@
     </div>
 
     <div class="divtotal1">
-        <div class="text"><h1 class="titulo">About Us</h1>
+        <div class="text">
+            <h1 class="titulo">Sobre nós</h1>
             <p>Este sistema visa atender um amplo grupo de pessoas que buscam uma plataforma digital que possa solucionar suas dúvidas no contexto profissional. A nossa prioridade é desenvolver uma plataforma simplificada, garantindo com que seja acessível a todos os públicos e a diversos nichos de programadores e colaboradores empresariais.
             Através dessa plataforma, busca-se impulsionar a criação de soluções inovadoras, atender necessidades decorrentes, estimular a criatividade e colaboração dos profissionais de programação, além de promover a inclusão digital e democratizar o acesso ao conhecimento tecnológico.</p>
         </div>
