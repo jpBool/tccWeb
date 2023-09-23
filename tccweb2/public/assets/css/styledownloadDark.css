@@ -8,12 +8,15 @@ body{
 /*---------header-----------*/
 .header 
 {
+    position: relative;
     width: 100%;
     display: inline;
     margin-top: 0;
     margin-left:0;
     font-family:  Helvetica;  
     font-weight: bolder;
+    font-size: 18px;
+    z-index: 99;
 }
 
 nav
@@ -72,7 +75,7 @@ nav
 
 .navButtom{
     display: grid;
-    gap: 3rem;
+    gap: 7.5rem;
     grid-template-columns: auto auto auto;
     justify-content: center;
     align-items: center;

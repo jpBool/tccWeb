@@ -58,11 +58,6 @@
                         </a>
 
                         <a href="#" class="integracao-button">
-                            <img src="{{'assets/img_tcc/icon_home.svg'}}" alt="img" class="sidebar-i">
-                            <span>Home</span>
-                        </a>
-
-                        <a href="#" class="integracao-button">
                             <img src="{{'assets/img_tcc/icon_download.svg'}}" alt="img" class="sidebar-i">
                             <span>Download</span>
                         </a>
