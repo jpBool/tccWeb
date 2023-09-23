@@ -10,6 +10,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Show All</title>
+
+
 </head>
 
 <body>
@@ -57,6 +59,7 @@
                 <h2>Vídeo do Projeto</h2>
 
                 <h2>Etapas do Projeto</h2>
+                <iframe src="" id="meuIframe" width="950" height="400"></iframe>
 
                 <h2>Colaboradores do Projeto</h2>
                 <div class="colaboradores">
@@ -69,5 +72,21 @@
                 </div>
             </div>
     </div>
+
+
+    <script>
+        // Obtém uma referência ao seu iframe
+        var iframe = document.getElementById("meuIframe");
+
+        // Obtém o valor do ID do projeto diretamente do PHP
+        var idProjeto = <?php echo json_encode($rows->id_projeto); ?>;
+
+        // Construa a URL com os parâmetros desejados
+        var url = "{{ route('ShowEtapas') }}?id_projeto=" + idProjeto;
+
+        // Define a URL do iframe
+        iframe.src = url;
+    </script>
+
 </body>
 @endsection

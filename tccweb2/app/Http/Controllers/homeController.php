@@ -8,9 +8,11 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Carbon\Carbon;
+use App\Models\gp2_grupos_etapas;
 
 class homeController extends Controller
 {
+    
     //
     public function showProjects()
     {
@@ -44,9 +46,18 @@ class homeController extends Controller
         $rows = gp2_projetos::where('id_projeto', $projeto)
         ->orderBy('porcentagem', 'desc')
         ->first();
+
+        
         // Faça algo com $descricao_breve
         
         // Por exemplo, você pode retornar uma view com o valor
         return view('projeto', compact('rows'));
+    }
+
+    public function ShowEtapas(Request $request)
+    {
+        $projeto = $request->input('id_projeto');
+        $row = gp2_grupos_etapas::where('id_projeto', $projeto)->get();
+        return view('etapas', compact('row'));
     }
 }

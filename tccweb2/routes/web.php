@@ -50,6 +50,8 @@ Route::get('/homeDark', function () {
 
         Route::get('/projetoUser', ['as' => 'projetoIsolado', 'uses' => 'App\Http\Controllers\homeController@showProjectIsoled']);
 
+        Route::get('/Etapas', ['as' => 'ShowEtapas', 'uses' => 'App\Http\Controllers\homeController@ShowEtapas']);
+
         Route::get('/sobre', function () {
             return view('sobre');
         });
@@ -142,6 +144,8 @@ Route::get('/homeDark', function () {
         Route::get('/edicaoperfilDark', function () {
             return view('edicaoperfilDark');
         });
+
+
     // Demais rotas
 
 
