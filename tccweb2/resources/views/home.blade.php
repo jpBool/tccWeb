@@ -14,8 +14,7 @@
 
     <body>
         <div class="main">
-            <br><br><br><br>
-            <br>
+            <br><br><br><br><br>
             
             <div class="allall">
             <h1>Para você!</h1>
