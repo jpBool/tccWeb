@@ -98,7 +98,7 @@
                 display: flex;
             }
             
-            .d
+            .line
             {
                 display: inline-flex;
             }
@@ -106,11 +106,12 @@
 
 </head>
 <body>
+    
 </body>
-    </html>
+</html>
 
-    <div class="order">
-    <div class="d">
+<div class="order">
+    <div class="line">
         @foreach($row as $row2)
             <div class="quadradinho">
                 @if ($row2)
@@ -142,4 +143,4 @@
                 @endforeach
         @endforeach
     </div>
-    </div>
+</div>

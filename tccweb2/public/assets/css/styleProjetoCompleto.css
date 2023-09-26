@@ -31,14 +31,14 @@ body::before {
 
 .main
 {
-    margin-top: 50px;
+    margin: 0;
     padding: 0;
-    margin-left: 500;
+    margin-left: auto;
     margin-right: auto;
     height: 100%; /* Garante que a div main tenha altura igual à altura do body */
     width: 100%;
     padding-bottom: 0;
-    position: fixed;
+    position: relative;
 }
 /* ------------------- BARRA -------------------*/
 
@@ -136,6 +136,11 @@ body::before {
     display: flex;
     margin-bottom: 7px;
 }
+
+.infoAutor iframe{
+    border-radius: 20px;
+}
+
 .email{
     text-decoration: underline;
 }

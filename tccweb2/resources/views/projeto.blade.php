@@ -16,6 +16,7 @@
 
 <body>
     <div class="main">
+        <div class="cetro">
             <div class="barra-progress">
                 <h1>Progress</h1>
                 <div class="barraPreta">
@@ -59,7 +60,7 @@
                 <h2>Vídeo do Projeto</h2>
 
                 <h2>Etapas do Projeto</h2>
-                <iframe src="" id="meuIframe" width="950" height="400"></iframe>
+                <iframe src="" id="meuIframe" width="820" height="400"></iframe>
 
                 <h2>Colaboradores do Projeto</h2>
                 <div class="colaboradores">
@@ -71,6 +72,7 @@
                     <h4>{{$rows->palavras_chaves}}</h4>
                 </div>
             </div>
+        </div>
     </div>
 
 
