@@ -72,7 +72,6 @@
             .etapas
             {
                 background: #BBE1F3;
-                display:block;
                 width: 400px;
                 border: 1px solid black;
                 border-radius: 10px;
