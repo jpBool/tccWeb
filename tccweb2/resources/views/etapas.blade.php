@@ -4,7 +4,6 @@
             .order
             {
                 display: block;
-                font-family: Helvetica;
             }
             .quadradinho
             {
@@ -14,10 +13,19 @@
                 border: 2px solid black;
                 padding: 10px;
                 width: 300px;
+                height: 120px;
+                font-family: Helvetica;
             }
             .quadradinho h3
             {
-                margin-bottom: 0;
+                margin-top: 0;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+            .quadradinho h4
+            {
+                margin: 10px;
+                float: right;
             }
             .num-porcentagem
             {
@@ -27,7 +35,7 @@
             .barraPreta
             {
                 box-sizing: border-box;
-                width: 22%;
+                width: 100%;
                 background-color: white;
                 display: block;
                 align-self: center;
@@ -38,7 +46,8 @@
             }
 
             .barra-progress{
-                width: 990px;
+                margin-left: 15px;
+                width: 250px;
                 display: flex;
                 border-radius: 18px;
                 padding: 10px;
@@ -59,6 +68,40 @@
                 border-radius: 10px;
                 display: flex;
             }
+
+            .etapas
+            {
+                background: #BBE1F3;
+                display:block;
+                width: 400px;
+                border: 1px solid black;
+                border-radius: 10px;
+                padding: 10px;
+                margin: 10px;
+                font-family: Helvetica;
+            }
+
+            .etapas h3
+            {
+                margin-top: 10px;
+            }
+
+            .etapas p
+            {
+                background: #8AB6D5;
+                border-radius: 10px;
+                padding: 10px;
+            }
+
+            .orderbi
+            {
+                display: flex;
+            }
+            
+            .d
+            {
+                display: inline-flex;
+            }
         </style>
 
 </head>
@@ -67,31 +110,36 @@
     </html>
 
     <div class="order">
+    <div class="d">
         @foreach($row as $row2)
-        <div class="quadradinho">
-            @if ($row2)
-                <h3>{{$row2->nome_grupo}}</h3><br>
-                {{$row2->porcentagem}}<br>
-                {{$row2->ordenador}}<br>
-
-                <div class="barra-progress">
-                <div class="barraPreta">
-                    <div class="barra" style="width: {{$row2->porcentagem}}%;">
-                        
+            <div class="quadradinho">
+                @if ($row2)
+                    <h3>{{$row2->nome_grupo}}</h3>
+                    <div class="barra-progress">
+                    <div class="barraPreta">
+                        <div class="barra" style="width: {{$row2->porcentagem}}%;">
+                            
+                        </div>
+                    </div>
+                    <div class="num-porcentagem">{{$row2->porcentagem}}%</div>
+                </div>
+                <label>N° etapas: {{$row2->num_etapas}}</label>
+                <h4>{{$row2->ordenador}}</h4>
+                @else
+                    <!-- Caso não haja registro correspondente -->
+                    Não foi encontrado nenhum registro.
+                @endif
+            </div>
+                @foreach($rowEtapas as $rowE)
+                <div class="orderbi">
+                @if($rowE->id_grupo == $row2->id_grupo)
+                    <div class="etapas">
+                        <h3>{{$rowE->nome_etapa}}</h3>
+                        <p>{{$rowE->descricao_etapa}}</p>
+                        @endif
                     </div>
                 </div>
-                <div class="num-porcentagem">{{$row2->porcentagem}}%</div>
-            </div>
-                {{$row2->num_etapas}}<br>
-            @else
-                <!-- Caso não haja registro correspondente -->
-                Não foi encontrado nenhum registro.
-            @endif
-        </div>
-            @foreach($rowEtapas as $rowE)
-                @if($rowE->id_grupo == $row2->id_grupo)
-                {{$rowE->nome_etapa}}
-                @endif
-            @endforeach
+                @endforeach
         @endforeach
-        </div>
+    </div>
+    </div>
