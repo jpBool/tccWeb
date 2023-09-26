@@ -22,7 +22,14 @@
             <div id="margin-project">
                 <div class='project'>
                     <div class="titulo">
-                        <img src="{{'assets/img_tcc/usuario.png'}}" alt="img" id="img-user">
+                        @foreach($rowsImagens as $rowI)
+                            @if($rowI->id_projeto == $row->id_projeto)
+                                @if($rowI->imagem_principal == true)
+                                <img src="{{'assets/img_tcc/usuario.png'}}" alt="img" id="img-user">
+                                @endif
+                            @endif
+                        @endforeach
+                        
                         <label class="label-titulo"> Nova atualização de <div id="nome-autor">{{ $row->autores }}</div>. 
 
                                             @if($row->diferencaDias > 0)
@@ -39,7 +46,14 @@
                     
                     <div class="conteudo"> 
                         <div>
-                            <img src="{{'assets/img_tcc/gatinho.png'}}" alt="img" id="img-project" width="340px">
+                        @foreach($rowsImagens as $rowI)
+                            @if($rowI->id_projeto == $row->id_projeto)
+                                @if($rowI->imagem_principal == true)
+                                    <img src="{{$rowI->diretorio}}" alt="img" id="img-project" width="340px">
+                                @endif
+                            @endif
+                        @endforeach
+                            
                         </div>
                         <div class="allConteudo">
                             <h2> {{$row->nome_projeto}} </h2>

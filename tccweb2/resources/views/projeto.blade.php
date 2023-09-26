@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    
     <div class="main">
         <div class="cetro">
             <div class="barra-progress">
@@ -29,11 +30,11 @@
 
             <div class="GroupNomProjeto">
                 <div class="nomeProjeto">
-                    <h1>< {{$rows->nome_projeto}} ></h1>
+                    <h1> {{$rows->nome_projeto}}</h1>
                     {{$rows->descricao_breve}};
                 </div>
                 <div class="dadosProjeto">
-                    Criado por : {{$rows->id_criador}};
+                    Criado por : {{$rows->autores}};
                     <br><br>
                     Criado em : {{$rows->data_criacao}};
                     <br><br>
@@ -45,9 +46,13 @@
             <div class="infoAutor"> 
                 <div class="autores">Autores: {{$rows->autores}};</div>
                 <label>E-mail para contato: <div class="email">{{$rows->email_contato}};</div></label>
-                <label>Site do Projeto: <div class="link-site">{{$rows->link_site}};</div></label>
+                <label>Site do Projeto: <div class="link-site"><a href="{{$rows->link_site}}">{{$rows->link_site}}; </a></div></label>
                 <br>
-                <h2>Status do Projeto: < {{$rows->status}} ></h2>
+                
+                
+                <h2>Status do Projeto: < {{$rowsStatus[$rows->status]->status}} ></h2>
+
+
                 <h4>Previsão de Conclusão : < {{$rows->previsao}} > </h4>
                 <h4>Linguagem: < {{$rows->linguagem}} > </h4>
                 <div class="descricao">
@@ -57,14 +62,43 @@
 
                 <h2>Imagens</h2>
 
+                @foreach($rowsImagens as $rowI)
+                    @if($rowI->id_projeto == $rows->id_projeto)
+                        
+                            <img src="{{$rowI->diretorio}}" alt="img" id="img-project" width="340px">
+                       
+                    @endif
+                @endforeach
+
                 <h2>Vídeo do Projeto</h2>
 
                 <h2>Etapas do Projeto</h2>
-                <iframe src="" id="meuIframe" width="820" height="400"></iframe>
+                <iframe src="" id="meuIframe" width="1020" height="600"></iframe>
 
                 <h2>Colaboradores do Projeto</h2>
                 <div class="colaboradores">
-                    <h4>{{$rows->id_criador}};</h4>
+                    @foreach($rowsColab as $rowsC)
+                        @if($rowsC->id_projeto == $rows->id_projeto)
+                            @foreach($rowsUsers as $rowsA)
+                                @if($rowsA->id_usuario == $rowsC->id_colaborador)
+                                <div class="colabs">
+                                    <img src="{{'assets/img_tcc/usuario.png'}}" alt="img" id="img-user" width="50px">
+                                    <div class="text-colab">
+                                        {{$rowsA->nome}}
+                                    </div>
+                                    <div class="email-colab">
+                                        {{$rowsA->email}}<br>
+                                    </div>
+                                </div>
+
+
+
+                                @endif
+                            @endforeach
+                        @endif
+                    @endforeach
+                   
+
                 </div>
 
                 <div class="palavras-chave">
