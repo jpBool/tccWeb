@@ -100,19 +100,17 @@
             
             .line
             {
+                width: 400px;
                 display: inline-flex;
             }
         </style>
 
 </head>
 <body>
-    
-</body>
-</html>
-
-<div class="order">
-    <div class="line">
-        @foreach($row as $row2)
+        
+    @foreach($row as $row2)
+        <div class="order">
+        <div class="line">
             <div class="quadradinho">
                 @if ($row2)
                     <h3>{{$row2->nome_grupo}}</h3>
@@ -132,15 +130,20 @@
                 @endif
             </div>
                 @foreach($rowEtapas as $rowE)
-                <div class="orderbi">
-                @if($rowE->id_grupo == $row2->id_grupo)
-                    <div class="etapas">
-                        <h3>{{$rowE->nome_etapa}}</h3>
-                        <p>{{$rowE->descricao_etapa}}</p>
-                        @endif
+                    @if($rowE->id_grupo == $row2->id_grupo)
+                    <div class="orderbi">
+                        <div class="etapas">
+                            <h3>{{$rowE->nome_etapa}}</h3>
+                            <p>{{$rowE->descricao_etapa}}</p>
+                            
+                        </div>
                     </div>
-                </div>
+                    @endif
                 @endforeach
-        @endforeach
-    </div>
-</div>
+        </div>
+        </div>
+    @endforeach
+
+
+</body>
+</html>
