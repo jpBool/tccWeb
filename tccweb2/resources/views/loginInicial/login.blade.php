@@ -39,11 +39,11 @@
                     @csrf
                     <div class="form-group">
                         <label for="email">E-mail</label>
-                        <input id="email" type="email" name="email" value="{{ old('email') }}" required autofocus cols="30">
+                        <input id="email" type="email" name="email" value="{{ old('email') }}" required autofocus>
                     </div>
                     <div class="form-group">
                         <label for="password">Senha</label>
-                        <input id="password" type="password" name="password" required rows="10">
+                        <input id="password" type="password" name="password" required>
                     </div>
                     <div class="form-group">
                         <button type="submit">Login</button>
