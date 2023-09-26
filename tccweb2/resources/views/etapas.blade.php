@@ -88,5 +88,10 @@
                 Não foi encontrado nenhum registro.
             @endif
         </div>
+            @foreach($rowEtapas as $rowE)
+                @if($rowE->id_grupo == $row2->id_grupo)
+                {{$rowE->nome_etapa}}
+                @endif
+            @endforeach
         @endforeach
         </div>

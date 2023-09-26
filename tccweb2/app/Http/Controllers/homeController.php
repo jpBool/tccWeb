@@ -9,6 +9,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Carbon\Carbon;
 use App\Models\gp2_grupos_etapas;
+use App\Models\gp2_etapas;
 
 class homeController extends Controller
 {
@@ -58,6 +59,21 @@ class homeController extends Controller
     {
         $projeto = $request->input('id_projeto');
         $row = gp2_grupos_etapas::where('id_projeto', $projeto)->get();
-        return view('etapas', compact('row'));
+        $rowEtapas = [];
+
+            $projetos = gp2_etapas::all();
+            foreach ($row as $projetoGrupo) {
+                foreach($projetos as $projeto)
+                {
+                    if($projetoGrupo->id_grupo == $projeto->id_grupo)
+                    {
+                        $rowEtapas[] = $projeto;
+                    }
+                    
+                    
+                }
+                
+            }
+        return view('etapas', compact('row', 'rowEtapas'));
     }
 }
