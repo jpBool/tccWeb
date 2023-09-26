@@ -9,7 +9,7 @@
 <body class="body">
 
 
-<div class="header">
+    <div class="header">
         <nav id="navbar">  
             <ul>
                 <img src="{{'assets/img_tcc/logoclaro.svg'}}" alt="img" class="imglogo">

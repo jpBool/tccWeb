@@ -151,4 +151,23 @@
 
         }) 
     </script>
+
+         
+    <script>
+
+        function openSidebar() {
+            document.getElementById('sidebar').style.visibility = 'visible';
+        };
+
+        function closeSidebar() {
+            document.getElementById('sidebar').style.visibility = 'hidden'
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('sidebar').style.visibility = 'hidden'
+            document.getElementById('openSidebarButton').addEventListener('click', () => openSidebar());
+            document.getElementById('closeSidebarButton').addEventListener('click', () => closeSidebar());
+        });
+
+    </script>
 </html>

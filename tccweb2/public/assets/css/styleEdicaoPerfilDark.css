@@ -24,6 +24,7 @@ main{
 }
 
 /*---------header-----------*/
+
 .header 
 {
     position: relative;
@@ -33,6 +34,7 @@ main{
     margin-left:0;
     font-family:  Helvetica;  
     font-weight: bolder;
+    font-size: 18px;
     z-index: 99;
 }
 
