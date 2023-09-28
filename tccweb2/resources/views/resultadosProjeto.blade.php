@@ -88,9 +88,9 @@
                     
 
                         <div class="botoesform">
-                        <input class="buttons" type="reset" value="LIMPAR FILTROS">
-                        <input class="buttons" type="submit" value="CANCELAR" formnovalidate>
-                        <input class="buttons" type="submit" value="APLICAR FILTROS">
+                        <input class="buttons" type="reset" value="">
+                        <input class="buttons" type="submit" value="">
+                        <input class="buttons" type="submit" value="">
                         </div>
                 </form>
                 

@@ -40,10 +40,18 @@ body::before {
     padding-bottom: 0;
     position: relative;
 }
+
+.cetro{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+}
 /* ------------------- BARRA -------------------*/
 
 .num-porcentagem{
     padding-left: 10px;
+    padding-top: 140px;
 }
 
 .barraPreta
@@ -158,8 +166,8 @@ body::before {
 {
     text-align: left;
     border: 1px solid black;
-    border-radius: 10px;
-    width: 800px;
+    border-radius: 20px;
+    width: 780px;
     height: 600px;
     padding: 20px;
 }
