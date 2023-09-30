@@ -252,8 +252,21 @@ padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
+
+.result_pess{
+    width: 30%;
+    max-width: 500px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.cont{
+    display: block;
+}
+
 .pessoasProjetos {
     display: flex;
     justify-content: center;
@@ -372,6 +385,7 @@ padding: 10px;
 #filterButton:hover {
     background-color: #0056b3;
 }
+
 /*-------------------------------footer--------------------------------*/
 .botoesfooter
 {

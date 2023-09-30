@@ -15,7 +15,7 @@
 <body class="body">
 
 <div class="espacinho">
-<form method="POST" action="/pesquisarProjetos">
+    <form method="POST" action="/pesquisarProjetos">
             @csrf
             <div class="separador">
                 <div class="search-container">
@@ -45,7 +45,15 @@
         </div>
             <div class="center">  
                 <div class="quad">
-                <form>
+                <form method="POST" aaction="/pesquisarProjetos">
+                        @csrf
+                     <!-- Outros campos do formulário, se houver -->
+                     <div class="separador">
+                <div class="search-container">
+                    <input type="text" name="termo_pesquisa" id="searchInput" placeholder="Pesquisar...">
+                    <button id="searchButton" type="submit" ><img class="lupa" src="{{'assets/img_tcc/lupa.svg'}}"></button>
+                </div>
+            </div>
                     <div class="status">
                         <label for="status">Status de Projeto:</label>
                         <select id="status" name="status">
@@ -61,15 +69,7 @@
                             <label for="porcentagem" id="lado2" >Menor que:</label>
                             <input type="number" id="porcentagem" name="porcentagem" min="0" max="100">
                         </div>
-                        
-                        <div class="datacon">
-                            <p id="lado0">Data de Conclusão:</p>
-                            <label for="porcentagem" id="lado" >Maior que:</label>
-                            <input type="number" id="porcentagem" name="porcentagem" min="0" max="100">
-                            <label for="porcentagem" id="lado2" >Menor que:</label>
-                            <input type="number" id="porcentagem" name="porcentagem" min="0" max="100">
-                        </div>
-                        
+                    
                         <div class="datatt">
                             <p id="lado0">Data de Atualização:</p>
                             <label for="porcentagem" id="lado" >Maior que:</label>
@@ -77,15 +77,6 @@
                             <label for="porcentagem" id="lado2" >Menor que:</label>
                             <input type="number" id="porcentagem" name="porcentagem" min="0" max="100">
                         </div>
-                        
-                        <div class="dataprev">
-                            <p id="lado0">Previsão de Conclusão:</p>
-                            <label for="porcentagem" id="lado" >Maior que:</label>
-                            <input type="number" id="porcentagem" name="porcentagem" min="0" max="100">
-                            <label for="porcentagem" id="lado2" >Menor que:</label>
-                            <input type="number" id="porcentagem" name="porcentagem" min="0" max="100">
-                        </div>
-                    
 
                         <div class="botoesform">
                         <input class="buttons" type="reset" value="">
