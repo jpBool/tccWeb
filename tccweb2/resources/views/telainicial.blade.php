@@ -50,7 +50,7 @@
                     <img style="background-color: #e3f2fa" src="{{'assets/img_tcc/icon2.svg'}}" alt="img" class="sidebar-icon-overlay svg-test" style="width: 2%;" >
                     
                     <div class="imgtextos">
-                        <img src="{{'assets/img_tcc/img1.jpg'}}" alt="img" class="imgtexto1" style="width: 100%;" > 
+                        <img src="{{'assets/img_tcc/Feed.png'}}" alt="img" class="imgtexto1" style="width: 100%;" > 
                     </div>
                 </div>
 
@@ -67,7 +67,7 @@
                     <img style="background-color: #e3f2fa" src="{{'assets/img_tcc/icon3.svg'}}" alt="img" class="sidebar-icon-overlay" style="width: 2%;"> 
 
                     <div class="imgtextos">
-                        <img src="{{'assets/img_tcc/img2.jpg'}}" alt="img" class="imgtexto1" style="width: 100%;" > 
+                        <img src="{{'assets/img_tcc/PesquisaUsuario.png'}}" alt="img" class="imgtexto1" style="width: 100%;" > 
                     </div>
                 </div>
 
@@ -84,22 +84,7 @@
                     <img  style="background-color: #e3f2fa" src="{{'assets/img_tcc/icon4.svg'}}" alt="img" class="sidebar-icon-overlay" style="width: 2%;" > 
 
                     <div class="imgtextos">
-                        <img src="{{'assets/img_tcc/img3.jpg'}}" alt="img" class="imgtexto1" style="width: 100%;" > 
-                    </div>
-                </div>
-
-                <!---------------------------------------------------------------------------------------------->
-
-                <div class="textprimeiro"> 
-                    <div class="espaco">
-                        <h2> Navegue em seu feed e descubra novos softwares.</h2>
-                        <p>As sugestões selecionadas para você, abrirão as portas da exploração e descoberta de suas preferências.</p><br>
-                    </div>
-                </div>
-
-                <div class="textprimeiro">
-                    <div class="imgtextos">
-                        <img src="{{'assets/img_tcc/img4.jpg'}}" alt="img" class="imgtexto1" style="width: 100%;" > 
+                        <img src="{{'assets/img_tcc/EtapasProjeto.png'}}" alt="img" class="imgtexto1" style="width: 100%;" > 
                     </div>
                 </div>
             </div> 
@@ -121,17 +106,6 @@
         </div>     
             
         <!-- footer -->
-
-        <div class="footer">
-            <img src="{{'assets/img_tcc/logoSensei.svg'}}" alt="img" class="imgfooter">
-
-            <div class="botoesfooter">
-                <a href="index.blade.php">Home</a>
-                <a href="sobre">Sobre nós</a>
-                <a href="pesquisar.html">Download</a>
-                <p class="emailequipe">sensei.system7@gmail.com</p>
-            </div>
-        </div>
     </main> 
 </body>
     <script>

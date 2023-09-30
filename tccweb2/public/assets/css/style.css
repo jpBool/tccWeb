@@ -1,5 +1,5 @@
 html{
-    height: 100%;
+    height: 80vh;
     background-repeat: no-repeat;
     padding-bottom: 0;
      /* 100% da altura da tela */
@@ -16,7 +16,6 @@ body
     /* Defina o fundo da página inteira, incluindo a área abaixo do footer */
     background-color: #f0f0f0; /* Substitua pela cor de fundo desejada */
     font-family: Helvetica;
-            
 }
 
 body::before {
@@ -37,9 +36,12 @@ body::before {
     margin-left: auto;
     margin-right: auto;
     height: 100%; /* Garante que a div main tenha altura igual à altura do body */
-    width: 100%;
     padding-bottom: 0;
     position: relative;
+}
+
+.all{
+    padding-top: 50px;
 }
 
 .card-login{
@@ -48,6 +50,8 @@ body::before {
     width: 800px;
     height: 420px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 28px 70px;
     border-radius: 20px;
     background-color: #BBE1F3;
@@ -82,13 +86,19 @@ body::before {
     margin-bottom: 10px;
 }
 
+.card-left h1{
+    font-size: 38px;
+}
+
 .card-right{    
     width: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 10px;
+    justify-content: center;
     padding-left: 100px;
+    font-size: 22px;
+    text-align: center;
 }
 
 .form-group{
@@ -122,10 +132,10 @@ body::before {
 }
 
 .form-group button{
-    width: 50%;
+    width: 45%;
     margin-top: 15px;
     margin-left: 70px;
-    padding: 16px 0px;
+    padding: 14px 0px;
     background: #130c3b;
     color: #ffffff;
     border-radius: 10px;
@@ -140,7 +150,6 @@ body::before {
 {
     position: fixed;
     width: 100%;
-    background-color: #FFFFFF;
     display: inline;
     margin-top: 0;
     margin-left:0;
