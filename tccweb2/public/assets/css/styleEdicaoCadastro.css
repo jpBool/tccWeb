@@ -90,7 +90,7 @@ nav
 
 .navButtom{
     display: grid;
-    gap: 3rem;
+    gap: 7.5rem;
     grid-template-columns: auto auto auto;
     justify-content: center;
     align-items: center;

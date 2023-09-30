@@ -36,14 +36,14 @@
                         <input id="password" type="password" name="password" required>
                     </div>
                     <div class="form-group">
-                        <button type="submit">Login</button>
+                        <button type="submit">LOGIN</button>
                     </div>
                 </form>
                 <p>Você não possui uma conta? Criar</p>
             </div>
             <div class="card-right">
                 <h1>Bem vindo!</h1>
-                <h3>Faça login login para entrar para nosso time</h3>
+                <p>Faça login para entrar para nosso time</p>
             </div>
         </div>
     </div>
