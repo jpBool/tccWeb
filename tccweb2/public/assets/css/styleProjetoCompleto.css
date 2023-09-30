@@ -124,7 +124,7 @@ body::before {
     margin-top: 5px;
     margin-left: 10%;
     width: 340px;
-    height: 130px;
+    height: 170px;
     display: block;
     text-align: left;
     border: 1px solid black;
@@ -176,8 +176,9 @@ body::before {
     border: 1px solid black;
     border-radius: 10px;
     width: 800px;
-    height: 300px;
+    height: 80%;
     padding: 10px;
+    display: block;
 }
 
 .palavras-chave{
@@ -188,3 +189,29 @@ body::before {
     padding: 0px 10px 10px 10px;
     margin-top: 50px;
 }
+
+.colabs {
+    gap: 5px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    height: 70px;
+    display: flex; /* Tornar .colabs um contêiner flexível */
+    align-items: center; /* Centralizar verticalmente */
+    align-self: center;
+}
+
+.text-colab {
+    display: inline-flex;
+    margin-bottom: 10px;
+    align-items: center; /* Centralizar verticalmente o texto */
+    margin-left: 10px; /* Espaçamento entre a imagem e o texto */
+}
+
+.email-colab {
+    display: inline-flex;
+    margin-bottom: 10px;
+    align-items: center; /* Centralizar verticalmente o texto */
+    margin-left: 150px; /* Espaçamento entre a imagem e o texto */
+    
+}
+

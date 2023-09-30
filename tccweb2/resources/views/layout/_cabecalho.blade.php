@@ -15,8 +15,8 @@
                 <img src="{{'assets/img_tcc/logo.svg'}}" alt="img" class="imglogo">
                 <div class="navButtom">
                     <li><a class="links" href="index">Seguindo</a></li>
-                    <li><a class="links" href="sobre">Explorar</a></li>
-                    <li><a class="links" href="pesquisar.html">Pesquisar</a></li>
+                    <li><a class="links" href="{{route('homeInicial')}}">Explorar</a></li>
+                    <li><a class="links" href="{{route('pesquisausuario')}}">Pesquisar</a></li>
                 </div>
 
                 <div class="navIcon">
@@ -32,17 +32,17 @@
                             <span>Logout</span>
                         </a>
 
-                        <a href="#" class="integracao-button">
+                        <a href="{{route('loginInicial.placeholder')}}" class="integracao-button">
                             <img src="{{'assets/img_tcc/icon_perfilescuro.svg'}}" alt="img" class="sidebar-i">
                             <span>Perfil</span>
                         </a>
 
-                        <a href="#" class="integracao-button"> 
+                        <a href="pesquisar"class="integracao-button"> 
                             <img src="{{'assets/img_tcc/icon_search.svg'}}" alt="img" class="sidebar-i">
                             <span>Pesquisar</span>
                         </a>
 
-                        <a href="#" class="integracao-button">
+                        <a href="{{route('homeInicial')}}" class="integracao-button">
                             <img src="{{'assets/img_tcc/icon_global.svg'}}" alt="img" class="sidebar-i">
                             <span>Explorar</span>
                         </a>
@@ -57,17 +57,17 @@
                             <span>Seguidores</span>
                         </a>
 
-                        <a href="#" class="integracao-button">
+                        <a href="{{route('download')}}" class="integracao-button">
                             <img src="{{'assets/img_tcc/icon_download.svg'}}" alt="img" class="sidebar-i">
                             <span>Download</span>
                         </a>
-
-                        <a href="#" class="integracao-button">
+           
+                        <a href="{{route('edicaoperfil')}}" class="integracao-button">
                             <img src="{{'assets/img_tcc/icon_user_edit.svg'}}" alt="img" class="sidebar-i">
                             <span>Editar perfil</span>
                         </a>
 
-                        <a href="#" class="integracao-button">
+                        <a href="{{route('edicaocadastro')}}" class="integracao-button">
                             <img src="{{'assets/img_tcc/icon_lock.svg'}}" alt="img" class="sidebar-i">
                             <span>Editar cadastro</span>
                         </a>
@@ -77,7 +77,7 @@
                             <span>Configurações</span>
                         </a>
 
-                        <a href="#" class="integracao-button">
+                        <a href="{{route('sobre')}}" class="integracao-button">
                             <img src="{{'assets/img_tcc/icon_people.svg'}}" alt="img" class="sidebar-i">
                             <span>Sobre</span>
                         </a>

@@ -52,14 +52,15 @@ Route::get('/homeDark', function () {
 
         Route::get('/Etapas', ['as' => 'ShowEtapas', 'uses' => 'App\Http\Controllers\homeController@ShowEtapas']);
 
-        Route::get('/sobre', function () {
+        Route::get('/sobre', 
+            function () {
             return view('sobre');
-        });
+        })->name('sobre');
         
 
         Route::get('/telainicial', function () {
             return view('telainicial');
-        });
+        })->name('telainicial');
 
         Route::get('/telainicialDark', function () {
             return view('telainicialDark');
@@ -67,7 +68,7 @@ Route::get('/homeDark', function () {
 
         Route::get('/teladownload', function () {
             return view('teladownload');
-        });
+        })->name('download');
 
         Route::get('/cadastro', function () {
             return view('cadastro');
@@ -75,7 +76,7 @@ Route::get('/homeDark', function () {
 
         Route::get('/edicaoperfil', function () {
             return view('edicaoperfil');
-        });
+        })->name('edicaoperfil');
 
         Route::get('/filtrarpesquisa', function () {
             return view('filtrarpesquisa');
@@ -85,7 +86,9 @@ Route::get('/homeDark', function () {
             return view('edicaocadastro');
         });
 
-        Route::get('/pesquisar', 'App\Http\Controllers\UsuariostccController@pesquisar'); // Rota para a página de pesquisa
+        Route::get('/pesquisar', 'App\Http\Controllers\UsuariostccController@pesquisar')->name('pesquisar');
+
+        // Rota para a página de pesquisa
         Route::post('/pesquisar', 'App\Http\Controllers\UsuariostccController@processarPesquisa'); // Rota para processar a pesquisa
 
         Route::post('/pesquisarProjetos', 'App\Http\Controllers\UsuariostccController@processarProjetos'); // 
@@ -116,9 +119,9 @@ Route::get('/homeDark', function () {
             return view('pesquisaUsuarios');
         })->name('pesquisausuario');
 
-        Route::get('/edicaocadastro', function () {
+        Route::post('/edicaocadastro', function () {
             return view('edicaocadastro');
-        });
+        })->name('edicaocadastro');
 
 
        

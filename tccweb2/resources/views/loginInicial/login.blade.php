@@ -12,16 +12,6 @@
             <nav id="navbar">  
                 <ul>
                     <img src="{{'assets/img_tcc/logo.svg'}}" alt="img" class="imglogo">
-                    <div class="navButtom">
-                        <li><a class="links" href="index">Seguindo</a></li>
-                        <li><a class="links" href="{{route('homeInicial')}}">Explorar</a></li>
-                        <li><a class="links" href="{{route('pesquisausuario') }}">Pesquisar</a></li>
-                    </div>
-
-                    <div class="navIcon">
-                        <img src="{{'assets/img_tcc/perfil.png'}}" alt="img" class="imgperfil">
-                        <img src="{{'assets/img_tcc/confg.png'}}" alt="img" class="imgconfg">
-                    </div>
                 </ul>
             </nav>
         </div>
@@ -56,16 +46,6 @@
                 <h3>Faça login login para entrar para nosso time</h3>
             </div>
         </div>
-    </div>
-    <div class="footer">
-                <img src="{{'assets/img_tcc/logoSensei.svg'}}" alt="img" class="imgfooter">
-
-                <div class="botoesfooter">
-                <a href="index.blade.php">Home</a>
-                <a href="sobre">Sobre nós</a>
-                <a href="pesquisar.html">Download</a>
-                <p class="emailequipe">sensei.system7@gmail.com</p>
-                </div>
     </div>
 </div>
 </body>

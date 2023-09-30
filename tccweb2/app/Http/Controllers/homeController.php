@@ -10,6 +10,10 @@ use Illuminate\Support\Facades\Hash;
 use Carbon\Carbon;
 use App\Models\gp2_grupos_etapas;
 use App\Models\gp2_etapas;
+use App\Models\gp2_imagens;
+use App\Models\gp2_status;
+use App\Models\gp2_colaboradores;
+use App\Models\gp2_usuarios;
 
 class homeController extends Controller
 {
@@ -20,7 +24,7 @@ class homeController extends Controller
        
 
             $rows = [];
-            $projetos = gp2_projetos::all();
+            $projetos = gp2_projetos::orderBy('porcentagem', 'desc')->get();
             foreach ($projetos as $projeto) {
                 $dataAtualizacao = $projeto->data_atualizacao;
                 $dataAtualizacao = Carbon::parse($dataAtualizacao);
@@ -29,8 +33,10 @@ class homeController extends Controller
                 $projeto->diferencaDias = $diferencaDias;
                 $rows[] = $projeto;
             }
+
+            $rowsImagens = gp2_imagens::all();
     
-            return view('home', compact('rows'));     
+            return view('home', compact('rows', 'rowsImagens'));     
         
          
     }
@@ -48,11 +54,17 @@ class homeController extends Controller
         ->orderBy('porcentagem', 'desc')
         ->first();
 
+        $rowsStatus = gp2_status::all();
+
+        $rowsImagens = gp2_imagens::all();
         
+        $rowsColab = gp2_colaboradores::all();
+
+        $rowsUsers = gp2_usuarios::all();
         // Faça algo com $descricao_breve
         
         // Por exemplo, você pode retornar uma view com o valor
-        return view('projeto', compact('rows'));
+        return view('projeto', compact('rows', 'rowsStatus', 'rowsImagens', 'rowsColab', 'rowsUsers'));
     }
 
     public function ShowEtapas(Request $request)
