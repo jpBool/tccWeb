@@ -62,12 +62,12 @@
                         @endforeach
 
                         @if($countMatches === 0)
-                            <img src="{{'assets/img_tcc/gatinho.png'}}" alt="img" id="img-user">
+                            <img src="{{'assets/img_tcc/gatinho.png'}}" alt="img" id="img-project" width="340px">
                         @endif
 
 
                         
-                        <img src="{{'assets/img_tcc/gatinho.png'}}" alt="img" id="img-user">
+                        
                         </div>
                         <div class="allConteudo">
                             <h2> {{$row->nome_projeto}} </h2>

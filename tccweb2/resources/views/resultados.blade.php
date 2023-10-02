@@ -42,8 +42,12 @@
         @foreach($resultados as $row)
         <div class="result_pess">
         <img src="{{'assets/img_tcc/usuario.png'}}" alt="img" id="img-user" width="50px">
-        {{ $row->nome }}<br> 
-        {{ $row->email }} Segue você --- Seguir de volta
+            <div clss="conta">
+                {{ $row->nome }}
+                {{ $row->email }} 
+            </div>
+                <input type="submit" value="Segue você" class="button" />
+                <input type="submit" value="Seguir de volta" class="button" />
         </div>
         @endforeach 
     </center>
