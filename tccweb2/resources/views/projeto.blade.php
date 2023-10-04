@@ -17,7 +17,6 @@
 <body>
     
     <div class="main">
-        <div class="cetro">
             <div class="barra-progress">
                 <h1>Progress</h1>
                 <div class="barraPreta">
@@ -44,69 +43,88 @@
                 </div>
             </div>
             <div class="infoAutor"> 
-                <div class="autores">Autores: {{$rows->autores}};</div>
-                <label>E-mail para contato: <div class="email">{{$rows->email_contato}};</div></label>
-                <label>Site do Projeto: <div class="link-site"><a href="{{$rows->link_site}}">{{$rows->link_site}}; </a></div></label>
-                <br>
+                <div class="text">
+                    <div class="autores">
+                        <label>Autores: {{$rows->autores}};</label>
+                        <label>E-mail para contato: <div class="email">{{$rows->email_contato}};</div></label>
+                        <label>Site do Projeto: <div class="link-site"><a href="{{$rows->link_site}}">{{$rows->link_site}} </a></div></label>
+                    </div>
+                </div>
+                <img src="{{'assets/img_tcc/icon1.svg'}}" alt="img" class="icon">
                 
-                
-                <h2>Status do Projeto: < {{$rowsStatus[$rows->status]->status}} ></h2>
+                <div class="text">
+                    <h2>Status do Projeto: < {{$rowsStatus[$rows->status]->status}} ></h2>
 
-
-                <h4>Previsão de Conclusão : < {{$rows->previsao}} > </h4>
-                <h4>Linguagem: < {{$rows->linguagem}} > </h4>
-                <div class="descricao">
-                    <h2>Descrição</h2>
-                    {{$rows->descricao_detalhada}};
+                    <h4>Previsão de Conclusão : < {{$rows->previsao}} > </h4>
+                    <h4>Linguagem: < {{$rows->linguagem}} > </h4>
+                    <div class="descricao">
+                        <h2>Descrição</h2>
+                        {{$rows->descricao_detalhada}};
+                    </div>
                 </div>
 
-                <h2>Imagens</h2>
+                <img src="{{'assets/img_tcc/icon1.svg'}}" alt="img" class="icon">
 
-                @foreach($rowsImagens as $rowI)
-                    @if($rowI->id_projeto == $rows->id_projeto)
-                        
-                            <img src="{{$rowI->diretorio}}" alt="img" id="img-project" width="340px">
-                       
-                    @endif
-                @endforeach
+                <div class="text">
+                    <h2>Imagens</h2>
+                        @foreach($rowsImagens as $rowI)
+                            @if($rowI->id_projeto == $rows->id_projeto)
+                            <div id="imagem">
+                                <img src="{{$rowI->diretorio}}" alt="img" id="img-project" width="340px">
+                            </div>
+                            @endif
+                        @endforeach
+                </div>
 
-                <h2>Vídeo do Projeto</h2>
+                <img src="{{'assets/img_tcc/icon1.svg'}}" alt="img" class="icon">
 
-                <h2>Etapas do Projeto</h2>
-                <iframe src="" id="meuIframe" width="1020" height="600"></iframe>
+                <div class="text">
+                    <h2>Vídeo do Projeto</h2>
+                </div>
 
-                <h2>Colaboradores do Projeto</h2>
-                <div class="colaboradores">
-                    @foreach($rowsColab as $rowsC)
-                        @if($rowsC->id_projeto == $rows->id_projeto)
-                            @foreach($rowsUsers as $rowsA)
-                                @if($rowsA->id_usuario == $rowsC->id_colaborador)
-                                <div class="colabs">
-                                    <img src="{{'assets/img_tcc/usuario.png'}}" alt="img" id="img-user" width="50px">
-                                    <div class="text-colab">
-                                        {{$rowsA->nome}}
-                                    </div>
-                                    <div class="email-colab">
-                                        {{$rowsA->email}}<br>
+                <img src="{{'assets/img_tcc/icon1.svg'}}" alt="img" class="icon">
+
+                <div class="text">
+                    <h2>Etapas do Projeto</h2>
+                    <iframe src="" id="meuIframe" width="820" height="600"></iframe>
+                </div>
+                
+                <img src="{{'assets/img_tcc/icon1.svg'}}" alt="img" class="icon">
+
+                <div class="text">
+                    <h2>Colaboradores do Projeto</h2>
+                    <div class="colaboradores">
+                        @foreach($rowsColab as $rowsC)
+                            @if($rowsC->id_projeto == $rows->id_projeto)
+                                @foreach($rowsUsers as $rowsA)
+                                    @if($rowsA->id_usuario == $rowsC->id_colaborador)
+                                <div id="linha">
+                                    <div class="colabs">
+                                        <img src="{{'assets/img_tcc/usuario.png'}}" alt="img" id="img-user" width="50px">
+                                        <div class="text-colab">
+                                            {{$rowsA->nome}}
+                                        </div>
+                                        <div class="email-colab">
+                                            {{$rowsA->email}}<br>
+                                        </div>
                                     </div>
                                 </div>
-
-
-
-                                @endif
-                            @endforeach
-                        @endif
-                    @endforeach
-                   
-
+                                    @endif
+                                @endforeach
+                            @endif
+                        @endforeach
+                    </div>
                 </div>
 
-                <div class="palavras-chave">
-                    <h2>Palavras Chaves</h2>
-                    <h4>{{$rows->palavras_chaves}}</h4>
+                <img src="{{'assets/img_tcc/icon1.svg'}}" alt="img" class="icon">
+
+                <div class="text">
+                    <div class="palavras-chave">
+                        <h2>Palavras Chaves</h2>
+                        <h4>{{$rows->palavras_chaves}}</h4>
+                    </div>
                 </div>
             </div>
-        </div>
     </div>
 
 

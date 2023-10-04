@@ -39,19 +39,15 @@ body::before {
     width: 100%;
     padding-bottom: 0;
     position: relative;
-}
-
-.cetro{
-    display: block;
-    text-align: center;
-    justify-content: center;
-    align-self: center;
+    font-family: Helvetica, sans-serif;
 }
 /* ------------------- BARRA -------------------*/
 
 .num-porcentagem{
-    padding-left: 10px;
-    padding-top: 140px;
+    padding-left: 20px;
+    margin-top: 155px;
+    font-weight: bold;
+    height: 30px;
 }
 
 .barraPreta
@@ -65,8 +61,15 @@ body::before {
     text-align: center;
     border: black;
     border-radius: 10px;
-    margin-left: 40px;
+    margin-left: 20px;
     border: 1px solid black;
+}
+
+.barra-progress h1
+{
+    margin-top: 145px;
+    margin-bottom: 0;
+    height: 50px;
 }
 
 .barra-progress{
@@ -75,7 +78,7 @@ body::before {
     border-radius: 18px;
     padding: 10px;
     color: black;
-    margin-left: 17%;
+    margin-left: 200px;
     background: none;
 }
 
@@ -98,8 +101,9 @@ body::before {
 {
     display: inline-flex;
     width: auto;
-    margin-left: 10%;
+    margin-left: 140px;
     margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .nomeProjeto
@@ -122,44 +126,75 @@ body::before {
 .dadosProjeto
 {
     margin-top: 5px;
-    margin-left: 10%;
-    width: 340px;
-    height: 170px;
+    max-width: 300px;
+    max-height: 320px;
     display: block;
     text-align: left;
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 15px;
 }
 
-.autores{
-    margin-bottom: 40px;
+#imagem{
+    padding-right: 10px;
+    display: inline-flex;
+}
+
+.infoAutor h2
+{
+    margin-top: 50px;
 }
 
 .infoAutor{
-    margin-bottom: 100px;
+    margin-left: 150px;
+    padding-bottom: 200px;
 }
 
-.infoAutor label{
+.text
+{
+    border-left: solid 6px #364E65;
+    padding-left: 125px;
+    padding-bottom: 5px;
+}
+
+.icon
+{
+    width: 20px;
+    margin-left: 90px;
+    position: absolute;
+    left: 0;
+    transform: translateX(-50%);
+    padding-left: 125px;
+    margin-top: 14px;
+}
+
+.autores {
+    display: block;
+}
+
+.autores label
+{
     display: flex;
     margin-bottom: 7px;
+}
+
+.email{
+    text-decoration: underline;
+    padding-left: 5px;
+}
+
+.link-site{
+    text-decoration: underline;
+    padding-left: 5px;
 }
 
 .infoAutor iframe{
     border-radius: 20px;
 }
 
-.email{
-    text-decoration: underline;
-}
-
-.link-site{
-    text-decoration: underline;
-}
-
-.infoAutor
+.descricao h2
 {
-    margin-left: 15%;
+    margin: 5px;
 }
 
 .descricao
@@ -167,27 +202,19 @@ body::before {
     text-align: left;
     border: 1px solid black;
     border-radius: 20px;
-    width: 780px;
-    height: 600px;
+    max-width: 780px;
+    max-height: 600px;
     padding: 20px;
 }
 
 .colaboradores{
-    border: 1px solid black;
+    background: #E5F1F3;
+    border: 2px solid black;
     border-radius: 10px;
-    width: 800px;
-    height: 80%;
+    max-width: 800px;
+    max-height: 700px;
     padding: 10px;
     display: block;
-}
-
-.palavras-chave{
-    border: 1px solid black;
-    border-radius: 10px;
-    width: 800px;
-    height: 200px;
-    padding: 0px 10px 10px 10px;
-    margin-top: 50px;
 }
 
 .colabs {
@@ -200,18 +227,41 @@ body::before {
     align-self: center;
 }
 
+#linha
+{
+    width: 100%;
+    border-bottom: 1px solid #8a8a8a;
+}
+
 .text-colab {
     display: inline-flex;
     margin-bottom: 10px;
     align-items: center; /* Centralizar verticalmente o texto */
     margin-left: 10px; /* Espaçamento entre a imagem e o texto */
+    max-width: 400px;
+    min-width: 300px;
 }
 
 .email-colab {
     display: inline-flex;
     margin-bottom: 10px;
     align-items: center; /* Centralizar verticalmente o texto */
-    margin-left: 150px; /* Espaçamento entre a imagem e o texto */
-    
+    margin-left: 0px; /* Espaçamento entre a imagem e o texto */
+}
+
+.palavras-chave h2
+{
+    margin-top: 5px;
+}
+
+.palavras-chave{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 820px;
+    min-height: 100px;
+    max-height: 300px;
+    margin-top: 50px;
+    box-sizing: border-box;
+    padding: 20px;
 }
 

@@ -45,29 +45,25 @@
                     </div>
                     
                     <div class="conteudo"> 
-                        <div>
-                        @php
-                            $countMatches = 0; // Variável de contagem
-                        @endphp
+                        <div class="foto">
+                            @php
+                                $countMatches = 0; // Variável de contagem
+                            @endphp
 
-                        @foreach($rowsImagens as $rowI)
-                            @if($rowI->id_projeto == $row->id_projeto)
-                                @if($rowI->imagem_principal == true)
-                                    <img src="{{$rowI->diretorio}}" alt="img" id="img-project" width="340px">
+                            @foreach($rowsImagens as $rowI)
+                                @if($rowI->id_projeto == $row->id_projeto)
+                                    @if($rowI->imagem_principal == true)
+                                        <img src="{{$rowI->diretorio}}" alt="img" id="img-project">
+                                    @endif
+                                    @php
+                                        $countMatches ++; // Incrementa a contagem quando encontra um match
+                                    @endphp
                                 @endif
-                                @php
-                                    $countMatches ++; // Incrementa a contagem quando encontra um match
-                                @endphp
+                            @endforeach
+
+                            @if($countMatches === 0)
+                                <img src="{{'assets/img_tcc/gatinho.png'}}" alt="img" id="img-project" width="340px">
                             @endif
-                        @endforeach
-
-                        @if($countMatches === 0)
-                            <img src="{{'assets/img_tcc/gatinho.png'}}" alt="img" id="img-project" width="340px">
-                        @endif
-
-
-                        
-                        
                         </div>
                         <div class="allConteudo">
                             <h2> {{$row->nome_projeto}} </h2>
