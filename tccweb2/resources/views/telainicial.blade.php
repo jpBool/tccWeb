@@ -100,8 +100,10 @@
             </div>
 
             <div class="botoesembaixo">
+                <a href="{{route('loginInicial.index')}}">
                 <button type="button" class="button1">Criar conta</button>
                 <button type="button" class="button2">Entrar</button>
+                </a>
             </div>
         </div>     
             
