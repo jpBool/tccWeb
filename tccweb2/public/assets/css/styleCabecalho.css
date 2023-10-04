@@ -76,6 +76,12 @@ nav
     
 }
 
+#navButton li 
+{
+    color:black;
+    padding: 10px;
+}
+
 /*-------------------------------sidebar--------------------------------*/
 
 .sidebar{
@@ -112,32 +118,46 @@ nav
 
 
 /*-------------------------------footer--------------------------------*/
-.botoesfooter
+.botoesfooter 
 {
-    display: inline;
+    display: inline-flex;
     margin-top: 15px;
-    margin-left: 30%;
+    margin-left: 30%; /* Reduzido para 10% */
     text-align: center;
     flex: 1 50px;
 }
 
-.botoesfooter {
-    display: inline;
-    margin-top: 15px;
-    margin-left: 10%; /* Reduzido para 10% */
-    text-align: center;
-    flex: 1 50px;
+.botoesfooter a
+{
+    padding-right: 10%;
+}
+.botoesfooter a:link, a:visited
+{
+    text-decoration: none;
+    color: #10273E;
+}
+.botoesfooter a:hover
+{
+    text-decoration: underline;
+}
+.botoesfooter a:active
+{
+    color: #10273E;
 }
 
-.emailequipe {
+.emailequipe 
+{
     font-size: 16.7px;
-    text-align: right;
     color: #10273E;
     margin-right: 10%; /* Reduzido para 10% */
     margin-top: 27px;
     margin-bottom: 2%;
 }
-.footer {
+
+.footer 
+{
+    padding-bottom: 1%;
+    padding-top: 1%;
     position:fixed;
     bottom: 0;
     background-color: #FFFFFF;
@@ -149,11 +169,9 @@ nav
 
 .textfooter
 {
-    
     display: flex;
     margin-left: 10%;
     margin-right: 25px;
-
 }
 
 .imgfooter
@@ -163,10 +181,4 @@ nav
     margin-left: 50px;
     margin-right: 25px;
     margin-top: 25px;
-}
-
-#navButton li 
-{
-    color:black;
-    padding: 10px;
 }

@@ -48,11 +48,13 @@ body::before {
     align-items: center;
     text-align: center;
     position: relative;
-    
+    padding-bottom: 50px;
 }
 .allall h1
 {
     align-self: center;
+    font-size: 3em;
+    margin-bottom: 60px;
 }
 
 .conteudo
@@ -63,6 +65,26 @@ body::before {
     width: 898px;
     display: inline-flex;
     position: relative;
+    justify-content: center;
+}
+
+#img-project
+{
+    min-height: 200px;
+    min-width: 300px;
+    max-width: 350px;
+    max-height: 250px;
+    box-sizing: border-box;
+    padding: 14px;
+    border-radius: 30px;
+}
+
+.foto
+{
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: auto;
 }
 
 .conteudo-texto
@@ -78,13 +100,15 @@ body::before {
 .allConteudo
 {
     display: block;
-    width: 80%;
+    width: 50%;
     position: relative;
+    text-align: center;
+    margin-left: 30px;
 }
 
 .button
 {
-    margin-top: 7px;
+    margin-top: 15px;
     min-width: 100px;
     height: 30px;
     color: #fff;
@@ -100,16 +124,7 @@ body::before {
     overflow: hidden;
     border: black;
     color: white;
-    margin-bottom: 10px;
-}
-
-#img-project
-{
-    box-sizing: border-box;
-    padding-left: 30px;
-    padding: 14px;
-    border-radius: 30px;
-    height: 230px;
+    margin-bottom: 5px;
 }
 
 .label-titulo{
