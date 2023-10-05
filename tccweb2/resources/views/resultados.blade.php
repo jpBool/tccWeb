@@ -42,7 +42,7 @@
         @foreach($resultados as $row)
         <div class="result_pess">
         <img src="{{'assets/img_tcc/usuario.png'}}" alt="img" id="img-user" width="50px">
-            <div clss="conta">
+            <div class="conta">
                 {{ $row->nome }}
                 {{ $row->email }} 
             </div>

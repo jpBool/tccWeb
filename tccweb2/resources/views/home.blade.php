@@ -22,13 +22,7 @@
             <div id="margin-project">
                 <div class='project'>
                     <div class="titulo">
-                        @foreach($rowsImagens as $rowI)
-                            @if($rowI->id_projeto == $row->id_projeto)
-                                @if($rowI->imagem_principal == true)
-                                <img src="{{'assets/img_tcc/usuario.png'}}" alt="img" id="img-user">
-                                @endif
-                            @endif
-                        @endforeach
+                        <img src="{{'assets/img_tcc/usuario.png'}}" alt="img" id="img-user">
                         
                         <label class="label-titulo"> Nova atualização de <div id="nome-autor">{{ $row->autores }}</div>. 
 
@@ -46,25 +40,29 @@
                     
                     <div class="conteudo"> 
                         <div class="foto">
-                            @php
-                                $countMatches = 0; // Variável de contagem
-                            @endphp
+                        @php
+                            $countMatches = 0; // Variável de contagem
+                        @endphp
 
-                            @foreach($rowsImagens as $rowI)
-                                @if($rowI->id_projeto == $row->id_projeto)
-                                    @if($rowI->imagem_principal == true)
-                                        <img src="{{$rowI->diretorio}}" alt="img" id="img-project">
-                                    @endif
-                                    @php
-                                        $countMatches ++; // Incrementa a contagem quando encontra um match
-                                    @endphp
+                        @foreach($rowsImagens as $rowI)
+                            @if($rowI->id_projeto == $row->id_projeto)
+                                @if($rowI->imagem_principal == true)
+                                    <img src="{{$rowI->diretorio}}" alt="img" id="img-project" width="340px">
                                 @endif
-                            @endforeach
-
-                            @if($countMatches === 0)
-                                <img src="{{'assets/img_tcc/gatinho.png'}}" alt="img" id="img-project" width="340px">
+                                @php
+                                    $countMatches ++; // Incrementa a contagem quando encontra um match
+                                @endphp
                             @endif
-                        </div>
+                        @endforeach
+
+                        @if($countMatches === 0)
+                            <img src="{{'assets/img_tcc/gatinho.png'}}" alt="img" id="img-project" width="340px">
+                        @endif
+
+
+                        
+                        
+                        </div> 
                         <div class="allConteudo">
                             <h2> {{$row->nome_projeto}} </h2>
                             <div class="barra-progress">

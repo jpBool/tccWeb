@@ -86,7 +86,7 @@
 
                 <div class="text">
                     <h2>Etapas do Projeto</h2>
-                    <iframe src="" id="meuIframe" width="820" height="600"></iframe>
+                    <iframe src="" id="meuIframe" width="1640" height="700"></iframe>
                 </div>
                 
                 <img src="{{'assets/img_tcc/icon1.svg'}}" alt="img" class="icon">
