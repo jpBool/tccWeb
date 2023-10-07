@@ -70,13 +70,13 @@ body::before {
 
 #img-project
 {
-    min-height: 200px;
+    /*min-height: 200px;*/
     min-width: 300px;
     max-width: 350px;
-    max-height: 250px;
+    max-height: 215px;
     box-sizing: border-box;
-    padding: 14px;
     border-radius: 30px;
+    margin-right: 30px;
 }
 
 .foto
@@ -103,7 +103,6 @@ body::before {
     width: 50%;
     position: relative;
     text-align: center;
-    margin-left: 30px;
 }
 
 .button

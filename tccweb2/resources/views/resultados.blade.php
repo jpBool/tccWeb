@@ -38,19 +38,19 @@
                     <input type="submit" value="Projetos" class="button2" />
                 </form>
     </div>
-    <center>
+    <div class="result">
         @foreach($resultados as $row)
         <div class="result_pess">
         <img src="{{'assets/img_tcc/usuario.png'}}" alt="img" id="img-user" width="50px">
             <div class="conta">
-                {{ $row->nome }}
-                {{ $row->email }} 
+                <div id="nome">{{ $row->nome }} </div>
+                <div id="email">{{ $row->email }}</div> 
             </div>
                 <input type="submit" value="Segue você" class="button" />
                 <input type="submit" value="Seguir de volta" class="button" />
         </div>
-        @endforeach 
-    </center>
+        @endforeach
+    </div>
 </body>
 
 </html>
