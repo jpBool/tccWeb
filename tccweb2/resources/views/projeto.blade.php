@@ -80,6 +80,9 @@
 
                 <div class="text">
                     <h2>Vídeo do Projeto</h2>
+                  
+                    <iframe src="{{$rows->link_youtube}}"
+                    width="560" height="315" frameborder="0" allowfullscreen></iframe>
                 </div>
 
                 <img src="{{'assets/img_tcc/icon1.svg'}}" alt="img" class="icon">

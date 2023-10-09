@@ -29,11 +29,15 @@
 
                 <div class="entrar">
                     <img src="{{'assets/img_tcc/icon1.svg'}}" alt="img" class="sidebar-icon" style="width: 3%;" > 
-                    
+                   
                     <div class="buttonsHome">
-                        <a class="button">Criar conta</a>
-                        <p>Ja possui uma conta? Entrar</p>
+                        
+                        <a class="button" href="{{route('loginInicial.index')}}" >
+                            <p>Criar conta</p>
+                        </a>
+                        <label>Ja possui uma conta? Entrar</label>
                     </div>
+                    
                 </div>
 
                 <!---------------------------------------------------------------------------------------------->
@@ -98,11 +102,12 @@
                     Faça parte de uma comunidade de desenvolvedores que compartilham ideias e conquistam o impossível.</p>
                 </div>
             </div>
-
-            <div class="botoesembaixo">
-                <button type="button" class="button1">Criar conta</button>
-                <button type="button" class="button2">Entrar</button>
-            </div>
+            <a href="{{route('loginInicial.index')}}">
+                <div class="botoesembaixo">
+                    <button type="button" class="button1">Criar conta</button>
+                    <button type="button" class="button2">Entrar</button>
+                </div>
+            </a>
         </div>     
             
         <!-- footer -->
