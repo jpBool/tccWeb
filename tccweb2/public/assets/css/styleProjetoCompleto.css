@@ -43,6 +43,11 @@ body::before {
 }
 /* ------------------- BARRA -------------------*/
 
+.margin
+{
+    margin-inline: 300px;
+}
+
 .num-porcentagem{
     padding-left: 20px;
     margin-top: 155px;
@@ -160,7 +165,7 @@ body::before {
 .icon
 {
     width: 20px;
-    margin-left: 90px;
+    margin-inline: 390px;
     position: absolute;
     left: 0;
     transform: translateX(-50%);

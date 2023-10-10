@@ -130,14 +130,12 @@ body::before {
     align-self: center;
 }
 
-#img-user
-{
+#img-user {
     align-self: center;
     width: 40px;
-    padding-left: 25px;
-    padding-right: 15px;
-    padding-top: 5px;
-    padding-bottom: 4px;
+    border-radius: 50%; /* Define a forma de círculo com um raio de 50% */
+    background-size: cover;
+    margin: 5px 15px 5px 15px;
 }
 
 #margin-project{

@@ -22,7 +22,13 @@
             <div id="margin-project">
                 <div class='project'>
                     <div class="titulo">
-                        <img src="{{'assets/img_tcc/usuario.png'}}" alt="img" id="img-user">
+                        @foreach($rowsUsers as $rowU)
+                            @if($row->atualizador == $rowU->id_usuario)
+                            <img src="assets/img_tcc/iconsPerfil/{{$rowU->avatar}}.png" alt="img" id="img-user">
+                            @endif
+                        @endforeach
+                    
+
                         
                         <label class="label-titulo"> Nova atualização de <div id="nome-autor">{{ $row->autores }}</div>. 
 

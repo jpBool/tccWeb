@@ -15,6 +15,7 @@ use App\Models\gp2_status;
 use App\Models\gp2_colaboradores;
 use App\Models\gp2_usuarios;
 
+
 class homeController extends Controller
 {
     
@@ -33,10 +34,10 @@ class homeController extends Controller
                 $projeto->diferencaDias = $diferencaDias;
                 $rows[] = $projeto;
             }
-
+            $rowsUsers = gp2_usuarios::all();
             $rowsImagens = gp2_imagens::all();
     
-            return view('home', compact('rows', 'rowsImagens'));     
+            return view('home', compact('rows', 'rowsImagens', 'rowsUsers'));     
         
          
     }

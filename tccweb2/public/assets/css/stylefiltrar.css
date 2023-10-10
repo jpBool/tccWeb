@@ -256,13 +256,16 @@ padding: 10px;
 
 .result_pess {
     max-width: 580px;
-    border: 1px solid black;
     border-radius: 15px;
     margin-bottom: 20px;
     display: flex;
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
+    border: 1px white solid;
+    box-shadow: 1px 1px 5px #10273E;
+    justify-content: center;
+    align-items: center;
 }
 
 .results {

@@ -94,17 +94,17 @@
                 
         <div>
 
-        
-        <br><br><br><br>
-       <center>
-            @foreach($resultados as $row)
-            {{ $row->nome_projeto }}<br> 
-            Segue você --- Seguir de volta
-            <br><br>
-            @endforeach 
-        </center>
-   
-  
+    <div class="result">
+        @foreach($resultados as $row)
+        <div class="result_pess">
+            <div class="conta">
+                <div id="nome">{{ $row->nome_projeto }}</div>
+            </div>
+        </div>
+            <input type="submit" value="Segue você" class="button" />
+            <input type="submit" value="Seguir de volta" class="button" />
+        @endforeach
+    </div>
 </body>
 
 </html>
