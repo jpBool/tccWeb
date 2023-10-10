@@ -13,7 +13,7 @@
 
 
 <body class="body">
-
+<div class="main">
 <div class="espacinho">
     <form method="POST" action="/pesquisarProjetos">
             @csrf
@@ -100,12 +100,13 @@
             <div class="conta">
                 <div id="nome">{{ $row->nome_projeto }}</div>
             </div>
-        </div>
             <input type="submit" value="Segue você" class="button" />
             <input type="submit" value="Seguir de volta" class="button" />
+        </div>
         @endforeach
     </div>
+    
+</div>
 </body>
-
 </html>
 @endsection 

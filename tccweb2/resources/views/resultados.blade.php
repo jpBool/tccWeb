@@ -13,6 +13,7 @@
 
 
 <body class="body">
+<div class="main">
 
 <div class="espacinho">
     <form method="POST" action="/pesquisar">
@@ -51,7 +52,7 @@
         </div>
         @endforeach
     </div>
+</div>
 </body>
-
 </html>
 @endsection 
