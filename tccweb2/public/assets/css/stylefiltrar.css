@@ -2,7 +2,6 @@ html{
     height: 100%;
     background-repeat: no-repeat;
     padding-bottom: 0;
-     /* 100% da altura da tela */
     display: flex;
     flex-direction: column; /* Para estender o conteúdo */
 }
@@ -28,7 +27,18 @@ body::before {
     height: 100%;
     z-index: -1;
     background: linear-gradient(to bottom, #ffffff, #BBE1F3, #9EBAD6, #9EBAD6);
-  }
+}
+
+.main
+{
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%; /* Garante que a div main tenha altura igual à altura do body */
+    width: 100%;
+    position: relative;
+}
 /*------------------------------- header --------------------------------*/
 .header 
 {
@@ -108,7 +118,7 @@ nav
   
   /*---------------------------------------------------------------*/
 
-  .button
+.button
 {
     margin-top: 7px;
     margin-right: 10px;
@@ -432,13 +442,12 @@ padding: 10px;
     background-color: white;
     text-align: left;
     display: flex;
-    position: relative;
     left: 0;
     margin-left:0;
     bottom: 0;
     width: 100%;
     font-family: Helvetica;
-    position: fixed;
+    position: absolute;
 }
 
 .textfooter

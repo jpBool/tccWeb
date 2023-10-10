@@ -36,9 +36,8 @@ body::before {
     padding: 0;
     margin-left: auto;
     margin-right: auto;
-    height: 100%; /* Garante que a div main tenha altura igual à altura do body */
+    min-height: 100%; /* Garante que a div main tenha altura igual à altura do body */
     width: 100%;
-    padding-bottom: 0;
     position: relative;
 }
 .allall
@@ -50,6 +49,7 @@ body::before {
     position: relative;
     padding-bottom: 50px;
 }
+
 .allall h1
 {
     align-self: center;

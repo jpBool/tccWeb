@@ -27,17 +27,15 @@ body::before {
     height: 100%;
     z-index: -1;
     background: linear-gradient(to bottom, #ffffff, #BBE1F3, #9EBAD6, #9EBAD6);
-  }
-
+}
 .main
 {
     margin: 0;
     padding: 0;
     margin-left: auto;
     margin-right: auto;
-    height: 100%; /* Garante que a div main tenha altura igual à altura do body */
+    min-height: 100%; /* Garante que a div main tenha altura igual à altura do body */
     width: 100%;
-    padding-bottom: 0;
     position: relative;
     font-family: Helvetica, sans-serif;
 }
