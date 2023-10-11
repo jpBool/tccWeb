@@ -24,8 +24,10 @@
                     <div class="titulo">
                         @foreach($rowsUsers as $rowU)
                             @if($row->atualizador == $rowU->id_usuario)
-                            <img src="assets/img_tcc/iconsPerfil/{{$rowU->avatar}}.png" alt="img" id="img-user">
+                            <a href="{{route('loginInicial.placeholder', ['usuario' => $rowU->id_usuario]) }}">
+                                <img src="assets/img_tcc/iconsPerfil/{{$rowU->avatar}}.png" alt="img" id="img-user">
                             @endif
+                            </a>
                         @endforeach
                     
 

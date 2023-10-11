@@ -35,7 +35,7 @@ body::before {
       padding: 0;
       margin-left: auto;
       margin-right: auto;
-      height: 100%; /* Garante que a div main tenha altura igual à altura do body */
+      min-height: 100%; /* Garante que a div main tenha altura igual à altura do body */
       width: 100%;
       padding-bottom: 0;
       position: relative;
@@ -95,11 +95,11 @@ body::before {
 
 #img-pess
 {
+    align-self: center;
     width: 75px;
-    box-sizing: border-box;
-    margin-top: 15px;
-    border-radius: 30px;
-    padding: 5px;
+    border-radius: 50%; /* Define a forma de círculo com um raio de 50% */
+    background-size: cover;
+    margin: 5px 15px 5px 15px;
 }
 
 #linha{
@@ -178,6 +178,30 @@ body::before {
 }
 
 /*--------------------------------------------------*/
+.foto
+{
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+#img-user {
+    align-self: center;
+    width: 50px;
+    border-radius: 50%; /* Define a forma de círculo com um raio de 50% */
+    background-size: cover;
+    margin: 5px 15px 5px 15px;
+}
+
+.allConteudo
+{
+    display: block;
+    width: 50%;
+    position: relative;
+    text-align: center;
+}
+
 .conteudo
 {
     margin: 0;
@@ -186,6 +210,7 @@ body::before {
     width: 898px;
     display: inline-flex;
     position: relative;
+    justify-content: center;
 }
 
 .conteudo-texto
@@ -198,11 +223,48 @@ body::before {
     text-align: center;
 }
 
-.allConteudo
+.imglogo
 {
-    display: block;
-    width: 80%;
+    float: left;
+    width: 200px;
+    height: auto; /* Altura automática (proporcional) */
+}
+
+.barra-progress{
+    width: 95%;
+    display: flex;
+    background: #10273E;
+    border-radius: 18px;
+    padding: 10px;
     position: relative;
+}
+.progress{
+    padding-left: 5px;
+    color: white;
+}
+
+ /* styles.css */
+.barra {
+    background-color: #8AB6D5;
+    height: 20px;
+    border-radius: 10px;
+}
+
+/* Defina a variável CSS customizada */
+:root {
+    --largura-elemento: 100px; /* Valor padrão ou um valor de fallback */
+}
+
+.barraPreta
+{
+    width: 65%;
+    background-color: #BBE1F3;
+    display: block;
+    align-self: center;
+    text-align: center;
+    border: black;
+    border-radius: 10px;
+    margin-left: 40px;
 }
 
 .button
@@ -285,44 +347,6 @@ body::before {
     color: white;
 }
 
-.barra-progress{
-    width: 95%;
-    display: flex;
-    background: #10273E;
-    border-radius: 18px;
-    padding: 10px;
-    position: relative;
-}
-
-.progress{
-    padding-left: 5px;
-    color: white;
-}
-
- /* styles.css */
-.barra {
-    background-color: #8AB6D5;
-    height: 20px;
-    border-radius: 10px;
-}
-
-/* Defina a variável CSS customizada */
-:root {
-    --largura-elemento: 100px; /* Valor padrão ou um valor de fallback */
-}
-
-.barraPreta
-{
-    width: 65%;
-    background-color: #BBE1F3;
-    display: block;
-    align-self: center;
-    text-align: center;
-    border: black;
-    border-radius: 10px;
-    margin-left: 40px;
-}
-
 .projects-perfil {
     flex: 1; /* Isso permite que a div cresça para ocupar o espaço vertical restante */
     display: flex;
@@ -337,7 +361,6 @@ body::before {
 {
     background-color: white;
     margin-top: 10px;
-    margin-left: 20px;
     margin-right: 10px;
     height: 100%;
     border-radius: 30px;
