@@ -19,7 +19,7 @@
                 <div id="linha-perfil">
                     <div class="top-left">
                         <div class="img-perfil">
-                            <img src="{{'assets/img_tcc/usuario.png'}}" alt="img" id="img-pess">
+                        <img src="assets/img_tcc/iconsPerfil/{{$user->avatar}}.png" alt="img" id="img-pess" >
                         </div>
                         <div class="seguidores-commits">
                             <div class="seguidores"> 
@@ -76,9 +76,27 @@
                                 </div>
                                     
                                 <div class="conteudo"> 
-                                    <div>
-                                        <img src="{{'assets/img_tcc/gatinho.png'}}" alt="img" id="img-project" width="280px">
-                                    </div>
+                                <div class="foto">
+                                    @php
+                                        $countMatches = 0; // Variável de contagem
+                                    @endphp
+
+                                    @foreach($rowsImagens as $rowI)
+                                        @if($rowI->id_projeto == $row->id_projeto)
+                                            @if($rowI->imagem_principal == true)
+                                                <img src="{{$rowI->diretorio}}" alt="img" id="img-project" width="340px">
+                                            @endif
+                                            @php
+                                                $countMatches ++; // Incrementa a contagem quando encontra um match
+                                            @endphp
+                                        @endif
+                                    @endforeach
+
+                                    @if($countMatches === 0)
+                                        <img src="{{'assets/img_tcc/gatinho.png'}}" alt="img" id="img-project" width="340px">
+                                    @endif
+                                
+                                </div> 
                                     <div class="allConteudo">
                                         <h2> {{$row->nome_projeto}} </h2>
 

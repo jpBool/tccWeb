@@ -13,6 +13,7 @@
 
 
 <body class="body">
+<div class="main">
 
 <div class="espacinho">
     <form method="POST" action="/pesquisar">
@@ -49,7 +50,7 @@
        
 
 
-  
+</div>
 </body>
 
 </html>

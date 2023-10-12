@@ -9,6 +9,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use App\Models\gp2_projetos;
 use App\Http\Controllers\AuthenticatesUsers;
+use App\Models\gp2_imagens;
 //use App\usuariostcc;
 
 class UsuariostccController extends Controller
@@ -50,10 +51,20 @@ class UsuariostccController extends Controller
     }
     
     //public function login(Request $request)
-    public function enterplaceholder()
+    public function enterplaceholder(Request $request)
     {
-        return view('loginInicial.placeholder');
+        $usuario = $request->input('usuario');
+        $user = gp2_usuarios::where('id_usuario', $usuario)->first();
+
+        if (!$user) {
+            abort(404); // Ou qualquer outra ação adequada em caso de usuário não encontrado
+        }
+        $rows = gp2_projetos::where('id_criador', $usuario)->get();
+        $rowsImagens = gp2_imagens::all();
+        return view('loginInicial.placeholder', compact('user', 'rows', 'rowsImagens'));
     }
+
+
     public function index()
     { // a visão que pede usuário e senha
         return view('loginInicial.login');
@@ -132,6 +143,7 @@ class UsuariostccController extends Controller
             ->orWhereRaw('LOWER(email) ILIKE ?', ["%$termoPesquisa%"])
             ->get();
 
+        
         return view('resultados', ['resultados' => $resultados]);
     }
 

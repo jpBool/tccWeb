@@ -13,6 +13,7 @@
 
 
 <body class="body">
+<div class="main">
 
 <div class="espacinho">
     <form method="POST" action="/pesquisar">
@@ -28,7 +29,7 @@
 
    
     <div class="pessoasProjetos"> 
-                <form action="" method="GET">
+                <form action="{{route('pesquisausuario')}}" method="GET">
                     <input type="submit" value="Pessoas" class="button" />
                 </form>
 
@@ -38,20 +39,24 @@
                     <input type="submit" value="Projetos" class="button2" />
                 </form>
     </div>
-    <center>
+    <div class="result">
         @foreach($resultados as $row)
         <div class="result_pess">
-        <img src="{{'assets/img_tcc/usuario.png'}}" alt="img" id="img-user" width="50px">
-            <div clss="conta">
-                {{ $row->nome }}
-                {{ $row->email }} 
-            </div>
+            <a href="{{route('loginInicial.placeholder', ['usuario' => $row->id_usuario]) }}">
+                <img src="assets/img_tcc/iconsPerfil/{{$row->avatar}}.png" alt="img" id="img-user" >
+            </a>
+                <div class="conta">
+                    <div id="nome">{{ $row->nome }} </div>
+                    <div id="email">{{ $row->email }}</div> 
+                </div>
+            
+                
                 <input type="submit" value="Segue você" class="button" />
                 <input type="submit" value="Seguir de volta" class="button" />
         </div>
-        @endforeach 
-    </center>
+        @endforeach
+    </div>
+</div>
 </body>
-
 </html>
 @endsection 

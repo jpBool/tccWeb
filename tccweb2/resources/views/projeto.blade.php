@@ -17,6 +17,7 @@
 <body>
     
     <div class="main">
+        <div class="margin">
             <div class="barra-progress">
                 <h1>Progress</h1>
                 <div class="barraPreta">
@@ -80,13 +81,38 @@
 
                 <div class="text">
                     <h2>Vídeo do Projeto</h2>
+                  
+                    <div id="video-container"></div>
+
+                        <div id="video-container"></div>
+
+                   
+
+                        <script>
+                            var youtubeLink = "{{$rows->link_youtube}}"; // Recupere o link direto do YouTube do seu banco de dados usando Blade
+                            var embedLink = youtubeLink.replace('https://www.youtube.com/watch?v=', 'https://www.youtube.com/embed/');
+
+                            // Crie o iframe
+                            var iframe = document.createElement("iframe");
+                            iframe.src = embedLink;
+                            iframe.width = "800px"; // Defina a largura desejada
+                            iframe.height = "500px"; // Defina a altura desejada
+                            iframe.frameBorder = "0"; // Remova a borda do iframe
+
+                            // Adicione o iframe ao container desejado
+                            var container = document.getElementById("video-container");
+                            container.appendChild(iframe);
+                        </script>
+
+                   
+
                 </div>
 
                 <img src="{{'assets/img_tcc/icon1.svg'}}" alt="img" class="icon">
 
                 <div class="text">
                     <h2>Etapas do Projeto</h2>
-                    <iframe src="" id="meuIframe" width="820" height="600"></iframe>
+                    <iframe src="" id="meuIframe" width="1640" height="700"></iframe>
                 </div>
                 
                 <img src="{{'assets/img_tcc/icon1.svg'}}" alt="img" class="icon">
@@ -125,6 +151,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </div>
 
 
