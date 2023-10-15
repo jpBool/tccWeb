@@ -96,7 +96,7 @@ body::before {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-left: 100px;
+    padding-left: 65px;
     font-size: 22px;
     text-align: center;
 }
@@ -125,6 +125,12 @@ body::before {
     outline: none;
     font-size: 14px;
     box-sizing: border-box;
+}
+
+.form-group input:focus{
+    /*background: #e3eefd;*/
+    border: 1px solid rgb(104, 104, 104);
+    width: 100%;
 }
 
 .form-group > input::placeholder{
