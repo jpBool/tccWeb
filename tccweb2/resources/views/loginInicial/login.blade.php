@@ -36,7 +36,9 @@
                         <input id="password" type="password" name="password" required>
                     </div>
                     <div class="form-group">
-                        <button type="submit" id="button">LOGIN</button>
+                        <div id="but">
+                            <button type="submit" id="button">LOGIN</button>
+                        </div>
                     </div>
                 </form>
                 <p>Você não possui uma conta? Criar</p>

@@ -107,7 +107,7 @@ body::before {
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    margin: 10px 0px;
+    margin-top: 15px;
 }
 
 .form-group label{
@@ -132,8 +132,8 @@ body::before {
 }
 
 .form-group button{
-    width: 120px;
-    height: 45px;
+    width: 110px;
+    height: 40px;
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -146,21 +146,26 @@ body::before {
     text-transform: uppercase;
     font-weight: 800;
     border: none;
+    cursor: pointer;
+}
+
+#but
+{
+    width: 300px;
+    height: 50px;
 }
 
 #button
 {
-    transition-timing-function: linear;
-    transition-delay: 1ms;
+    transition-delay: 1.5ms;
+    transition: width 1ms, height 1ms, ease-in;
 }
 
 #button:hover
 {
-    width: 110px;
-    height: 40px;
+    width: 113px;
+    height: 40.1px;
     background:#211855;
-    margin-top: 5px;
-    cursor: pointer;
 }
 
 /*--------------------------header--------------------*/
