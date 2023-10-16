@@ -130,6 +130,10 @@ body::before {
     align-self: center;
 }
 
+.a{
+    text-decoration: none;
+}
+
 #img-user {
     align-self: center;
     width: 40px;

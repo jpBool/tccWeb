@@ -26,13 +26,20 @@
                             @if($row->atualizador == $rowU->id_usuario)
                             <a href="{{route('loginInicial.placeholder', ['usuario' => $rowU->id_usuario]) }}">
                                 <img src="assets/img_tcc/iconsPerfil/{{$rowU->avatar}}.png" alt="img" id="img-user">
-                            @endif
                             </a>
+                            
+                            <label class="label-titulo"> Nova atualização de 
+                            <a href="{{route('loginInicial.placeholder', ['usuario' => $rowU->id_usuario]) }}" class="a">
+                                <div id="nome-autor">{{ $rowU->nome}}.</div>
+                            </a>
+                            @endif
+                            
+                            
                         @endforeach
                     
 
                         
-                        <label class="label-titulo"> Nova atualização de <div id="nome-autor">{{ $row->autores }}</div>. 
+                        
 
                                             @if($row->diferencaDias > 0)
                             Há {{ $row->diferencaDias }} {{ Str::plural('dia', $row->diferencaDias) }}

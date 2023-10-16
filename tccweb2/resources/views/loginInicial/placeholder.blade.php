@@ -66,12 +66,12 @@
             <div class="projects-perfil">
                 <div class="BackProjects">
                     <br><br>
-                    <h1 id="piupiu">Seus Projetos: </h1> <br><br><br>
+                    <h1 id="piupiu">Projetos: </h1> <br><br><br>
                     @foreach($rows as $row)
                         <div id="margin-project">   
                             <div class='project'>
                                 <div class="titulo">
-                                    <img src="{{'assets/img_tcc/usuario.png'}}" alt="img" id="img-user">
+                                    <img src="assets/img_tcc/iconsPerfil/{{$user->avatar}}.png" alt="img" id="img-pess2">
                                     <label class="label-titulo"> Nova atualização de <div id="nome-autor">{{$row->autores}} </div>. Há 18 horas </label>
                                 </div>
                                     
@@ -114,7 +114,10 @@
                                             <br>
                                             <br>
                                             {{$row->data_criacao}} <br>
-                                            <button type="button" class="button">Show all</button>
+                                            <form action="{{route('projetoIsolado')}}">
+                                                <input type="hidden" name="id_projeto" value="{{$row->id_projeto}}">
+                                                <input type="submit" value="Show All" class="button" />
+                                            </form>
                                         </div> 
                                     </div> 
                                 </div>
