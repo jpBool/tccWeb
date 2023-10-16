@@ -34,20 +34,27 @@
                     {{$rows->descricao_breve}};
                 </div>
                 <div class="dadosProjeto">
-                    Criado por : {{$rows->autores}};
+                    Criado por : {{$rows->autores}}
                     <br><br>
-                    Criado em : {{$rows->data_criacao}};
+                    Criado em : {{$rows->data_criacao}}
                     <br><br>
-                    Atualizado por : {{$rows->atualizador}};
+          
+                           
+                                    @foreach($rowsUsers as $rowsA)
+                                        @if($rowsA->id_usuario == $rows->atualizador)
+                                            Atualizado por : {{$rowsA->nome}}
+                                        @endif                               
+                                    @endforeach
+
                     <br><br>
-                    Atualizado em :{{ \Carbon\Carbon::parse($rows->data_atualizacao)->format('Y-m-d H:i') }};
+                    Atualizado em :{{ \Carbon\Carbon::parse($rows->data_atualizacao)->format('Y-m-d H:i') }}
                 </div>
             </div>
             <div class="infoAutor"> 
                 <div class="text">
                     <div class="autores">
                         <label>Autores: {{$rows->autores}};</label>
-                        <label>E-mail para contato: <div class="email">{{$rows->email_contato}};</div></label>
+                        <label>E-mail para contato: <div class="email">{{$rows->email_contato}}</div></label>
                         <label>Site do Projeto: <div class="link-site"><a href="{{$rows->link_site}}">{{$rows->link_site}} </a></div></label>
                     </div>
                 </div>
@@ -60,7 +67,7 @@
                     <h4>Linguagem: < {{$rows->linguagem}} > </h4>
                     <div class="descricao">
                         <h2>Descrição</h2>
-                        {{$rows->descricao_detalhada}};
+                        {{$rows->descricao_detalhada}}
                     </div>
                 </div>
 
@@ -111,6 +118,7 @@
                 <img src="{{'assets/img_tcc/icon1.svg'}}" alt="img" class="icon">
 
                 <div class="text">
+                    <a href="">botão teste</a>
                     <h2>Etapas do Projeto</h2>
                     <iframe src="" id="meuIframe" width="1640" height="700"></iframe>
                 </div>
@@ -126,7 +134,9 @@
                                     @if($rowsA->id_usuario == $rowsC->id_colaborador)
                                 <div id="linha">
                                     <div class="colabs">
-                                        <img src="{{'assets/img_tcc/usuario.png'}}" alt="img" id="img-user" width="50px">
+                                        <a href="{{route('loginInicial.placeholder', ['usuario' => $rowsA->id_usuario]) }}">
+                                        <img src="assets/img_tcc/iconsPerfil/{{$rowsA->avatar}}.png" alt="img" id="img-user2">
+                                        </a>
                                         <div class="text-colab">
                                             {{$rowsA->nome}}
                                         </div>

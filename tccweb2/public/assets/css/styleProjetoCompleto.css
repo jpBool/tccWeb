@@ -268,3 +268,10 @@ body::before {
     padding: 20px;
 }
 
+#img-user2 {
+    align-self: center;
+    width: 55px;
+    border-radius: 50%; /* Define a forma de círculo com um raio de 50% */
+    background-size: cover;
+    margin: 5px 15px 5px 15px;
+}
