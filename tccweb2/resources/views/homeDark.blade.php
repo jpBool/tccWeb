@@ -45,7 +45,7 @@
                         <div class="allConteudo">
                             <h2> {{$row->nome_projeto}} </h2>
                             <div class="barra-progress">
-                                <div class="progress">Progress</div>
+                                <div class="progress">Progresso</div>
                                     <div class="barraPreta">
                                         <div class="barra" style="width: {{$row->porcentagem}}%;">
 
@@ -63,7 +63,7 @@
                             
                                 <form action="{{route('projetoIsolado')}}">
                                     <input type="hidden" name="id_projeto" value="{{$row->id_projeto}}">
-                                    <input type="submit" value="Show All" class="button" />
+                                    <input type="submit" value="Mostrar mais" class="button" />
                                 </form>
                             </div> 
                         </div> 

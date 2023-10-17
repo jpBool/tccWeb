@@ -19,7 +19,7 @@
     <div class="main">
         <div class="margin">
             <div class="barra-progress">
-                <h1>Progress</h1>
+                <h1>Progresso</h1>
                 <div class="barraPreta">
                     <div class="barra" style="width: {{$rows->porcentagem}}%;">
                         
