@@ -5,14 +5,20 @@
     <title>Etapas</title>
 </head>
 <body class="all">
-    <div class="top-top-all">
-        <div class="one">
-            <h4>Criado em : </h4>
-            <h4>Criado por : </h4>
+    <div class="so-top">
+        <div class="top-all">
+            <img src="{{'assets/img_tcc/logo.svg'}}" alt="img" class="imglogo">
+            <h1>etapas do projeto place holder</h1>
         </div>
-        <div class="two">
-            <h4>Atualizado em : </h4>
-            <h4>Atualizado por :</h4>
+        <div class="top-top-all">
+            <div class="one">
+                <h4>Criado em : </h4>
+                <h4>Criado por : </h4>
+            </div>
+            <div class="two">
+                <h4>Atualizado em : </h4>
+                <h4>Atualizado por :</h4>
+            </div>
         </div>
     </div>
 

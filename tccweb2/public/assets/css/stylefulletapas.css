@@ -1,12 +1,39 @@
+
+.imglogo
+{
+    float: left;
+    width: 150px;
+    height: auto;
+}
+.so-top
+{
+    display: grid;
+}
 .all
 {
     font-family: Helvetica, sans-serif;
+    margin: 0;
 }
+
+.top-all{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: #8AB6D5;
+    padding: 5px;
+}
+
+.top-all h1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 .top-top-all
 {
     background: #BBE1F3;
     display: flex;
-    flex: 1 50px;
+    padding: 5px;
 }
 
 .one{
@@ -14,8 +41,16 @@
     margin-inline: 200px;
 }
 
+.one h4{
+    margin: 0;
+}
+
 .two{
     display: block;
+}
+
+.two h4{
+    margin: 0;
 }
 .order
 {
@@ -29,7 +64,7 @@
     margin: 10px;
     border: 2px solid black;
     padding: 10px;
-    width: 300px;
+    width: 280px;
     height: 120px;
     font-family: Helvetica;
 }
@@ -119,11 +154,20 @@
 
 .impact h3{
     float: left;
+    margin: 5px;
+}
+
+.impact p{
+    text-align: left;
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
 }
 
 .bottom-etapas label
 {
     display: block;
+    font-size: 50px;
 }
 
 .orderbi

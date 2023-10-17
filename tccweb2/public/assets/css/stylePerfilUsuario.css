@@ -62,7 +62,8 @@ body::before {
 }
 .top-left
 {
-    display: inline-flex;
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -370,6 +371,7 @@ body::before {
     background-color: white;
     margin-top: 10px;
     margin-right: 10px;
+    width: 900px;
     min-height: 1000px;
     max-height: 3300px;
     border-radius: 30px;
