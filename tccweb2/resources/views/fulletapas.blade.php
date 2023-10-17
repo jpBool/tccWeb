@@ -46,10 +46,19 @@
                             <h4>Status : {{$rowsStatus[$rowE->status -1]->status}}</h4>
                             <h4>Responsável : {{$rowE->responsavel}}</h4>
                             <h4>Email : {{$rowE->email_responsavel}}</h4>
-                            <p>{{$rowE->descricao_etapa}}</p>
+                            <div class="impact">
+                                <h3>Descrição:</h3>
+                                <p>{{$rowE->descricao_etapa}}</p>
+                            </div>
+                            <div class="impact">
+                                @if($rowE->descricao_impedimento != null)
+                                    <h3>Impedimentos:</h3>
+                                    <p>{{$rowE->descricao_impedimento}}</p>
+                                @endif
+                            </div>
                             <h4>Porcentagem :    {{$rowE->porcentagem}}</h4>
-                            <p>Nível de prioridade : {{$rowE->prioridade}}</p>
-                            <p>Peso da etapa: {{$rowE->peso}}</p>
+                            <h4>Nível de prioridade : {{$rowE->prioridade}}</h4>
+                            <h4>Peso da etapa: {{$rowE->peso}}</h4>
                             <div class="bottom-etapas">
                                 <label>Criado em : {{$rowE->data_criacao}}<label>
                                 <label>Atualizado em : {{$rowE->data_atualizacao}}<label>

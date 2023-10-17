@@ -108,16 +108,22 @@
     margin-top: 10px;
 }
 
-.bottom-etapas
+.impact
 {
-    display: block;
-}
-
-.etapas p
-{
+    padding: 10px;
     background: #8AB6D5;
     border-radius: 10px;
     padding: 10px;
+    margin-top: 20px;
+}
+
+.impact h3{
+    float: left;
+}
+
+.bottom-etapas label
+{
+    display: block;
 }
 
 .orderbi
