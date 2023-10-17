@@ -61,7 +61,7 @@
                 <img src="{{'assets/img_tcc/icon1.svg'}}" alt="img" class="icon">
                 
                 <div class="text">
-                    <h2>Status do Projeto: < {{$rowsStatus[$rows->status]->status}} ></h2>
+                    <h2>Status do Projeto: < {{$rowsStatus[$rows->status -1]->status}} ></h2>
 
                     <h4>Previsão de Conclusão : < {{$rows->previsao}} > </h4>
                     <h4>Linguagem: < {{$rows->linguagem}} > </h4>
@@ -118,7 +118,7 @@
                 <img src="{{'assets/img_tcc/icon1.svg'}}" alt="img" class="icon">
 
                 <div class="text">
-                    <a href="">botão teste</a>
+                    <a target="_blank" href="{{ route('ShowEtapasFull', ['id_projeto' => $rows->id_projeto]) }}">botão teste</a>
                     <h2>Etapas do Projeto</h2>
                     <iframe src="" id="meuIframe" width="1640" height="700"></iframe>
                 </div>

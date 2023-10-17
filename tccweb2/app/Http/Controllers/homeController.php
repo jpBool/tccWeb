@@ -89,4 +89,26 @@ class homeController extends Controller
             }
         return view('etapas', compact('row', 'rowEtapas'));
     }
+    
+    public function ShowEtapasFull(Request $request)
+    {
+        $projeto = $request->input('id_projeto');
+        $row = gp2_grupos_etapas::where('id_projeto', $projeto)->get();
+        $rowEtapas = [];
+        $rowsStatus = gp2_status::all();
+            $projetos = gp2_etapas::all();
+            foreach ($row as $projetoGrupo) {
+                foreach($projetos as $projeto)
+                {
+                    if($projetoGrupo->id_grupo == $projeto->id_grupo)
+                    {
+                        $rowEtapas[] = $projeto;
+                    }
+                    
+                    
+                }
+                
+            }
+        return view('fulletapas', compact('row', 'rowEtapas', 'rowsStatus'));
+    }
 }

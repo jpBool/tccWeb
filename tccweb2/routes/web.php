@@ -51,6 +51,7 @@ Route::get('/homeDark', function () {
         Route::get('/projetoUser', ['as' => 'projetoIsolado', 'uses' => 'App\Http\Controllers\homeController@showProjectIsoled']);
 
         Route::get('/Etapas', ['as' => 'ShowEtapas', 'uses' => 'App\Http\Controllers\homeController@ShowEtapas']);
+        Route::get('/EtapasFull', ['as' => 'ShowEtapasFull', 'uses' => 'App\Http\Controllers\homeController@ShowEtapasFull']);
 
         Route::get('/sobre', 
             function () {
