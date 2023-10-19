@@ -119,8 +119,6 @@ nav
 .sidebar-i{
     width: 1.5rem;
 }
-
-
 /*-------------------------------footer--------------------------------COMECEI A PARTIR DAQUI*/
 .botoesfooter
 {
@@ -211,6 +209,18 @@ nav
     font-family: Helvetica;
     width: max-content;
     min-width: 150px;
+}
+
+.buttonLogin.a:link {
+    color: white;
+  }
+
+.buttonLogin.a:visited {
+    color: white;
+}
+
+.buttonLogin.a:link {
+    color: white;
 }
 
 .button1

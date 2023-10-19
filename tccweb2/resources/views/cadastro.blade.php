@@ -118,7 +118,7 @@
                     <button class="divButton" type="submit">Cadastrar</button>
                 </form>
 
-                <p id="loginLink">Já possui uma conta? <a href="#" id="loginLink">Faça login</a></p>
+                <p id="loginLink">Já possui uma conta? <a href="{{route('loginInicial.index')}}" id="loginLink">Faça login</a></p>
             </div>
         </main>
         <!-- footer -->

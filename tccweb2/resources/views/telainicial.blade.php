@@ -32,10 +32,10 @@
                    
                     <div class="buttonsHome">
                         
-                        <a class="button" href="{{route('loginInicial.index')}}" >
+                        <a class="button" href="{{route('cadastro')}}" >
                             <p>Criar conta</p>
                         </a>
-                        <label>Ja possui uma conta? Entrar</label>
+                        <a class="buttonLogin" href="{{route('loginInicial.index')}}">Ja possui uma conta? Entrar</a>
                     </div>
                     
                 </div>
