@@ -73,7 +73,7 @@ Route::get('/homeDark', function () {
 
         Route::get('/cadastro', function () {
             return view('cadastro');
-        });
+        })->name('cadastro');
 
         Route::get('/edicaoperfil', function () {
             return view('edicaoperfil');

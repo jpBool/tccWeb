@@ -104,8 +104,10 @@
                     <img src="{{'assets/img_tcc/icon1claro.svg'}}" alt="img" class="sidebar-icon" style="width: 3%;" > 
                     
                     <div class="buttonsHome">
-                        <a class="button">Criar conta</a>
-                        <p>Ja possui uma conta? Entrar</p>
+                        <a class="button" href="{{route('cadastro')}}" >
+                            <p>Criar conta</p>
+                        </a>
+                        <a href="{{route('loginInicial.index')}}">Ja possui uma conta? Entrar</a>
                     </div>
                 </div>
 
