@@ -30,24 +30,21 @@ class UsuariostccController extends Controller
 
     public function login(Request $request)
     {
-        $credentials = $request->only('email', 'password');
+        $email = $request->input('email');
+        $password = md5($request->input('password'));
 
-        if (Auth::attempt($credentials)) {
+        $user = gp2_usuarios::where('email', $email)
+            ->where('senha', $password)
+            ->first();
+
+        if ($user) {
             // Autenticação bem-sucedida
-            $user = Auth::user(); // Obtenha o usuário autenticado
-            $rows = gp2_projetos::where('id_criador', $user->id_usuario)
-                ->orderBy('porcentagem', 'desc')
-                ->get();
-
-                if (Auth::check())
-                {
-                    return view('home', compact('user', 'rows'));
-                }
-            
-        }
-
-        // Autenticação falhou, redirecione de volta para a página de login
-        return redirect()->back()->withInput()->withErrors(['email' => 'Credenciais inválidas']);
+            Auth::login($user);
+            return redirect('/home'); // Redirecione para a página de destino após o login bem-sucedido
+        } else {
+            // Autenticação falhou, redirecione de volta para a página de login
+            return redirect()->back()->withInput()->withErrors(['email' => 'Credenciais inválidas']);
+    }
     }
     
     //public function login(Request $request)
