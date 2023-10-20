@@ -51,8 +51,7 @@
                 </div>
             
                 
-                <input type="submit" value="Segue você" class="button" />
-                <input type="submit" value="Seguir de volta" class="button" />
+                <input type="submit" value="Seguir" class="button" />
         </div>
         @endforeach
     </div>

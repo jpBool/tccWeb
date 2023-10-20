@@ -41,7 +41,7 @@
                         </div>
                     </div>
                 </form>
-                <p>Você não possui uma conta? Criar</p>
+                <a href="{{route('cadastro')}}">Você não possui uma conta? Criar</a>
             </div>
             <div class="card-right">
                 <h1>Bem vindo!</h1>

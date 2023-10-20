@@ -41,7 +41,7 @@
                         
                         
 
-                                            @if($row->diferencaDias > 0)
+                            @if($row->diferencaDias > 0)
                             Há {{ $row->diferencaDias }} {{ Str::plural('dia', $row->diferencaDias) }}
                         @else
                             <?php

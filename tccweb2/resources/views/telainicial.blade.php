@@ -104,13 +104,6 @@
             </div>
 
 
-            <div class="botoesembaixo">
-                <a href="{{route('loginInicial.index')}}">
-                <button type="button" class="button1">Criar conta</button>
-                <button type="button" class="button2">Entrar</button>
-                </a>
-            </div>
-
             <a href="{{route('loginInicial.index')}}">
                 <div class="botoesembaixo">
                     <button type="button" class="button1">Criar conta</button>
@@ -122,11 +115,11 @@
         <!-- footer -->
     </main> 
 </body>
-    <script>
+<script>
         document.addEventListener('scroll', () => {
             let scrollVertical = window.pageYOffset;
             const header = document.getElementById('navbar');
-            if(scrollVertical > 300) {
+            if(scrollVertical > 100) {
                 header.style.backgroundColor = 'white';
                 console.log(`Scroll vertical:`, header);
             } else {
