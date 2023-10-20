@@ -337,6 +337,13 @@ padding: 10px;
     gap: 2%;
 }
 
+.mindi{
+    gap:5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .buttons{
     background: #0C283C;
     padding: 1px 3x;
