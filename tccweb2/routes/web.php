@@ -133,7 +133,7 @@ Route::get('/homeDark', function () {
 
         Route::get('/cadastroDark', function () {
             return view('cadastroDark');
-        });
+        })->name('cadastroDark');
 
         Route::get('/sobreDark', function () {
             return view('sobreDark');
