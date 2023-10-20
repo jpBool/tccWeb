@@ -344,6 +344,10 @@ padding: 10px;
     justify-content: center;
 }
 
+.conto{
+    width: 100%;
+}
+
 .buttons{
     background: #0C283C;
     padding: 1px 3x;

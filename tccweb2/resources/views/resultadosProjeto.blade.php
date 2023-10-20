@@ -49,7 +49,7 @@
                             @csrf
                         <!-- Outros campos do formulário, se houver -->
                         <div class="mindi">
-                            <div class="search-container">
+                            <div class="conto">
                                 <input type="text" name="termo_pesquisa" id="searchInput" placeholder="Pesquisar...">
                                 <button id="searchButton" type="submit" ><img class="lupa" src="{{'assets/img_tcc/lupa.svg'}}"></button>
                             </div>
