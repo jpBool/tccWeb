@@ -31,8 +31,7 @@
         </div>
     </div>
 
-        <div>
-            <div class="pessoasProjetos"> 
+    <div class="pessoasProjetos"> 
                     <form action="{{route('pesquisausuario') }}" method="GET">
                         <input type="submit" value="Pessoas" class="button2" />
                     </form>
@@ -42,12 +41,14 @@
                         <input type="submit" value="Projetos" class="button" />
                     </form>
             </div>
+    <div class="teste">
+        <div>
             <div class="quad-result">  
                 <div class="quad">
                     <form method="POST" aaction="/pesquisarProjetos">
                             @csrf
                         <!-- Outros campos do formulário, se houver -->
-                        <div class="separador">
+                        <div class="mindi">
                             <div class="search-container">
                                 <input type="text" name="termo_pesquisa" id="searchInput" placeholder="Pesquisar...">
                                 <button id="searchButton" type="submit" ><img class="lupa" src="{{'assets/img_tcc/lupa.svg'}}"></button>
@@ -78,9 +79,9 @@
                         </div>
 
                         <div class="botoesform">
-                            <input class="buttons" type="reset" value="">
-                            <input class="buttons" type="submit" value="">
-                            <input class="buttons" type="submit" value="">
+                            <input class="buttons" type="reset" value="Dó">
+                            <input class="buttons" type="submit" value="Ré">
+                            <input class="buttons" type="submit" value="Mi">
                         </div>
                     </form>
                 </div>
@@ -98,6 +99,7 @@
             </div>
             @endforeach
         </div>
+    </div>
 </div>
 </body>
 </html>

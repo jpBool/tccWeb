@@ -9,8 +9,10 @@ html{
 
 body
 {
+    width: 100%;
+    position: absolute;
     overflow-y: auto;
-    height: 100%;
+    min-height: 100%;
     margin: 0;
     padding: 0;
     /* Defina o fundo da página inteira, incluindo a área abaixo do footer */
@@ -288,6 +290,15 @@ padding: 10px;
     justify-content: center;
 }
 
+.teste{
+    display: flex;
+}
+
+.result{
+    margin-top: 50px;
+    width: 80%;
+}
+
 .result_pess {
     max-width: 600px;
     border-radius: 15px;
@@ -300,6 +311,7 @@ padding: 10px;
     box-shadow: 1px 1px 5px #10273E;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .results {
@@ -326,8 +338,7 @@ padding: 10px;
 }
 
 .buttons{
-    background-color: #0C283C;
-    color: #fff;
+    background: #0C283C;
     padding: 1px 3x;
     border-radius: 10px;
     border: black;
