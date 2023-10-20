@@ -176,7 +176,7 @@ class UsuariostccController extends Controller
             'nome' => $request->input('nome'),
             'email' => $request->input('email'),
             'datanasc' => $request->input('datanasc'),
-            'senha' => bcrypt($request->input('senha')),
+            'senha' => md5($request->input('senha')),
             // Outros campos do usuário que você deseja salvar
         ]);
 

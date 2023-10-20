@@ -15,7 +15,7 @@
 <body class="body">
 <div class="main">
 
-<div class="espacinho">
+<div class="espacinho2">
     <form method="POST" action="/pesquisar">
         @csrf
         <div class="separador">

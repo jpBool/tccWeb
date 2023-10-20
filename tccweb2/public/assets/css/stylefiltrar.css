@@ -188,7 +188,7 @@ nav
 .search-container {
     display: flex;
     align-items:flex-start;
-    justify-content: left;
+    justify-content: center;
     margin-top: 20px;
     width: 800px;
 }
@@ -237,11 +237,19 @@ nav
     display: flex;
     justify-content: center;
     gap:5%;
-    width: 700px;
+    width: 100%;
 }
 
 .espacinho{
     display: flex;
+    position:relative;
+    justify-content: center;
+    width: 100%;
+    margin-top: 200px;
+}
+.espacinho2
+{
+    display: block;
     position:relative;
     justify-content: center;
     width: 100%;
@@ -296,7 +304,7 @@ padding: 10px;
 
 .result{
     margin-top: 50px;
-    width: 80%;
+    width: 100%;
 }
 
 .result_pess {
@@ -497,7 +505,7 @@ form{
     bottom: 0;
     width: 100%;
     font-family: Helvetica;
-    position: absolute;
+    position: fixed;
 }
 
 .textfooter
