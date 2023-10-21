@@ -27,8 +27,8 @@ Route::get('/login', ['as' => 'loginInicial.index', 'uses' => 'App\Http\Controll
 // Agrupe apenas as rotas protegidas pelo middleware 'auth' aqui
 
 
-        Route::get('/home', 
-        ['as' => 'homeInicial', 'uses' => 'App\Http\Controllers\homeController@showProjects']);
+        Route::get('/home', ['as' => 'homeInicial', 'uses' => 'App\Http\Controllers\homeController@showProjects']);
+
         
         Route::get('/placeholder', ['as' => 'loginInicial.placeholder', 'uses' => 'App\Http\Controllers\UsuariostccController@enterplaceholder']);
 

@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Hash;
 use App\Models\gp2_projetos;
 use App\Http\Controllers\AuthenticatesUsers;
 use App\Models\gp2_imagens;
+use App\Models\gp2_colaboradores;
 //use App\usuariostcc;
 
 class UsuariostccController extends Controller
@@ -56,9 +57,12 @@ class UsuariostccController extends Controller
         if (!$user) {
             abort(404); // Ou qualquer outra ação adequada em caso de usuário não encontrado
         }
+        $rowsColab = gp2_colaboradores::where('id_colaborador', $usuario)->get();
+        $rowsUsers = gp2_usuarios::all();
         $rows = gp2_projetos::where('id_criador', $usuario)->get();
         $rowsImagens = gp2_imagens::all();
-        return view('loginInicial.placeholder', compact('user', 'rows', 'rowsImagens'));
+        $rowsProject = gp2_projetos::all();
+        return view('loginInicial.placeholder', compact('user', 'rows', 'rowsImagens', 'rowsUsers', 'rowsColab', 'rowsProject'));
     }
 
 

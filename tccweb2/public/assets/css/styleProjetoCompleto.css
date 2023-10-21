@@ -32,12 +32,11 @@ body::before {
 {
     margin: 0;
     padding: 0;
-    margin-left: auto;
-    margin-right: auto;
-    min-height: 100%; /* Garante que a div main tenha altura igual à altura do body */
+    min-height: 100vh;
     width: 100%;
     position: relative;
     font-family: Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 /* ------------------- BARRA -------------------*/
 
