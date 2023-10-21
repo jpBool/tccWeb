@@ -48,7 +48,7 @@
 
                 <div class="textprimeiro">
                     <div class="imgtextos">
-                        <img src="{{'assets/img_tcc/img1.jpg'}}" alt="img" class="imgtexto1" style="width: 100%;" > 
+                        <img src="{{'assets/img_tcc/ExplorarDark.png'}}" alt="img" class="imgtexto1" style="width: 100%;" > 
                         <img style="background-color: #364E65" src="{{'assets/img_tcc/icon2claro.svg'}}" alt="img" class="sidebar-icon-overlay" style="width: 2%;" >
                     </div>
                 </div>
@@ -66,7 +66,7 @@
                     <img style="background-color: #364E65" src="{{'assets/img_tcc/icon3claro.svg'}}" alt="img" class="sidebar-icon-overlay" style="width: 2%;"> 
 
                     <div class="imgtextos">
-                        <img src="{{'assets/img_tcc/img2.jpg'}}" alt="img" class="imgtexto1" style="width: 100%;" > 
+                        <img src="{{'assets/img_tcc/PesquisaUsuarioDark.png'}}" alt="img" class="imgtexto1" style="width: 100%;" > 
                     </div>
                 </div>
 
@@ -83,24 +83,11 @@
                     <img style="background-color: #364E65" src="{{'assets/img_tcc/icon4claro.svg'}}" alt="img" class="sidebar-icon-overlay" style="width: 2%;" > 
 
                     <div class="imgtextos">
-                        <img src="{{'assets/img_tcc/img3.jpg'}}" alt="img" class="imgtexto1" style="width: 100%;" > 
+                        <img src="{{'assets/img_tcc/EtapasProjeto.png'}}" alt="img" class="imgtexto1" style="width: 100%;" > 
                     </div>
                 </div>
 
                 <!---------------------------------------------------------------------------------------------->
-
-                <div class="textprimeiro"> 
-                    <div class="espaco">
-                        <h2> Navegue em seu feed e descubra novos softwares.</h2>
-                        <p>As sugestões selecionadas para você, abrirão as portas da exploração e descoberta de suas preferências.</p><br>
-                    </div>
-                </div>
-
-                <div class="textprimeiro">
-                    <div class="imgtextos">
-                        <img src="{{'assets/img_tcc/img4.jpg'}}" alt="img" class="imgtexto1" style="width: 100%;" > 
-                    </div>
-                </div>
             </div> 
             
             <div class="ultimotexto">
