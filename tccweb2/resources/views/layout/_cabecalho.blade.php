@@ -91,20 +91,6 @@
 <body>
 
     <script>
-        document.addEventListener('scroll', () => {
-            let scrollVertical = window.pageYOffset;
-            const header = document.getElementById('navbar');
-            if(scrollVertical > 100) {
-                header.style.backgroundColor = 'white';
-                console.log(`Scroll vertical:`, header);
-            } else {
-                header.style.backgroundColor = 'transparent';
-            }
-
-        }) 
-    </script>
-
-    <script>
 
         function openSidebar() {
             document.getElementById('sidebar').style.visibility = 'visible';
