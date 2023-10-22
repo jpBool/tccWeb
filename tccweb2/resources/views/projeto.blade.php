@@ -106,7 +106,9 @@
 
                 <div class="text">
                     <div class="grupo-etapas">
-                        <a target="_blank" href="{{ route('ShowEtapasFull', ['id_projeto' => $rows->id_projeto]) }}">botão teste</a>
+                        <a target="_blank" href="{{ route('ShowEtapasFull', ['id_projeto' => $rows->id_projeto]) }}">
+                            <img src="{{'assets/img_tcc/grupo_etapas.png'}}" alt="img">
+                        </a>
                     </div>
                     <h2>Etapas do Projeto</h2>
                     <iframe src="" id="meuIframe" width="1640" height="700"></iframe>
