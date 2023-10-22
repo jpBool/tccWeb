@@ -38,14 +38,11 @@
                     <br><br>
                     Criado em : {{$rows->data_criacao}}
                     <br><br>
-          
-                           
-                                    @foreach($rowsUsers as $rowsA)
-                                        @if($rowsA->id_usuario == $rows->atualizador)
-                                            Atualizado por : {{$rowsA->nome}}
-                                        @endif                               
-                                    @endforeach
-
+                    @foreach($rowsUsers as $rowsA)
+                        @if($rowsA->id_usuario == $rows->atualizador)
+                            Atualizado por : {{$rowsA->nome}}
+                        @endif                               
+                    @endforeach
                     <br><br>
                     Atualizado em :{{ \Carbon\Carbon::parse($rows->data_atualizacao)->format('Y-m-d H:i') }}
                 </div>
@@ -88,13 +85,6 @@
 
                 <div class="text">
                     <h2>Vídeo do Projeto</h2>
-                  
-                    <div id="video-container"></div>
-
-                        <div id="video-container"></div>
-
-                   
-
                         <script>
                             var youtubeLink = "{{$rows->link_youtube}}"; // Recupere o link direto do YouTube do seu banco de dados usando Blade
                             var embedLink = youtubeLink.replace('https://www.youtube.com/watch?v=', 'https://www.youtube.com/embed/');
@@ -110,15 +100,14 @@
                             var container = document.getElementById("video-container");
                             container.appendChild(iframe);
                         </script>
-
-                   
-
                 </div>
 
                 <img src="{{'assets/img_tcc/icon1.svg'}}" alt="img" class="icon">
 
                 <div class="text">
-                    <a target="_blank" href="{{ route('ShowEtapasFull', ['id_projeto' => $rows->id_projeto]) }}">botão teste</a>
+                    <div class="grupo-etapas">
+                        <a target="_blank" href="{{ route('ShowEtapasFull', ['id_projeto' => $rows->id_projeto]) }}">botão teste</a>
+                    </div>
                     <h2>Etapas do Projeto</h2>
                     <iframe src="" id="meuIframe" width="1640" height="700"></iframe>
                 </div>
