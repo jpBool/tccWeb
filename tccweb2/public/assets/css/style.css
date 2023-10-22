@@ -10,12 +10,13 @@ html{
 body
 {
     overflow-y: auto;
-    height: 100%;
     margin: 0;
     padding: 0;
     /* Defina o fundo da página inteira, incluindo a área abaixo do footer */
     background-color: #f0f0f0; /* Substitua pela cor de fundo desejada */
     font-family: Helvetica;
+    min-width: 900px;
+    min-height: 650px;
 }
 
 body::before {
@@ -42,11 +43,15 @@ body::before {
 
 .all{
     padding-top: 50px;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-login{
-    margin-top:10%;
-    margin-left:30%;
     width: 800px;
     height: 420px;
     display: flex;
@@ -174,10 +179,22 @@ body::before {
     background:#211855;
 }
 
+a:link{
+    text-decoration: none;
+    color: #130c3b;
+}
+a:visited{
+    color: #211855;
+}
+a:hover{
+    text-decoration: underline;
+    color: #4f3bc2;
+}
+
 /*--------------------------header--------------------*/
 .header 
 {
-    position: fixed;
+    position: static;
     width: 100%;
     display: inline;
     margin-top: 0;
