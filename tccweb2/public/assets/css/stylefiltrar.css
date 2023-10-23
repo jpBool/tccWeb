@@ -9,8 +9,8 @@ html{
 
 body
 {
-    width: 100%;
-    position: absolute;
+    min-width: 1400px;
+    position: relative;
     overflow-y: auto;
     min-height: 100%;
     margin: 0;
@@ -240,11 +240,18 @@ nav
     width: 100%;
 }
 
+.ladolado{
+    display: flex;
+    justify-content: center;
+    min-width: 2000px;
+}
+
 .espacinho{
     display: flex;
     position:relative;
-    justify-content: center;
-    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 1800px;
     margin-top: 200px;
 }
 .espacinho2
@@ -253,6 +260,10 @@ nav
     position:relative;
     justify-content: center;
     width: 100%;
+    margin-top: 200px;
+}
+
+.quad-result{
     margin-top: 200px;
 }
 
@@ -276,10 +287,11 @@ padding: 10px;
 }
 
 .quad{
+    margin-left: 60px;
     margin-top: 50px;
     background-color: #BBE1F3;
     width: 800px;
-    height: 355px;
+    height: 290px;
     border-radius: 2rem;
     visibility: hidden;
     font-size: 20px;
@@ -356,15 +368,28 @@ padding: 10px;
     justify-content: center;
 }
 
+.pessoasProjetos2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 80px;
+    width: 810px;
+    gap: 2%;
+}
+
 .mindi{
     gap:5%;
     width: 100%;
     display: flex;
     justify-content: center;
+    height: 90px;
 }
 
 .conto{
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .buttons{
@@ -384,6 +409,8 @@ padding: 10px;
     align-items: center;
     justify-content: left;
     margin-left: 50px;
+    margin-top: 15px;
+    height: 40px;
     
 }
 
@@ -400,6 +427,7 @@ padding: 10px;
     justify-content: left;
     display: flex;
     margin-left: 50px;
+    height: 40px;
 
 }
 
@@ -412,7 +440,7 @@ padding: 10px;
 }
 #lado0
 {
-    width: 130px;
+    width: 200px;
     margin-right: 20px;
 }
 #lado
@@ -428,7 +456,7 @@ padding: 10px;
 
 form{
     display: block;
-    align-self: center;
+    align-self: end;
 }
 
 .botoesform{
@@ -436,12 +464,12 @@ form{
     gap: 30px;
     justify-content: center;
     padding: 15px;
+    margin-top: 10px;
 }
 
 .status{
     display: flex;
     justify-content: center;
-    margin-top: 13px;
 }
 
 #status
@@ -503,7 +531,7 @@ form{
     text-align: right;
     color: #10273E;
     margin-right: 52%;
-    margin-top: 27px;
+    margin-top: 15px;
 }
 
 .footer 
@@ -517,7 +545,7 @@ form{
     width: 100%;
     font-family: Helvetica;
     position: fixed;
-    height: 100px;
+    height: 75px;
 }
 
 .textfooter
@@ -529,7 +557,7 @@ form{
 
 .imgfooter
 {
-    width: 180px;
+    width: 140px;
     height: 50px;
     margin-left: 50px;
     margin-right: 25px;

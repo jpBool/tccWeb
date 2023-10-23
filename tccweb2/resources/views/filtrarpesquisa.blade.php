@@ -34,8 +34,8 @@
         </div>
     </div>
 
-    <div>
-        <div class="pessoasProjetos"> 
+    <div class="lado">
+            <div class="pessoasProjetos2"> 
                 <form action="{{route('pesquisausuario') }}" method="GET">
                     <input type="submit" value="Pessoas" class="button2" />
                 </form>
@@ -44,7 +44,11 @@
                     <input type="hidden" name="id_projeto" value="">
                     <input type="submit" value="Projetos" class="button" />
                 </form>
+            </div>
         </div>
+
+
+        <div>
             <div class="center">  
                 <div class="quad">
                 <form>
@@ -95,22 +99,9 @@
                         <input class="buttons" type="submit" value="APLICAR FILTROS">
                         </div>
                 </form>
-                
                 </div>
-                
             </div>
-
-
-                
         <div>
-
-        
-
-       
-
-   
-  
 </body>
-
 </html>
 @endsection 
