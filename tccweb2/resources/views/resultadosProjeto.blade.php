@@ -15,7 +15,7 @@
 <body class="body">
 <div class="main">
     <div class="ladolado">
-        <div class="espacinho">
+        <div class="espacinho3">
             <form method="POST" action="/pesquisarProjetos">
                 @csrf
                 <div class="separador">
