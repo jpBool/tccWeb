@@ -195,13 +195,11 @@ a:hover{
 .header 
 {
     position: static;
-    width: 100%;
     display: inline;
     margin-top: 0;
     margin-left:0;
     font-family:  Helvetica;  
     font-weight: bolder;
-    z-index: 99;
 }
 
 nav

@@ -31,16 +31,18 @@
         </div>
     </div>
 
-    <div class="pessoasProjetos"> 
-                    <form action="{{route('pesquisausuario') }}" method="GET">
-                        <input type="submit" value="Pessoas" class="button2" />
-                    </form>
+    <div class="lado">
+        <div class="pessoasProjetos"> 
+            <form action="{{route('pesquisausuario') }}" method="GET">
+                <input type="submit" value="Pessoas" class="button2" />
+            </form>
 
-                    <form action="{{route('projetoIsolado')}}">
-                        <input type="hidden" name="id_projeto" value="">
-                        <input type="submit" value="Projetos" class="button" />
-                    </form>
-            </div>
+            <form action="{{route('projetoIsolado')}}">
+                <input type="hidden" name="id_projeto" value="">
+                <input type="submit" value="Projetos" class="button" />
+            </form>
+        </div>
+    </div>
     <div class="teste">
         <div>
             <div class="quad-result">  

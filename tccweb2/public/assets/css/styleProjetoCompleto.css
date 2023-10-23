@@ -10,7 +10,8 @@ html{
 body
 {
     overflow-y: auto;
-    height: 100%;
+    min-height: 3300px;
+    min-width: 2350px;
     margin: 0;
     padding: 0;
     /* Defina o fundo da página inteira, incluindo a área abaixo do footer */
@@ -157,6 +158,17 @@ body::before {
     border-left: solid 6px #364E65;
     padding-left: 125px;
     padding-bottom: 5px;
+}
+
+.bow{
+    display: block;
+    width: 1640px;
+}
+
+.grupo-etapas{
+    width: 50px;
+    height: auto;
+    float: right;
 }
 
 .icon
