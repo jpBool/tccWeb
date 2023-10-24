@@ -1,23 +1,49 @@
-body, html{
-    background: linear-gradient(to bottom, #ffffff, #BBE1F3, #9EBAD6, #9EBAD6);
+html{
+    height: 80vh;
     background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-    width:100%;
-    font-family: Helvetica;
-    height: 120vh;
+    padding-bottom: 0;
+     /* 100% da altura da tela */
+    display: flex;
+    flex-direction: column; /* Para estender o conteúdo */
 }
 
-body{     
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    
+body
+{
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    /* Defina o fundo da página inteira, incluindo a área abaixo do footer */
+    background-color: #f0f0f0; /* Substitua pela cor de fundo desejada */
+    font-family: Helvetica;
+    min-width: 800px;
+    min-height: 700px;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(to bottom, #ffffff, #BBE1F3, #9EBAD6, #9EBAD6);
 }
 
 main{
-    height: 60vh;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%; /* Garante que a div main tenha altura igual à altura do body */
+    padding-bottom: 0;
+    position: relative;
+}
+
+.all{
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,13 +66,6 @@ main{
 .titulo p {
     text-align: center;
     font-size: 20px;
-}
-
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 form

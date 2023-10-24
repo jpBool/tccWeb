@@ -28,7 +28,7 @@ body::before {
     height: 100%;
     z-index: -1;
     background: linear-gradient(to bottom, #ffffff, #BBE1F3, #9EBAD6, #9EBAD6);
-  }
+}
 
 .main
 {

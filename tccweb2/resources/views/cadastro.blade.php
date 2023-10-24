@@ -4,9 +4,18 @@
         <link href="{{('assets/css/stylecadastro.css')}}" rel="stylesheet">
         <meta charset="UTF-8">
         <title>Cadastro</title>
+
+        <div class="header">
+            <nav id="navbar">  
+                <ul>
+                    <img src="{{'assets/img_tcc/logo.svg'}}" alt="img" class="imglogo">
+                </ul>
+            </nav>
+        </div>
     </head>
     <body>
         <main>
+        <div class="all">
             <div class="fundo">
 
                 <div class="titulo">         
@@ -40,6 +49,7 @@
 
                 <p id="loginLink">Já possui uma conta? <a href="{{route('loginInicial.index')}}" id="loginLink">Faça login</a></p>
             </div>
+        </div>
         </main>
     </body>
 

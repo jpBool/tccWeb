@@ -55,8 +55,7 @@
                     <div class="conta">
                         <div id="nome">{{ $row->nome_projeto }}</div>
                     </div>
-                    <input type="submit" value="Segue você" class="button" />
-                    <input type="submit" value="Seguir de volta" class="button" />
+                    <input type="submit" value="Show all" class="button" />
                 </div>
                 @endforeach
             </div>
