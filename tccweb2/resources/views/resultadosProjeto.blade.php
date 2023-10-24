@@ -53,18 +53,38 @@
                         
                         <div class="Porcentagem">
                             <p id="lado0">Porcentagem:</p>
-                            <label for="porcentagem" id="lado" >Maior que:</label>
-                            <input type="number" id="porcentagem" name="porcentagem" min="0" max="100">
-                            <label for="porcentagem" id="lado2" >Menor que:</label>
-                            <input type="number" id="porcentagem" name="porcentagem" min="0" max="100">
+                            <div id="block">
+                                <div id="lado">
+                                    <label for="porcentagem">Maior que:</label>
+                                    <div id="porcentagem">
+                                        <input type="number" name="porcentagem" min="0" max="100">
+                                    </div>
+                                </div>
+                                <div id="lado2">
+                                    <label for="porcentagem">Menor que:</label>
+                                    <div id="porcentagem">
+                                        <input type="number" name="porcentagem" min="0" max="100">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         
                         <div class="datatt">
                             <p id="lado0">Data de Atualização:</p>
-                            <label for="porcentagem" id="lado" >Maior que:</label>
-                            <input type="number" id="porcentagem" name="porcentagem" min="0" max="100">
-                            <label for="porcentagem" id="lado2" >Menor que:</label>
-                            <input type="number" id="porcentagem" name="porcentagem" min="0" max="100">
+                                <div id="block">
+                                    <div id="lado">
+                                        <label for="porcentagem">Maior que:</label>
+                                        <div id="porcentagem">
+                                            <input type="number" name="porcentagem" min="0" max="100">
+                                        </div>
+                                    </div>
+                                    <div id="lado2">
+                                        <label for="porcentagem">Menor que:</label>
+                                        <div id="porcentagem">
+                                            <input type="number" name="porcentagem" min="0" max="100">
+                                        </div>
+                                    </div>
+                                </div>
                         </div>
 
                         <div class="botoesform">
