@@ -14,24 +14,54 @@
 
 <body class="body">
 <div class="main">
-    <div class="ladolado">
-        <div class="espacinho3">
-            <form method="POST" action="/pesquisarProjetos">
-                @csrf
-                <div class="separador">
-                    <div class="search-container">
-                        <input type="text" name="termo_pesquisa" id="searchInput" placeholder="Pesquisar...">
-                        <button id="searchButton" type="submit" ><img class="lupa" src="{{'assets/img_tcc/lupa.svg'}}"></button>
-                    </div>
-                </div>    
-            </form>
+<div class="quad-bonito">
+    <div class="quad-bonito2">
+        <div class="ladolado">
+            <div class="espacinho3">
+                <form method="POST" action="/pesquisarProjetos">
+                    @csrf
+                    <div class="separador">
+                        <div class="search-container">
+                            <input type="text" name="termo_pesquisa" id="searchInput" placeholder="Pesquisar...">
+                            <button id="searchButton" type="submit" ><img class="lupa" src="{{'assets/img_tcc/lupa.svg'}}"></button>
+                        </div>
+                    </div>    
+                </form>
 
-            <div class="filtrar">
-                <div class="filtro"><img class="filter" src="{{'assets/img_tcc/filtersearch.svg'}}"></img></div>
-                <div class="textfiltro">Filtrar Pesquisa</div>
+                <div class="filtrar">
+                    <div class="filtro"><img class="filter" src="{{'assets/img_tcc/filtersearch.svg'}}"></img></div>
+                    <div class="textfiltro">Filtrar Pesquisa</div>
+                </div>
             </div>
         </div>
-        <div>
+
+        <div class="lado">
+            <div class="pessoasProjetos2"> 
+                <form action="{{route('pesquisausuario') }}" method="GET">
+                    <input type="submit" value="Pessoas" class="button2" />
+                </form>
+
+                <form action="{{route('projetoIsolado')}}">
+                    <input type="hidden" name="id_projeto" value="">
+                    <input type="submit" value="Projetos" class="button" />
+                </form>
+            </div>
+        </div>
+        <div class="teste">
+
+            <div class="result">
+                @foreach($resultados as $row)
+                <div class="result_pess">
+                    <div class="conta">
+                        <div id="nome">{{ $row->nome_projeto }}</div>
+                    </div>
+                    <input type="submit" value="Segue você" class="button" />
+                    <input type="submit" value="Seguir de volta" class="button" />
+                </div>
+                @endforeach
+            </div>
+        </div>
+    </div>
             <div class="quad-result">  
                 <div class="quad">
                     <form method="POST" aaction="/pesquisarProjetos">
@@ -96,34 +126,7 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="lado">
-        <div class="pessoasProjetos2"> 
-            <form action="{{route('pesquisausuario') }}" method="GET">
-                <input type="submit" value="Pessoas" class="button2" />
-            </form>
-
-            <form action="{{route('projetoIsolado')}}">
-                <input type="hidden" name="id_projeto" value="">
-                <input type="submit" value="Projetos" class="button" />
-            </form>
-        </div>
-    </div>
-    <div class="teste">
-
-        <div class="result">
-            @foreach($resultados as $row)
-            <div class="result_pess">
-                <div class="conta">
-                    <div id="nome">{{ $row->nome_projeto }}</div>
-                </div>
-                <input type="submit" value="Segue você" class="button" />
-                <input type="submit" value="Seguir de volta" class="button" />
-            </div>
-            @endforeach
-        </div>
-    </div>
+</div>
 </div>
 </body>
 </html>

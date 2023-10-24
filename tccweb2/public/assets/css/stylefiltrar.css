@@ -275,7 +275,8 @@ nav
 }
 
 .quad-result{
-    margin-top: 200px;
+    margin-top: 270px;
+    z-index: +1;
 }
 
 .filtrar{
@@ -297,12 +298,11 @@ padding: 10px;
     font-size: 25px;
 }
 
-.quad:link::before{
-    margin: -300px;
+.quad-bonito{
+    display: flex;
+    justify-content: center;
 }
-
 .quad{
-    margin-left: 60px;
     margin-top: 50px;
     background-color: #BBE1F3;
     width: 700px;
@@ -332,11 +332,13 @@ padding: 10px;
 
 .teste{
     display: flex;
+    width: 140%;
+    justify-content: center;
 }
 
 .result{
     margin-top: 50px;
-    width: 100%;
+    width: 40%;
     margin-bottom: 210px;
 }
 
