@@ -23,7 +23,7 @@
                 </div>
             </form>
 
-            <div class="lado">
+            <div class="lado1">
                 <div class="pessoasProjetos"> 
                     <form action="{{route('pesquisausuario')}}" method="GET">
                         <input type="submit" value="Pessoas" class="button" />
@@ -36,7 +36,7 @@
                 </div>
             </div>
 
-            <div class="result">
+            <div class="result1">
                 @foreach($resultados as $row)
                 <div class="result_pess">
                     <a href="{{route('loginInicial.placeholder', ['usuario' => $row->id_usuario]) }}">
@@ -46,8 +46,8 @@
                         <div id="nome">{{ $row->nome }} </div>
                         <div id="email">{{ $row->email }}</div> 
                     </div>
-                    
-                    <input type="submit" value="Seguir" class="button" />
+                    <input type="submit" value="Segue você" class="button3" />
+                    <input type="submit" value="Seguir de volta" class="button" />
                 </div>
                 @endforeach
             </div>

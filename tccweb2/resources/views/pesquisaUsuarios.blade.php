@@ -24,7 +24,7 @@
                 </div>
                 
             </form>
-            <div class="lado">
+            <div class="lado1">
                 <div class="pessoasProjetos"> 
                     <form action="" method="GET">
                         <input type="submit" value="Pessoas" class="button" />

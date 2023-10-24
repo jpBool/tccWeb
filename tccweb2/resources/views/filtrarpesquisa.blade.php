@@ -34,8 +34,8 @@
         </div>
     </div>
 
-    <div class="lado">
-            <div class="pessoasProjetos2"> 
+    <div class="lado1">
+            <div class="pessoasProjetos3"> 
                 <form action="{{route('pesquisausuario') }}" method="GET">
                     <input type="submit" value="Pessoas" class="button2" />
                 </form>
@@ -48,60 +48,69 @@
         </div>
 
 
-        <div>
-            <div class="center">  
+        <div class="quad-result1">  
                 <div class="quad">
-                <form>
-                    <div class="status">
-                        <label for="status">Status de Projeto:</label>
-                        <select id="status" name="status">
-                            <option value="em-andamento">Em Andamento</option>
-                            <option value="concluido">Concluído</option>
-                        </select>
-                    </div>
-                    
-                        <div class="Porcentagem">
-                            <p id="lado0">Porcentagem:</p>
-                            <label for="porcentagem" id="lado" >Maior que:</label>
-                            <input type="number" id="porcentagem" name="porcentagem" min="0" max="100">
-                            <label for="porcentagem" id="lado2" >Menor que:</label>
-                            <input type="number" id="porcentagem" name="porcentagem" min="0" max="100">
+                    <form method="POST" aaction="/pesquisarProjetos">
+                            @csrf
+                        <!-- Outros campos do formulário, se houver -->
+                        <div class="mindi">
+                            <div class="conto">
+                                <input type="text" name="termo_pesquisa" id="searchInput" placeholder="Pesquisar...">
+                                <button id="searchButton" type="submit" ><img class="lupa" src="{{'assets/img_tcc/lupa.svg'}}"></button>
+                            </div>
+                        </div>
+                        <div class="status">
+                            <label for="status">Status de Projeto:</label>
+                            <select id="status" name="status">
+                                <option value="em-andamento">Em Andamento</option>
+                                <option value="concluido">Concluído</option>
+                            </select>
                         </div>
                         
-                        <div class="datacon">
-                            <p id="lado0">Data de Conclusão:</p>
-                            <label for="porcentagem" id="lado" >Maior que:</label>
-                            <input type="number" id="porcentagem" name="porcentagem" min="0" max="100">
-                            <label for="porcentagem" id="lado2" >Menor que:</label>
-                            <input type="number" id="porcentagem" name="porcentagem" min="0" max="100">
+                        <div class="Porcentagem">
+                            <p id="lado0">Porcentagem:</p>
+                            <div id="block">
+                                <div id="lado">
+                                    <label for="porcentagem">Maior que:</label>
+                                    <div id="porcentagem">
+                                        <input type="number" name="porcentagem" min="0" max="100">
+                                    </div>
+                                </div>
+                                <div id="lado2">
+                                    <label for="porcentagem">Menor que:</label>
+                                    <div id="porcentagem">
+                                        <input type="number" name="porcentagem" min="0" max="100">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         
                         <div class="datatt">
                             <p id="lado0">Data de Atualização:</p>
-                            <label for="porcentagem" id="lado" >Maior que:</label>
-                            <input type="number" id="porcentagem" name="porcentagem" min="0" max="100">
-                            <label for="porcentagem" id="lado2" >Menor que:</label>
-                            <input type="number" id="porcentagem" name="porcentagem" min="0" max="100">
+                                <div id="block">
+                                    <div id="lado">
+                                        <label for="porcentagem">Maior que:</label>
+                                        <div id="porcentagem">
+                                            <input type="number" name="porcentagem" min="0" max="100">
+                                        </div>
+                                    </div>
+                                    <div id="lado2">
+                                        <label for="porcentagem">Menor que:</label>
+                                        <div id="porcentagem">
+                                            <input type="number" name="porcentagem" min="0" max="100">
+                                        </div>
+                                    </div>
+                                </div>
                         </div>
-                        
-                        <div class="dataprev">
-                            <p id="lado0">Previsão de Conclusão:</p>
-                            <label for="porcentagem" id="lado" >Maior que:</label>
-                            <input type="number" id="porcentagem" name="porcentagem" min="0" max="100">
-                            <label for="porcentagem" id="lado2" >Menor que:</label>
-                            <input type="number" id="porcentagem" name="porcentagem" min="0" max="100">
-                        </div>
-                    
 
                         <div class="botoesform">
-                        <input class="buttons" type="reset" value="LIMPAR FILTROS">
-                        <input class="buttons" type="submit" value="CANCELAR" formnovalidate>
-                        <input class="buttons" type="submit" value="APLICAR FILTROS">
+                            <input class="buttons" type="reset" value="LIMPAR FILTROS">
+                            <input class="buttons" type="submit" value="CANCELAR">
+                            <input class="buttons" type="submit" value="APLICAR FILTROS">
                         </div>
-                </form>
+                    </form>
                 </div>
             </div>
-        <div>
 </body>
 </html>
 @endsection 

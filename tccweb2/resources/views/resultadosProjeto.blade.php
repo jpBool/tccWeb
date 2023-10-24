@@ -118,9 +118,9 @@
                         </div>
 
                         <div class="botoesform">
-                            <input class="buttons" type="reset" value="Dó">
-                            <input class="buttons" type="submit" value="Ré">
-                            <input class="buttons" type="submit" value="Mi">
+                            <input class="buttons" type="reset" value="LIMPAR FILTROS">
+                            <input class="buttons" type="submit" value="CANCELAR">
+                            <input class="buttons" type="submit" value="APLICAR FILTRO">
                         </div>
                     </form>
                 </div>

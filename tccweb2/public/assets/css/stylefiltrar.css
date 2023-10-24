@@ -143,7 +143,6 @@ nav
     margin-right: 10px;
     min-width: 100px;
     height: 30px;
-    color: #fff;
     padding: 5px 10px;
     font-weight: bold;
     cursor: pointer;
@@ -154,8 +153,28 @@ nav
     z-index: 0; /*Quanto maior o valor, mais fica na camada de frente quando há sobreposiçao de objetos*/
     background: black;
     overflow: hidden;
-    border: black;
     color: white;
+    border: black;
+    margin-bottom: 10px;
+}
+
+.button3{
+    margin-top: 7px;
+    margin-right: 10px;
+    min-width: 100px;
+    height: 30px;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0; /*Quanto maior o valor, mais fica na camada de frente quando há sobreposiçao de objetos*/
+    background: rgb(221, 236, 255);
+    overflow: hidden;
+    color: black;
+    border: 1px solid black;
     margin-bottom: 10px;
 }
 
@@ -173,10 +192,9 @@ nav
     outline: none;
     border-radius: 5px;
     z-index: 0; /*Quanto maior o valor, mais fica na camada de frente quando há sobreposiçao de objetos*/
-    background: rgb(255, 255, 255);
+    background: rgb(221, 236, 255);
     overflow: hidden;
-    border: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    border: 1px solid black;
     margin-bottom: 10px;
 }
 
@@ -279,6 +297,13 @@ nav
     z-index: +1;
 }
 
+.quad-result1{
+    margin-top: 100px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
 .filtrar{
     width: 220px;
     height: 80px;
@@ -342,9 +367,18 @@ padding: 10px;
     margin-bottom: 210px;
 }
 
+.result1{
+    margin-top: 50px;
+    width: 100%;
+    margin-bottom: 210px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .result_pess {
-    max-width: 550px;
-    border-radius: 15px;
+    max-width: 700px;
+    height: 110px;
+    border-radius: 25px;
     margin-bottom: 20px;
     display: flex;
     padding: 10px;
@@ -387,6 +421,12 @@ padding: 10px;
 .lado{
     width: 100%;
     display: flex;
+    justify-content: end;
+}
+
+.lado1{
+    width: 100%;
+    display: flex;
     justify-content: center;
 }
 
@@ -395,8 +435,18 @@ padding: 10px;
     justify-content: flex-start;
     align-items: center;
     height: 80px;
-    width: 810px;
+    width: 910px;
     gap: 2%;
+}
+
+.pessoasProjetos3{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    height: 80px;
+    width: 910px;
+    gap: 2%;
+    margin-left: 80px;
 }
 
 .mindi{
