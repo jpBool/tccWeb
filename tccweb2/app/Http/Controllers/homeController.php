@@ -22,7 +22,7 @@ class homeController extends Controller
     //
     public function showProjects()
     {
-       
+       //teste
 
             $rows = [];
             $projetos = gp2_projetos::where('excluido', false)
