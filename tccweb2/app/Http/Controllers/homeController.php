@@ -25,7 +25,9 @@ class homeController extends Controller
        
 
             $rows = [];
-            $projetos = gp2_projetos::orderBy('porcentagem', 'desc')->get();
+            $projetos = gp2_projetos::where('excluido', false)
+            ->orderBy('porcentagem', 'desc')
+            ->get();
             foreach ($projetos as $projeto) {
                 $dataAtualizacao = $projeto->data_atualizacao;
                 $dataAtualizacao = Carbon::parse($dataAtualizacao);
