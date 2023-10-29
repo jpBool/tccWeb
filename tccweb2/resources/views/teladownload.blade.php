@@ -13,13 +13,13 @@
     <body>
         <div class="main">
             <div class="Titulo">
-                <h1> Download Sensei</h1>
+                <h1>SENSEI Desktop</h1>
             </div>
             
             <div class="conteudo">
                 <div class="download">
                     <div class="subtitulo"> 
-                        <h2>Download Sensei para Windows</h2>
+                        <h2>Download Sensei - Windows</h2>
                     </div>
 
                     
@@ -32,16 +32,23 @@
                 
                 <div class="textos">
                     <h2>Quais as vantagens de baixar o nosso sistema?</h2>
-                        <p class="textin">Nosso site oferece diversas vantagens para os usuários que buscam explorar 
-                            o potencial da tecnologia. 
+                        <p class="textin">
+                            Nosso site oferece diversas vantagens para os usuários que buscam explorar 
+                            o potencial da tecnologia.
+                        </p>
+                        <p class="textin">
                             Ao identificar as 
                             necessidades individuais dos clientes em relação à tecnologia, proporcionamos soluções direcionadas e eficazes. 
                             Além disso, estamos comprometidos
                             em auxiliar as pessoas na resolução de problemas sociais por meio 
                             da inovação tecnológica, promovendo um impacto positivo na sociedade. 
+                        </p>
+                        <p class="textin">
                             Para os 
                             desenvolvedores, oferecemos uma oportunidade única de ascensão acadêmica e profissional, 
                             impulsionando suas carreiras para novos patamares. 
+                        </p>
+                        <p class="textin">
                             Nossa plataforma se destaca pela facilidade de acesso e uso, garantindo que todos possam 
                             desfrutar das possibilidades tecnológicas sem barreiras. 
                             Ao participar conosco, você estará imerso em um ambiente que valoriza o desenvolvimento e a
@@ -50,15 +57,6 @@
                 </div>   
             </div>  
 
-            <div class="footer">
-                        <img src="{{'assets/img_tcc/logoSensei.svg'}}" alt="img" class="imgfooter">
-
-                        <div class="botoesfooter">
-                        <a href="index.blade.php">Home</a>
-                        <a href="sobre.blade.php">Sobre nós</a>
-                        <a href="pesquisar.html">Download</a>
-                        <p class="emailequipe">sensei.system7@gmail.com</p>
-            </div>
         </div>
     </body>
 </html>

@@ -1,128 +1,44 @@
-body{
-    background: linear-gradient(to bottom, #ffffff, #BBE1F3, #9EBAD6, #9EBAD6);
+html{
+    height: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 0;
+     /* 100% da altura da tela */
+    display: flex;
+    flex-direction: column; /* Para estender o conteúdo */
+}
+
+body
+{
+    overflow-y: auto;
+    height: 100%;
     margin: 0;
     padding: 0;
-    height: 1100px;
-    width:100%;
-}
-/*---------header-----------*/
-.header 
-{
-    position: relative;
-    width: 100%;
-    display: inline;
-    margin-top: 0;
-    margin-left:0;
-    font-family:  Helvetica;  
-    font-weight: bolder;
-    font-size: 18px;
-    z-index: 99;
+    /* Defina o fundo da página inteira, incluindo a área abaixo do footer */
+    background-color: #f0f0f0; /* Substitua pela cor de fundo desejada */
+    font-family: Helvetica;
+            
 }
 
-nav
-{
-    width: 100%;
-    /* position: fixed; */
-}
-
-.header nav ul 
-{
-    list-style-type: none; /*define o icone marcador ou check nos itens da lista*/
-    margin: 0;
-    text-align: center;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-}
-
-.imglogo
-{
-    float: left;
-    width: 200px;
-    height: auto; /* Altura automática (proporcional) */
-}
-
-.header nav ul li 
-{
-    display: inline;
-    margin-right: 3%;
-}
-
-.header nav ul li a 
-{
-    text-decoration: none;
-    color: #10273E;
-}
-
-.nav-icon{
-    width: 30px;
-    cursor: pointer;
-}
-
-.navIcon{
-    display: grid;
-    height: auto;
-    margin-left: 30%;
-    margin-right: 20px;
-    gap: 2rem;
-    grid-template-columns: auto auto;
-}
-
-.navButtom{
-    display: grid;
-    gap: 7.5rem;
-    grid-template-columns: auto auto auto;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
-}
-
-
-/*-------------------------------sidebar--------------------------------*/
-
-.sidebar{
-    z-index: 1000;
+body::before {
+    content: "";
     position: fixed;
-    right: 0;
     top: 0;
-
-    width: fit-content;
-    padding: 1rem;
-
-    height: 100%;
-    background-color: #fff;
-    visibility: hidden;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.sidebar a {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
-}
-
-.sidebar-i{
-    width: 1.5rem;
-}
-
-
-/*-------------------------------body--------------------------------*/
-
-.main{
-    font-family:  Helvetica;
+    left: 0;
     width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(to bottom, #ffffff, #BBE1F3, #9EBAD6, #9EBAD6);
+  }
+
+.main
+{
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%; /* Garante que a div main tenha altura igual à altura do body */
+    width: 100%;
+    position: relative;
 }
 
 .conteudo{
@@ -132,16 +48,21 @@ nav
 }
 
 .Titulo{
-    text-align:left;
-    margin-left: 200px;
-    margin-top: 50px;
+    text-align:center;
+    margin-top: 150px;
     margin-bottom: 80px;
-    font-size: 25px;
+}
+
+.Titulo h1{
+    font-size: 3em;
 }
 
 .subtitulo{
-    font-size:20px;
     text-align: center;
+}
+
+.subtitulo h2{
+    font-size:2em;
 }
 
 .download {
@@ -189,72 +110,14 @@ nav
     align-self: flex-start;
 }
 
-.textos h2, .subtitulo h2 {
-    font-size: 36px;
-    font-weight: 800;
+.textos h2{
+    font-size: 2em;
     text-align: center;
 }
 
 .textin{
     font-size: 20px;
     text-align:justify;
-    font-weight: bold;
-    max-width: 600px;
-}
-
-/*-------------------------------footer--------------------------------*/
-.botoesfooter
-{
-    display: inline;
-    margin-top: 15px;
-    margin-left: 30%;
-    text-align: center;
-    flex: 1 50px;
-}
-
-.botoesfooter a
-{
-    color: #10273E;
-    text-decoration: none;
-    padding-right: 10%;
-    font-size:16.7px;
-}
-
-.emailequipe{
-    font-size: 16.7px;
-    text-align: right;
-    color: #10273E;
-    margin-right: 52%;
-    margin-top: 27px;
-}
-
-.footer 
-{
-    background-color: white;
-    padding-bottom: 2%;
-    padding-top: 2%;
-    text-align: left;
-    display: flex;
-    position: relative;
-    left: 0;
-    margin-left:0;
-    bottom: 0;
-    width: 100%;
-    font-family: Helvetica;
-}
-
-.textfooter
-{
-    display: flex;
-    margin-left: 10%;
-    margin-right: 25px;
-}
-
-.imgfooter
-{
-    width: 180px;
-    height: 50px;
-    margin-left: 50px;
-    margin-right: 25px;
-    margin-top: 25px;
+    max-width: 700px;
+    margin: 10px;
 }
