@@ -72,9 +72,11 @@ body::before {
 
 #img-project
 {
-    /*min-height: 200px;*/
-    min-width: 300px;
-    max-width: 320px;
+    /*min-height: 200px;
+    min-width: 300px;*/
+    max-width: 350px;
+    width: auto;
+    box-sizing: border-box;
     max-height: 215px;
     box-sizing: border-box;
     border-radius: 30px;
@@ -85,8 +87,9 @@ body::before {
 {
     display: flex;
     align-items: center;
-    width: auto;
     height: auto;
+    justify-content: center;
+    width: 370px;
 }
 
 .conteudo-texto

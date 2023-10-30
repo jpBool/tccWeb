@@ -20,6 +20,9 @@ Route::get('/', function () {
 });
 
 Route::post('/login', ['as' => 'login', 'uses' => 'App\Http\Controllers\UsuariostccController@login']);
+
+Route::get('/sair', ['as' => 'sair', 'uses' => 'App\Http\Controllers\UsuariostccController@sair']);
+
 Route::get('/login', ['as' => 'loginInicial.index', 'uses' => 'App\Http\Controllers\UsuariostccController@index']);
 
 
@@ -68,7 +71,8 @@ Route::get('/homeDark', function () {
         }); 
 
         Route::get('/teladownload', function () {
-            return view('teladownload');
+            $userId = session('user_id');
+            return view('teladownload', compact('userId'));
         })->name('download');
 
         Route::get('/cadastro', function () {
@@ -80,7 +84,8 @@ Route::get('/homeDark', function () {
         })->name('edicaoperfil');
 
         Route::get('/filtrarpesquisa', function () {
-            return view('filtrarpesquisa');
+            $userId = session('user_id');
+            return view('filtrarpesquisa', compact('userId'));
         });
 
         Route::get('/edicaocadastro', function () {
@@ -108,16 +113,18 @@ Route::get('/homeDark', function () {
 
         Route::post('/cadastrar', 'App\Http\Controllers\UsuariostccController@cadastrar')->name('cadastro.store');
 
-        Route::get('/perfil/editar', 'App\Http\Controllers\UsuariostccController@editar')->name('perfil.editar');
+        Route::get('/perfil/editar', 'App\Http\Controllers\UsuariostccController@editar')->name('editar');
 
         Route::post('/perfil/atualizar', 'App\Http\Controllers\UsuariostccController@atualizar')->name('perfil.atualizar');
 
         Route::get('/filtrarpesquisa', function () {
-            return view('filtrarpesquisa');
+            $userId = session('user_id');
+            return view('filtrarpesquisa', compact('userId'));
         })->name('filtrarpesquisa');
 
         Route::get('pesquisausuario', function () {
-            return view('pesquisaUsuarios');
+            $userId = session('user_id');
+            return view('pesquisaUsuarios', compact('userId'));
         })->name('pesquisausuario');
 
         Route::post('/edicaocadastro', function () {

@@ -157,7 +157,16 @@
                                         </a>
                                         @endif
                                         @endforeach
-                                        <label class="label-titulo"> Nova atualização de <div id="nome-autor">{{$row->autores}} </div>. Há 18 horas </label>
+
+                                        @if($row->diferencaDias > 0)
+                                        Há {{ $row->diferencaDias }} {{ Str::plural('dia', $row->diferencaDias) }}
+                                        @else
+                                            <?php
+                                                $dataAtualizacao = \Carbon\Carbon::parse($row->data_atualizacao);
+                                                echo 'Há ' . $dataAtualizacao->diffForHumans();
+                                            ?>
+                                        @endif
+                                        
                                     </div>
                                         
                                     <div class="conteudo"> 

@@ -23,7 +23,9 @@ class homeController extends Controller
     public function showProjects()
     {
        //teste
-
+       $userId = session('user_id');
+        if($userId)
+        {
             $rows = [];
             $projetos = gp2_projetos::where('excluido', false)
             ->orderBy('porcentagem', 'desc')
@@ -39,7 +41,12 @@ class homeController extends Controller
             $rowsUsers = gp2_usuarios::all();
             $rowsImagens = gp2_imagens::all();
     
-            return view('home', compact('rows', 'rowsImagens', 'rowsUsers'));     
+            return view('home', compact('rows', 'rowsImagens', 'rowsUsers', 'userId'));     
+        }
+        else
+        {
+            return view('loginInicial.login');
+        }
         
          
     }

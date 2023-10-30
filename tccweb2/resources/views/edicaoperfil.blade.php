@@ -3,10 +3,11 @@
 @section('conteudo')
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <link href="{{('assets/css/styleEdicaoPerfil.css')}}" rel="stylesheet">
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Edição de Perfil</title>
 </head>
 <body>
@@ -29,17 +30,17 @@
 
                 <div class="divLabel">
                     <label for="nome">Nome:</label>
-                    <input class="form_input" type="text" id="nome" name="nome" placeholder="Nome" value="{{ $usuario->nome }}">
+                    <input class="form_input" type="text" id="nome" name="nome" placeholder="Nome" value="{{$usuario->nome }}">
                 </div>
 
                 <div class="divLabel">
                     <label for="TextNat">Naturalidade:</label>
-                    <input class="form_input" type="text" id="TextNat" name="TextNat" placeholder="Naturalidade" value="{{ $usuario->naturalidade }}">
+                    <input class="form_input" type="text" id="TextNat" name="TextNat" placeholder="Naturalidade" value="{{$usuario->naturalidade }}">
                 </div>
 
                 <div class="divLabel">
                     <label for="TextBio">Biografia:</label>
-                    <textarea class="form_input" id="TextBio" name="TextBio" placeholder="Biografia" value="{{ $usuario->biografia }}"> </textarea>
+                    <textarea class="form_input" id="TextBio" name="TextBio" placeholder="Biografia" value="{{$usuario->biografia }}"> </textarea>
                 </div>
 
                 <button class="divButton" type="submit">Salvar alterações</button>
@@ -49,30 +50,9 @@
             
     <!-- footer -->
         
-    <div class="footer">
-        <img src="{{'assets/img_tcc/logoSensei.svg'}}" alt="img" class="imgfooter">
-
-        <div class="botoesfooter">
-            <a href="index.blade.php">Home</a>
-            <a href="sobre">Sobre nós</a>
-            <a href="pesquisar.html">Download</a>
-            <p class="emailequipe">sensei.system7@gmail.com</p>
-        </div>
-    </div>  
+    
 </body>
 
-    <script>
-        document.addEventListener('scroll', () => {
-            let scrollVertical = window.pageYOffset;
-            const header = document.getElementById('navbar');
-            if(scrollVertical > 300) {
-                header.style.backgroundColor = 'white';
-                console.log(`Scroll vertical:`, header);
-            } else {
-                header.style.backgroundColor = 'transparent';
-            }
-
-        }) 
-    </script>
+    
 </html>
 @endsection 

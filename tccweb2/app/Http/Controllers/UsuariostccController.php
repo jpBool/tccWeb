@@ -11,6 +11,7 @@ use App\Models\gp2_projetos;
 use App\Http\Controllers\AuthenticatesUsers;
 use App\Models\gp2_imagens;
 use App\Models\gp2_colaboradores;
+use Carbon\Carbon;
 //use App\usuariostcc;
 
 class UsuariostccController extends Controller
@@ -18,6 +19,13 @@ class UsuariostccController extends Controller
 
     protected $redirectTo = '/home'; // Redirecionar após o login bem-sucedido
 
+    public function sair()
+    {
+        // Encerrar a sessão e remover todos os dados da sessão
+        session()->flush();
+        return redirect()->route('login');
+        
+    }
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
@@ -33,12 +41,13 @@ class UsuariostccController extends Controller
     {
         $email = $request->input('email');
         $password = md5($request->input('password'));
-
+        
         $user = gp2_usuarios::where('email', $email)
             ->where('senha', $password)
             ->first();
 
         if ($user) {
+            session(['user_id' => $user->id_usuario]);
             // Autenticação bem-sucedida
             Auth::login($user);
             return redirect('/home'); // Redirecione para a página de destino após o login bem-sucedido
@@ -51,6 +60,21 @@ class UsuariostccController extends Controller
     //public function login(Request $request)
     public function enterplaceholder(Request $request)
     {
+        $userId = session('user_id');
+    if($userId)
+    {
+        $projetos = gp2_projetos::where('excluido', false)
+            ->orderBy('porcentagem', 'desc')
+            ->get();
+        $rowsProject = [];
+        foreach ($projetos as $projeto) {
+            $dataAtualizacao = $projeto->data_atualizacao;
+            $dataAtualizacao = Carbon::parse($dataAtualizacao);
+            $dataAtual = Carbon::now();
+            $diferencaDias = $dataAtual->diffInDays($dataAtualizacao);
+            $projeto->diferencaDias = $diferencaDias;
+            $rowsProject[] = $projeto;
+        }
         $usuario = $request->input('usuario');
         $user = gp2_usuarios::where('id_usuario', $usuario)->first();
 
@@ -61,8 +85,14 @@ class UsuariostccController extends Controller
         $rowsUsers = gp2_usuarios::all();
         $rows = gp2_projetos::where('id_criador', $usuario)->get();
         $rowsImagens = gp2_imagens::all();
-        $rowsProject = gp2_projetos::all();
-        return view('loginInicial.placeholder', compact('user', 'rows', 'rowsImagens', 'rowsUsers', 'rowsColab', 'rowsProject'));
+        
+        return view('loginInicial.placeholder', compact('user', 'rows', 'rowsImagens', 'rowsUsers', 'rowsColab', 'rowsProject', 'userId'));
+    }
+    else
+    {
+        return view('loginInicial.login');
+    }
+
     }
 
 
@@ -111,11 +141,7 @@ class UsuariostccController extends Controller
             return redirect()->route('loginInicial.index');
         }
     }
-    public function sair()
-    {
-        Auth::logout();
-        return redirect()->route('site.home');
-    }
+
 
     public function returnLogin()
     {
@@ -123,18 +149,36 @@ class UsuariostccController extends Controller
     }
 
     public function showUsers()
-    {
+    {$userId = session('user_id');
+        if($userId)
+        {
         $rows = gp2_usuarios::all();
         return view('buscar', compact('rows'));
+        }
+        else
+        {
+            return view('loginInicial.login');
+        }
     }
 
 
     public function pesquisar()
     {
-        return view('pesquisar'); // Crie uma view chamada 'pesquisar' para exibir o formulário de pesquisa.
+    $userId = session('user_id');
+        if($userId)
+        {
+            return view('pesquisar'); // Crie uma view chamada 'pesquisar' para exibir o formulário de pesquisa.
+        }
+        else
+        {
+            return view('loginInicial.login');
+        }
     }
 
     public function processarPesquisa(Request $request)
+    {
+    $userId = session('user_id');
+    if($userId)
     {
         $termoPesquisa = $request->input('termo_pesquisa');
 
@@ -145,10 +189,18 @@ class UsuariostccController extends Controller
             ->get();
 
         
-        return view('resultados', ['resultados' => $resultados]);
+        return view('resultados', ['resultados' => $resultados], compact('userId'));
+    }
+    else
+    {
+        return view('loginInicial.login');
+    }
     }
 
     public function processarProjetos(Request $request)
+    {
+        $userId = session('user_id');
+    if($userId)
     {
         $termoPesquisa = $request->input('termo_pesquisa');
 
@@ -158,12 +210,20 @@ class UsuariostccController extends Controller
             ->orWhereRaw('LOWER(descricao_breve) ILIKE ?', ["%$termoPesquisa%"])
             ->get();
 
-        return view('resultadosProjeto', ['resultados' => $resultados]);
+        return view('resultadosProjeto', ['resultados' => $resultados], compact('userId'));
+    }
+    else
+    {
+        return view('loginInicial.login');
+    }
     }
 
 
     public function cadastrar(Request $request)
     {
+        $userId = session('user_id');
+        if($userId)
+        {
         // Valide os dados do formulário de cadastro
         $request->validate([
             'nome' => 'required|string',
@@ -171,6 +231,7 @@ class UsuariostccController extends Controller
             'datanasc' => 'required|date',
             'senha' => 'required|min:6',
         ]);
+        
 
         // Crie um novo usuário
         gp2_usuarios::create([
@@ -184,11 +245,24 @@ class UsuariostccController extends Controller
         // Redirecione para a página de login ou para onde desejar após o cadastro
         return view('loginInicial.login');// ou outra rota de sua escolha
     }
+    else
+    {
+        return view('loginInicial.login');
+    }
+    }
 
     public function editar()
     {
-        $usuario = Auth::user(); // Obtém o usuário autenticado
-        return view('edicaoperfil', compact('usuario'));
+        $userId = session('user_id');
+        if($userId)
+        {
+        $usuario = gp2_usuarios::where('id_usuario', $userId)->first(); // Obtém o usuário autenticado
+        return view('edicaoperfil', compact('usuario', 'userId'));
+        }
+        else
+        {
+            return view('loginInicial.login');
+        }
     }
 
     public function atualizar(Request $request)

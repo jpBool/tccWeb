@@ -27,17 +27,18 @@
                         <!-- Conteúdo da barra lateral -->
                         <img src="{{'assets/img_tcc/icon_close.svg'}}" alt="img" class="nav-icon" id="closeSidebarButton" style="width: 20px">
 
-                        <a href="#" class="integracao-button"> 
+                        <a href="{{route('sair')}}" class="integracao-button"> 
                             <img src="{{'assets/img_tcc/icon_logout.svg'}}" alt="img" class="sidebar-i">
                             <span>Logout</span>
                         </a>
 
-                        <a href="{{route('loginInicial.placeholder')}}" class="integracao-button">
+                        
+                        <a href="{{route('loginInicial.placeholder', ['usuario' => $userId]) }}" class="integracao-button">
                             <img src="{{'assets/img_tcc/icon_perfilescuro.svg'}}" alt="img" class="sidebar-i">
                             <span>Perfil</span>
                         </a>
 
-                        <a href="pesquisar"class="integracao-button"> 
+                        <a href="{{route('pesquisausuario')}}"class="integracao-button"> 
                             <img src="{{'assets/img_tcc/icon_search.svg'}}" alt="img" class="sidebar-i">
                             <span>Pesquisar</span>
                         </a>
@@ -62,7 +63,7 @@
                             <span>Download</span>
                         </a>
            
-                        <a href="{{route('edicaoperfil')}}" class="integracao-button">
+                        <a href="{{route('editar')}}" class="integracao-button">
                             <img src="{{'assets/img_tcc/icon_user_edit.svg'}}" alt="img" class="sidebar-i">
                             <span>Editar perfil</span>
                         </a>
