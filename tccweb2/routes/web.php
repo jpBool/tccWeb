@@ -113,7 +113,7 @@ Route::get('/homeDark', function () {
 
         Route::post('/cadastrar', 'App\Http\Controllers\UsuariostccController@cadastrar')->name('cadastro.store');
 
-        Route::get('/perfil/editar', 'App\Http\Controllers\UsuariostccController@editar')->name('editar');
+        Route::get('/editar', 'App\Http\Controllers\UsuariostccController@editar')->name('editar');
 
         Route::post('/perfil/atualizar', 'App\Http\Controllers\UsuariostccController@atualizar')->name('perfil.atualizar');
 
