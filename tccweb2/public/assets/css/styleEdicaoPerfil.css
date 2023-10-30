@@ -1,26 +1,46 @@
-body, html{
-    background: linear-gradient(to bottom, #ffffff, #BBE1F3, #9EBAD6, #9EBAD6);
+html{
+    height: 100%;
     background-repeat: no-repeat;
+    padding-bottom: 0;
+     /* 100% da altura da tela */
+    display: flex;
+    flex-direction: column; /* Para estender o conteúdo */
+}
+
+body
+{
+    overflow-y: auto;
+    height: 100%;
     margin: 0;
     padding: 0;
-    width:100%;
+    /* Defina o fundo da página inteira, incluindo a área abaixo do footer */
+    background-color: #f0f0f0; /* Substitua pela cor de fundo desejada */
     font-family: Helvetica;
-    height: 125vh;
+            
 }
 
-body{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    
-}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(to bottom, #ffffff, #BBE1F3, #9EBAD6, #9EBAD6);
+  }
 
-main{
-    height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.main
+{
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%; /* Garante que a div main tenha altura igual à altura do body */
+    min-width: 1000px;
+    max-width: 100%;
+    position: relative;
+   
 }
 
 
@@ -69,7 +89,7 @@ main{
     width: 550px;
     height: 730px;
     border-radius: 2rem;
-    
+    margin-top: 10%;
     box-shadow: 0px 0px 30px rgb(255, 255, 255);
 }
 

@@ -265,23 +265,96 @@ class UsuariostccController extends Controller
         }
     }
 
-    public function atualizar(Request $request)
+    public function editarCadastro()
     {
-        $usuario = Auth::user(); // Obtém o usuário autenticado
-
-        $request->validate([
-            'nome' => 'required|string|max:255',
-            // Outras regras de validação para os campos do perfil
-        ]);
-
-        // Atualize os campos do perfil com os novos valores do formulário
-        $usuario->update([
-            'nome' => $request->input('nome'),
-            // Atualize os outros campos do perfil aqui
-        ]);
-
-        return redirect()->route('edicaoperfil')->with('success', 'Perfil atualizado com sucesso');
+        $userId = session('user_id');
+        if($userId)
+        {
+        $usuario = gp2_usuarios::where('id_usuario', $userId)->first(); // Obtém o usuário autenticado
+        return view('edicaocadastro', compact('usuario', 'userId'));
+        }
+        else
+        {
+            return view('loginInicial.login');
+        }
     }
+
+
+    public function atualizar(Request $request)
+{
+    // Obtém o ID do usuário da sessão
+    $userId = session('user_id');
+
+    // Verifica se o usuário está autenticado
+    if ($userId) {
+        // Recupere o usuário com base no ID da sessão
+        $usuario = gp2_usuarios::find($userId);
+
+        // Verifique se o usuário foi encontrado
+        if ($usuario) {
+            // Valide os campos do formulário
+            $request->validate([
+                'nome' => 'required|string|max:255',
+                // Adicione outras regras de validação para os campos do perfil
+            ]);
+
+            // Atualize os campos do perfil com os valores do formulário
+            $usuario->nome = $request->input('nome');
+            $usuario->naturalidade = $request->input('TextNat');
+            $usuario->bio = $request->input('TextBio');
+            // Atualize os outros campos do perfil aqui
+
+            // Salve as alterações no banco de dados
+            $usuario->save();
+
+            return view('edicaoperfil', compact('usuario', 'userId'))->with('success', 'Perfil atualizado com sucesso');
+        } else {
+            // Se o usuário não foi encontrado, você pode redirecioná-lo para uma página de erro ou executar outra ação apropriada.
+            return view('pagina_de_erro');
+        }
+    } else {
+        return view('loginInicial.login');
+    }
+}
+
+public function atualizarCadastri(Request $request)
+{
+    // Obtém o ID do usuário da sessão
+    $userId = session('user_id');
+
+    // Verifica se o usuário está autenticado
+    if ($userId) {
+        // Recupere o usuário com base no ID da sessão
+        $usuario = gp2_usuarios::find($userId);
+
+        // Verifique se o usuário foi encontrado
+        if ($usuario) {
+            // Valide os campos do formulário
+            $request->validate([
+                
+                // Adicione outras regras de validação para os campos do perfil
+            ]);
+
+            // Atualize os campos do perfil com os valores do formulário
+            $usuario->email = $request->input('email');
+            $usuario->nascimento = $request->input('datanasc');
+            $usuario->senha = $request->input(md5('senha'));
+            // Atualize os outros campos do perfil aqui
+
+            // Salve as alterações no banco de dados
+            $usuario->save();
+
+            return view('edicaoperfil', compact('usuario', 'userId'))->with('success', 'Perfil atualizado com sucesso');
+        } else {
+            // Se o usuário não foi encontrado, você pode redirecioná-lo para uma página de erro ou executar outra ação apropriada.
+            return view('pagina_de_erro');
+        }
+    } else {
+        return view('loginInicial.login');
+    }
+}
+
+    
 
 
     
