@@ -54,7 +54,7 @@
                         </div>
                     </div>
                     
-                    <form action="{{ route('perfil.editar') }}">
+                    <form action="{{ route('editar') }}">
                        
                         <input type="submit" value="Editar" class="button-perfil" />
                     </form>
