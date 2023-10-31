@@ -22,20 +22,19 @@
                 <h2> Editar Cadastro </h2>
             </div>
 
-            <form class="form_altera" method="POST" action="{{ route('perfil.atualizarCadastro') }}">
-                @csrf
+            <form class="form_altera">
 
                 <div class="divLabel">
                     <label for="email">Alterar e-mail:</label>
-                    <input class="form_input" type="text" id="email" name="email" placeholder="e-mail" value="{{$usuario->email}}>
+                    <input class="form_input" type="text" id="email" name="email" placeholder="e-mail">
                 </div>
                 <div class="divLabel">
                     <label for="datanasc">Data de nascimento:</label>
-                    <input class="form_input" type="date" id="datanasc" style="width:" name="datanasc" value="{{$usuario->nascimento}}>
+                    <input class="form_input" type="date" id="datanasc" style="width:" name="datanasc">
                 </div>
                 <div class="divLabel">
                     <label for="senha">Alterar senha:</label>
-                    <input class="form_input" type="password" id="senha" name="senha" placeholder="senha" value="">
+                    <input class="form_input" type="password" id="senha" name="senha" placeholder="senha">
                 </div>
             
                 <button class="divButton" type="submit">Salvar alterações</button>

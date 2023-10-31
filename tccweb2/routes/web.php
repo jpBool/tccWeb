@@ -88,7 +88,9 @@ Route::get('/homeDark', function () {
             return view('filtrarpesquisa', compact('userId'));
         });
 
-       
+        Route::get('/edicaocadastro', function () {
+            return view('edicaocadastro');
+        });
 
         Route::get('/pesquisar', 'App\Http\Controllers\UsuariostccController@pesquisar')->name('pesquisar');
 
@@ -112,10 +114,8 @@ Route::get('/homeDark', function () {
         Route::post('/cadastrar', 'App\Http\Controllers\UsuariostccController@cadastrar')->name('cadastro.store');
 
         Route::get('/editar', 'App\Http\Controllers\UsuariostccController@editar')->name('editar');
-        Route::get('/editarCdastro', 'App\Http\Controllers\UsuariostccController@editarCadastro')->name('editarCadastro');
 
-        Route::post('/atualizar', 'App\Http\Controllers\UsuariostccController@atualizar')->name('perfil.atualizar');
-        Route::post('/atualizarCadastro', 'App\Http\Controllers\UsuariostccController@atualizarCadastro')->name('perfil.atualizarCadastro');
+        Route::post('/perfil/atualizar', 'App\Http\Controllers\UsuariostccController@atualizar')->name('perfil.atualizar');
 
         Route::get('/filtrarpesquisa', function () {
             $userId = session('user_id');
@@ -127,12 +127,9 @@ Route::get('/homeDark', function () {
             return view('pesquisaUsuarios', compact('userId'));
         })->name('pesquisausuario');
 
-        Route::get('/edicaocadastro', 'App\Http\Controllers\UsuariostccController@editarCadastro')->name('edicaocadastro');
-        /*Route::post('/edicaocadastro', function () {
-            $userId = session('user_id');
-            $usuario = gp2_usuarios::where('id_usuario', $userId)->first();
-            return view('edicaocadastro', compact('usuario', 'userId'));
-        })->name('edicaocadastro');*/
+        Route::post('/edicaocadastro', function () {
+            return view('edicaocadastro');
+        })->name('edicaocadastro');
 
 
        

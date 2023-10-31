@@ -21,7 +21,7 @@
                 <img src="{{'assets/img_tcc/joao.svg'}}" alt="foto" class="imgUsuario">      
                 <div>
                     <h3> Nome de Usuário </h3>
-                    <input type="file" name="nova_foto" class="button" accept="image/*">
+                    <button type="button" class="button">Alterar foto de perfil</button>
                 </div>
             </div>
 
@@ -40,7 +40,7 @@
 
                 <div class="divLabel">
                     <label for="TextBio">Biografia:</label>
-                    <input class="form_input" type="text" id="TextBio" name="TextBio" placeholder="Bio" value="{{$usuario->bio }}"> </textarea>
+                    <textarea class="form_input" id="TextBio" name="TextBio" placeholder="Biografia" value="{{$usuario->biografia }}"> </textarea>
                 </div>
 
                 <button class="divButton" type="submit">Salvar alterações</button>
