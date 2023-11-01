@@ -40,7 +40,7 @@
 
                 <div class="divLabel">
                     <label for="TextBio">Biografia:</label>
-                    <textarea class="form_input" id="TextBio" name="TextBio" placeholder="Biografia" value="{{$usuario->biografia }}"> </textarea>
+                    <input class="form_input" id="TextBio" name="TextBio" placeholder="Biografia" value="{{$usuario->bio }}"> </input>
                 </div>
 
                 <button class="divButton" type="submit">Salvar alterações</button>

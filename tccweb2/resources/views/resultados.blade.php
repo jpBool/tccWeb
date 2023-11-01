@@ -46,8 +46,10 @@
                         <div id="nome">{{ $row->nome }} </div>
                         <div id="email">{{ $row->email }}</div> 
                     </div>
-                    <input type="submit" value="Segue você" class="button3" />
-                    <input type="submit" value="Seguir de volta" class="button" />
+                    <form action="{{route('handleFollow', '$userId')}}" id="" method="GET">
+                        <input type="submit">
+                    </form>
+                   
                 </div>
                 @endforeach
             </div>

@@ -17,7 +17,7 @@ use Carbon\Carbon;
 class UsuariostccController extends Controller
 {
 
-    protected $redirectTo = '/home'; // Redirecionar após o login bem-sucedido
+    // Redirecionar após o login bem-sucedido
 
     public function sair()
     {
@@ -38,31 +38,32 @@ class UsuariostccController extends Controller
 
 
     public function login(Request $request)
-    {
-        session()->flush();
-        $email = $request->input('email');
-        $password = md5($request->input('password'));
-        
-        $user = gp2_usuarios::where('email', $email)
-            ->where('senha', $password)
-            ->first();
+{
+    session()->flush();
+    $email = $request->input('email');
+    $password = md5($request->input('password'));
+    
+    $user = gp2_usuarios::where('email', $email)
+        ->where('senha', $password)
+        ->first();
 
-        if ($user) {
-            session(['user_id' => $user->id_usuario]);
-            // Autenticação bem-sucedida
-            Auth::login($user);
-            return redirect('/home'); // Redirecione para a página de destino após o login bem-sucedido
-        } else {
-            // Autenticação falhou, redirecione de volta para a página de login
-            return redirect()->back()->withInput()->withErrors(['email' => 'Credenciais inválidas']);
+    if ($user) {
+        session(['user_id' => $user->id_usuario]);
+        // Autenticação bem-sucedida
+        
+        return redirect()->route('homeInicial'); // Corrigido para redirecionar para a rota nomeada
+    } else {
+        // Autenticação falhou, redirecione de volta para a página de login
+        return redirect()->back()->withInput()->withErrors(['email' => 'Credenciais inválidas']);
     }
-    }
+}
+
     
     //public function login(Request $request)
     public function enterplaceholder(Request $request)
     {
         $userId = session('user_id');
-    if($userId)
+    if (session()->has('user_id')) 
     {
         $projetos = gp2_projetos::where('excluido', false)
             ->orderBy('porcentagem', 'desc')
@@ -358,9 +359,21 @@ public function atualizarCadastro(Request $request)
     {
         return view('loginInicial.login');
     }
+
 }
 
+public function handleFollow(Request $request)
+    {
+        dd($request);
 
+        /* :
+            create Follow::Create([
+                'seguindo' =>  id que recebe,
+                'seguidor' => sessao
+            ])
+        
+        */
+    }
 
     
 

@@ -32,6 +32,7 @@ Route::get('/login', ['as' => 'loginInicial.index', 'uses' => 'App\Http\Controll
 
         Route::get('/home', ['as' => 'homeInicial', 'uses' => 'App\Http\Controllers\homeController@showProjects']);
 
+        Route::get('/follow/{id}', ['as' => 'handleFollow', 'uses' => 'App\Http\Controllers\UsuariosTccController@handleFollow']);
         
         Route::get('/placeholder', ['as' => 'loginInicial.placeholder', 'uses' => 'App\Http\Controllers\UsuariostccController@enterplaceholder']);
 
