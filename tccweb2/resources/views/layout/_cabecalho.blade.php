@@ -14,7 +14,7 @@
             <ul>
                 <img src="{{'assets/img_tcc/logo.svg'}}" alt="img" class="imglogo">
                 <div class="navButtom">
-                    <li><a class="links" href="index">Seguindo</a></li>
+                    <li><a class="links" href="{{route('Seguidores')}}">Seguindo</a></li>
                     <li><a class="links" href="{{route('homeInicial')}}">Explorar</a></li>
                     <li><a class="links" href="{{route('pesquisausuario')}}">Pesquisar</a></li>
                 </div>

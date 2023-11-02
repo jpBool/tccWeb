@@ -11,6 +11,7 @@ use App\Models\gp2_projetos;
 use App\Http\Controllers\AuthenticatesUsers;
 use App\Models\gp2_imagens;
 use App\Models\gp2_colaboradores;
+use App\Models\gp2_seguidores;
 use Carbon\Carbon;
 //use App\usuariostcc;
 
@@ -190,8 +191,8 @@ class UsuariostccController extends Controller
             ->orWhereRaw('LOWER(email) ILIKE ?', ["%$termoPesquisa%"])
             ->get();
 
-        
-        return view('resultados', ['resultados' => $resultados], compact('userId'));
+        $rowsSeguidores = gp2_seguidores::all();
+        return view('resultados', ['resultados' => $resultados], compact('userId', 'rowsSeguidores'));
     }
     else
     {
@@ -211,7 +212,7 @@ class UsuariostccController extends Controller
         $resultados = gp2_projetos::whereRaw('LOWER(nome_projeto) ILIKE ?', ["%$termoPesquisa%"])
             ->orWhereRaw('LOWER(descricao_breve) ILIKE ?', ["%$termoPesquisa%"])
             ->get();
-
+       
         return view('resultadosProjeto', ['resultados' => $resultados], compact('userId'));
     }
     else
@@ -362,17 +363,48 @@ public function atualizarCadastro(Request $request)
 
 }
 
-public function handleFollow(Request $request)
-    {
-        dd($request);
+    public function handleFollow(Request $request)
+        {
+            $seguido = $request->input('id_seguido');
+            $userId = session('user_id');
+            $dataAtual = now()->format('Y-m-d ');
+            gp2_seguidores::create([
+                'id_seguidor' => $userId,
+                'id_seguido' => $seguido,
+                'data_inicio_seguindo' => $dataAtual,
+            ]);
 
-        /* :
-            create Follow::Create([
-                'seguindo' =>  id que recebe,
-                'seguidor' => sessao
-            ])
-        
-        */
+            return view('pesquisaUsuarios', compact('userId'));
+            
+        }
+
+
+    public function seguidores(Request $request)
+    {
+        $userId = session('user_id');
+        if($userId)
+        {
+            $termoPesquisa = $request->input('termo_pesquisa');
+
+            // Execute a pesquisa no banco de dados usando o termo de pesquisa.
+            $resultadosSeg = gp2_seguidores::where('id_seguidor', $userId)->get();
+
+            $resultados2 = gp2_usuarios::whereRaw('LOWER(nome) ILIKE ?', ["%$termoPesquisa%"])
+            ->orWhereRaw('LOWER(email) ILIKE ?', ["%$termoPesquisa%"])
+            ->get();
+
+            $resultadosSeg = gp2_seguidores::where('id_seguidor', $userId)->pluck('id_seguido');
+            
+            $resultados = $resultados2->whereIn('id_usuario', $resultadosSeg)->all();
+            
+            $rowsSeguidores = gp2_seguidores::all();
+
+            return view('resultados', ['resultados' => $resultados], compact('userId', 'rowsSeguidores'));
+        }
+        else
+        {
+            return view('loginInicial.login');
+        }
     }
 
     

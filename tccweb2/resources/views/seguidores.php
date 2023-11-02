@@ -13,7 +13,7 @@
 <body class="body">
     <div class="main">
         <div class="espacinho2">
-            <form method="POST" action="/pesquisar">
+            <form method="POST" action="{{route('Seguidores')}}">
                 @csrf
                 <div class="separador">
                     <div class="search-container">

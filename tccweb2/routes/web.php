@@ -32,13 +32,13 @@ Route::get('/login', ['as' => 'loginInicial.index', 'uses' => 'App\Http\Controll
 
         Route::get('/home', ['as' => 'homeInicial', 'uses' => 'App\Http\Controllers\homeController@showProjects']);
 
-        Route::get('/follow/{id}', ['as' => 'handleFollow', 'uses' => 'App\Http\Controllers\UsuariosTccController@handleFollow']);
+        Route::get('/follow', ['as' => 'handleFollow', 'uses' => 'App\Http\Controllers\UsuariosTccController@handleFollow']);
         
         Route::get('/placeholder', ['as' => 'loginInicial.placeholder', 'uses' => 'App\Http\Controllers\UsuariostccController@enterplaceholder']);
 
         Route::get('/busca', ['as' => 'pesquisaTotal', 'uses' => 'App\Http\Controllers\UsuariostccController@enterplaceholder']);
 
-        Route::get('/pesquisar', ['as' => 'pesquisarAll', 'uses' => 'App\Http\Controllers\UsuariostccController@showUsers']);
+       
 
 
 Route::get('/edicaoperfilDark', function () {
@@ -91,10 +91,11 @@ Route::get('/homeDark', function () {
 
      
 
-        Route::get('/pesquisar', 'App\Http\Controllers\UsuariostccController@pesquisar')->name('pesquisar');
+       // Route::get('/pesquisar', 'App\Http\Controllers\UsuariostccController@pesquisar')->name('pesquisar');
 
         // Rota para a página de pesquisa
-        Route::post('/pesquisar', 'App\Http\Controllers\UsuariostccController@processarPesquisa'); // Rota para processar a pesquisa
+        Route::post('/pesquisar', 'App\Http\Controllers\UsuariostccController@processarPesquisa')->name('pesquisarU'); 
+        Route::get('/seguidores', 'App\Http\Controllers\UsuariostccController@seguidores')->name('Seguidores');// Rota para processar a pesquisa
 
         Route::post('/pesquisarProjetos', 'App\Http\Controllers\UsuariostccController@processarProjetos'); // 
 
