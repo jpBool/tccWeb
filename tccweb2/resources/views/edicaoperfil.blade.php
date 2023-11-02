@@ -18,10 +18,14 @@
                 <h2> Editar Perfil </h2>
             </div>
             <div class="userconfig">  
-                <img src="{{'assets/img_tcc/joao.svg'}}" alt="foto" class="imgUsuario">      
+                <img src="{{ asset('caminho/para/foto/existente.jpg') }}" alt="foto" class="imgUsuario">      
                 <div>
                     <h3> Nome de Usuário </h3>
-                    <button type="button" class="button">Alterar foto de perfil</button>
+                    <form action="{{route('uploadFoto') }}" method="POST" enctype="multipart/form-data">
+                        @csrf
+                        <input type="file" name="nova_foto" accept="image/*">
+                        <button type="submit" class="button">Alterar foto de perfil</button>
+                    </form>
                 </div>
             </div>
 

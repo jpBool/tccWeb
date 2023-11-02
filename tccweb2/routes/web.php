@@ -34,6 +34,8 @@ Route::get('/login', ['as' => 'loginInicial.index', 'uses' => 'App\Http\Controll
 
         Route::get('/follow', ['as' => 'handleFollow', 'uses' => 'App\Http\Controllers\UsuariosTccController@handleFollow']);
         
+        Route::get('/unfollow', ['as' => 'handleUnfollow', 'uses' => 'App\Http\Controllers\UsuariosTccController@handleUnfollow']);
+
         Route::get('/placeholder', ['as' => 'loginInicial.placeholder', 'uses' => 'App\Http\Controllers\UsuariostccController@enterplaceholder']);
 
         Route::get('/busca', ['as' => 'pesquisaTotal', 'uses' => 'App\Http\Controllers\UsuariostccController@enterplaceholder']);
@@ -94,11 +96,14 @@ Route::get('/homeDark', function () {
        // Route::get('/pesquisar', 'App\Http\Controllers\UsuariostccController@pesquisar')->name('pesquisar');
 
         // Rota para a página de pesquisa
-        Route::post('/pesquisar', 'App\Http\Controllers\UsuariostccController@processarPesquisa')->name('pesquisarU'); 
-        Route::get('/seguidores', 'App\Http\Controllers\UsuariostccController@seguidores')->name('Seguidores');// Rota para processar a pesquisa
+        Route::get('/pesquisar', 'App\Http\Controllers\UsuariostccController@processarPesquisa')->name('pesquisarU'); 
+
+        Route::get('/seguidores', 'App\Http\Controllers\UsuariostccController@seguidores')->name('Seguidores');
+        Route::get('/seguindo', 'App\Http\Controllers\UsuariostccController@seguidores2')->name('Seguidores2');/// Rota para processar a pesquisa
 
         Route::post('/pesquisarProjetos', 'App\Http\Controllers\UsuariostccController@processarProjetos'); // 
 
+        Route::post('/upload-foto', 'App\Http\Controllers\UsuariostccController@uploadFoto')->name('uploadFoto');
         Route::get('/teladownloadDark', function () {
             return view('teladownloadDark');
         });

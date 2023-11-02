@@ -58,6 +58,10 @@ class homeController extends Controller
     }
 
     public function ShowProjectIsoled(Request $request) {
+
+        $userId = session('user_id');
+        if($userId)
+        {
         $projeto = $request->input('id_projeto');
         
         $rows = gp2_projetos::where('id_projeto', $projeto)
@@ -74,7 +78,12 @@ class homeController extends Controller
         // Faça algo com $descricao_breve
         
         // Por exemplo, você pode retornar uma view com o valor
-        return view('projeto', compact('rows', 'rowsStatus', 'rowsImagens', 'rowsColab', 'rowsUsers'));
+        return view('projeto', compact('rows', 'rowsStatus', 'rowsImagens', 'rowsColab', 'rowsUsers', 'userId'));
+    }
+    else
+    {
+        return view('loginInicial.login');
+    }
     }
 
     public function ShowEtapas(Request $request)

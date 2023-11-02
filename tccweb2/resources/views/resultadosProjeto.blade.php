@@ -37,7 +37,7 @@
 
         <div class="lado">
             <div class="pessoasProjetos2"> 
-                <form action="{{route('pesquisausuario') }}" method="GET">
+                <form action="{{route('pesquisarU')}}" method="GET">
                     <input type="submit" value="Pessoas" class="button2" />
                 </form>
 

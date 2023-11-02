@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+    
 use Illuminate\Support\Facades\Auth;
 use App\Models\gp2_usuarios;
 use Illuminate\Http\Request;
@@ -13,6 +13,7 @@ use App\Models\gp2_imagens;
 use App\Models\gp2_colaboradores;
 use App\Models\gp2_seguidores;
 use Carbon\Carbon;
+use phpseclib\Net\SFTP;
 //use App\usuariostcc;
 
 class UsuariostccController extends Controller
@@ -178,27 +179,7 @@ class UsuariostccController extends Controller
         }
     }
 
-    public function processarPesquisa(Request $request)
-    {
-    $userId = session('user_id');
-    if($userId)
-    {
-        $termoPesquisa = $request->input('termo_pesquisa');
-
-        // Execute a pesquisa no banco de dados usando o termo de pesquisa.
-        $resultados = gp2_usuarios::all();
-        $resultados = gp2_usuarios::whereRaw('LOWER(nome) ILIKE ?', ["%$termoPesquisa%"])
-            ->orWhereRaw('LOWER(email) ILIKE ?', ["%$termoPesquisa%"])
-            ->get();
-
-        $rowsSeguidores = gp2_seguidores::all();
-        return view('resultados', ['resultados' => $resultados], compact('userId', 'rowsSeguidores'));
-    }
-    else
-    {
-        return view('loginInicial.login');
-    }
-    }
+    
 
     public function processarProjetos(Request $request)
     {
@@ -322,6 +303,39 @@ class UsuariostccController extends Controller
     }
 }
 
+public function uploadFoto(Request $request)
+{
+    $request->validate([
+        'nova_foto' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
+    ]);
+
+    if ($request->file('nova_foto')) {
+        $foto = $request->file('nova_foto');
+        $caminho_local = $foto->getRealPath();
+
+        // Configurar a conexão FTP
+        $sftp = new SFTP('200.145.153.91');
+        if (!$sftp->login('matheussoares', 'cti')) {
+            return redirect()->back()->with('error', 'Falha na autenticação FTP.');
+        }
+
+        // Diretório remoto onde você deseja enviar a imagem
+        $diretorio_remoto = '/public_sites/matheussoares/imagens';
+
+        // Nome do arquivo no servidor FTP (pode usar o mesmo nome da imagem)
+        $nome_arquivo_remoto = $foto->getClientOriginalName();
+
+        // Faça o upload da imagem para o servidor FTP
+        if ($sftp->put($diretorio_remoto . $nome_arquivo_remoto, $caminho_local, SFTP::SOURCE_LOCAL_FILE)) {
+            return redirect()->back()->with('success', 'Foto de perfil atualizada com sucesso.');
+        } else {
+            return redirect()->back()->with('error', 'Falha ao enviar a foto para o servidor FTP.');
+        }
+    }
+
+    return redirect()->back()->with('error', 'Nenhuma imagem selecionada para envio.');
+}
+
 public function atualizarCadastro(Request $request)
 {
     // Obtém o ID do usuário da sessão
@@ -374,10 +388,54 @@ public function atualizarCadastro(Request $request)
                 'data_inicio_seguindo' => $dataAtual,
             ]);
 
-            return view('pesquisaUsuarios', compact('userId'));
+            return redirect()->back();
             
         }
 
+        public function handleUnfollow(Request $request)
+        {
+            $seguido = $request->id_seguido;
+            $userId = session('user_id');
+
+            // Encontre o registro correspondente e exclua-o
+            gp2_seguidores::where('id_seguidor', $userId)
+                ->where('id_seguido', $seguido)
+                ->delete();
+
+            return redirect()->back(); // Ou redirecione para a página desejada após deixar de seguir o usuário.
+        }
+
+
+    public function processarPesquisa(Request $request)
+    {
+        $userId = session('user_id');
+        if($userId)
+        {
+            $termoPesquisa = $request->input('termo_pesquisa');
+            if($termoPesquisa != null)
+            {
+               
+
+                // Execute a pesquisa no banco de dados usando o termo de pesquisa.
+                $resultados = gp2_usuarios::all();
+                $resultados = gp2_usuarios::whereRaw('LOWER(nome) ILIKE ?', ["%$termoPesquisa%"])
+                    ->orWhereRaw('LOWER(email) ILIKE ?', ["%$termoPesquisa%"])
+                    ->get();
+            }
+            else
+            {
+                $resultados = gp2_usuarios::all();
+            }
+            
+
+            $rowsSeguidores = gp2_seguidores::all();
+            return view('resultados', ['resultados' => $resultados], compact('userId', 'rowsSeguidores'));
+        }
+        else
+        {
+            return view('loginInicial.login');
+        }
+    }
 
     public function seguidores(Request $request)
     {
@@ -399,7 +457,35 @@ public function atualizarCadastro(Request $request)
             
             $rowsSeguidores = gp2_seguidores::all();
 
-            return view('resultados', ['resultados' => $resultados], compact('userId', 'rowsSeguidores'));
+            return view('seguidores', ['resultados' => $resultados], compact('userId', 'rowsSeguidores'));
+        }
+        else
+        {
+            return view('loginInicial.login');
+        }
+    }
+
+    public function seguidores2(Request $request)
+    {
+        $userId = session('user_id');
+        if($userId)
+        {
+            $termoPesquisa = $request->input('termo_pesquisa');
+
+            // Execute a pesquisa no banco de dados usando o termo de pesquisa.
+            $resultadosSeg = gp2_seguidores::where('id_seguido', $userId)->get();
+
+            $resultados2 = gp2_usuarios::whereRaw('LOWER(nome) ILIKE ?', ["%$termoPesquisa%"])
+            ->orWhereRaw('LOWER(email) ILIKE ?', ["%$termoPesquisa%"])
+            ->get();
+
+            $resultadosSeg = gp2_seguidores::where('id_seguido', $userId)->pluck('id_seguidor');
+            
+            $resultados = $resultados2->whereIn('id_usuario', $resultadosSeg)->all();
+            
+            $rowsSeguidores = gp2_seguidores::all();
+
+            return view('seguindo', ['resultados' => $resultados], compact('userId', 'rowsSeguidores'));
         }
         else
         {

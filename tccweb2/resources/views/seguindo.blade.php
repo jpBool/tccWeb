@@ -13,7 +13,7 @@
 <body class="body">
     <div class="main">
         <div class="espacinho2">
-            <form method="POST" action="{{route('Seguidores')}}">
+            <form method="GET" action="{{route('Seguidores')}}">
                 @csrf
                 <div class="separador">
                     <div class="search-container">
@@ -25,13 +25,13 @@
 
             <div class="lado1">
                 <div class="pessoasProjetos"> 
-                    <form action="{{route('pesquisausuario')}}" method="GET">
-                        <input type="submit" value="Pessoas" class="button" />
+                    <form action="{{route('Seguidores')}}" method="GET">
+                        <input type="submit" value="Seguindo" class="button2" />
                     </form>
-                    <form action="{{ route('filtrarpesquisa') }}" method="GET">
+                    <form action="{{route('Seguidores2')}}" method="GET">
                         <!-- Outros campos do formulário, se houver -->
                         <input type="hidden" name="id_projeto" value="">
-                        <input type="submit" value="Projetos" class="button2" />
+                        <input type="submit" value="Seguidores" class="button" />
                     </form>
                 </div>
             </div>
@@ -46,15 +46,17 @@
                         <div id="nome">{{ $row->nome }} </div>
                         <div id="email">{{ $row->email }}</div> 
                     </div>
-                    <form action="{{ route('handleFollow')}}" method="GET">
-                        @php
+                    @php
                             $seguidor = 0; // Inicializa a variável $seguidor como 0
                         @endphp
                         
                         @foreach($rowsSeguidores as $rowS)
                             @if($rowS->id_seguido == $row->id_usuario)
                                 @if($rowS->id_seguidor == $userId)
+                                <form action="{{ route('handleUnfollow')}}" method="GET">
+                                    <input type="hidden" name="id_seguido" id="id_seguido" value="{{ $row->id_usuario }}">
                                     <input type="submit" value="Deixar de seguir" class="button" />
+                                </form>
                                     @php
                                         $seguidor = 1; // Define $seguidor como 1
                                     @endphp
@@ -64,10 +66,13 @@
                         @endforeach
                         
                         @if($seguidor == 0)
+                        <form action="{{ route('handleFollow') }}" method="GET">
+
+
                             <input type="hidden" name="id_seguido" id="id_seguido" value="{{ $row->id_usuario }}">
                             <input type="submit" value="Seguir" class="button" />
+                        </form>
                         @endif
-                    </form>
 
                    
                 </div>

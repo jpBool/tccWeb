@@ -16,7 +16,7 @@
                 <div class="navButtom">
                     <li><a class="links" href="{{route('Seguidores')}}">Seguindo</a></li>
                     <li><a class="links" href="{{route('homeInicial')}}">Explorar</a></li>
-                    <li><a class="links" href="{{route('pesquisausuario')}}">Pesquisar</a></li>
+                    <li><a class="links" href="{{route('pesquisarU')}}">Pesquisar</a></li>
                 </div>
 
                 <div class="navIcon">
@@ -38,7 +38,7 @@
                             <span>Perfil</span>
                         </a>
 
-                        <a href="{{route('pesquisausuario')}}"class="integracao-button"> 
+                        <a href="{{route('pesquisarU')}}"class="integracao-button"> 
                             <img src="{{'assets/img_tcc/icon_search.svg'}}" alt="img" class="sidebar-i">
                             <span>Pesquisar</span>
                         </a>
@@ -68,10 +68,6 @@
                             <span>Editar perfil</span>
                         </a>
 
-                        <a href="{{route('edicaocadastro')}}" class="integracao-button">
-                            <img src="{{'assets/img_tcc/icon_lock.svg'}}" alt="img" class="sidebar-i">
-                            <span>Editar cadastro</span>
-                        </a>
 
                         <a href="#" class="integracao-button">
                             <img src="{{'assets/img_tcc/icon_confg.svg'}}" alt="img" class="sidebar-i">
