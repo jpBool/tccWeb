@@ -156,10 +156,7 @@
                 <img src="{{'assets/img_tcc/icon1.svg'}}" alt="img" class="icon">
 
                 <div class="text">
-                    <div class="palavras-chave">
-                        <h2>Palavras Chaves</h2>
-                        <h4>{{$rows->palavras_chaves}}</h4>
-                    </div>
+                    
                 </div>
             </div>
         </div>

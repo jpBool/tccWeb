@@ -51,6 +51,38 @@ class homeController extends Controller
          
     }
 
+
+    public function showProjectsDark()
+    {
+       //teste
+       $userId = session('user_id');
+        if($userId)
+        {
+            $rows = [];
+            $projetos = gp2_projetos::where('excluido', false)
+            ->orderBy('data_atualizacao', 'desc')
+            ->get();
+            foreach ($projetos as $projeto) {
+                $dataAtualizacao = $projeto->data_atualizacao;
+                $dataAtualizacao = Carbon::parse($dataAtualizacao);
+                $dataAtual = Carbon::now();
+                $diferencaDias = $dataAtual->diffInDays($dataAtualizacao);
+                $projeto->diferencaDias = $diferencaDias;
+                $rows[] = $projeto;
+            }
+            $rowsUsers = gp2_usuarios::all();
+            $rowsImagens = gp2_imagens::all();
+    
+            return view('homeDark', compact('rows', 'rowsImagens', 'rowsUsers', 'userId'));     
+        }
+        else
+        {
+            return view('loginInicial.login');
+        }
+        
+         
+    }
+
     public function showUserProjects()
     {
         $rows = gp2_projetos::all();

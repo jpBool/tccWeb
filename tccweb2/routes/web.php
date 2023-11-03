@@ -47,9 +47,8 @@ Route::get('/edicaoperfilDark', function () {
     return view('edicaoperfilDark');
 });
 
-Route::get('/homeDark', function () {
-    return view('homeDark');
-});
+        Route::get('/homeDark', ['as' => 'homeInicialDark', 'uses' => 'App\Http\Controllers\homeController@showProjectsDark']);
+
         Route::post('/logar', ['as' => 'loginInicial.logar', 'uses' => 'App\Http\Controllers\UsuariostccController@entrar']);
 
         

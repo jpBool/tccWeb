@@ -71,7 +71,7 @@
                         </a>
 
 
-                        <a href="#" class="integracao-button">
+                        <a href="{{route('homeInicialDark')}}" class="integracao-button">
                             <img src="{{'assets/img_tcc/icon_confg.svg'}}" alt="img" class="sidebar-i">
                             <span>Configurações</span>
                         </a>

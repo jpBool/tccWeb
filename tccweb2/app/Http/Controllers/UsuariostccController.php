@@ -96,11 +96,11 @@ class UsuariostccController extends Controller
         $rowsImagens = gp2_imagens::all();
 
         $countSeguidor = DB::table('gp2_seguidores')
-        ->where('id_seguidor', $userId)
+        ->where('id_seguidor', $usuario)
         ->count();
 
         $countSeguido = DB::table('gp2_seguidores')
-        ->Where('id_seguido', $userId)
+        ->Where('id_seguido', $usuario)
         ->count();
         
         return view('loginInicial.placeholder', compact('user', 'rows', 'rowsImagens', 'rowsUsers', 'rowsColab', 'rowsProject', 'userId', 'countSeguidor', 'countSeguido'));
@@ -206,8 +206,10 @@ class UsuariostccController extends Controller
         $resultados = gp2_projetos::whereRaw('LOWER(nome_projeto) ILIKE ?', ["%$termoPesquisa%"])
             ->orWhereRaw('LOWER(descricao_breve) ILIKE ?', ["%$termoPesquisa%"])
             ->get();
+        $rowsUsers = gp2_usuarios::all();
+        $rowsImagens = gp2_imagens::all();
        
-        return view('resultadosProjeto', ['resultados' => $resultados], compact('userId'));
+        return view('resultadosProjeto', ['resultados' => $resultados], compact('userId', 'rowsUsers', 'rowsImagens'));
     }
     else
     {
