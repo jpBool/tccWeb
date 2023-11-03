@@ -18,18 +18,8 @@
                 <h2> Editar Perfil </h2>
             </div>
             <div class="userconfig">  
-                <img src="{{ asset('caminho/para/foto/existente.jpg') }}" alt="foto" class="imgUsuario">      
-                <div>
-                    <h3> Nome de Usuário </h3>
-                    <form action="{{ route('store') }}" method="post" enctype="multipart/form-data">
-    <div class="form-group">
-        <label for="exampleInputFile">File input</label>
-        <input type="file" name="profile_image" id="exampleInputFile" multiple />
-    </div>
-    {{ csrf_field() }}
-    <button type="submit" class="btn btn-default">Submit</button>
-</form>
-                </div>
+                <img src="assets/img_tcc/iconsPerfil/{{$usuario->avatar}}.png" alt="foto" class="imgUsuario">      
+                
             </div>
 
             <form class="form_altera" method="POST" action="{{ route('perfil.atualizar') }}">

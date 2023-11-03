@@ -24,10 +24,10 @@
                         <div class="seguidores-commits">
                             <div class="seguidores"> 
                                 <div class="top-left-left-top-left">
-                                    <label>134 seguidores</label>
+                                    <label>seguidores <br> {{$countSeguidor}} </label>
                                 </div>
                                 <div class="top-left-left-top-right">
-                                    <label>136 seguindo</label>
+                                    <label>seguindo <br> {{$countSeguido}} </label>
                                 </div>
                             </div>
                             <div id="linha">
@@ -53,11 +53,12 @@
                             <label>Bio : {{$user->bio}}</label>
                         </div>
                     </div>
-                    
+                    @if($user->id_usuario == $userId)
                     <form action="{{ route('editar') }}">
                        
                         <input type="submit" value="Editar" class="button-perfil" />
                     </form>
+                    @endif
                 </div>
             </div>
             <br>

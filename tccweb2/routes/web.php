@@ -61,7 +61,8 @@ Route::get('/homeDark', function () {
 
         Route::get('/sobre', 
             function () {
-            return view('sobre');
+            $userId = session('user_id');
+            return view('sobre', compact('userId'));
         })->name('sobre');
         
 

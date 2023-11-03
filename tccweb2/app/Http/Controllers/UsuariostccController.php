@@ -15,7 +15,9 @@ use App\Models\gp2_seguidores;
 use Carbon\Carbon;
 use phpseclib\Net\SCP;
 use Illuminate\Support\Facades\Storage;
-use League\Flysystem\Ftp\FtpAdapter;
+use League\Flysystem\Ftp\FtpAdapwter;
+use Illuminate\Support\Facades\DB;
+
 
 //use App\usuariostcc;
 
@@ -92,8 +94,16 @@ class UsuariostccController extends Controller
         $rowsUsers = gp2_usuarios::all();
         $rows = gp2_projetos::where('id_criador', $usuario)->get();
         $rowsImagens = gp2_imagens::all();
+
+        $countSeguidor = DB::table('gp2_seguidores')
+        ->where('id_seguidor', $userId)
+        ->count();
+
+        $countSeguido = DB::table('gp2_seguidores')
+        ->Where('id_seguido', $userId)
+        ->count();
         
-        return view('loginInicial.placeholder', compact('user', 'rows', 'rowsImagens', 'rowsUsers', 'rowsColab', 'rowsProject', 'userId'));
+        return view('loginInicial.placeholder', compact('user', 'rows', 'rowsImagens', 'rowsUsers', 'rowsColab', 'rowsProject', 'userId', 'countSeguidor', 'countSeguido'));
     }
     else
     {
@@ -208,34 +218,44 @@ class UsuariostccController extends Controller
 
     public function cadastrar(Request $request)
     {
-        $userId = session('user_id');
-        if($userId)
-        {
+       
+      
+        
         // Valide os dados do formulário de cadastro
-        $request->validate([
+        $regras = [
             'nome' => 'required|string',
             'email' => 'required|email|unique:gp2_usuarios',
             'datanasc' => 'required|date',
             'senha' => 'required|min:6',
-        ]);
-        
+        ];
 
+        $mensagens = [
+            'nome.required' => 'O campo nome é obrigatório.',
+            'email.required' => 'O campo email é obrigatório.',
+            'email.email' => 'O campo email deve ser um endereço de email válido.',
+            'email.unique' => 'Este email já está em uso.',
+            'datanasc.required' => 'O campo data de nascimento é obrigatório.',
+            'datanasc.date' => 'O campo data de nascimento deve ser uma data válida.',
+            'senha.required' => 'O campo senha é obrigatório.',
+            'senha.min' => 'A senha deve ter pelo menos 6 caracteres.',
+        ];
+        
+        $request->validate($regras, $mensagens);
+
+       
+        $avatarNumero = rand(1, 30);
         // Crie um novo usuário
         gp2_usuarios::create([
             'nome' => $request->input('nome'),
             'email' => $request->input('email'),
             'datanasc' => $request->input('datanasc'),
             'senha' => md5($request->input('senha')),
+            'avatar' => $avatarNumero,
             // Outros campos do usuário que você deseja salvar
         ]);
 
         // Redirecione para a página de login ou para onde desejar após o cadastro
-        return view('loginInicial.login');// ou outra rota de sua escolha
-    }
-    else
-    {
-        return view('loginInicial.login');
-    }
+        return redirect()->route('loginInicial.index');//' ou outra rota de sua escolha
     }
 
     public function editar()

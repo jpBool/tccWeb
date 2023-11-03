@@ -20,7 +20,9 @@
                 </div>
 
                 <div class="navIcon">
-                    <img src="{{'assets/img_tcc/icon_perfilescuro.svg'}}" alt="img" class="nav-icon">
+
+                    <a href="{{route('loginInicial.placeholder', ['usuario' => $userId]) }}">
+                        <img src="{{'assets/img_tcc/icon_perfilescuro.svg'}}" alt="img" class="nav-icon"> </a>
                     <img src="{{'assets/img_tcc/icon_menu.svg'}}" alt="img" class="nav-icon" id="openSidebarButton">
 
                     <div class="sidebar" id="sidebar">
@@ -48,12 +50,12 @@
                             <span>Explorar</span>
                         </a>
 
-                        <a href="#" class="integracao-button">
+                        <a href="{{route('Seguidores')}}" class="integracao-button">
                             <img src="{{'assets/img_tcc/icon_notification.svg'}}" alt="img" class="sidebar-i">
                             <span>Seguindo</span>
                         </a>
 
-                        <a href="#" class="integracao-button">
+                        <a href="{{route('Seguidores2')}}" class="integracao-button">
                             <img src="{{'assets/img_tcc/icon_user_add.svg'}}" alt="img" class="sidebar-i">
                             <span>Seguidores</span>
                         </a>
