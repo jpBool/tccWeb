@@ -31,7 +31,7 @@
             <div class="GroupNomProjeto">
                 <div class="nomeProjeto">
                     <h1> {{$rows->nome_projeto}}</h1>
-                    {{$rows->descricao_breve}};
+                    {{$rows->descricao_breve}}
                 </div>
                 <div class="dadosProjeto">
                     @foreach($rowsUsers as $rowsA)
@@ -64,8 +64,8 @@
                 <div class="text">
                     <h2>Status do Projeto: {{$rowsStatus[$rows->status -1]->status}} </h2>
 
-                    <h4>Previsão de Conclusão : < {{$rows->previsao}} > </h4>
-                    <h4>Linguagem: < {{$rows->linguagem}} > </h4>
+                    <h4>Previsão de Conclusão :  {{$rows->previsao}}  </h4>
+                    <h4>Linguagem:  {{$rows->linguagem}}  </h4>
                     <div class="descricao">
                         <h2>Descrição</h2>
                         {{$rows->descricao_detalhada}}
