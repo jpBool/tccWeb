@@ -84,8 +84,11 @@
                 <img src="{{'assets/img_tcc/icon1.svg'}}" alt="img" class="icon">
 
                 <div class="text">
+                    @if($rows->link_youtube != null)
                     <h2>Vídeo do Projeto</h2>
                     <div id="video-container"> </div>
+                    @endif
+                    
                         <script>
                             var youtubeLink = "{{$rows->link_youtube}}"; // Recupere o link direto do YouTube do seu banco de dados usando Blade
                             var embedLink = youtubeLink.replace('https://www.youtube.com/watch?v=', 'https://www.youtube.com/embed/');
