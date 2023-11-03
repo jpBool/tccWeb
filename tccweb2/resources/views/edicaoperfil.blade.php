@@ -21,11 +21,14 @@
                 <img src="{{ asset('caminho/para/foto/existente.jpg') }}" alt="foto" class="imgUsuario">      
                 <div>
                     <h3> Nome de Usuário </h3>
-                    <form action="{{route('uploadFoto') }}" method="POST" enctype="multipart/form-data">
-                        @csrf
-                        <input type="file" name="nova_foto" accept="image/*">
-                        <button type="submit" class="button">Alterar foto de perfil</button>
-                    </form>
+                    <form action="{{ route('store') }}" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="exampleInputFile">File input</label>
+        <input type="file" name="profile_image" id="exampleInputFile" multiple />
+    </div>
+    {{ csrf_field() }}
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
                 </div>
             </div>
 

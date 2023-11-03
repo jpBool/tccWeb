@@ -13,7 +13,10 @@ use App\Models\gp2_imagens;
 use App\Models\gp2_colaboradores;
 use App\Models\gp2_seguidores;
 use Carbon\Carbon;
-use phpseclib\Net\SFTP;
+use phpseclib\Net\SCP;
+use Illuminate\Support\Facades\Storage;
+use League\Flysystem\Ftp\FtpAdapter;
+
 //use App\usuariostcc;
 
 class UsuariostccController extends Controller
@@ -303,37 +306,31 @@ class UsuariostccController extends Controller
     }
 }
 
-public function uploadFoto(Request $request)
+
+
+public function store(Request $request)
 {
-    $request->validate([
-        'nova_foto' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
-    ]);
-
-    if ($request->file('nova_foto')) {
-        $foto = $request->file('nova_foto');
-        $caminho_local = $foto->getRealPath();
-
-        // Configurar a conexão FTP
-        $sftp = new SFTP('200.145.153.91');
-        if (!$sftp->login('matheussoares', 'cti')) {
-            return redirect()->back()->with('error', 'Falha na autenticação FTP.');
-        }
-
-        // Diretório remoto onde você deseja enviar a imagem
-        $diretorio_remoto = '/public_sites/matheussoares/imagens';
-
-        // Nome do arquivo no servidor FTP (pode usar o mesmo nome da imagem)
-        $nome_arquivo_remoto = $foto->getClientOriginalName();
-
-        // Faça o upload da imagem para o servidor FTP
-        if ($sftp->put($diretorio_remoto . $nome_arquivo_remoto, $caminho_local, SFTP::SOURCE_LOCAL_FILE)) {
-            return redirect()->back()->with('success', 'Foto de perfil atualizada com sucesso.');
-        } else {
-            return redirect()->back()->with('error', 'Falha ao enviar a foto para o servidor FTP.');
-        }
+    if($request->hasFile('profile_image')) {
+         
+        //get filename with extension
+        $filenamewithextension = $request->file('profile_image')->getClientOriginalName();
+ 
+        //get filename without extension
+        $filename = pathinfo($filenamewithextension, PATHINFO_FILENAME);
+ 
+        //get file extension
+        $extension = $request->file('profile_image')->getClientOriginalExtension();
+ 
+        //filename to store
+        $filenametostore = $filename.'_'.uniqid().'.'.$extension;
+ 
+        //Upload File to external server
+        Storage::disk('ftp')->put($filenametostore, fopen($request->file('profile_image'), 'r+'));
+ 
+        //Store $filenametostore in the database
     }
-
-    return redirect()->back()->with('error', 'Nenhuma imagem selecionada para envio.');
+ 
+    return redirect('images')->with('status', "Image uploaded successfully.");
 }
 
 public function atualizarCadastro(Request $request)

@@ -103,7 +103,7 @@ Route::get('/homeDark', function () {
 
         Route::post('/pesquisarProjetos', 'App\Http\Controllers\UsuariostccController@processarProjetos'); // 
 
-        Route::post('/upload-foto', 'App\Http\Controllers\UsuariostccController@uploadFoto')->name('uploadFoto');
+        Route::post('/upload-foto', 'App\Http\Controllers\UsuariostccController@store')->name('store');
         Route::get('/teladownloadDark', function () {
             return view('teladownloadDark');
         });

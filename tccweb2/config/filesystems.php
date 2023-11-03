@@ -29,6 +29,14 @@ return [
     */
 
     'disks' => [
+        
+        'ftp' => [
+            'driver' => 'ftp',
+            'host' => env('FTP_HOST'),
+            'username' => env('FTP_USERNAME'),
+            'password' => env('FTP_PASSWORD'),
+            'root' => 'DIR_PATH_TO_WHERE_IMAGE_STORE' // for example: /var/www/html/dev/images
+        ],
 
         'local' => [
             'driver' => 'local',
