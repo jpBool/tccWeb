@@ -1,5 +1,5 @@
 @extends('layout._siteDark')
-@section('titulo','Logar')
+@section('titulo','Home')
 @section('conteudo')
 
 <!DOCTYPE html>
