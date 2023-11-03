@@ -44,12 +44,6 @@
             </form>
         </div>
     </main>
-            
-    <!-- footer -->
-        
-    
-</body>
-
-    
+</body>   
 </html>
 @endsection 

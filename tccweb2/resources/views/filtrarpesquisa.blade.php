@@ -15,6 +15,7 @@
 
 
 <body class="body">
+<div class="main">
 
 <div class="espacinho">
     <form method="POST" action="/pesquisarProjetos">
@@ -110,6 +111,7 @@
                     </form>
                 </div>
             </div>
+</div>
 </body>
 </html>
 @endsection 

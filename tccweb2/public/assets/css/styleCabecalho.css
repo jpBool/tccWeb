@@ -168,7 +168,7 @@ nav
     height: 150px;
     font-family: Helvetica;
     clear: both; /* Limpa elementos flutuantes */
-    overflow-x:auto;
+    overflow-x:hidden;
 }
 
 .textfooter

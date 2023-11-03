@@ -1,63 +1,43 @@
-body, html{
-    background: linear-gradient(to bottom, #ffffff, #BBE1F3, #9EBAD6, #9EBAD6);
+html{
+    height: 80vh;
     background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-    width:100%;
-    font-family: Helvetica;
-    height: 125vh;
+    padding-bottom: 0;
+     /* 100% da altura da tela */
+    display: flex;
+    flex-direction: column; /* Para estender o conteúdo */
 }
 
-body{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    
+body
+{
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    /* Defina o fundo da página inteira, incluindo a área abaixo do footer */
+    background-color: #f0f0f0; /* Substitua pela cor de fundo desejada */
+    font-family: Helvetica;
+    min-width: 900px;
+    min-height: 850px;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(to bottom, #ffffff, #BBE1F3, #9EBAD6, #9EBAD6);
 }
 
 main{
-    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
-
-/*-------------------------------sidebar--------------------------------*/
-
-.sidebar{
-    z-index: 1000;
-    position: fixed;
-    right: 0;
-    top: 0;
-
-    width: fit-content;
-    padding: 1rem;
-
-    height: 100%;
-    background-color: #fff;
-    visibility: hidden;
-    display: flex;
     flex-direction: column;
-    gap: 1rem;
-}
-
-.sidebar a {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
-}
-
-.sidebar-i{
-    width: 1.5rem;
-}
-
+    margin-bottom: 400px;
+    height: 100%;
+} 
 
 /*------------------------------Body-------------------------------*/
 .fundo{
@@ -67,19 +47,11 @@ main{
     padding: 1rem;
     background-color: #C0E0F6;
     width: 550px;
-    height: 730px;
+    height: 650px;
     border-radius: 2rem;
-    margin-top: 350px;
+    margin-top: 200px;
     box-shadow: 0px 0px 30px rgb(255, 255, 255);
 }
-
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 4rem;
-} 
 
 form
 {
