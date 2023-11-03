@@ -134,6 +134,7 @@
                         <div class="etapas">
                             <h3>{{$rowE->nome_etapa}}</h3>
                             <p>{{$rowE->descricao_etapa}}</p>
+                            
                             <p>{{$rowE->porcentagem}}</p>
                             
                         </div>

@@ -8,7 +8,7 @@
     <div class="so-top">
         <div class="top-all">
             <img src="{{'assets/img_tcc/logo.svg'}}" alt="img" class="imglogo">
-            <h1>etapas do projeto place holder</h1>
+            <h1>etapas do projeto </h1>
         </div>
         <div class="top-top-all">
             <div class="one">
@@ -35,7 +35,7 @@
                         </div>
                     </div>
                     <div class="num-porcentagem">{{$row2->porcentagem}}%</div>
-                </div>
+                    </div>
                 <label>N° etapas: {{$row2->num_etapas}}</label>
                 <h4>{{$row2->ordenador}}</h4>
                 @else
@@ -62,7 +62,15 @@
                                     <p>{{$rowE->descricao_impedimento}}</p>
                                 @endif
                             </div>
-                            <h4>Porcentagem :    {{$rowE->porcentagem}}</h4>
+                    <div class="barra-progress">
+                        <div class="barraPreta">
+                            <div class="barra" style="width: {{$row2->porcentagem}}%;">
+                                
+                            </div>
+                        </div>
+                    <div class="num-porcentagem">{{$rowE->porcentagem}}%</div>
+                    </div>
+                         
                             <h4>Nível de prioridade : {{$rowE->prioridade}}</h4>
                             <h4>Peso da etapa: {{$rowE->peso}}</h4>
                             <div class="bottom-etapas">

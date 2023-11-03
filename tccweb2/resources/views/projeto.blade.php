@@ -1,5 +1,5 @@
 @extends('layout._site')
-@section('titulo','Logar')
+@section('titulo','Projeto')
 @section('conteudo')
 
 <!DOCTYPE html>
@@ -130,10 +130,12 @@
                                         <img src="assets/img_tcc/iconsPerfil/{{$rowsA->avatar}}.png" alt="img" id="img-user2">
                                         </a>
                                         <div class="text-colab">
-                                            {{$rowsA->nome}}
+                                        <a href="{{route('loginInicial.placeholder', ['usuario' => $rowsA->id_usuario]) }}"> 
+                                            {{$rowsA->nome}} </a>
                                         </div>
                                         <div class="email-colab">
-                                            {{$rowsA->email}}<br>
+                                        <a href="{{route('loginInicial.placeholder', ['usuario' => $rowsA->id_usuario]) }}">
+                                            {{$rowsA->email}}<br> </a>
                                         </div>
                                     </div>
                                 </div>
