@@ -34,7 +34,11 @@
                     {{$rows->descricao_breve}};
                 </div>
                 <div class="dadosProjeto">
-                    Criado por : {{$rows->autores}}
+                    @foreach($rowsUsers as $rowsA)
+                    @if($rowsA->id_usuario == $rows->id_criador)
+                    Criado por : {{$rowsA->nome}}
+                    @endif
+                    @endforeach
                     <br><br>
                     Criado em : {{$rows->data_criacao}}
                     <br><br>
