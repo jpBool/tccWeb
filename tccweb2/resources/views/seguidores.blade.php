@@ -73,13 +73,10 @@
                             <input type="submit" value="Seguir" class="button" />
                         </form>
                         @endif
-                   
-
-                   
                 </div>
                 @endforeach
             </div>
-        <div>
+        </div>
     </div>
 </body>
 </html>
