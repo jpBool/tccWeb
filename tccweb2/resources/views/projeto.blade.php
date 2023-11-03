@@ -50,7 +50,7 @@
             <div class="infoAutor"> 
                 <div class="text">
                     <div class="autores">
-                        <label>Autores: {{$rows->autores}};</label>
+                        <label>Autores: {{$rows->autores}}</label>
                         <label>E-mail para contato: <div class="email">{{$rows->email_contato}}</div></label>
                         <label>Site do Projeto: <div class="link-site"><a href="{{$rows->link_site}}">{{$rows->link_site}} </a></div></label>
                     </div>
@@ -58,7 +58,7 @@
                 <img src="{{'assets/img_tcc/icon1.svg'}}" alt="img" class="icon">
                 
                 <div class="text">
-                    <h2>Status do Projeto: < {{$rowsStatus[$rows->status -1]->status}} ></h2>
+                    <h2>Status do Projeto: {{$rowsStatus[$rows->status -1]->status}} </h2>
 
                     <h4>Previsão de Conclusão : < {{$rows->previsao}} > </h4>
                     <h4>Linguagem: < {{$rows->linguagem}} > </h4>
@@ -85,6 +85,7 @@
 
                 <div class="text">
                     <h2>Vídeo do Projeto</h2>
+                    <div id="video-container"> </div>
                         <script>
                             var youtubeLink = "{{$rows->link_youtube}}"; // Recupere o link direto do YouTube do seu banco de dados usando Blade
                             var embedLink = youtubeLink.replace('https://www.youtube.com/watch?v=', 'https://www.youtube.com/embed/');
