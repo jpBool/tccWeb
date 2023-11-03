@@ -26,7 +26,7 @@
                     <img src="{{'assets/img_tcc/download.png'}}" alt="img" class="imgdownload">
                     
 
-                    <button type="button" class="button">Download</button>
+                   <a href="https://github.com/jpBool/tccCsharp"> <button type="button" class="button">Download</button> </a>
 
                 </div>
                 

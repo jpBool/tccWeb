@@ -28,7 +28,7 @@ class homeController extends Controller
         {
             $rows = [];
             $projetos = gp2_projetos::where('excluido', false)
-            ->orderBy('porcentagem', 'desc')
+            ->orderBy('data_atualizacao', 'desc')
             ->get();
             foreach ($projetos as $projeto) {
                 $dataAtualizacao = $projeto->data_atualizacao;

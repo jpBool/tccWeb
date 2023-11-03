@@ -77,7 +77,7 @@
                         </a>
 
                         <a href="http://200.145.153.91/matheussoares/SENSEI/Help%20do%20Sistema%20-%20SENSEI.pdf" >
-                        <img src="{{'assets/img_tcc/icon_confg.svg'}}" alt="img" class="sidebar-i">
+                        <img src="{{'assets/img_tcc/icon_helps.svg'}}" alt="img" class="sidebar-i">
                             <span>Help do sistema</span>
                         </a>
 
