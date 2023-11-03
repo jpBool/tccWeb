@@ -1,6 +1,3 @@
-@extends('layout._site')
-@section('titulo','Bem-Vindo')
-@section('conteudo')
 
 <!DOCTYPE html>
 <html>
@@ -129,4 +126,3 @@
         }) 
     </script>
 </html>
-@endsection 
