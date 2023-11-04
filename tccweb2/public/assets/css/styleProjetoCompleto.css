@@ -231,6 +231,10 @@ body::before {
     display: block;
 }
 
+.colabs a{
+    text-decoration: none;
+}
+
 .colabs {
     gap: 5px;
     margin-left: 15px;
