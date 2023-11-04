@@ -73,6 +73,9 @@
                             <input type="submit" value="Seguir" class="button" />
                         </form>
                         @endif
+
+
+
                 </div>
                 @endforeach
             </div>

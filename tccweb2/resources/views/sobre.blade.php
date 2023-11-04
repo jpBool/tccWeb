@@ -11,6 +11,7 @@
     </head>
 
     <body class="body">
+    <div class="main">
         <div class="divtotal1">
             <div class="text">
                 <h1 class="titulo">Sobre nós</h1>
@@ -52,6 +53,7 @@
             </div>
         </div>
 
+    </div>
     </body>
 
     <script>

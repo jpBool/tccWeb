@@ -9,7 +9,7 @@ html{
 
 body
 {
-    min-width: 1480px;
+    min-width: 1500px;
     position: relative;
     overflow-y: auto;
     height: 100%;
@@ -42,6 +42,7 @@ body::before {
     min-width: 1000px;
     max-width: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .allall
@@ -468,7 +469,7 @@ nav
 .espacinho3{
     display: flex;
     position:relative;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: flex-end;
     min-width: 1800px;
     margin-top: 200px;
@@ -481,11 +482,6 @@ nav
     justify-content: center;
     width: 100%;
     margin-top: 200px;
-}
-
-.quad-result{
-    margin-top: 270px;
-    z-index: +1;
 }
 
 .quad-result1{
@@ -519,6 +515,8 @@ padding: 10px;
     display: flex;
     justify-content: center;
 }
+
+
 .quad{
     margin-top: 50px;
     background-color: #BBE1F3;
@@ -530,6 +528,13 @@ padding: 10px;
     border-width: 2.5px; 
     border-style: solid; 
     border-color:  rgb(0, 0, 0);
+    position: absolute;
+    z-index: 99;
+    box-shadow: 5px 10px 10px #4b6977, 
+                -200px -50px 0px cornflowerblue,
+                200px 200px 0px cadetblue,
+                -200px 200px chartreuse,
+                200px -50px 0px coral;
 }
 
 #block{
@@ -549,13 +554,13 @@ padding: 10px;
 
 .teste{
     display: flex;
-    width: 140%;
+    width: 100%;
     justify-content: center;
 }
 
 .result{
     margin-top: 50px;
-    width: 40%;
+    width: 100%;
     margin-bottom: 210px;
 }
 
@@ -613,7 +618,7 @@ padding: 10px;
 .lado{
     width: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: center;
 }
 
 .lado1{

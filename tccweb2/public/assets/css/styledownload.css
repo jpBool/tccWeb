@@ -16,6 +16,7 @@ body
     /* Defina o fundo da página inteira, incluindo a área abaixo do footer */
     background-color: #f0f0f0; /* Substitua pela cor de fundo desejada */
     font-family: Helvetica;
+    min-width: 1500px;
             
 }
 
@@ -44,7 +45,8 @@ body::before {
 .conteudo{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    width: 100%;
 }
 
 .Titulo{
@@ -70,6 +72,7 @@ body::before {
     flex-direction: column;
     align-items: center;
     gap: 16px;
+    margin-right: 400px;
 }
 
 .imgdownload{

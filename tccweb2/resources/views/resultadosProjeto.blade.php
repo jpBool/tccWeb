@@ -14,8 +14,6 @@
 
 <body class="body">
 <div class="main">
-<div class="quad-bonito">
-    <div class="quad-bonito2">
         <div class="ladolado">
             <div class="espacinho3">
                 <form method="POST" action="/pesquisarProjetos">
@@ -48,6 +46,68 @@
             </div>
         </div>
         <div class="teste">
+
+        <div class="quad">
+                    <form method="POST" aaction="/pesquisarProjetos">
+                            @csrf
+                        <!-- Outros campos do formulário, se houver -->
+                        <div class="mindi">
+                            <div class="conto">
+                                <input type="text" name="termo_pesquisa" id="searchInput" placeholder="Pesquisar...">
+                                <button id="searchButton" type="submit" ><img class="lupa" src="{{'assets/img_tcc/lupa.svg'}}"></button>
+                            </div>
+                        </div>
+                        <div class="status">
+                            <label for="status">Status de Projeto:</label>
+                            <select id="status" name="status">
+                                <option value="em-andamento">Em Andamento</option>
+                                <option value="concluido">Concluído</option>
+                            </select>
+                        </div>
+                        
+                        <div class="Porcentagem">
+                            <p id="lado0">Porcentagem:</p>
+                            <div id="block">
+                                <div id="lado">
+                                    <label for="porcentagem">Maior que:</label>
+                                    <div id="porcentagem">
+                                        <input type="number" name="porcentagem" min="0" max="100">
+                                    </div>
+                                </div>
+                                <div id="lado2">
+                                    <label for="porcentagem">Menor que:</label>
+                                    <div id="porcentagem">
+                                        <input type="number" name="porcentagem" min="0" max="100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="datatt">
+                            <p id="lado0">Data de Atualização:</p>
+                                <div id="block">
+                                    <div id="lado">
+                                        <label for="porcentagem">Maior que:</label>
+                                        <div id="porcentagem">
+                                            <input type="number" name="porcentagem" min="0" max="100">
+                                        </div>
+                                    </div>
+                                    <div id="lado2">
+                                        <label for="porcentagem">Menor que:</label>
+                                        <div id="porcentagem">
+                                            <input type="number" name="porcentagem" min="0" max="100">
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="botoesform">
+                            <input class="buttons" type="reset" value="LIMPAR FILTROS">
+                            <input class="buttons" type="submit" value="CANCELAR">
+                            <input class="buttons" type="submit" value="APLICAR FILTRO">
+                        </div>
+                    </form>
+            </div>
 
             <div class="result">
                 @foreach($resultados as $row)
@@ -131,72 +191,8 @@
                 @endforeach
             </div>
         </div>
-    </div>
-            <div class="quad-result">  
-                <div class="quad">
-                    <form method="POST" aaction="/pesquisarProjetos">
-                            @csrf
-                        <!-- Outros campos do formulário, se houver -->
-                        <div class="mindi">
-                            <div class="conto">
-                                <input type="text" name="termo_pesquisa" id="searchInput" placeholder="Pesquisar...">
-                                <button id="searchButton" type="submit" ><img class="lupa" src="{{'assets/img_tcc/lupa.svg'}}"></button>
-                            </div>
-                        </div>
-                        <div class="status">
-                            <label for="status">Status de Projeto:</label>
-                            <select id="status" name="status">
-                                <option value="em-andamento">Em Andamento</option>
-                                <option value="concluido">Concluído</option>
-                            </select>
-                        </div>
-                        
-                        <div class="Porcentagem">
-                            <p id="lado0">Porcentagem:</p>
-                            <div id="block">
-                                <div id="lado">
-                                    <label for="porcentagem">Maior que:</label>
-                                    <div id="porcentagem">
-                                        <input type="number" name="porcentagem" min="0" max="100">
-                                    </div>
-                                </div>
-                                <div id="lado2">
-                                    <label for="porcentagem">Menor que:</label>
-                                    <div id="porcentagem">
-                                        <input type="number" name="porcentagem" min="0" max="100">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="datatt">
-                            <p id="lado0">Data de Atualização:</p>
-                                <div id="block">
-                                    <div id="lado">
-                                        <label for="porcentagem">Maior que:</label>
-                                        <div id="porcentagem">
-                                            <input type="number" name="porcentagem" min="0" max="100">
-                                        </div>
-                                    </div>
-                                    <div id="lado2">
-                                        <label for="porcentagem">Menor que:</label>
-                                        <div id="porcentagem">
-                                            <input type="number" name="porcentagem" min="0" max="100">
-                                        </div>
-                                    </div>
-                                </div>
-                        </div>
 
-                        <div class="botoesform">
-                            <input class="buttons" type="reset" value="LIMPAR FILTROS">
-                            <input class="buttons" type="submit" value="CANCELAR">
-                            <input class="buttons" type="submit" value="APLICAR FILTRO">
-                        </div>
-                    </form>
-                </div>
-            </div>
         </div>
-</div>
 </div>
 </body>
 </html>
