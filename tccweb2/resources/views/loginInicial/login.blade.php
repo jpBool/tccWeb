@@ -23,8 +23,8 @@
     <div class="all">
         <div class="card-login">
             <div class="card-left">
-                <h1>Hello!</h1>
-                <h3>Sign in to your account</h3>
+                <h1>Olá!</h1>
+                <h3>Faça login em sua conta</h3>
                 <form method="POST" action="{{ route('login') }}">
                     @csrf
                     <div class="form-group">

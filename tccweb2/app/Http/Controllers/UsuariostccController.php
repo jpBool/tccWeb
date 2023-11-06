@@ -33,10 +33,6 @@ class UsuariostccController extends Controller
         return redirect()->route('login');
         
     }
-    public function __construct()
-    {
-        $this->middleware('guest')->except('logout');
-    }
 
     public function showLoginForm()
     {
@@ -45,25 +41,25 @@ class UsuariostccController extends Controller
 
 
     public function login(Request $request)
-{
-    session()->flush();
-    $email = $request->input('email');
-    $password = md5($request->input('password'));
-    
-    $user = gp2_usuarios::where('email', $email)
-        ->where('senha', $password)
-        ->first();
-
-    if ($user) {
-        session(['user_id' => $user->id_usuario]);
-        // Autenticação bem-sucedida
+    {
+        session()->flush();
+        $email = $request->input('email');
+        $password = md5($request->input('password'));
         
-        return redirect()->route('homeInicial'); // Corrigido para redirecionar para a rota nomeada
-    } else {
-        // Autenticação falhou, redirecione de volta para a página de login
-        return redirect()->back()->withInput()->withErrors(['email' => 'Credenciais inválidas']);
+        $user = gp2_usuarios::where('email', $email)
+            ->where('senha', $password)
+            ->first();
+
+        if ($user) {
+            session(['user_id' => $user->id_usuario]);
+            // Autenticação bem-sucedida
+            
+            return redirect()->route('homeInicial'); // Corrigido para redirecionar para a rota nomeada
+        } else {
+            // Autenticação falhou, redirecione de volta para a página de login
+            return redirect()->back()->withInput()->withErrors(['email' => 'Credenciais inválidas']);
+        }
     }
-}
 
     
     //public function login(Request $request)
@@ -133,6 +129,7 @@ class UsuariostccController extends Controller
     {
        
     }
+    
     public function entrar(Request $req)
     {
         $dados = $req->all();
