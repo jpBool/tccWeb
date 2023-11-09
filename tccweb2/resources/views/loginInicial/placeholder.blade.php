@@ -58,6 +58,24 @@
                        
                         <input type="submit" value="Editar" class="button-perfil" />
                     </form>
+                    @else
+                        @if($resultado == 1)
+                        <div class="espace-button">
+                            <form action="{{ route('handleUnfollow')}}" method="GET">
+                                    <input type="hidden" name="id_seguido" id="id_seguido" value="{{ $user->id_usuario }}">
+                                    <input type="submit" value="Deixar de seguir" class="button2" />
+                                </form>
+                        </div>
+                        @else
+                        <div class="espace-button">
+                            <form action="{{ route('handleFollow') }}" method="GET">
+
+
+                            <input type="hidden" name="id_seguido" id="id_seguido" value="{{ $user->id_usuario }}">
+                            <input type="submit" value="Seguir" class="button3" />
+                            </form>
+                        </div>
+                        @endif
                     @endif
                 </div>
             </div>

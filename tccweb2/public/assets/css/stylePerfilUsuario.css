@@ -281,7 +281,6 @@ body::before {
     margin-top: 7px;
     min-width: 100px;
     height: 30px;
-    color: #fff;
     padding: 5px 10px;
     font-weight: bold;
     cursor: pointer;
@@ -295,6 +294,65 @@ body::before {
     border: black;
     color: white;
     margin-bottom: 10px;
+}
+
+.button2
+{
+    margin-top: 7px;
+    min-width: 800px;
+    height: 30px;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0; /*Quanto maior o valor, mais fica na camada de frente quando há sobreposiçao de objetos*/
+    background: #E5F1F3;
+    overflow: hidden;
+    border: 1px solid black;
+    color: black;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+
+.button2:hover, :visited, :active{
+    background: black;
+    color: #fff;
+}
+
+.button3
+{
+    margin-top: 7px;
+    min-width: 800px;
+    height: 30px;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0; /*Quanto maior o valor, mais fica na camada de frente quando há sobreposiçao de objetos*/
+    background: black;
+    overflow: hidden;
+    border: black;
+    color: white;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+
+.button3:hover, :visited, :active{
+    background: #E5F1F3;
+    color: black;
+    border: 1px solid black;
+}
+
+.espace-button{
+    margin-left: 100px;
+    float: right;
+    padding-top: 15px;
 }
 
 #img-project

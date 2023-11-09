@@ -31,6 +31,11 @@
                 </div>
 
                 <div class="divLabel">
+                    <label for="TextBio">Email:</label>
+                    <input class="form_input" id="TextEmail" name="TextEmail" placeholder="Biografia" value="{{$usuario->email }}"> </input>
+                </div>
+
+                <div class="divLabel">
                     <label for="TextNat">Naturalidade:</label>
                     <input class="form_input" type="text" id="TextNat" name="TextNat" placeholder="Naturalidade" value="{{$usuario->naturalidade }}">
                 </div>
@@ -39,6 +44,10 @@
                     <label for="TextBio">Biografia:</label>
                     <input class="form_input" id="TextBio" name="TextBio" placeholder="Biografia" value="{{$usuario->bio }}"> </input>
                 </div>
+
+                
+
+               
 
                 <button class="divButton" type="submit">Salvar alterações</button>
             </form>
